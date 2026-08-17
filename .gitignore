@@ -1,0 +1,8 @@
+.DS_Store
+firmware/ac-sensor-node-esp32s3/build/
+firmware/ac-sensor-node-esp32s3/build-release/
+firmware/ac-sensor-node-esp32s3/sdkconfig
+firmware/ac-sensor-node-esp32s3/sdkconfig.old
+firmware/ac-sensor-node-esp32s3/managed_components/
+__pycache__/
+*.pyc
