@@ -3,16 +3,19 @@
 Standalone hardware, firmware, contract, equation, and release repository for
 the 2005 Toyota 4Runner engine-bay A/C telemetry node.
 
-The current firmware is `v0.1.0-dev.1` with the `EMPTY_RECOVERY` software
-profile. It is a deliberately minimal USB recovery image for the bench-verified
-16 MB flash / 8 MB octal-PSRAM ESP32-S3 board. It reports identity and health,
-uses A/B rollback, preserves NVS, and does not link or initialize Wi-Fi, BLE,
-sensor, storage, or vehicle-bus paths.
+The checked-in release is `v0.1.0-dev.1` with the `EMPTY_RECOVERY` software
+profile. A separate `v0.2.0-dev.1` `TEMPERATURE_BENCH` target adds the real
+ESP32-S3 internal die-temperature sensor as a board-health observation while
+keeping every unselected external probe explicit and unavailable. Both targets
+use A/B rollback, preserve NVS, and omit Wi-Fi, BLE, storage, pressure, and
+vehicle-bus paths.
 
 ## Current safety boundary
 
 - Wi-Fi and BLE are absent from the recovery build, not merely hidden in the UI.
-- Pressure and temperature values remain unavailable until exact sensor parts,
+- The temperature bench target also omits Wi-Fi and BLE and never labels the
+  internal die sensor as ambient, refrigerant-line, cabin, or vent temperature.
+- A/C probe pressure and temperature values remain unavailable until exact sensor parts,
   transfer functions, interfaces, and calibration provenance are frozen.
 - The release installer preserves NVS at `0x9000..0xCFFF`.
 - A/B OTA slots and bootloader rollback remain available for recovery.
@@ -25,6 +28,7 @@ sensor, storage, or vehicle-bus paths.
 ## Repository map
 
 - `firmware/ac-sensor-node-esp32s3/` — ESP-IDF 5.5.3 firmware and release builder.
+- `firmware/ac-temperature-bench-esp32s3/` — real board die-temperature bench target.
 - `releases/v0.1.0-dev.1/` — exact installer binaries, manifest, checksums, and validation evidence.
 - `contracts/jsonschema/v1/` — versioned POST and telemetry contracts.
 - `equations/v1/` — pressure lift, absolute pressure ratio, and vent delta-T definitions.
@@ -54,11 +58,16 @@ docker run --rm \
   bash -lc 'idf.py set-target esp32s3 && idf.py build'
 ```
 
-Or use `make build`. A release build requires a clean worktree:
+Or use `make build` to compile both the recovery and temperature-bench targets.
+A recovery release build requires a clean worktree:
 
 ```bash
 make release VERSION=v0.1.0-dev.1
 ```
+
+The temperature-bench target is development software, not a published flash
+release. See `docs/development/TEMPERATURE-SENSORS.md` for the external-probe
+selection and calibration gate.
 
 ## Recovery installation
 

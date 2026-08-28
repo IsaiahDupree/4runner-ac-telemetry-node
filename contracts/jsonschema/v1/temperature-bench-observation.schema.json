@@ -1,0 +1,104 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://schemas.vhos.dev/v1/temperature-bench-observation.schema.json",
+  "title": "A/C Temperature Bench Observation v0.1",
+  "$defs": {
+    "calibrationIdentity": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["configured", "calibration_id", "revision", "validation_status"],
+      "properties": {
+        "configured": {"const": false},
+        "calibration_id": {"type": "null"},
+        "revision": {"type": "null"},
+        "validation_status": {"type": "null"}
+      }
+    },
+    "boardChannel": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "value_c",
+        "quality",
+        "state",
+        "source",
+        "semantic_role",
+        "driver_identity",
+        "driver_range_min_c",
+        "driver_range_max_c",
+        "driver_claimed_max_error_c",
+        "calibration"
+      ],
+      "properties": {
+        "value_c": {"type": ["number", "null"]},
+        "quality": {"enum": ["SENSOR_UNVERIFIED", "OUT_OF_RANGE", "MISSING"]},
+        "state": {"enum": ["OBSERVED_UNCALIBRATED", "OUT_OF_DRIVER_RANGE", "READ_ERROR", "DRIVER_ERROR"]},
+        "source": {"const": "ESP32_S3_INTERNAL_DIE"},
+        "semantic_role": {"const": "BOARD_DIE_HEALTH_ONLY"},
+        "driver_identity": {"const": "esp-idf.esp32s3.tsens/5.5.3"},
+        "driver_range_min_c": {"const": -10},
+        "driver_range_max_c": {"const": 80},
+        "driver_claimed_max_error_c": {"const": 1},
+        "calibration": {"$ref": "#/$defs/calibrationIdentity"}
+      },
+      "allOf": [
+        {
+          "if": {"properties": {"state": {"const": "OBSERVED_UNCALIBRATED"}}},
+          "then": {
+            "properties": {
+              "value_c": {"type": "number"},
+              "quality": {"const": "SENSOR_UNVERIFIED"}
+            }
+          },
+          "else": {"properties": {"value_c": {"type": "null"}}}
+        }
+      ]
+    },
+    "unconfiguredExternalChannel": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["value_c", "quality", "state", "source", "sensor_identity", "driver_identity", "calibration"],
+      "properties": {
+        "value_c": {"type": "null"},
+        "quality": {"const": "MISSING"},
+        "state": {"const": "HARDWARE_NOT_SELECTED"},
+        "source": {"const": "UNCONFIGURED"},
+        "sensor_identity": {"type": "null"},
+        "driver_identity": {"type": "null"},
+        "calibration": {"$ref": "#/$defs/calibrationIdentity"}
+      }
+    }
+  },
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "contract",
+    "contract_version",
+    "device_id",
+    "software_profile",
+    "sample_counter",
+    "observed_at_monotonic_us",
+    "channels"
+  ],
+  "properties": {
+    "contract": {"const": "sensor.node.temperature-bench"},
+    "contract_version": {"const": "0.1.0"},
+    "device_id": {"type": "string", "pattern": "^ac-node-(?:[0-9a-f]{12}|identity-unavailable)$"},
+    "software_profile": {"const": "TEMPERATURE_BENCH"},
+    "sample_counter": {"type": "integer", "minimum": 0},
+    "observed_at_monotonic_us": {"type": "integer", "minimum": 0},
+    "channels": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["board", "high_line", "low_line", "ambient", "cabin_return", "center_vent"],
+      "properties": {
+        "board": {"$ref": "#/$defs/boardChannel"},
+        "high_line": {"$ref": "#/$defs/unconfiguredExternalChannel"},
+        "low_line": {"$ref": "#/$defs/unconfiguredExternalChannel"},
+        "ambient": {"$ref": "#/$defs/unconfiguredExternalChannel"},
+        "cabin_return": {"$ref": "#/$defs/unconfiguredExternalChannel"},
+        "center_vent": {"$ref": "#/$defs/unconfiguredExternalChannel"}
+      }
+    }
+  }
+}

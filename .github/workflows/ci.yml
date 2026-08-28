@@ -12,12 +12,18 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v7
-      - name: Build ESP32-S3 recovery firmware with pinned ESP-IDF
+      - name: Build ESP32-S3 recovery and temperature firmware with pinned ESP-IDF
         run: >-
           docker run --rm
           -v "$GITHUB_WORKSPACE:/project"
-          -w /project/firmware/ac-sensor-node-esp32s3
+          -w /project
           espressif/idf:v5.5.3
-          bash -lc 'idf.py set-target esp32s3 && idf.py build'
-      - name: Verify source, release evidence, and compiled component boundary
-        run: python3 tools/verify_repository.py --build-dir firmware/ac-sensor-node-esp32s3/build
+          bash -lc 'idf.py -C firmware/ac-sensor-node-esp32s3 set-target esp32s3 &&
+          idf.py -C firmware/ac-sensor-node-esp32s3 build &&
+          idf.py -C firmware/ac-temperature-bench-esp32s3 set-target esp32s3 &&
+          idf.py -C firmware/ac-temperature-bench-esp32s3 build'
+      - name: Verify source, release evidence, and compiled component boundaries
+        run: >-
+          python3 tools/verify_repository.py
+          --recovery-build-dir firmware/ac-sensor-node-esp32s3/build
+          --temperature-build-dir firmware/ac-temperature-bench-esp32s3/build

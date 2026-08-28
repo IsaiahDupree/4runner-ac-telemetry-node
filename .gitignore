@@ -6,3 +6,8 @@ firmware/ac-sensor-node-esp32s3/sdkconfig.old
 firmware/ac-sensor-node-esp32s3/managed_components/
 __pycache__/
 *.pyc
+firmware/ac-temperature-bench-esp32s3/build/
+firmware/ac-temperature-bench-esp32s3/build-release/
+firmware/ac-temperature-bench-esp32s3/sdkconfig
+firmware/ac-temperature-bench-esp32s3/sdkconfig.old
+firmware/ac-temperature-bench-esp32s3/managed_components/
