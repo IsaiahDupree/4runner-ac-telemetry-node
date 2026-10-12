@@ -12,7 +12,11 @@
 <span class="status">DISCOVERY — ELECTRICAL DESIGN BLOCKED</span>
 <p>The mounting reference is prepared. Controller identity, board role, exact sensors,
 power limits and interfaces must be resolved before the wired schematic and populated PCB.</p>
-<nav class="links"><a href="mounting-reference.kicad_pcb">Editable mounting reference</a><a href="design-inputs.json">Design inputs</a><a href="input-review.json">Consistency evidence</a><a href="README.md">Engineering notes</a></nav>
+<nav class="links"><a href="mounting-reference.kicad_pcb">Editable mounting reference</a><a href="design-inputs.json">Design inputs</a><a href="source-reconciliation.md">Recovered project specifications</a><a href="input-review.json">Consistency evidence</a><a href="README.md">Engineering notes</a></nav>
+<p class="small">Source audit: the original spec freezes Nano ESP32 with headers;
+later CAD records an UNO-format ESP32-S3-WROOM-1-N16R8 candidate and the requested
+Pi + Arduino mounting planes. Exact Sensata variants and final contact probes
+remain explicitly open. See the linked reconciliation for source history.</p>
 <p class="small"><a href="boardspec.json">Canonical PCB-agent BoardSpec</a> ·
 <a href="boardspec-review.json">Model validation</a>. The current automatic generator
 does not support this automotive/radio scope; the functional carrier requires guided

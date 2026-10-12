@@ -1,0 +1,212 @@
+{
+  "schema_version": "ac-carrier-source-research/1",
+  "captured_at": "2026-10-12T23:53:54.662418+00:00",
+  "scope": "source_reconciliation_only_no_electrical_selection_or_release",
+  "source_files": [
+    {
+      "id": "focused-spec",
+      "repository": "4runner-ac-telemetry-node",
+      "snapshot_commit": "c4c1ca6d2cbc120edb87734b080f5c6955313a2c",
+      "path": "docs/prd/2005_Toyota_4Runner_AC_Engine_Bay_Telemetry_Node_Spec_v1.0.txt",
+      "url": "https://github.com/IsaiahDupree/4runner-ac-telemetry-node/blob/c4c1ca6d2cbc120edb87734b080f5c6955313a2c/docs/prd/2005_Toyota_4Runner_AC_Engine_Bay_Telemetry_Node_Spec_v1.0.txt",
+      "sha256": "4a5e8f440b7d23f1fe8ae38cd5af5b5898709947d4e5cfe86c979b975b3fe2ae",
+      "size_bytes": 30482,
+      "working_copy_matches_commit": true,
+      "excerpts": [
+        {
+          "start_line": 10,
+          "end_line": 15,
+          "sha256": "d4df8d8f8cfe8e574ddee886c7f19416eff67f0cadecddb73d3ec698146a0174",
+          "text": "1.1 Design correction: Nano ESP32 power path\nThe earlier architecture block showed a 12 V -> 5 V automotive buck feeding the Nano VIN/5 V path. The current Arduino Nano ESP32 documentation makes an important distinction: VIN is specified for 6-21 V, the board is 3.3 V I/O, and 5 V is available through VBUS only when supplied from USB-C. Therefore this specification supersedes the earlier 5 V-to-VIN interpretation.\nPrimary in-vehicle power: use a protected automotive regulator feeding approximately 6.5-7.0 V into Nano VIN, then validate brownout behavior during cranking.\nPressure sensors receive their own regulated 5 V rail; do not expect the VIN-powered Nano ESP32 to provide a 5 V sensor rail.\nUSB-C remains the preferred bench/service/debug data path and may also power the board on the bench.\n2. Product Mission and Scope\n"
+        },
+        {
+          "start_line": 169,
+          "end_line": 246,
+          "sha256": "d316970f6d3a5b01b072fcfc260146725716106d62b233817b4707cda24bfbec",
+          "text": "Status\nReason / requirement\nController\nArduino Nano ESP32 with headers (ESP32-S3 / NORA-W106, Nano form factor, USB-C)\nFREEZE V0/V1\nWi-Fi + BLE, native USB-C, 16 MB flash, Arduino ecosystem, Nano carrier-board form factor.\nHigh pressure\nSensata Automotive A/C Pressure Sensor - high-side analog configuration\nFAMILY FREEZE; orderable PN TBD\nR134a compatible, 5 V analog option, 0.6-35 barA operating range, automotive temperature/IP rating.\nLow pressure\nSensata Automotive A/C Pressure Sensor - low-side analog configuration\nFAMILY FREEZE; orderable PN TBD\nR134a compatible, 5 V analog option, 0.6-10.25 barA range gives better low-side resolution.\nPrecision ADC\nTI ADS1115-Q1\nRECOMMENDED V1/V2\nAutomotive 16-bit, 4-channel I2C ADC; isolates pressure accuracy from ESP32 ADC nonlinearity and provides spare channels.\nVehicle buck\nTI LM5164-Q1\nFREEZE REFERENCE\nAEC-Q100, 6-100 V input, 1 A; configure ~6.5-7.0 V for Nano VIN after protection.\nSensor 5 V rail\nAutomotive 5 V regulator; TPS7B83-Q1 5 V is current reference\nCANDIDATE\nPressure sensors require 5 V; independent clean sensor rail simplifies diagnosis and power cycling.\nStorage V0\nAdafruit microSD SPI/SDIO breakout #4682 + 16-64 GB high-endurance microSD\nFREEZE V0\nFast prototype path; replace breakout with SMD socket/card detect on custom PCB.\nEnclosure\nHammond 1554D2GY polycarbonate enclosure\nFREEZE V1 FIT-CHECK\n119 x 66 x 61 mm, IP68 family, RF-friendly plastic, engine-bay-friendly form factor.\nPower connector\nDeutsch DTM 2-pin or DT 2-pin\nFREEZE FAMILY\nSealed 12 V + ground connection.\nSensor connectors\nDeutsch DTM 3-pin; e.g. DTM06-3S mating family\nFREEZE FAMILY\n5 V / GND / signal per pressure sensor; sealed and serviceable.\nFuse\nSealed ATO/Mini blade inline holder + 1 A fuse\nFREEZE V1\nBranch protection close to switched power source.\nWiring\n18 AWG TXL/GXL power; 20-22 AWG TXL/GXL sensor wiring\nFREEZE SPEC\nAutomotive insulation and temperature/abrasion tolerance.\nHarness protection\nHigh-temp split loom/braided sleeve + adhesive-lined heat shrink + P-clamps\nFREEZE SPEC\nChafe, vibration, strain-relief and serviceability.\nMounting\nM3 PCB standoffs; M4/M5 stainless fasteners; rubber isolators; bracket\nFREEZE SPEC\nSeparate electronics structure from A/C plumbing; manage vibration.\nUSB service\nNano USB-C internal service port; optional sealed panel extension\nFREEZE FUNCTION\nBench programming, serial/debug and recovery. Keep sealed during normal engine-bay operation.\nA/C prototype interface\nR134a HIGH + LOW service couplers, short rated hose, supported adapter block\nFREEZE PROTOTYPE CONCEPT\nAvoid heavy direct cantilever at service ports; temporary data-collection path only.\nA/C permanent interface\nA/C-rated tee/dedicated sensor port retaining service access\nDESIGN REQUIRED\nProduction path must be mechanically supported, leak tested, refrigerant/PAG compatible and serviceable.\nLine temperatures\n2-3 automotive-rated contact temperature probes\nSELECT\nNeeded for superheat/subcooling-style metrics and stronger diagnosis.\nParameter\nLow side\nHigh side\nDesign implication\n"
+        },
+        {
+          "start_line": 512,
+          "end_line": 539,
+          "sha256": "3207c1166a0b2463be3fc2e19497c4e5ee89ede29c80da72d3a04b0d0d6513b4",
+          "text": "Why it matters\nCurrent recommendation\nExact Sensata orderable PNs\nLocks calibration/output/connector and procurement.\nObtain manufacturer/distributor configuration quote before sensor order.\nPermanent A/C fitting geometry\nLeak risk, serviceability and mechanical load.\nPrototype with supported hoses; permanent tee/port only after measuring vehicle and professional leak-validation plan.\nPressure-channel ADC path\nRepeatability and explainability.\nUse ADS1115-Q1 on custom carrier unless bench evidence justifies Nano ADC alone.\nSensor 5 V regulator\nNoise, thermal margin, independent sensor power.\nAutomotive 5 V rail; TPS7B83-Q1 is a current reference, final choice after thermal/availability review.\nLine-temp probe technology\nSuperheat/subcooling accuracy and engine-bay durability.\nSelect automotive-rated contact probe after physical mounting trial.\nAtmospheric pressure source\nAbsolute-to-gauge conversion.\nAdd validated local pressure source or explicitly log configured atmospheric pressure for controlled tests.\nIgnition power source\nBattery drain and electrical noise.\nFused ignition-switched underhood source; exact fuse/stud after vehicle inspection.\nAndroid head-unit transport\nBLE background behavior and optional USB.\nBLE primary; USB only after the installed head unit model/host behavior is verified.\nDocument authority\nThis is the focused build specification for the A/C engine-bay node. Where it conflicts with the older telemetry documents on Nano ESP32 power routing, this v1.0 document controls. Vehicle-specific A/C acceptance envelopes and exact refrigerant-fitting part numbers remain subject to physical validation and service information before production use.\n"
+        }
+      ]
+    },
+    {
+      "id": "parent-bench-bom",
+      "repository": "4runner-vehicle-health-os",
+      "snapshot_commit": "c852f17e84ef6d274b74871488ad97e0c4a4942b",
+      "path": "docs/hardware/RECOMMENDED-HARDWARE.md",
+      "url": "https://github.com/IsaiahDupree/4runner-vehicle-health-os/blob/c852f17e84ef6d274b74871488ad97e0c4a4942b/docs/hardware/RECOMMENDED-HARDWARE.md",
+      "sha256": "a5a5b95d751dabbe8e73b54acd9c4019faea751db9a6679ff1d03099600f7698",
+      "size_bytes": 8081,
+      "working_copy_matches_commit": true,
+      "excerpts": [
+        {
+          "start_line": 47,
+          "end_line": 68,
+          "sha256": "d957d04221e9dd3e50a6448e688c59aa9c7572e618b0562a33151c02c7d24f83",
+          "text": "## Added-sensor V0 bench BOM\n\nThis is the exact development BOM for the Telemetry Build half of the project. It is a bench/prototype baseline, not approval for unattended engine-bay installation.\n\n| Qty | Exact item | Role | Primary source |\n| ---: | --- | --- | --- |\n| 1 | Espressif **ESP32-S3-DevKitC-1-N8R8** | V0 sensor-node controller | [Espressif user guide](https://docs.espressif.com/projects/esp-dev-kits/en/latest/esp32s3/esp32-s3-devkitc-1/user_guide.html) |\n| 1 | Adafruit **microSD Card Breakout**, product `4682` | SPI/SDIO prototype logging | [Adafruit](https://www.adafruit.com/product/4682) |\n| 1 | SanDisk **MAX ENDURANCE 32 GB**, `SDSQQVR-032G-GN6IA` | High-endurance V0 log media | [Western Digital](https://www.westerndigital.com/products/memory-cards/sandisk-max-endurance-uhs-i-microsd) |\n| 1 | Honeywell **PX2AF1XX200PSAAX** | Low-side R-134a pressure candidate; 0-200 psi sealed gauge, 5 V ratiometric | [Honeywell PX2 family](https://automation.honeywell.com/us/en/products-backup/sensing-solutions/sensors/pressure-sensors/packaged-pressure/px2-series) |\n| 1 | Honeywell **PX2AF1XX600PSAAX** | High-side R-134a pressure candidate; 0-600 psi sealed gauge, 5 V ratiometric | [Honeywell PX2 family](https://automation.honeywell.com/us/en/products-backup/sensing-solutions/sensors/pressure-sensors/packaged-pressure/px2-series) |\n| 2 | Honeywell **3685301** shielded Metri-Pack 150 mating cable, 1 m | Manufacturer-defined sensor harness pigtail | [PX2 datasheet](https://prod-edam.honeywell.com/content/dam/honeywell-edam/sps/siot/en-us/products/sensors/pressure-sensors/industrial-pressure-sensors/px2-series/documents/sps-siot-heavy-duty-pressure-px2-series-datasheet-50069942-i-en-ciid-142978.pdf) |\n| 1 | YELLOW JACKET **41337** | R-134a high-side premium coupler, 1/4-inch male flare | [YELLOW JACKET](https://yellowjacket.com/product/automotive-r-134a-ac-couplers-premium-with-control-valve/) |\n| 1 | YELLOW JACKET **41338** | R-134a low-side premium coupler, 1/4-inch male flare | [YELLOW JACKET](https://yellowjacket.com/product/automotive-r-134a-ac-couplers-premium-with-control-valve/) |\n| 1 | Adafruit **ADS1115 16-bit ADC**, product `1085` | V0 pressure acquisition after protected scaling to the 3.3 V ADC domain | [Adafruit](https://www.adafruit.com/product/1085) |\n| 6 | 10.0 kΩ / 20.0 kΩ, 0.1%, low-tempco resistors | Two characterized 2:1 pressure-signal dividers; final protection moves onto the V1 PCB | Qualified electronics distributor |\n| 3 | Adafruit **PT1000 3-wire RTD**, product `3984` | V0 high line, low line, and ambient temperature probes | [Adafruit](https://www.adafruit.com/product/3984) |\n| 3 | Adafruit **PT1000 MAX31865 amplifier**, product `3648` | V0 RTD interface | [Adafruit](https://www.adafruit.com/product/3648) |\n\nThe Honeywell PX2 family documentation explicitly lists R-134a media compatibility and offers the selected female-Schrader 1/4-inch flare port. The two pressure ranges preserve useful low-side resolution while retaining high-side headroom. Before purchase and vehicle connection, confirm distributor availability for the full catalog strings, obtain manufacturer/distributor confirmation for the exact variants, verify mating geometry, and have a qualified automotive A/C technician review the assembly. PAG-oil exposure, seals, hose/adapters, clearance, support, and leak-check procedure remain installation approval gates.\n\nThe Adafruit RTD assemblies and breakout boards are V0 development parts. They are not the V1 automotive PCB, sealed harness, or final engine-bay qualification. V1 must replace breakout wiring with protected inputs, sealed connectors, controlled sensor attachment, and environmental validation from `TEL-HW-002` through `TEL-HW-006`.\n"
+        }
+      ]
+    },
+    {
+      "id": "documented-board-observation",
+      "repository": "4runner-vehicle-health-os",
+      "snapshot_commit": "c852f17e84ef6d274b74871488ad97e0c4a4942b",
+      "path": "firmware/ac-sensor-node-esp32s3/README.md",
+      "url": "https://github.com/IsaiahDupree/4runner-vehicle-health-os/blob/c852f17e84ef6d274b74871488ad97e0c4a4942b/firmware/ac-sensor-node-esp32s3/README.md",
+      "sha256": "32e538146211d584b25c7557b1d5d17ff1181dfb294bf1050258e6ef32f0e43f",
+      "size_bytes": 3584,
+      "working_copy_matches_commit": true,
+      "excerpts": [
+        {
+          "start_line": 58,
+          "end_line": 58,
+          "sha256": "8dc49732fa7a1c17815e010fb9d2b2f3777b4bcf8b6852d101ffb3a75bcaaae1",
+          "text": "The checked-in configuration targets the physically detected 16 MB flash / 8 MB octal-PSRAM ESP32-S3 board. Do not flash this image onto the classic ESP32 CAN gateway.\n"
+        },
+        {
+          "start_line": 67,
+          "end_line": 69,
+          "sha256": "3fcbd80d2d1fa3f70d9220ac47d7b0b1e21c250058a4921e2398636d649563c6",
+          "text": "- flash: 16 MB detected\n- PSRAM: 8 MB embedded\n\n"
+        }
+      ]
+    },
+    {
+      "id": "later-controller-candidate",
+      "repository": "orion-control-plane",
+      "snapshot_commit": "1b3e779719934bb89b24672f283ca498ad2f27cd",
+      "path": "modeling/jobs/ac_diagnostic_enclosure_slot_mount.py",
+      "url": "https://github.com/IsaiahDupree/orion-control-plane/blob/1b3e779719934bb89b24672f283ca498ad2f27cd/modeling/jobs/ac_diagnostic_enclosure_slot_mount.py",
+      "sha256": "eb725d399a4a9f528b5a5819483098dd1c0d9191f5d5c8b4e045fa5dcdefc6ae",
+      "size_bytes": 347546,
+      "working_copy_matches_commit": true,
+      "excerpts": [
+        {
+          "start_line": 272,
+          "end_line": 290,
+          "sha256": "96a3b6e2f53283442cc705d5b329d7b8012e07f40d21c39f1c36b3b2ce47b9b6",
+          "text": "    \"owner_esp32_s3_uno_candidate\": {\n        \"label\": \"Owner ESP32-S3 UNO-format board candidate envelope\",\n        # X includes the photographed ~2.5 mm DC-jack body protrusion.  Y is a\n        # conservative component/header envelope; plug bodies are service-only.\n        \"size_mm\": [71.1, 18.0, 53.34],\n        \"source\": (\n            \"owner photos match the generic OEM board sold by DIYables; the \"\n            \"asymmetric axes are the exact official Arduino UNO Rev3 pattern, \"\n            \"while the photographed clone outline and connector envelope remain \"\n            \"coupon-gated until caliper-measured\"\n        ),\n    },\n}\n\n# The owner directed us to use the standard Arduino UNO mounting reference for\n# this candidate controller.  The photographed clone itself is not yet\n# dimensionally confirmed, so the physical coupon remains mandatory.  These\n# four axes are intentionally asymmetric and must never be mirrored like the\n# vehicle-fastener pair.  All four carrier features are round.\n"
+        },
+        {
+          "start_line": 581,
+          "end_line": 588,
+          "sha256": "6818b9b041d3c6311c39803297a504194d4c3096fa9f2334d5b9e2c9eb33b445",
+          "text": "    \"owner_photos\": \"eight owner-supplied 2880 x 3840 engine-bay photographs in two batches, 2026-09-11\",\n    \"owner_component_photos\": \"four owner-supplied 2880 x 3840 component photographs, 2026-09-11\",\n    \"flsun_v400_profile\": \"https://github.com/Flsun3d/Flsun-V400/blob/main/V400%20config%20for%20Cura%204.13.1/flsun_v400.def.json\",\n    \"oring_gland\": base.PANEL_SOURCES[\"oring_gland\"],\n    \"arduino_uno_reference_cad\": \"https://docs.arduino.cc/static/6bb7a3ca51ebee82a252f60c0b418787/A000066-cad-files.zip\",\n    \"owner_controller_likely_listing\": \"https://diyables.io/products/esp32-s3-development-board-with-esp32-s3-wroom-1-n16r8-wifi-bluetooth-uno-compatible-form-factor-works-with-arduino-ide\",\n    \"waveshare_ups_hat_d\": \"https://files.waveshare.com/wiki/UPS-HAT-D/UPS-HAT-D%203D%20Drawing.zip\",\n    \"cnc_kitchen_m3_standard\": INSERT_SPECS[\"structural_m3_standard\"][\"source\"],\n"
+        },
+        {
+          "start_line": 642,
+          "end_line": 653,
+          "sha256": "4d8afdd7eebfe148de3901000a174fba3a0621019194d8ae66f1874504f40e69",
+          "text": "    {\"file\": \"components/Photo 1.jpg\", \"pixels\": [2880, 3840],\n     \"sha256\": \"03dcdd7dd7f18e7389279529f88585ca0de4352d9a12eb2eb842438f3821dbb4\",\n     \"interpretation\": \"owner ESP32-S3 UNO and Waveshare UPS HAT D size relationship\"},\n    {\"file\": \"components/Photo 2.jpg\", \"pixels\": [2880, 3840],\n     \"sha256\": \"035ed7150542f811808a18ce4559efecead38877e1a802f596fa93ded8844b09\",\n     \"interpretation\": \"front faces and mounting holes of both owner boards\"},\n    {\"file\": \"components/Photo 3.jpg\", \"pixels\": [2880, 3840],\n     \"sha256\": \"7b5638fa438bfcd094da73a41026b2206d5302bc424201d2523425ac20d974e4\",\n     \"interpretation\": \"owner ESP32-S3 UNO board label and four asymmetric holes\"},\n    {\"file\": \"components/Photo 4.jpg\", \"pixels\": [2880, 3840],\n     \"sha256\": \"be02f02fa58aaa6f764575501080d00cfdcdb8c4f65886f64fe34261df4380c6\",\n     \"interpretation\": \"clear confirmation of ESP32-S3 UNO and Waveshare UPS HAT D identities\"},\n"
+        }
+      ]
+    },
+    {
+      "id": "earlier-cad-components",
+      "repository": "orion-control-plane",
+      "snapshot_commit": "1b3e779719934bb89b24672f283ca498ad2f27cd",
+      "path": "modeling/jobs/ac_diagnostic_enclosure.py",
+      "url": "https://github.com/IsaiahDupree/orion-control-plane/blob/1b3e779719934bb89b24672f283ca498ad2f27cd/modeling/jobs/ac_diagnostic_enclosure.py",
+      "sha256": "5b6de1097882e4eeaf8af8381ae50584d3b27a022e94acb7f604ee4162f7327e",
+      "size_bytes": 92498,
+      "working_copy_matches_commit": true,
+      "excerpts": [
+        {
+          "start_line": 103,
+          "end_line": 141,
+          "sha256": "7979baa8cd0a3f23ac84cc8ec6652bcd80d3f8d73f5b074340cd667b40bf15ae",
+          "text": "COMPONENT_SPECS: dict[str, dict[str, Any]] = {\n    \"waveshare_ups_hat_d\": {\n        \"label\": \"Waveshare UPS HAT (D), rotated -90 degrees\",\n        \"envelope_input_mm\": [85.0, 62.464, 31.38],\n        \"envelope_world_mm\": [62.464, 85.0, 31.38],\n        \"pcb_mm\": [85.0, 56.0],\n        \"hole_d_mm\": 3.0,\n        \"hole_centers_input_mm\": [[3.5, 3.5], [61.5, 3.5], [3.5, 52.5], [61.5, 52.5]],\n        \"hole_transform\": \"world local (x,y) = (input y, 85.0 - input x)\",\n        \"source\": \"https://files.waveshare.com/wiki/UPS-HAT-D/UPS-HAT-D%203D%20Drawing.zip\",\n    },\n    \"dfrobot_dfr0975\": {\n        \"label\": \"DFRobot DFR0975 ESP32-S3 development board\",\n        \"envelope_world_mm\": [61.47, 25.4, 7.1],\n        \"hole_d_mm\": 2.0,\n        \"hole_pattern_mm\": [56.6, 22.0],\n        \"hole_centers_local_mm\": [[2.435, 1.7], [59.035, 1.7], [2.435, 23.7], [59.035, 23.7]],\n        \"source\": \"https://wiki.dfrobot.com/dfr0975\",\n    },\n    \"adafruit_microsd_4682\": {\n        \"label\": \"Adafruit microSD SPI/SDIO breakout product 4682\",\n        \"envelope_world_mm\": [25.4, 22.86, 3.46],\n        \"hole_d_mm\": 2.5,\n        \"hole_centers_local_mm\": [[2.54, 2.54], [22.86, 2.54]],\n        \"coordinate_status\": \"VERIFY: two-hole card-side orientation inferred from the Adafruit CAD/Eagle datum\",\n        \"source\": \"https://www.adafruit.com/product/4682\",\n    },\n    \"adafruit_sht40_4885\": {\n        \"label\": \"Adafruit SHT40 temperature/humidity breakout product 4885\",\n        \"envelope_world_mm\": [25.4, 17.78, 4.53],\n        \"hole_d_mm\": 2.5,\n        \"hole_pattern_mm\": [20.32, 12.70],\n        \"hole_centers_local_mm\": [[2.54, 2.54], [22.86, 2.54], [2.54, 15.24], [22.86, 15.24]],\n        \"source\": \"https://www.adafruit.com/product/4885\",\n    },\n    \"interface_pcb_reserved\": {\n        \"label\": \"Reserved future interface PCB envelope on removable carrier\",\n        \"envelope_world_mm\": [55.0, 55.0, 15.0],\n        \"hole_d_mm\": 0.0,\n"
+        }
+      ]
+    },
+    {
+      "id": "current-cad-electrical-reconciliation",
+      "repository": "orion-control-plane",
+      "snapshot_commit": "1b3e779719934bb89b24672f283ca498ad2f27cd",
+      "path": "docs/ac-remaining-fit-and-print.md",
+      "url": "https://github.com/IsaiahDupree/orion-control-plane/blob/1b3e779719934bb89b24672f283ca498ad2f27cd/docs/ac-remaining-fit-and-print.md",
+      "sha256": "c4ae28b887db887c2dac906e62aaa13be1924dec535b60d1fec12dbe0e2ca6a9",
+      "size_bytes": 4496,
+      "working_copy_matches_commit": true,
+      "excerpts": [
+        {
+          "start_line": 58,
+          "end_line": 61,
+          "sha256": "87172cde89fdb4567c3907732606e9b1144bc75d4ab815c956278bef0b73abc5",
+          "text": "The older telemetry source describes a Nano ESP32 architecture; this active\nCAD follows the user-requested Pi + Arduino platforms. Reconcile the final\nelectronics BOM and power entry before freezing the wired enclosure. Do not\nassume that an older electrical connector list belongs to these board ports.\n"
+        }
+      ]
+    }
+  ],
+  "drive_readbacks": [
+    {
+      "id": "focused-drive-readback",
+      "file_id": "1rMmG6yA9YKml6fOkHtBKk_CI0mZiWGaA",
+      "url": "https://docs.google.com/document/d/1rMmG6yA9YKml6fOkHtBKk_CI0mZiWGaA/edit",
+      "provider_modified_at": "2026-08-16T23:44:04.647Z",
+      "retained_source_id": "focused-spec",
+      "readable_text_plus_terminal_lf_sha256": "4a5e8f440b7d23f1fe8ae38cd5af5b5898709947d4e5cfe86c979b975b3fe2ae",
+      "readable_text_size_bytes": 30482,
+      "byte_equal_to_retained_text": true,
+      "binary_docx_reverified": false
+    },
+    {
+      "id": "integrated-drive-readback",
+      "file_id": "1RC52bfDNV_n64M8ksWte7iB3DkNI9OdB",
+      "url": "https://docs.google.com/document/d/1RC52bfDNV_n64M8ksWte7iB3DkNI9OdB/edit",
+      "provider_modified_at": "2026-08-16T18:31:20.824Z",
+      "readable_text_plus_terminal_lf_sha256": "4d2e8385f931fe59f9c80cbad0bfa94777caa9f6aece6c184c962bf9e371d82c",
+      "readable_text_size_bytes": 128207,
+      "complete_readback_retained_in_repository": false,
+      "binary_docx_reverified": false,
+      "excerpts": [
+        {
+          "start_line": 2346,
+          "end_line": 2368,
+          "sha256": "eb2faa176031d7f4cb2b49f08cc3703d3b346124d5482eb1c028f49069564725",
+          "text": "Design a compact 2-layer carrier PCB for an Arduino Nano ESP32 for a 2005 Toyota 4Runner A/C telemetry system.\n\nFunctional requirements:\n- Arduino Nano ESP32 plugs into female headers.\n- Two independent A/C pressure inputs: HIGH and LOW.\n- V0/V1 sensors may be 5 V analog 0.5–4.5 V; protect/scale signals safely to the MCU ADC.\n- Provide optional I2C expansion for a future external ADC/digital pressure sensor.\n- microSD socket with card detect.\n- Vehicle input power from nominal 12 V.\n- Use an automotive-appropriate wide-input buck stage; current preferred reference is TI LM5164-Q1.\n- Include reverse-polarity and transient protection.\n- Independently switch power to both pressure sensors.\n- Deutsch-compatible external connector plan: 2-pin power and 3-pin per analog sensor.\n- Status LED and sealed TEST/RECOVERY button input.\n- Test points for VIN, 5V, 3V3, GND, HIGH signal, LOW signal, SDA, SCL, UART/JTAG.\n- Programming interface suitable for a pogo fixture and JLCPCB post-assembly programming.\n- Add hardware support for self-test: rail measurement and a known ADC reference.\n- Keep copper/components/metal hardware out of the Nano ESP32 antenna keepout.\n- Four M3 mounting holes.\n- Target Hammond 1554D2GY enclosure or smaller if practical.\n- Generate schematic, BOM, PCB layout, routed board, DRC/ERC report, assembly drawing, Gerbers, BOM, CPL and STEP.\n- Prefer components stocked by JLCPCB/LCSC when equivalent engineering quality is available.\n- Clearly flag all assumptions, especially pressure-sensor electrical characteristics, automotive transient protection, connector pinout and thermal limits.\n"
+        },
+        {
+          "start_line": 2404,
+          "end_line": 2414,
+          "sha256": "d40fb6f2940b625ba79d66e3f703641e936e643c09971534d6f18bfa65aae89a",
+          "text": "Use pressure together with ambient temperature, line/vent temperature, compressor state, condenser airflow and operating conditions. The telemetry system should preserve raw data and avoid declaring charge state from a single pressure snapshot.\nOpen item\nWhat must be decided\nExact pressure sensor PNs\nNeed explicit R134a/PAG compatibility, electrical output, pressure range, thread/fitting and pricing.\nPermanent refrigerant interface\nTemporary quick couplers are easy; production needs a supported, leak-tested permanent sensor port/tee.\nAnalog accuracy target\nDecide whether ESP32 ADC is adequate or add a dedicated ADC.\nIgnition power point\nChoose fused switched source and grounding point on the vehicle.\n"
+        }
+      ]
+    }
+  ],
+  "owner_instruction": {
+    "id": "owner-two-mounting-planes",
+    "timestamp": "2026-09-20T19:14:03.852Z",
+    "raw_record_sha256": "44e09f4e6b9b5b9a7f8b25d0915e2c5d9785694063cdd79899199cba3a490cdb",
+    "message_text_sha256": "a935b41085abb476ed19751838292a7bd605ff1f7aac1e678e526a1d3b44f120",
+    "authority_scope": "two_separate_pcb_mounting_planes_on_a_shared_slide_for_bench_access",
+    "identifies_pi_model_or_electrical_pinout": false,
+    "source_kind": "retained_owner_session_message",
+    "message_excerpt": "one for the Pi and then one for the Arduino",
+    "excerpt_sha256": "660d6f0816e0b164b0ef9c5cbfa82dd8fc892af7255c01ad88229f3a647eff4c",
+    "full_message_in_repository": false,
+    "full_message_retained_privately": true
+  },
+  "primary_web_references_checked_on": "2026-10-12",
+  "primary_web_references": [
+    {
+      "url": "https://docs.arduino.cc/hardware/nano-esp32",
+      "role": "Nano manufacturer documentation; not proof of owned board identity"
+    },
+    {
+      "url": "https://diyables.io/products/esp32-s3-development-board-with-esp32-s3-wroom-1-n16r8-wifi-bluetooth-uno-compatible-form-factor-works-with-arduino-ide",
+      "role": "Seller listing linked by retained CAD source; candidate match only, no owned-board pinout verification"
+    }
+  ],
+  "limitations": [
+    "The original component photograph bytes were not located or inspected in this audit; their recorded hashes and interpretations are retained from the CAD source.",
+    "The August physical board observation is historical documentation; it does not identify a board SKU or prove it is the September photographed controller.",
+    "Drive comparison covers connector-readable text plus one terminal LF, not original DOCX binary bytes.",
+    "Source claims and product candidates do not complete composite BoardSpec contracts, native EDA, physical tests or fabrication approval."
+  ]
+}

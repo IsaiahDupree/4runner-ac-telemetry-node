@@ -9,6 +9,13 @@ Open [the visual review](review.html) for the mounting pattern, planned circuit
 blocks and unresolved decisions. [design-inputs.json](design-inputs.json) is the
 versioned input record; null values represent genuinely unresolved contracts.
 
+The [source reconciliation](source-reconciliation.md) recovers controller,
+sensor, power, storage and mounting decisions from the parent project, live
+Drive specs, CAD implementation and the owner's earlier request. Its
+[retained evidence](evidence/source-research-2026-10-12.json) includes exact
+source excerpts and hashes. The fourteen incomplete contracts are composite
+engineering inputs, not fourteen topics with no known requirements.
+
 [boardspec.json](boardspec.json) uses the existing PCB agent's canonical
 `BoardSpec` model and passes its content-hash validation and serialization
 roundtrip. All fourteen significant contract fields remain `unknown`; the
@@ -24,11 +31,16 @@ verification profile. The current bounded LED generator cannot synthesize it.
 
 ## Reconciled source authority
 
-The focused August electrical spec controls sensor/calibration behavior and
-the original Nano ESP32 power path. The October enclosure follows the owner's
-Pi + UNO-format ESP32-S3 arrangement. Choosing a controller alone does not
-resolve the exact board SKU, header pinout, supply limits or the role of a new
-sensor PCB. Neither source silently overrides the other in this package.
+The focused August electrical spec explicitly freezes **Arduino Nano ESP32
+with headers** for V0/V1 and controls sensor/calibration behavior and its Nano
+power path. A fresh Drive text readback matches the retained text byte for byte.
+The owner later requested separate Pi and Arduino mounting planes, which the
+current cassette follows. Its CAD source links the photographed UNO-format
+ESP32-S3 to a likely **DIYables ESP32-S3-WROOM-1-N16R8** listing and identifies
+**Waveshare UPS HAT (D)**. The original component photos were not re-inspected;
+the source's candidate match does not verify the owned board revision, header
+pinout, supply limits or the host Pi model. The electrical migration and new
+sensor-PCB role remain to be resolved.
 
 The older parent repository's V0 BOM names Honeywell PX2AF1XX200PSAAX /
 PX2AF1XX600PSAAX and Adafruit PT1000/MAX31865 development assemblies. They are
@@ -36,10 +48,11 @@ historical alternatives, not selected parts for this later Sensata baseline.
 The current focused spec and temperature gate still leave the orderable
 pressure variants and external temperature technology open.
 
-The current recovery release also requires ESP32-S3 with exactly 16 MB flash.
-An unidentified UNO-format clone or the older 8 MB development-board candidate
-cannot be assumed compatible with that installer. Record the actual module,
-flash capacity and board revision before selecting firmware or flashing.
+The parent firmware record documents an August ESP32-S3 observation with 16 MB
+flash and 8 MB PSRAM; the current recovery release requires exactly 16 MB flash.
+That historical observation does not prove which board SKU was used or link it
+to the later UNO-format candidate. Verify the actual module, flash capacity and
+board revision before selecting firmware or flashing.
 
 The retained common-fastener CAD release is shell `mdl_c29e657682e440af`, slide
 `mdl_d17c5f5215d74f07` and cross-fit `mdl_5d10914d0a9e4648`, with a maximum

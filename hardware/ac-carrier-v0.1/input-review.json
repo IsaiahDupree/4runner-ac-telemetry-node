@@ -30,7 +30,7 @@
   "canonical_boardspec_bytes_bound": true,
   "automatic_generation_capability": "OUT_OF_SCOPE",
   "minimum_requested_analog_observations_sps": 105,
-  "input_sha256": "3424605a3a07ac44638312bc0116596f3041258b2c92b5e090b95828a3ca8541",
+  "input_sha256": "bf32b3aedda4e42970237d9f777c46b0625ff9464187717f84ca77f69005a7f6",
   "mounting_reference_sha256": "0cd90901458b38c46fc853c90fa91be7b0b3cd513bf87394a416fa68c462e630",
-  "observed_at": "2026-10-12T23:23:27.544296+00:00"
+  "observed_at": "2026-10-12T23:54:31.953637+00:00"
 }
