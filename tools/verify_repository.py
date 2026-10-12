@@ -9,6 +9,11 @@ import hashlib
 import json
 from pathlib import Path
 
+if __package__:
+    from .verify_ac_carrier import verify as verify_ac_carrier
+else:
+    from verify_ac_carrier import verify as verify_ac_carrier
+
 
 ROOT = Path(__file__).resolve().parents[1]
 RECOVERY_FIRMWARE = ROOT / "firmware" / "ac-sensor-node-esp32s3"
@@ -33,7 +38,7 @@ def sha256(path: Path) -> str:
 
 def read_json(path: Path) -> dict:
     value = json.loads(path.read_text(encoding="utf-8"))
-    require(isinstance(value, dict), f"{path.relative_to(ROOT)} must contain an object")
+    require(isinstance(value, dict), f"{path} must contain an object")
     return value
 
 
@@ -266,6 +271,7 @@ def main() -> None:
     verify_partitions(TEMPERATURE_FIRMWARE, "TEMPERATURE_BENCH")
     verify_release()
     verify_documents()
+    verify_ac_carrier(ROOT)
     if args.recovery_build_dir is not None:
         verify_build(
             args.recovery_build_dir.resolve(),

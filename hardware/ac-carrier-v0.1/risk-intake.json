@@ -1,0 +1,424 @@
+{
+  "schema_version": 1,
+  "content_hash": "2db2875fdc6174df0037a9fdf8dfcfb3cd7a05fdef45104ce385f35f556aee0f",
+  "assessment_id": "assessment:c4207e581bac9086974d7ac53ad6ebc16f3d17bc4740cc9b08ee7307dcab80be",
+  "policy_version": "pcb-autopilot.project-intake-baseline.v1",
+  "policy_hash": "03a2e367fa8fad63a6c25e5bdf46292f52bf2e3ae9f8acf7011dfc07c43d99a6",
+  "query_content_hash": "405ae183b1c1168d9d6014ccf7c7f8a6d2fbe91a545d26345e6fe1d1cbb340c2",
+  "query_sha256": "ab67993e9a3f8edd8af179874add7e8dc3923729e6bfee8acd2c820b446c9f47",
+  "source_fact_hashes": [],
+  "assessment_trust": "UNTRUSTED_CANDIDATE",
+  "risk_tier": "C",
+  "maximum_project_mode": "COPILOT",
+  "risk_signals": [
+    {
+      "schema_version": 1,
+      "content_hash": "fc8c6eb0244c1d4775575cb2314c84431676e767c62ffd435b68f9dfaa43ab08",
+      "signal_code": "BASELINE_UNRESOLVED",
+      "rule_id": "intake.raw-query-is-unconfirmed.v1",
+      "risk_floor": "A",
+      "mode_ceiling": "AUTOPILOT",
+      "matched_fragments": [
+        "unconfirmed raw query"
+      ],
+      "provenance": "UNTRUSTED_QUERY_TEXT",
+      "establishes_engineering_truth": false
+    },
+    {
+      "schema_version": 1,
+      "content_hash": "5110182a44d676cb321c9e595bbec022c014d7dd957cf729b7d3595dd433eae4",
+      "signal_code": "EXPERT_RF",
+      "rule_id": "risk.c.rf.v1",
+      "risk_floor": "C",
+      "mode_ceiling": "COPILOT",
+      "matched_fragments": [
+        "BLE",
+        "Wi-Fi"
+      ],
+      "provenance": "UNTRUSTED_QUERY_TEXT",
+      "establishes_engineering_truth": false
+    },
+    {
+      "schema_version": 1,
+      "content_hash": "722b56ae991e802fa3c7969bc0c410a49db207022b05e8000f94d23e7c0b0cf7",
+      "signal_code": "GUIDED_AUTOMOTIVE",
+      "rule_id": "risk.b.automotive.v1",
+      "risk_floor": "B",
+      "mode_ceiling": "COPILOT",
+      "matched_fragments": [
+        "automotive",
+        "crank transient",
+        "vehicle"
+      ],
+      "provenance": "UNTRUSTED_QUERY_TEXT",
+      "establishes_engineering_truth": false
+    },
+    {
+      "schema_version": 1,
+      "content_hash": "de2dc53cd23bf33610fe710fd101e84f6a7d8bbd1d73ab79c52608c4774ef385",
+      "signal_code": "GUIDED_INTERFACES",
+      "rule_id": "risk.b.interfaces.v1",
+      "risk_floor": "B",
+      "mode_ceiling": "COPILOT",
+      "matched_fragments": [
+        "USB"
+      ],
+      "provenance": "UNTRUSTED_QUERY_TEXT",
+      "establishes_engineering_truth": false
+    },
+    {
+      "schema_version": 1,
+      "content_hash": "e0ead41be8c8fd8a45a9ce407e146e20f5e5428497f0abba26c95065fa3d0c1c",
+      "signal_code": "GUIDED_MCU",
+      "rule_id": "risk.b.mcu.v1",
+      "risk_floor": "B",
+      "mode_ceiling": "COPILOT",
+      "matched_fragments": [
+        "ESP32"
+      ],
+      "provenance": "UNTRUSTED_QUERY_TEXT",
+      "establishes_engineering_truth": false
+    },
+    {
+      "schema_version": 1,
+      "content_hash": "274d367d1f0d6f593d2c582390043c76512a7a42e2e4861ff4d0301debdbd1c9",
+      "signal_code": "GUIDED_MODERATE_ANALOG",
+      "rule_id": "risk.b.moderate-analog.v1",
+      "risk_floor": "B",
+      "mode_ceiling": "COPILOT",
+      "matched_fragments": [
+        "ADC"
+      ],
+      "provenance": "UNTRUSTED_QUERY_TEXT",
+      "establishes_engineering_truth": false
+    }
+  ],
+  "capability_signals": [
+    {
+      "schema_version": 1,
+      "content_hash": "9cf187c2c27e25489df7e6be598084baf4f85153d2cd17c1f60e3b94e23d93d3",
+      "signal_code": "REVIEW_REUSE_LINEAGE",
+      "rule_id": "scope.review.reuse-lineage.v1",
+      "disposition_floor": "HUMAN_REVIEW_REQUIRED",
+      "mode_ceiling": "COPILOT",
+      "matched_fragments": [
+        "variant"
+      ],
+      "capability_version": "pcb-autopilot.current-capability-boundary.v1",
+      "provenance": "UNTRUSTED_QUERY_TEXT",
+      "authorizes_capability_claim": false
+    },
+    {
+      "schema_version": 1,
+      "content_hash": "9de17efbd04837623f6937eaff5fe016f6f8d239566a5ee2052bc906d8b90323",
+      "signal_code": "SCOPE_EXCLUDES_AUTOMOTIVE",
+      "rule_id": "scope.exclude.automotive.v1",
+      "disposition_floor": "OUT_OF_SCOPE",
+      "mode_ceiling": "COPILOT",
+      "matched_fragments": [
+        "automotive",
+        "vehicle"
+      ],
+      "capability_version": "pcb-autopilot.current-capability-boundary.v1",
+      "provenance": "UNTRUSTED_QUERY_TEXT",
+      "authorizes_capability_claim": false
+    },
+    {
+      "schema_version": 1,
+      "content_hash": "f444ea8336d9f3d226db883f0077ed8a98e5589147ed91b06f1776e91e4f9b8a",
+      "signal_code": "SCOPE_EXCLUDES_RF",
+      "rule_id": "scope.exclude.rf.v1",
+      "disposition_floor": "OUT_OF_SCOPE",
+      "mode_ceiling": "COPILOT",
+      "matched_fragments": [
+        "BLE",
+        "Wi-Fi"
+      ],
+      "capability_version": "pcb-autopilot.current-capability-boundary.v1",
+      "provenance": "UNTRUSTED_QUERY_TEXT",
+      "authorizes_capability_claim": false
+    }
+  ],
+  "discovery_questions": [
+    {
+      "schema_version": 1,
+      "content_hash": "7f113a00444a0ad3cf7138a99eb0d1a7dde3428c2b249eaf3b6ffa64d2e04280",
+      "question_id": "DQ-POWER_INPUT",
+      "topic": "POWER_INPUT",
+      "prompt": "Confirm every power source, voltage range, available fault current, and startup behavior.",
+      "rationale": "Power words in a query are not a confirmed electrical input contract.",
+      "triggered_by_signal_codes": [
+        "BASELINE_UNRESOLVED"
+      ],
+      "blocks_design_progression": true
+    },
+    {
+      "schema_version": 1,
+      "content_hash": "01c1de5753b10b1bc079ab28b4a95559c431823ba4720adea741e55938106063",
+      "question_id": "DQ-LOADS_AND_OUTPUTS",
+      "topic": "LOADS_AND_OUTPUTS",
+      "prompt": "Confirm every load and output, including nominal and fault current, accuracy, and timing.",
+      "rationale": "Output loading and failure behavior determine architecture and conductor limits.",
+      "triggered_by_signal_codes": [
+        "BASELINE_UNRESOLVED"
+      ],
+      "blocks_design_progression": true
+    },
+    {
+      "schema_version": 1,
+      "content_hash": "6d68a22d123135d797a2cc6cae9785b9f26177d3d22f0d6c936d811f8d181b40",
+      "question_id": "DQ-INTERFACES",
+      "topic": "INTERFACES",
+      "prompt": "Confirm each electrical interface, direction, voltage domain, speed, and protocol role.",
+      "rationale": "A protocol name alone does not establish its electrical contract.",
+      "triggered_by_signal_codes": [
+        "BASELINE_UNRESOLVED"
+      ],
+      "blocks_design_progression": true
+    },
+    {
+      "schema_version": 1,
+      "content_hash": "4b72fa4fa63ba3455a366dedef714909310e73a43e9c95f58b870e5ac66a2b6f",
+      "question_id": "DQ-COMPONENT_IDENTITY",
+      "topic": "COMPONENT_IDENTITY",
+      "prompt": "Provide exact orderable component identities or authorize an engineer to select candidates.",
+      "rationale": "Generic device names cannot establish symbols, footprints, ratings, or lifecycle.",
+      "triggered_by_signal_codes": [
+        "BASELINE_UNRESOLVED"
+      ],
+      "blocks_design_progression": true
+    },
+    {
+      "schema_version": 1,
+      "content_hash": "b71ec2341aef795830ae8a1dbb13b744e4affbb710d3fde62d9a876f63a190b2",
+      "question_id": "DQ-CONNECTORS_AND_PINOUTS",
+      "topic": "CONNECTORS_AND_PINOUTS",
+      "prompt": "Confirm connector series, mating part, orientation, and authoritative pinout.",
+      "rationale": "The system must not infer connector polarity or pin numbering.",
+      "triggered_by_signal_codes": [
+        "BASELINE_UNRESOLVED"
+      ],
+      "blocks_design_progression": true
+    },
+    {
+      "schema_version": 1,
+      "content_hash": "767f6588149900afd7f222a64b037bc223da2ed6307be695787c0781613fc248",
+      "question_id": "DQ-MECHANICAL",
+      "topic": "MECHANICAL",
+      "prompt": "Confirm board outline, mounting, keepouts, height limits, and connector access.",
+      "rationale": "Mechanical constraints are required before placement or release assessment.",
+      "triggered_by_signal_codes": [
+        "BASELINE_UNRESOLVED"
+      ],
+      "blocks_design_progression": true
+    },
+    {
+      "schema_version": 1,
+      "content_hash": "b3f16d80f27a87e117d01ee325b804fa008ef3cd3b5579cee02d046e66c03ea2",
+      "question_id": "DQ-ENVIRONMENT",
+      "topic": "ENVIRONMENT",
+      "prompt": "Confirm temperature, moisture, vibration, ESD exposure, cabling, and installation environment.",
+      "rationale": "Environmental limits cannot be inferred from the application label.",
+      "triggered_by_signal_codes": [
+        "BASELINE_UNRESOLVED",
+        "GUIDED_AUTOMOTIVE"
+      ],
+      "blocks_design_progression": true
+    },
+    {
+      "schema_version": 1,
+      "content_hash": "19aa3bed3b5374e5e6f1ad519838cf27d8aff6e78541250796ee5e6dfab82209",
+      "question_id": "DQ-SAFETY_AND_FAULTS",
+      "topic": "SAFETY_AND_FAULTS",
+      "prompt": "Describe credible shorts, opens, reverse connection, overloads, and failure consequences.",
+      "rationale": "Fault energy and consequences are required for conservative risk classification.",
+      "triggered_by_signal_codes": [
+        "BASELINE_UNRESOLVED",
+        "GUIDED_AUTOMOTIVE"
+      ],
+      "blocks_design_progression": true
+    },
+    {
+      "schema_version": 1,
+      "content_hash": "7633c4d3f4a012d40cc75ace49b0bd45855b4993342f72107e3d17bfd2756685",
+      "question_id": "DQ-FIRMWARE",
+      "topic": "FIRMWARE",
+      "prompt": "Confirm firmware ownership, boot, programming, diagnostics, and update requirements.",
+      "rationale": "MCU selection does not establish a testable firmware contract.",
+      "triggered_by_signal_codes": [
+        "BASELINE_UNRESOLVED",
+        "GUIDED_MCU"
+      ],
+      "blocks_design_progression": true
+    },
+    {
+      "schema_version": 1,
+      "content_hash": "582e52c8f4ca7aff843e26321dedb08666df27483cfa42e041aa334ada3d53fe",
+      "question_id": "DQ-TEST_AND_ACCEPTANCE",
+      "topic": "TEST_AND_ACCEPTANCE",
+      "prompt": "Define a verification method and numeric acceptance criteria for every requirement.",
+      "rationale": "A design request is not a verification plan.",
+      "triggered_by_signal_codes": [
+        "BASELINE_UNRESOLVED"
+      ],
+      "blocks_design_progression": true
+    },
+    {
+      "schema_version": 1,
+      "content_hash": "b26dffb35c2d521941084e74ad8d28d0d5f458402a627c87b2cad5a648829dfd",
+      "question_id": "DQ-REGULATORY",
+      "topic": "REGULATORY",
+      "prompt": "Confirm all regulatory, certification, safety, and industry obligations.",
+      "rationale": "Named applications can imply obligations that still require qualified human review.",
+      "triggered_by_signal_codes": [
+        "BASELINE_UNRESOLVED",
+        "EXPERT_RF",
+        "SCOPE_EXCLUDES_AUTOMOTIVE",
+        "SCOPE_EXCLUDES_RF"
+      ],
+      "blocks_design_progression": true
+    },
+    {
+      "schema_version": 1,
+      "content_hash": "65311b13888d87c0eb887d8700cdb09deb90f7355ed93d723922f178a8df7d9f",
+      "question_id": "DQ-RF",
+      "topic": "RF",
+      "prompt": "Confirm bands, power, antenna implementation, coexistence, enclosure, and certification plan.",
+      "rationale": "RF performance and regulatory compliance require specialist evidence.",
+      "triggered_by_signal_codes": [
+        "BASELINE_UNRESOLVED",
+        "EXPERT_RF"
+      ],
+      "blocks_design_progression": true
+    },
+    {
+      "schema_version": 1,
+      "content_hash": "c79775401bbfab61a597f40670f5c56f0a7563cba6a6129a0b520046cb9ec539",
+      "question_id": "DQ-SIGNAL_INTEGRITY",
+      "topic": "SIGNAL_INTEGRITY",
+      "prompt": "Confirm edge rates, topology, impedance, length matching, stack-up, and return-path constraints.",
+      "rationale": "A bus name cannot prove layout or signal-integrity feasibility.",
+      "triggered_by_signal_codes": [
+        "BASELINE_UNRESOLVED",
+        "GUIDED_INTERFACES"
+      ],
+      "blocks_design_progression": true
+    },
+    {
+      "schema_version": 1,
+      "content_hash": "f2a591797e2a1b3fcc845546e53196e22dade13455cc8b68fc8956a93ac6b0e3",
+      "question_id": "DQ-ANALOG_PERFORMANCE",
+      "topic": "ANALOG_PERFORMANCE",
+      "prompt": "Confirm signal range, source impedance, bandwidth, noise, accuracy, and calibration requirements.",
+      "rationale": "Analog performance must be expressed as measurable limits.",
+      "triggered_by_signal_codes": [
+        "BASELINE_UNRESOLVED",
+        "GUIDED_MODERATE_ANALOG"
+      ],
+      "blocks_design_progression": true
+    },
+    {
+      "schema_version": 1,
+      "content_hash": "38310866f988acc946094f9fb6c3ccd5a752bf414108efd5e3680c7500b62a5d",
+      "question_id": "DQ-MANUFACTURING",
+      "topic": "MANUFACTURING",
+      "prompt": "Confirm fabrication and assembly targets, materials, finish, packages, and DNP policy.",
+      "rationale": "Manufacturer compatibility requires exact, versioned process constraints.",
+      "triggered_by_signal_codes": [
+        "BASELINE_UNRESOLVED"
+      ],
+      "blocks_design_progression": true
+    },
+    {
+      "schema_version": 1,
+      "content_hash": "df35a594c5cc1792d140885516356b9d37dac1d29eb71d1c7ad5dce3cdbcbf11",
+      "question_id": "DQ-REUSE_AND_LINEAGE",
+      "topic": "REUSE_AND_LINEAGE",
+      "prompt": "Identify exact qualified block, component, firmware, fixture, and family versions proposed for reuse.",
+      "rationale": "Names or similarities cannot establish production-proven reuse eligibility.",
+      "triggered_by_signal_codes": [
+        "BASELINE_UNRESOLVED"
+      ],
+      "blocks_design_progression": true
+    },
+    {
+      "schema_version": 1,
+      "content_hash": "68a40eb5271f031f52a04c27f3f00a641ede4e64a2b376fe48a73c9f778a6a10",
+      "question_id": "DQ-CHANGE_CONTROL",
+      "topic": "CHANGE_CONTROL",
+      "prompt": "Confirm revision ownership, approval roles, and what changes require re-verification.",
+      "rationale": "Later changes must invalidate affected evidence and approvals.",
+      "triggered_by_signal_codes": [
+        "BASELINE_UNRESOLVED",
+        "REVIEW_REUSE_LINEAGE"
+      ],
+      "blocks_design_progression": true
+    },
+    {
+      "schema_version": 1,
+      "content_hash": "33abe39cb0dbccd13ebae76757906b17f11c733494a44e192df9a618573266c9",
+      "question_id": "DQ-FIXTURE_AND_BRINGUP",
+      "topic": "FIXTURE_AND_BRINGUP",
+      "prompt": "Confirm test points, fixture access, first-power limits, programming, and bring-up equipment.",
+      "rationale": "Physical testability must be designed in rather than inferred after fabrication.",
+      "triggered_by_signal_codes": [
+        "BASELINE_UNRESOLVED"
+      ],
+      "blocks_design_progression": true
+    }
+  ],
+  "intake_quality": {
+    "schema_version": 1,
+    "content_hash": "c96734eac11abc9ff8fede81dccc13ed2df182bf5613c053308b4669a85b2975",
+    "score": 50,
+    "cue_topics": [
+      "POWER_INPUT",
+      "INTERFACES",
+      "COMPONENT_IDENTITY",
+      "CONNECTORS_AND_PINOUTS",
+      "ENVIRONMENT",
+      "SAFETY_AND_FAULTS"
+    ],
+    "total_topic_count": 12,
+    "input_claims_confirmed": false,
+    "establishes_operational_readiness": false
+  },
+  "operational_readiness": {
+    "schema_version": 1,
+    "content_hash": "ec1b16d879b58941f6a91ba52b15d5a5f1463605bf1016d832e25049560dd5de",
+    "score": 0,
+    "status": "NOT_ESTABLISHED",
+    "reuse": {
+      "schema_version": 1,
+      "content_hash": "50134e943246d9a1f0f1be6b3ab03b68b576d800ec62b1e252e518de5b6f1213",
+      "status": "NOT_ESTABLISHED",
+      "qualified_physical_block_count": 0,
+      "exact_block_hashes": [],
+      "exact_component_record_hashes": [],
+      "reason": "No exact independently attested, production-proven physical block coverage is established by a raw project query.",
+      "authorizes_reuse": false
+    },
+    "verification": {
+      "schema_version": 1,
+      "content_hash": "e0b91df7a31d18011fb11119f4249f0d55b85632513c1627f8e466aee083d8c1",
+      "status": "NOT_ESTABLISHED",
+      "bound_requirement_hashes": [],
+      "passing_verification_hashes": [],
+      "physical_test_evidence_hashes": [],
+      "reason": "No approved requirements, deterministic reports, or physical test evidence are bound at intake.",
+      "authorizes_release": false
+    },
+    "requirements_approved": false,
+    "architecture_approved": false,
+    "human_release_approved": false,
+    "can_advance_lifecycle": false,
+    "authorizes_fabrication": false,
+    "authorizes_order": false
+  },
+  "disposition": "OUT_OF_SCOPE",
+  "establishes_confirmed_requirements": false,
+  "reports_engineering_pass": false,
+  "can_advance_lifecycle": false,
+  "authorizes_fabrication": false,
+  "authorizes_order": false
+}

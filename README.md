@@ -32,6 +32,9 @@ vehicle-bus paths.
 - `releases/v0.1.0-dev.1/` — exact installer binaries, manifest, checksums, and validation evidence.
 - `contracts/jsonschema/v1/` — versioned POST and telemetry contracts.
 - `equations/v1/` — pressure lift, absolute pressure ratio, and vent delta-T definitions.
+- `hardware/ac-carrier-v0.1/` — recent enclosure mounting reference, proposed circuit
+  architecture and a source-bound discovery gate; the functional PCB remains blocked
+  on controller, sensor, power and interface decisions.
 - `docs/prd/` — focused specification text export, source record, and earlier master DOCX.
 - `docs/development/` — empty-recovery authority and physical validation gate.
 - `docs/PROVENANCE.md` — extraction history and upstream ESP32 design decisions.

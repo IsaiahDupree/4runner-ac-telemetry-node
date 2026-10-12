@@ -1,0 +1,204 @@
+{
+  "status": "digitally_verified_common_fasteners_physical_fit_pending",
+  "source_commit": "084e86c38a53ef6173a67fad42eb4b60f3b5152c",
+  "package": {
+    "zip": "/Users/isaiahdupree/Documents/Software/artifacts/ac-common-fasteners-2026-10-12/Toyota-AC-common-fasteners-PLA-fit-kit.zip",
+    "bytes": 9447502,
+    "sha256": "5a841973958dd1895c29e4a6b089b6e10a33a7547c209e7340f33cb7b600269f",
+    "printable_stl_count": 16,
+    "jobs": {
+      "shell": "mdl_c29e657682e440af",
+      "slide": "mdl_d17c5f5215d74f07",
+      "cross": "mdl_5d10914d0a9e4648"
+    },
+    "source_commit": "084e86c38a53ef6173a67fad42eb4b60f3b5152c"
+  },
+  "profile": "ac_v4_dual_board_front_slide_v4_routes",
+  "platform_revision": "raised_board_insert_platforms_v2",
+  "common_fastener_revision": "m3_case_set_v1",
+  "screws": {
+    "M3x8": 14,
+    "M3x10": 10,
+    "M2.5x6": 8
+  },
+  "inserts": {
+    "M3x5.7": 20,
+    "M3x3_short": 4,
+    "M2.5x4": 8
+  },
+  "board_washers": {
+    "count": 8,
+    "od_mm": 5,
+    "thickness_mm": 0.5
+  },
+  "drivers": [
+    "TX10",
+    "TX8"
+  ],
+  "active_fastener_interfaces": 32,
+  "fastener_checks": 320,
+  "cap_lid_boss_diameter_mm": 8.4,
+  "cap_lid_radial_wall_mm": 1.9,
+  "cap_lid_wall_checks": [
+    {
+      "boss": 1,
+      "limit_mm3": 0.01,
+      "missing_material_mm3": 0.0,
+      "pass": true,
+      "radial_wall_mm": 1.9000000000000004
+    },
+    {
+      "boss": 2,
+      "limit_mm3": 0.01,
+      "missing_material_mm3": 0.0,
+      "pass": true,
+      "radial_wall_mm": 1.9000000000000004
+    }
+  ],
+  "maximum_case_width_mm": 264.7,
+  "local_outward_extension_mm": 0.7,
+  "cap_lid_screw_and_gasket_axes_unchanged": true,
+  "board_bosses_per_platform": 4,
+  "board_boss_diameter_mm": 8.4,
+  "board_boss_height_mm": 8,
+  "board_insert_pocket_depth_mm": 5,
+  "board_insert_floor_above_plate_mm": 3,
+  "board_insert_total_backing_mm": 6,
+  "board_insert_bore_checks": 8,
+  "physical_insert_stock_verified": false,
+  "platform_material_checks": 40,
+  "platform_step_roundtrip_checks": 17,
+  "routing_step_roundtrip_checks": 17,
+  "check_counts": {
+    "checks": 36,
+    "nominal_pose_checks": 162,
+    "service_sweep_checks": 15066,
+    "service_access_checks": 5,
+    "routing_checks": 42325,
+    "fastener_checks": 320
+  },
+  "total_combined_checks": 57914,
+  "failed": [],
+  "minimum_routing_clearance_mm": 1.8199999999999932,
+  "remaining_after_additional_0_8mm_allowance_mm": 1.0199999999999931,
+  "physical_connector_fit_verified": false,
+  "vehicle_fit_verified": false,
+  "connected_harness_extraction_verified": false,
+  "printer_uploaded": false,
+  "print_started": false,
+  "gcode_included": false,
+  "v5_cage_excluded": true,
+  "verification": {
+    "status": "pass",
+    "at": "2026-10-12T18:59:47.003690+00:00",
+    "pytest_summary": "209 passed, 3 skipped, 593 subtests passed in 6.70s",
+    "checks": [
+      {
+        "command": [
+          "python3",
+          "-m",
+          "pytest",
+          "-q"
+        ],
+        "exit_code": 0,
+        "output": "..................................................................... [ 32%]\n.......................... [ 44%]\n.............................ss....................................................... [ 85%]\n..................... [ 95%]\n.....s....                                                            [100%]\n209 passed, 3 skipped, 593 subtests passed in 11.56s"
+      },
+      {
+        "command": [
+          "python3",
+          "-m",
+          "py_compile",
+          "modeling/jobs/ac_diagnostic_enclosure_slot_mount.py",
+          "modeling/jobs/ac_diagnostic_enclosure_dual_board_slide.py",
+          "modeling/jobs/ac_diagnostic_enclosure_cross_fit.py"
+        ],
+        "exit_code": 0,
+        "output": ""
+      },
+      {
+        "command": [
+          "python3",
+          "tests/validate_schemas.py"
+        ],
+        "exit_code": 0,
+        "output": "{\n  \"ok\": true,\n  \"schema_count\": 11,\n  \"schemas\": [\n    \"browser-capabilities.schema.json\",\n    \"browser-command.schema.json\",\n    \"orion-ac-cross-fit.schema.json\",\n    \"orion-command.schema.json\",\n    \"orion-fgl-loc01-coupons.schema.json\",\n    \"orion-fgl-rugged-box.schema.json\",\n    \"orion-gerber-review.schema.json\",\n    \"orion-receipt.schema.json\",\n    \"orion-service-topics.schema.json\",\n    \"orion-v400-slice.schema.json\",\n    \"orion-worker-job.schema.json\"\n  ]\n}"
+      },
+      {
+        "command": [
+          "python3",
+          "wsl-agent/orion_agent_runner.py",
+          "list"
+        ],
+        "exit_code": 0,
+        "output": "{\n  \"jobs\": [],\n  \"workspace_root\": \"/Users/isaiahdupree/.orion-control/workspaces\"\n}"
+      },
+      {
+        "command": [
+          "python3",
+          "control-api/orion_control_api.py",
+          "--self-test"
+        ],
+        "exit_code": 0,
+        "output": "Local authenticated API self-test passed; raw unrelated host/process state omitted."
+      },
+      {
+        "command": [
+          "python3",
+          "scripts/generate_agent_service_contracts.py",
+          "--check"
+        ],
+        "exit_code": 0,
+        "output": ""
+      },
+      {
+        "command": [
+          "git",
+          "diff",
+          "--check"
+        ],
+        "exit_code": 0,
+        "output": ""
+      }
+    ],
+    "orion_checks": [
+      {
+        "command": "host-agent/Get-OrionMonitorSnapshot.ps1",
+        "exit_code": 0,
+        "evidence": "Get-OrionMonitorSnapshot.json"
+      },
+      {
+        "command": "host-agent/Get-OrionBrowserStatus.ps1",
+        "exit_code": 0,
+        "evidence": "Get-OrionBrowserStatus.json"
+      }
+    ],
+    "envelope_followup_at": "2026-10-12T19:06:24.036349+00:00",
+    "envelope_followup": "Actual X min/max gate now uses declared maximum case width; mount-relative right extent includes 0.7 mm local tabs.",
+    "envelope_followup_pytest_summary": "209 passed, 3 skipped, 593 subtests passed in 8.35s",
+    "source_commit": "084e86c38a53ef6173a67fad42eb4b60f3b5152c",
+    "final_preflight": {
+      "at": "2026-10-12T19:10:43.252083+00:00",
+      "pytest": "209 passed, 3 skipped, 593 subtests passed in 6.70s",
+      "py_compile": true,
+      "service_inventory_check": true,
+      "git_diff_check": true,
+      "source_files": {
+        "modeling/jobs/ac_diagnostic_enclosure_slot_mount.py": "eb725d399a4a9f528b5a5819483098dd1c0d9191f5d5c8b4e045fa5dcdefc6ae",
+        "modeling/jobs/ac_diagnostic_enclosure_dual_board_slide.py": "8d1a9eb84c3a80e58ed7cff384744198086e311974271cba6832dfb6d7fe126b",
+        "modeling/jobs/ac_diagnostic_enclosure_cross_fit.py": "0c033ccde9143010dfc4a40164f8288526d79ba1f933e7be764e720883f2ab80"
+      }
+    },
+    "unrelated_worktree_changes_preserved": [
+      "docs/service-contract.md (PresenterOverBroll section)",
+      "workers/orion_workers.py",
+      "artifacts/orion-deployments/2026-09-20-ea78166-qr-branding.json",
+      "tests/test_presenter_visibility_contract.py"
+    ],
+    "test_scope_note": "Full bounded suite ran in the shared worktree; CAD source hashes and commit are recorded separately. Unrelated changes were not included in the CAD commits."
+  },
+  "supersedes_package": "Toyota-AC-raised-board-inserts-PLA-fit-kit.zip",
+  "first_failed_cross_fit_job": "mdl_13f8f444f37447a8",
+  "intermediate_failed_shell_job": "mdl_9b72de25080b44be",
+  "intermediate_failure": "Legacy overall-width gate still used 264 mm; corrected to declared 264.7 mm exterior and reran.",
+  "first_failure": "Two cap-side lid insert radial walls were incomplete; source modified and all three successful job IDs regenerated/revalidated."
+}

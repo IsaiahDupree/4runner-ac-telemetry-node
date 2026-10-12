@@ -1,0 +1,30 @@
+{
+  "observed_at": "2026-10-12T23:22:30.870997+00:00",
+  "pcb_agent_source_commit": "da755f7c1135c22949c5c116763e4f659acad312",
+  "boardspec_sha256": "23ae9bd4d1bbff1974293a6a89ebcf9516b1dff9fb9e771c5293a3811ff0ea78",
+  "boardspec_record_hash": "4af431de4ae30788e2e461e6b8f45d4c28b8686c2ca0fe3332f999b0f60762a7",
+  "canonical_domain_roundtrip": "PASS",
+  "blocking_schematic_paths": [
+    "contracts.board_role",
+    "contracts.connectors_harness",
+    "contracts.controller",
+    "contracts.environment_and_test",
+    "contracts.fabrication_rules",
+    "contracts.final_pcb_mechanics",
+    "contracts.measurement_routing",
+    "contracts.pi_boundary",
+    "contracts.power_envelope",
+    "contracts.pressure_high",
+    "contracts.pressure_low",
+    "contracts.sensor_rail",
+    "contracts.storage_interface",
+    "contracts.temperature_interfaces"
+  ],
+  "risk_tier": "C",
+  "risk_review": "INCOMPLETE",
+  "autopilot_allowed": false,
+  "requirements_approval_present": false,
+  "schematic_compilation_allowed": false,
+  "fabrication_allowed": false,
+  "native_eda": "NOT_RUN"
+}

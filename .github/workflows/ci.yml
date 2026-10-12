@@ -27,3 +27,5 @@ jobs:
           python3 tools/verify_repository.py
           --recovery-build-dir firmware/ac-sensor-node-esp32s3/build
           --temperature-build-dir firmware/ac-temperature-bench-esp32s3/build
+      - name: Verify retained A/C carrier discovery and unsafe-edit regressions
+        run: python3 -m unittest discover -s tests -v

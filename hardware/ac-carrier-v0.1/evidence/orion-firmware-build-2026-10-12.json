@@ -1,0 +1,230 @@
+{
+  "schema_version": "ac-carrier-firmware-verification/1",
+  "scope": "unchanged_existing_firmware_and_discovery_consistency_only",
+  "observed_at": "2026-10-12T23:29:25.875520+00:00",
+  "status": "PASS",
+  "placement": "orion",
+  "entry_point": "orion_job_supervisor.py",
+  "job_id": "job_ac_carrier_verification_7a7bcfa7_attempt4",
+  "started_at": "2026-10-12T23:20:20.139063+00:00",
+  "completed_at": "2026-10-12T23:24:50.643427+00:00",
+  "exit_code": 0,
+  "source_git_base": "a97cd32d0e1f67589fb71972835af703f22541e6",
+  "source_zip_sha256": "3a3bb3c43eec22b1e0785cc86b3a1f3f1f4f7791e33c39b597642428938f3090",
+  "archived_source_note": "The archive predates the canonical BoardSpec files and final metadata-reader regression fix. All 18 firmware source files still match it. Current source checks ran separately on the Mac using these retrieved, hash-verified compiled artifacts.",
+  "firmware_source_files": [
+    {
+      "name": "firmware/ac-sensor-node-esp32s3/.gitignore",
+      "sha256": "fa052ee990e6c548bd73c9d5a2b7735e187202738d6819654b1f656da8eb2f4f",
+      "bytes": 35
+    },
+    {
+      "name": "firmware/ac-sensor-node-esp32s3/CMakeLists.txt",
+      "sha256": "f3c3dbbd10920ce5572a14bf6c4ad40a92eda1e338d0a26edcf41e569076ca93",
+      "bytes": 527
+    },
+    {
+      "name": "firmware/ac-sensor-node-esp32s3/README.md",
+      "sha256": "32e538146211d584b25c7557b1d5d17ff1181dfb294bf1050258e6ef32f0e43f",
+      "bytes": 3584
+    },
+    {
+      "name": "firmware/ac-sensor-node-esp32s3/main/CMakeLists.txt",
+      "sha256": "42749e573d004544b4ff5aedc24bddf0994b034f36af2b4d77b701fd3ef748fb",
+      "bytes": 197
+    },
+    {
+      "name": "firmware/ac-sensor-node-esp32s3/main/main.c",
+      "sha256": "a73c0b92a6bc376cf5b723004f8a328a71deb14bb08841a80745cf080df4c9bc",
+      "bytes": 7754
+    },
+    {
+      "name": "firmware/ac-sensor-node-esp32s3/partitions.csv",
+      "sha256": "61495d1c97729504381949586180e188630eb2c7076d91a2bf2ead24f7b85c37",
+      "bytes": 329
+    },
+    {
+      "name": "firmware/ac-sensor-node-esp32s3/sdkconfig.defaults",
+      "sha256": "0aa30c6dc073c9ff3ab9b6f0b6b0bc40e4943ac15929a6cc4f6cc1059239e3f8",
+      "bytes": 531
+    },
+    {
+      "name": "firmware/ac-sensor-node-esp32s3/tools/build_release.sh",
+      "sha256": "c50f624b45d5072e74ed43d30ffd43c95c58441a02bed4d3a5949a1f8a43733d",
+      "bytes": 984
+    },
+    {
+      "name": "firmware/ac-sensor-node-esp32s3/tools/validate_release.py",
+      "sha256": "053198aa8217e76df2276410067c4a742c646aa12ab2357686bdf7301b440a0b",
+      "bytes": 11606
+    },
+    {
+      "name": "firmware/ac-temperature-bench-esp32s3/.gitignore",
+      "sha256": "fa052ee990e6c548bd73c9d5a2b7735e187202738d6819654b1f656da8eb2f4f",
+      "bytes": 35
+    },
+    {
+      "name": "firmware/ac-temperature-bench-esp32s3/CMakeLists.txt",
+      "sha256": "db736858edbc5baee07f86f0501fba43895d7b10237922f6e87e3763a38a6a97",
+      "bytes": 533
+    },
+    {
+      "name": "firmware/ac-temperature-bench-esp32s3/README.md",
+      "sha256": "192f374189704d6323e0eb2a5550c64349de45d1b2bc6e1243c85e6602c69d5a",
+      "bytes": 1685
+    },
+    {
+      "name": "firmware/ac-temperature-bench-esp32s3/main/CMakeLists.txt",
+      "sha256": "787a7df1edd1ec33b43c75c48afadf0df407c745273252574c2cf4f379f95cd2",
+      "bytes": 247
+    },
+    {
+      "name": "firmware/ac-temperature-bench-esp32s3/main/main.c",
+      "sha256": "8c6a4fe8b2065e6fca7d057dc227c42489d0e532a89d58bd956377fecae890a0",
+      "bytes": 8430
+    },
+    {
+      "name": "firmware/ac-temperature-bench-esp32s3/main/temperature_channels.c",
+      "sha256": "d75c0e818ba40f16860bdadb23fabf8ecad9ad29506ac78808c4562af5350f09",
+      "bytes": 5792
+    },
+    {
+      "name": "firmware/ac-temperature-bench-esp32s3/main/temperature_channels.h",
+      "sha256": "710b7de30c834abb371897c7c5d55927f4cc7ca576684d207305b7b0e7ff0843",
+      "bytes": 1043
+    },
+    {
+      "name": "firmware/ac-temperature-bench-esp32s3/partitions.csv",
+      "sha256": "61495d1c97729504381949586180e188630eb2c7076d91a2bf2ead24f7b85c37",
+      "bytes": 329
+    },
+    {
+      "name": "firmware/ac-temperature-bench-esp32s3/sdkconfig.defaults",
+      "sha256": "0aa30c6dc073c9ff3ab9b6f0b6b0bc40e4943ac15929a6cc4f6cc1059239e3f8",
+      "bytes": 531
+    }
+  ],
+  "current_firmware_matches_build_sources": true,
+  "image_repo_digests": [
+    "espressif/idf@sha256:8ccd4d2ce413889c6c2bba57e986c670302094efb91c913c6091152e317a7805"
+  ],
+  "build_command": "idf.py -C firmware/ac-sensor-node-esp32s3 set-target esp32s3 && idf.py -C firmware/ac-sensor-node-esp32s3 build && idf.py -C firmware/ac-temperature-bench-esp32s3 set-target esp32s3 && idf.py -C firmware/ac-temperature-bench-esp32s3 build && python3 tools/verify_repository.py --recovery-build-dir firmware/ac-sensor-node-esp32s3/build --temperature-build-dir firmware/ac-temperature-bench-esp32s3/build && python3 -m unittest discover -s tests -v",
+  "resource_limits": {
+    "cpus": 2,
+    "memory": "4g",
+    "pids": 256,
+    "timeout_seconds": 900
+  },
+  "build_artifacts": [
+    {
+      "name": "firmware/ac-sensor-node-esp32s3/build/vhos_ac_sensor_node.bin",
+      "bytes": 199344,
+      "sha256": "6cf2b63fcee81ef0f37ba32194bee1245a7ac65dad26617e8939a573445e7e58"
+    },
+    {
+      "name": "firmware/ac-sensor-node-esp32s3/build/config/sdkconfig.h",
+      "bytes": 37317,
+      "sha256": "07653dd2090f71b76c773abaf5624cb050da4971c2e90cc3a36f0a7c19739d0a"
+    },
+    {
+      "name": "firmware/ac-sensor-node-esp32s3/build/project_description.json",
+      "bytes": 96820,
+      "sha256": "0594897c65462f7868ab6fa17d877abd30c2460083aacc37fcbb3edc8c4096f6"
+    },
+    {
+      "name": "firmware/ac-temperature-bench-esp32s3/build/vhos_ac_temperature_bench.bin",
+      "bytes": 206576,
+      "sha256": "c748da7c1594d52f8d4b279f430d65831c698ea796e4bd8143a4bab36fb0d957"
+    },
+    {
+      "name": "firmware/ac-temperature-bench-esp32s3/build/config/sdkconfig.h",
+      "bytes": 37317,
+      "sha256": "07653dd2090f71b76c773abaf5624cb050da4971c2e90cc3a36f0a7c19739d0a"
+    },
+    {
+      "name": "firmware/ac-temperature-bench-esp32s3/build/project_description.json",
+      "bytes": 98035,
+      "sha256": "0e2f48a7620b37659d06359c3df69a653c482b843d1f03592cba3fa3fe542b86"
+    }
+  ],
+  "checks": {
+    "both_firmware_profiles_compile": "PASS",
+    "compiled_16mb_rollback_radio_and_size_boundaries": "PASS",
+    "orion_archived_discovery_tests": 11,
+    "current_local_regression_tests": 15,
+    "current_repository_metadata_verifier": "PASS",
+    "artifact_retrieval_sha256": "PASS",
+    "owned_build_container_absence_observed": true
+  },
+  "local_check_commands": [
+    {
+      "command": [
+        "python3",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-v"
+      ],
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "python3",
+        "tools/verify_repository.py",
+        "--recovery-build-dir",
+        "/private/tmp/ac-carrier-verification-20261012-7a7bcfa7/attempt4/compiled/firmware/ac-sensor-node-esp32s3/build",
+        "--temperature-build-dir",
+        "/private/tmp/ac-carrier-verification-20261012-7a7bcfa7/attempt4/compiled/firmware/ac-temperature-bench-esp32s3/build"
+      ],
+      "exit_code": 0
+    }
+  ],
+  "retained_raw_evidence_directory": "/private/tmp/ac-carrier-verification-20261012-7a7bcfa7/attempt4",
+  "retained_raw_evidence": [
+    {
+      "name": "firmware-build-evidence-attempt4.json",
+      "bytes": 14074,
+      "sha256": "55c2bfa0b20e0535d2306c24d3589cc5b4461ac36fafacca7ac59600910c40f8"
+    },
+    {
+      "name": "build-state-attempt4.json",
+      "bytes": 477,
+      "sha256": "48a98e0ad7e8619b846808a0e29f044caa5b17326add67b7735f2b28ee799f05"
+    },
+    {
+      "name": "firmware-build-attempt4.log",
+      "bytes": 160387,
+      "sha256": "f420569b6d3d5e55d35cf193f80d55a3f4bfc08dec60a7a8565df6e7f8f2786f"
+    },
+    {
+      "name": "receipts.ndjson",
+      "bytes": 6115,
+      "sha256": "82cfe74977b882207ebaf418448b0ffaeeabfc61a1d17dc1530f6a56712489cf"
+    },
+    {
+      "name": "supervisor-stdout-attempt4.log",
+      "bytes": 58,
+      "sha256": "5186eb77b063f2f45e00e15151e1481add458d284415eeebd662be591bc643f6"
+    },
+    {
+      "name": "supervisor-stderr-attempt4.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "local-checks.log",
+      "bytes": 2446,
+      "sha256": "52b813d2e86298f86627a90d9e26fc14ed215e4b8e87dfc874ef2999a24c69ce"
+    }
+  ],
+  "electrical_pcb_validation": "NOT_RUN",
+  "native_pcb_erc": "NOT_RUN",
+  "native_pcb_drc": "NOT_RUN",
+  "physical_flash_and_boot": "NOT_RUN",
+  "new_populated_board_fit": "NOT_RUN",
+  "fabrication_authorized": false,
+  "ordering_authorized": false,
+  "vehicle_installation_authorized": false
+}

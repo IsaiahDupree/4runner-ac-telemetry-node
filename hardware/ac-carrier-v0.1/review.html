@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>4Runner A/C carrier — discovery review</title>
+<style>
+:root{color-scheme:dark;font-family:system-ui,-apple-system,sans-serif;background:#101a24;color:#edf4fa}body{max-width:1100px;margin:36px auto;padding:0 22px 60px}h1{font-size:34px;margin:12px 0}h2{font-size:21px}p,li{line-height:1.6;color:#becdd9}a{color:#86d9eb}.eyebrow{color:#86d9eb;font-size:13px;letter-spacing:1px}.status{display:inline-block;padding:7px 11px;background:#5b3c10;color:#ffdf9d;border-radius:6px;font-size:13px;font-weight:700}.card{background:#182735;border:1px solid #344b5e;border-radius:12px;padding:24px;margin:24px 0}.grid{display:grid;grid-template-columns:1fr 1fr;gap:24px}svg{width:100%;height:auto}table{width:100%;border-collapse:collapse;font-size:14px}th,td{text-align:left;padding:12px 7px;border-bottom:1px solid #344b5e}th{color:#edf4fa}td{color:#becdd9}.small{font-size:13px}.warn{border-left:3px solid #e6b655;padding-left:15px}.links{display:flex;flex-wrap:wrap;gap:18px}code{font-size:13px}summary{cursor:pointer;color:#86d9eb}@media(max-width:800px){.grid{grid-template-columns:1fr}h1{font-size:28px}}@media print{:root{color-scheme:light;background:white;color:#172733}body{margin:0;max-width:none}.card{background:white;border-color:#bbc6cf}p,li,td{color:#263d4d}a,summary,.eyebrow{color:#076276}th{color:#172733}.status{background:#fff2cf;color:#63400a}.card{break-inside:avoid}}
+</style>
+<header>
+<div class="eyebrow">4RUNNER · A/C TELEMETRY · ac-carrier-v0.1 · 12 OCT 2026</div>
+<h1>The A/C board, grounded in the recent enclosure</h1>
+<span class="status">DISCOVERY — ELECTRICAL DESIGN BLOCKED</span>
+<p>The mounting reference is prepared. Controller identity, board role, exact sensors,
+power limits and interfaces must be resolved before the wired schematic and populated PCB.</p>
+<nav class="links"><a href="mounting-reference.kicad_pcb">Editable mounting reference</a><a href="design-inputs.json">Design inputs</a><a href="input-review.json">Consistency evidence</a><a href="README.md">Engineering notes</a></nav>
+<p class="small"><a href="boardspec.json">Canonical PCB-agent BoardSpec</a> ·
+<a href="boardspec-review.json">Model validation</a>. The current automatic generator
+does not support this automotive/radio scope; the functional carrier requires guided
+circuit authoring and a dedicated native verification profile.</p>
+</header>
+<section class="card grid">
+<div>
+<h2>Actual cassette mounting axes</h2>
+<svg viewBox="-14 -12 96 85" role="img" aria-label="Dimension drawing of the 68.58 by 53.34 mm UNO mounting reference with four asymmetric holes, installed after a 180 degree rotation">
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="4" markerHeight="4" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10z" fill="#93b1c2"/></marker></defs>
+<rect x="0" y="0" width="68.58" height="53.34" fill="#1e695e" stroke="#71c3af" stroke-width=".4"/>
+<g fill="none" stroke="#eccf82" stroke-dasharray="1 .8" stroke-width=".25">
+<circle cx="2.54" cy="45.72" r="4.2"/><circle cx="2.54" cy="17.78" r="4.2"/><circle cx="54.61" cy="50.80" r="4.2"/><circle cx="53.34" cy="2.54" r="4.2"/>
+</g>
+<g fill="#101a24" stroke="#d4e7ee" stroke-width=".25"><circle cx="2.54" cy="45.72" r="1.6"/><circle cx="2.54" cy="17.78" r="1.6"/><circle cx="54.61" cy="50.80" r="1.6"/><circle cx="53.34" cy="2.54" r="1.6"/></g>
+<g font-family="system-ui,sans-serif" fill="#edf4fa" font-size="2.3"><text x="7.7" y="46.5">H1</text><text x="7.7" y="18.6">H2</text><text x="60" y="51.6">H3</text><text x="58.7" y="3.3">H4</text></g>
+<g fill="#d4e7ee" text-anchor="middle" font-family="system-ui,sans-serif"><text x="34.29" y="26" font-size="3">MOUNTING REFERENCE</text><text x="34.29" y="31" font-size="2.6">NO ELECTRICAL CIRCUIT</text><text x="34.29" y="36" font-size="2.4">Ø3.2 mm NPTH · 1.6 mm thickness</text></g>
+<g stroke="#93b1c2" stroke-width=".25" fill="none"><path d="M0 -1 V-8 M68.58 -1 V-8 M-1 0 H-8 M-1 53.34 H-8"/><path d="M0 -6 H68.58" marker-start="url(#arrow)" marker-end="url(#arrow)"/><path d="M-6 0 V53.34" marker-start="url(#arrow)" marker-end="url(#arrow)"/></g>
+<g fill="#becdd9" text-anchor="middle" font-size="2.5"><text x="34.29" y="-7.5">68.58 mm</text><text transform="translate(-8 26.67) rotate(-90)">53.34 mm</text></g>
+<text x="0" y="62" fill="#eccf82" font-size="2.3">Dashed circles: Ø8.4 mm underside support references.</text>
+<text x="0" y="67" fill="#becdd9" font-size="2.3">Dimension drawing from retained CAD metadata; not a native PCB export.</text>
+</svg>
+</div>
+<div>
+<h2>What carries over</h2>
+<table><tr><th>Reference</th><th>Retained dimension</th></tr>
+<tr><td>Installed plastic case</td><td>264.7 × 92 × 97 mm</td></tr>
+<tr><td>Arduino PCB underside</td><td>Z 44.8 mm</td></tr>
+<tr><td>Mounting origin in case</td><td>X 128.5 / Y 12.062 mm</td></tr>
+<tr><td>Inter-board cable aisle</td><td>18 mm</td></tr>
+<tr><td>Reference component height</td><td>18 mm; new parts unverified</td></tr>
+<tr><td>Board mounting</td><td>M2.5 × 6 + Ø5 × 0.5 washer</td></tr>
+</table>
+<p class="small">Exact source pairing: shell <code>mdl_c29e657682e440af</code>,
+slide <code>mdl_d17c5f5215d74f07</code>, cross-fit <code>mdl_5d10914d0a9e4648</code>.
+The board pattern rotates 180°; it is not mirrored.</p>
+<p class="warn small">The blue platform already holds the controller. A second sensor
+PCB or shield needs its own mounting/stacking decision and a fresh assembly check.
+The Pi/UPS reference is for bench fit; lithium batteries are prohibited underhood.</p>
+</div>
+</section>
+<section class="card">
+<h2>Proposed circuit blocks</h2>
+<p class="small">Architecture for review. Boxes are required functions, not selected parts,
+assigned pins, a completed schematic or measured hardware.</p>
+<svg viewBox="0 0 1000 410" role="img" aria-label="Proposed architecture connecting protected vehicle power, independent sensor power, pressure and temperature interfaces, controller and logging">
+<defs><marker id="flow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 0 L10 5 L0 10z" fill="#86d9eb"/></marker></defs>
+<g fill="#223b4c" stroke="#57798f" stroke-width="1.3">
+<rect x="10" y="15" width="175" height="65" rx="8"/><rect x="215" y="15" width="200" height="65" rx="8"/><rect x="455" y="15" width="205" height="65" rx="8"/><rect x="700" y="15" width="275" height="65" rx="8"/>
+<rect x="10" y="140" width="210" height="85" rx="8"/><rect x="265" y="140" width="220" height="85" rx="8"/><rect x="530" y="140" width="215" height="85" rx="8"/><rect x="790" y="140" width="185" height="85" rx="8"/>
+<rect x="10" y="300" width="235" height="80" rx="8"/><rect x="295" y="300" width="235" height="80" rx="8"/><rect x="580" y="300" width="170" height="80" rx="8"/><rect x="800" y="300" width="175" height="80" rx="8"/>
+</g>
+<g fill="none" stroke="#86d9eb" stroke-width="2" marker-end="url(#flow)">
+<path d="M185 47 H215"/><path d="M415 47 H455"/><path d="M660 47 H700"/>
+<path d="M555 80 V110 H115 V140"/><path d="M220 182 H265"/><path d="M485 182 H530"/><path d="M745 182 H790"/>
+<path d="M245 340 H295"/><path d="M530 340 H565 V245 H882 V225"/>
+<path d="M882 225 V270 H665 V300"/><path d="M882 225 V300"/>
+</g>
+<g fill="#edf4fa" font-family="system-ui,sans-serif" font-size="14" text-anchor="middle">
+<text x="97" y="43">Switched vehicle source</text><text x="97" y="64">Fuse near source</text>
+<text x="315" y="43">Reverse / surge / EMI</text><text x="315" y="64">Limits unresolved</text>
+<text x="557" y="43">Separate regulated rails</text><text x="557" y="64">Load / crank / thermal review</text>
+<text x="837" y="43">Controller supply + USB service</text><text x="837" y="64">Exact host and power path required</text>
+<text x="115" y="165">Independent 5 V switches</text><text x="115" y="187">HIGH / LOW sensors</text><text x="115" y="208">Exact variants required</text>
+<text x="375" y="165">Two pressure front ends</text><text x="375" y="187">Scale / filter / protect</text><text x="375" y="208">Normal and fault limits</text>
+<text x="637" y="165">ADS1115-Q1-class ADC</text><text x="637" y="187">Reference + extra rail path</text><text x="637" y="208">7 observations / 4 inputs</text>
+<text x="882" y="165">ESP32-S3 host</text><text x="882" y="187">GPIO / pin map open</text><text x="882" y="208">Raw evidence + health</text>
+<text x="127" y="329">HIGH / LOW line + ambient</text><text x="127" y="352">Temperature technology open</text>
+<text x="412" y="329">Protected temperature interface</text><text x="412" y="352">Transfer and faults required</text>
+<text x="665" y="329">microSD logging</text><text x="665" y="352">Power-loss testing</text>
+<text x="887" y="329">BLE / service / Pi link</text><text x="887" y="352">Later runtime work</text>
+</g>
+</svg>
+<p class="small">All rail measurements also feed health acquisition. The extra ADC/multiplexer/controller
+measurement path has not been selected. The existing radio-off firmware does not implement these blocks.</p>
+</section>
+<section class="card grid">
+<div><h2>Decisions needed to wire the board</h2>
+<ol><li>Exact controller and board role: sidecar, shield or integrated replacement.</li>
+<li>Exact HIGH/LOW pressure sensors and external temperature probes.</li>
+<li>Power/crank limits, measurement routing, connectors and final mechanical assembly.</li></ol>
+<details><summary>All 14 unresolved contracts</summary><p>CONTROLLER · BOARD_ROLE · PRESSURE_HIGH · PRESSURE_LOW ·
+TEMPERATURE_INTERFACES · POWER_ENVELOPE · SENSOR_RAIL · PI_BOUNDARY · MEASUREMENT_ROUTING ·
+STORAGE_INTERFACE · CONNECTORS_HARNESS · FINAL_PCB_MECHANICS · FABRICATION_RULES · ENVIRONMENT_AND_TEST.</p>
+<p>Exact questions and blocking stages are recorded in <a href="design-inputs.json">the input record</a>.</p></details>
+</div>
+<div><h2>Current evidence</h2>
+<table><tr><th>Check</th><th>State</th></tr>
+<tr><td>Retained source / mounting axes</td><td>Consistency passed</td></tr>
+<tr><td>Current discovery / metadata regressions</td><td>15 passed</td></tr>
+<tr><td>Existing firmware builds / compiled boundaries</td><td><a href="evidence/orion-firmware-build-2026-10-12.json">Passed on Orion; evidence</a></td></tr>
+<tr><td>Functional schematic / electrical PCB</td><td>Not created</td></tr>
+<tr><td>Native ERC / DRC</td><td>Not run</td></tr>
+<tr><td>New PCB physical fit / bench results</td><td>Not run</td></tr>
+<tr><td>Standards / fabrication / ordering</td><td>Not established / blocked</td></tr></table>
+</div>
+</section>
+<footer><p class="small">Primary electrical references:
+<a href="https://docs.arduino.cc/resources/datasheets/ABX00083-datasheet.pdf">Arduino Nano ESP32</a> ·
+<a href="https://www.ti.com/lit/ds/symlink/ads1115-q1.pdf">TI ADS1115-Q1</a> ·
+<a href="https://www.ti.com/lit/ds/symlink/lm5164-q1.pdf">TI LM5164-Q1</a> ·
+<a href="https://www.ti.com/lit/ds/symlink/tps7b83-q1.pdf">TI TPS7B83-Q1</a> ·
+<a href="https://www.sensata.com/products/pressure-sensors/ac-pressure-sensor-0">Sensata A/C family</a>.
+Family ratings do not establish the ordered variant or certify the complete assembly.</p></footer>
+</html>

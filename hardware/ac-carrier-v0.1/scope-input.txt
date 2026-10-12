@@ -1,0 +1,16 @@
+Source-bound discovery scope summary, not a confirmed electrical contract:
+Create a 2005 Toyota 4Runner engine-bay automotive A/C telemetry carrier with
+distinct HIGH and LOW pressure inputs, external temperature channels, a
+protected precision ADC path, independently switched sensor power, fused
+ignition-switched vehicle 12 V power, reverse-polarity and transient protection,
+cold-crank recovery, microSD logging and USB service. The focused specification
+plans an ESP32-S3 controller with BLE and Wi-Fi service for Android integration.
+Recent mechanical work instead reserves Pi and UNO-format ESP32-S3 platforms.
+Exact board role, controller SKU, sensor variants, temperature technology, power
+limits, connectors, GPIO and final populated mechanics remain unresolved.
+
+Sources: the retained focused v1.0 specification, external temperature gate,
+common-fastener CAD release and actual slide measurement records named and
+hashed in design-inputs.json. This summary is an agent-authored discovery input;
+neither its words nor a deterministic keyword classification confirm a
+requirement, qualify a circuit or approve fabrication.
