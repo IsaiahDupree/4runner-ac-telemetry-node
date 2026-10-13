@@ -1,0 +1,43 @@
+{
+  "schema_version": "pcb-autopilot.ac-carrier-acquisition-request.v1",
+  "project_id": "4runner-ac-telemetry-node",
+  "revision_id": "ac-carrier-v0.1.discovery",
+  "board_spec": {
+    "path": "hardware/ac-carrier-v0.1/boardspec.json",
+    "sha256": "23ae9bd4d1bbff1974293a6a89ebcf9516b1dff9fb9e771c5293a3811ff0ea78"
+  },
+  "design_inputs": {
+    "path": "hardware/ac-carrier-v0.1/design-inputs.json",
+    "sha256": "bf32b3aedda4e42970237d9f777c46b0625ff9464187717f84ca77f69005a7f6"
+  },
+  "focused_spec": {
+    "path": "docs/prd/2005_Toyota_4Runner_AC_Engine_Bay_Telemetry_Node_Spec_v1.0.txt",
+    "sha256": "4a5e8f440b7d23f1fe8ae38cd5af5b5898709947d4e5cfe86c979b975b3fe2ae"
+  },
+  "reference_policy": "ONE_INPUT_AND_HEALTH_SAMPLE_PER_KNOWN_ADC",
+  "candidates": [
+    {
+      "candidate_id": "one_ads1115",
+      "rationale": "Evaluate one ADS1115 for all seven required analog signals, with no external MUX or controller-ADC route. The nominal rate is a draft setting, not an implemented schedule.",
+      "units": [
+        {"unit_id": "ADC_PRIMARY", "kind": "ADS1115-Q1", "bus_id": "DRAFT_I2C_BUS", "address_pin": "GND", "data_rate_sps": 128}
+      ]
+    },
+    {
+      "candidate_id": "two_ads1115",
+      "rationale": "Explore two separate conversion engines with distinct address-pin connections and one external-reference input on each ADC. This is an unselected proposal; exact parts, supplies, conditioning, fanout, controller pins and timing remain unresolved.",
+      "units": [
+        {"unit_id": "ADC_PRIMARY", "kind": "ADS1115-Q1", "bus_id": "DRAFT_I2C_BUS", "address_pin": "GND", "data_rate_sps": 128},
+        {"unit_id": "ADC_SECONDARY", "kind": "ADS1115-Q1", "bus_id": "DRAFT_I2C_BUS", "address_pin": "VDD", "data_rate_sps": 128}
+      ]
+    },
+    {
+      "candidate_id": "ads1115_plus_unresolved_path",
+      "rationale": "Keep the original ADS1115 plus another measurement path as an open alternative. A controller ADC needs verified board/GPIO/accuracy evidence; an external MUX needs a reviewed topology and settling/protection evidence. Neither path has a declared usable capacity here.",
+      "units": [
+        {"unit_id": "ADC_PRIMARY", "kind": "ADS1115-Q1", "bus_id": "DRAFT_I2C_BUS", "address_pin": "GND", "data_rate_sps": 128},
+        {"unit_id": "ADDITIONAL_ANALOG_PATH", "kind": "UNRESOLVED_ANALOG_PATH"}
+      ]
+    }
+  ]
+}

@@ -1,0 +1,539 @@
+2005 Toyota 4Runner
+A/C Engine-Bay
+Telemetry Node
+Hardware, Firmware & A/C Performance Assessment Specification
+Arduino Nano ESP32 / ESP32-S3  •  High + Low Pressure  •  Temperature  •  BLE/Wi-Fi  •  microSD  •  USB-C  •  Android Integration
+Version 1.0  |  Development Baseline  |  16 August 2026
+Companion specification to: 2005 Toyota 4Runner Integrated Vehicle Health Platform Master Spec v0.2
+1. What We Found in the Existing Project Docs
+The component plan already exists in multiple project documents. This specification consolidates those decisions, corrects one power-path ambiguity, and focuses the project specifically on A/C performance measurement.
+1.1 Design correction: Nano ESP32 power path
+The earlier architecture block showed a 12 V -> 5 V automotive buck feeding the Nano VIN/5 V path. The current Arduino Nano ESP32 documentation makes an important distinction: VIN is specified for 6-21 V, the board is 3.3 V I/O, and 5 V is available through VBUS only when supplied from USB-C. Therefore this specification supersedes the earlier 5 V-to-VIN interpretation.
+Primary in-vehicle power: use a protected automotive regulator feeding approximately 6.5-7.0 V into Nano VIN, then validate brownout behavior during cranking.
+Pressure sensors receive their own regulated 5 V rail; do not expect the VIN-powered Nano ESP32 to provide a 5 V sensor rail.
+USB-C remains the preferred bench/service/debug data path and may also power the board on the bench.
+2. Product Mission and Scope
+Mount the electronics enclosure inside the engine bay on the body/chassis, not on refrigerant plumbing.
+Measure A/C low-side and high-side pressure continuously while the vehicle is operating.
+Add suction/liquid-line temperature and ambient/vent temperature so the system can move beyond pressure-only diagnosis.
+Log raw observations locally to microSD and expose live telemetry over BLE to the in-vehicle Android infotainment device.
+Provide a Wi-Fi SoftAP for service, logs, configuration, diagnostics and OTA updates without requiring internet.
+Use USB-C for bench flashing/debugging and local recovery.
+Calculate only evidence-backed A/C performance metrics; diagnostic hypotheses must expose the measurements and equations that produced them.
+Integrate every service, sensor calibration, firmware version and A/C finding into the broader 4Runner Vehicle Health OS history.
+2.1 Non-goals for the first vehicle build
+Do not automatically charge, evacuate or vent refrigerant.
+Do not claim refrigerant charge state from one pressure snapshot.
+Do not leave inexpensive service-tool couplers as the final permanent product interface.
+Do not depend on cloud connectivity for measurement or basic diagnosis.
+Do not expose raw 12 V vehicle power or 5 V sensor output directly to 3.3 V ESP32 I/O.
+3. Reference System Architecture
+3.1 Data authority
+The A/C node owns raw pressure/temperature observations and its own hardware-health data. The Android Vehicle Health OS owns cross-system fusion, long-term history, versioned equations, service records, and user-facing maintenance recommendations. Raw data remains authoritative and must be replayable after firmware or model changes.
+4. Component Selection and BOM Baseline
+5. Pressure Sensor Requirements and Interface
+The current Sensata automotive A/C pressure-sensor platform is a strong match because it has dedicated low- and high-side variants, R134a compatibility, analog/LIN options, automotive environmental ratings, and separate operating ranges appropriate to each side.
+5.1 Gauge vs. absolute pressure
+The Sensata ranges are specified as absolute pressure (barA). The system should retain absolute pressure as the raw quantity. If it displays familiar manifold-style gauge pressure, convert using a documented atmospheric-pressure input:
+Atmospheric pressure can come from a calibrated local pressure sensor, a configuration value for controlled testing, or another validated source. The source must be logged with each calculation run.
+6. Automotive Power and Electrical Architecture
+All Nano ESP32 GPIO/analog I/O is 3.3 V. Sensor outputs must be divided/clamped/conditioned before reaching the MCU or a 3.3 V-powered ADC.
+USB-C can power the Nano at 5 V on the bench, but engine-bay primary power should use the protected vehicle-power path so USB remains available for service/debug.
+The custom carrier must include brownout/reset telemetry so a crank-related power event is distinguishable from an A/C fault.
+High and low pressure sensors should have independently switchable power so firmware can isolate/power-cycle a failed channel.
+6.1 ADC recommendation
+Use ADS1115-Q1 on the custom carrier unless bench data proves the Nano ADC is sufficiently repeatable. Four channels allow HIGH pressure, LOW pressure, a known calibration/reference channel and one spare analog input. The final analog front-end still needs input protection and scaling consistent with the ordered sensor output.
+7. Refrigerant Plumbing and Engine-Bay Mechanical Design
+7.1 Prototype / data-collection interface
+1.  Connect the dedicated R134a LOW quick coupler to the vehicle low-side service port.
+2.  Connect the dedicated R134a HIGH quick coupler to the vehicle high-side service port.
+3.  Use short refrigerant-rated service hose or a mechanically supported adapter block so the sensor mass is not cantilevered from the aluminum A/C line.
+4.  Adapt to the exact pressure-sensor thread using rated metal fittings and refrigerant-compatible seals.
+5.  Leak-check the new joints before operating the vehicle and inspect again after heat/vibration cycling.
+6.  Label HIGH and LOW physically and electrically so the channels cannot be swapped during service.
+7.2 Permanent production interface
+Replace service-tool couplers with an A/C-rated tee, dedicated sensor port, or OEM-style permanent pressure-sensor interface.
+Preserve a normal service port so the system can still be recovered, evacuated, vacuum-tested and charged with standard equipment.
+Any line modification must be professionally recovered/evacuated and leak-tested before return to service.
+Do not use the sensor or adapter stack as a structural support for the electronics enclosure.
+Keep the sensor wiring and refrigerant hardware clear of belts, fans, exhaust/manifold heat, sharp edges and engine-motion paths.
+7.3 Enclosure placement
+8. A/C Performance Assessment Model
+The node is not just a pair of gauges. It should create a traceable A/C performance record that can answer: Is the system building the expected pressure differential? Is heat rejection changing? Is evaporator behavior degrading? Is compressor performance changing? What changed since the last service?
+8.1 Required observations
+8.2 Core equations - every result is versioned
+8.3 Initial hypothesis engine
+9. Firmware, Sampling and Data Logging
+9.1 Minimum log schema
+The file system should retain /config/device.json, daily telemetry logs, event JSONL, latest POST, health history and firmware manifest. A vehicle-service event should create a durable marker so pre/post-service performance can be compared.
+10. Power-On Self-Test and Continuous Built-In Test
+1.  Read reset reason, hardware revision, firmware version and configuration CRC.
+2.  Measure protected vehicle input, Nano VIN rail, sensor 5 V rail and 3.3 V rail.
+3.  Measure a known ADC reference; if it is outside tolerance, mark pressure data INVALID rather than publishing trusted PSI.
+4.  Power HIGH sensor, test for open/short/rail-stuck/implausible output, then sample variance.
+5.  Repeat for LOW sensor.
+6.  Verify temperature channels and detect obvious open/short/stuck behavior.
+7.  Mount microSD, write random payload + CRC, close/reopen/read/verify/delete.
+8.  Start BLE and verify local advertising/service health.
+9.  Start Wi-Fi AP when requested and verify local HTTP /health.
+10.  Persist POST result to NVM and SD. A newly updated firmware image becomes VALID only after critical POST passes.
+11. Android Infotainment / Vehicle Health OS Integration
+Primary daily link: BLE from the engine-bay node to the installed Android infotainment device.
+Service fallback: Android or phone joins 4RUNNER-AC-XXXX SoftAP for logs, calibration, diagnostics and firmware update.
+USB-C is a service/development path; direct USB-to-head-unit integration is optional and depends on the identified Android head unit USB host behavior.
+Android stores device identity, hardware revision, sensor serial/configuration, calibration revision and every capture session.
+The Vehicle Health OS fuses A/C node data with OBD/CAN context such as RPM, vehicle speed, compressor state and other validated HVAC signals.
+Every top-level A/C health card must drill down to calculation run -> equation version -> exact inputs -> raw sensor samples.
+11.1 Suggested Android A/C screen
+12. Validation and A/C Test Protocol
+12.1 Bench gate before vehicle install
+Sweep input supply over the expected automotive operating window and validate deterministic brownout/recovery.
+Inject known pressure-sensor voltages or a sensor simulator at multiple points; verify calibration and open/short detection.
+Compare ADS1115-Q1 and Nano ADC results during bench calibration; decide whether production requires the external ADC.
+Interrupt power repeatedly during SD writes; verify no unacceptable corruption and deterministic recovery.
+Test BLE with enclosure closed and Wi-Fi AP/log download/OTA.
+Run hot-soak chamber/enclosure test to the selected component/environment limits.
+Run an intentionally bad OTA image and verify rollback/safe mode.
+12.2 Vehicle baseline sequence
+1.  Record ambient temperature, atmospheric pressure, vehicle state and firmware/calibration versions before A/C start.
+2.  With engine off, capture equalized/static high and low pressures when practical.
+3.  Start engine and A/C under a repeatable configuration; record RPM, blower/recirc state and initial pressure/temperature transient.
+4.  Wait for stabilization; record high/low pressure, ambient, suction/liquid line temperatures and vent temperature.
+5.  Repeat at elevated idle if safe/appropriate and then under controlled road operation.
+6.  Record low-speed/idle and moving airflow conditions to characterize condenser-airflow sensitivity.
+7.  Repeat over multiple ambient temperatures/days to establish the vehicle-specific healthy baseline.
+8.  Compare the node against trusted manifold/service equipment before promoting the sensor calibration to VEHICLE_VALIDATED.
+13. Development Plan and Immediate Next Steps
+13.1 Definition of Done - first installed prototype
+Boots reliably from switched vehicle power and survives engine crank without corrupting logs.
+Passes POST and identifies its board/firmware/calibration revision.
+Reads high and low pressure from validated refrigerant-compatible sensors.
+Logs timestamped telemetry to microSD with device-health fields.
+Streams live data to the Android device over BLE with repeatable reconnect behavior.
+Exposes local Wi-Fi /health, logs and OTA/recovery workflow.
+USB-C bench/service access remains functional.
+No measurable refrigerant leak from the prototype interface.
+A/C performance calculations are traceable to raw observations and equation versions.
+The complete build can be reproduced from a version-controlled BOM, wiring/pin map, firmware and calibration package.
+14. Open Engineering Decisions
+15. Source Documents and Current Manufacturer References
+Project source documents used:
+4Runner_Telemetry_Build_Master_Spec.docx - living engineering specification, 15 pages.
+4Runner_Telemetry_Build_Master_Doc_v1.docx - condensed hardware + software PRD, 7 pages.
+2005_Toyota_4Runner_Integrated_Vehicle_Health_Platform_Master_Spec_v0.2.docx - merged system-level master specification.
+Arduino Nano ESP32 official hardware page
+Arduino Nano ESP32 official datasheet / user manual
+Sensata Automotive A/C Pressure Sensor product page
+Sensata Automotive A/C Pressure Sensor datasheet
+TI LM5164-Q1 automotive buck converter
+TI ADS1115-Q1 automotive 16-bit ADC
+TI TPS7B83-Q1 automotive 5 V LDO reference
+Hammond 1554D2GY enclosure
+Adafruit microSD SPI/SDIO breakout #4682
+TE Connectivity DEUTSCH DTM06-3S connector family example
+Purpose
+Define a permanent engine-bay sensing node for the 2005 Toyota 4Runner that measures the A/C high-side and low-side circuits, preserves raw evidence, calculates explainable performance metrics, and sends results to the in-vehicle Android Vehicle Health OS. The design must remain serviceable, leak-safe, self-diagnosing, and upgradeable.
+Existing document
+What it already contains
+How this spec uses it
+4Runner_Telemetry_Build_Master_Spec.docx
+15-page living engineering spec: Nano ESP32, sensor plumbing, enclosure, automotive power, microSD, BLE/Wi-Fi, OTA, self-test, Flux/JLCPCB, test plan.
+Primary technical source; details preserved and tightened.
+4Runner_Telemetry_Build_Master_Doc_v1.docx
+Condensed hardware/software PRD with complete prototype hardware list, engine-bay mounting, PCB requirements, self-test, logging and deployment phases.
+Used as the build/checklist baseline.
+Integrated Vehicle Health Platform Master Spec v0.2
+System-level Android maintenance OS plus merged telemetry hardware annex.
+Defines the Android/evidence destination for this A/C node.
+Key unresolved item from the older docs
+The exact orderable pressure-sensor part numbers and permanent refrigerant fittings were deliberately left open. The sensor family can now be narrowed to a current automotive A/C pressure-sensor platform, but final purchasable configuration still depends on connector, port geometry, calibration/output and distributor availability.
+LOW A/C port -> rated coupler/tee -> LOW pressure sensor ----\
+                                                         +--> protected analog -> ADS1115-Q1 -> Nano ESP32
+HIGH A/C port -> rated coupler/tee -> HIGH pressure sensor ---/
+
+LOW suction-line temperature ----------------------------------\
+HIGH/liquid-line temperature ----------------------------------+--> temperature inputs
+Ambient / optional vent temperature ---------------------------/
+
+12 V IGN -> 1 A sealed fuse -> reverse polarity + TVS/transient protection
+        -> LM5164-Q1 (~6.5-7.0 V) -> Nano VIN
+        -> automotive 5 V sensor rail -> HIGH/LOW pressure sensors
+
+Nano ESP32 -> microSD black-box log
+           -> BLE -> Android Vehicle Health OS
+           -> Wi-Fi SoftAP -> local dashboard/logs/OTA
+           -> USB-C -> bench/service/debug/recovery
+           -> future data fusion with OBD/CAN gateway
+Subsystem
+Recommended component / family
+Status
+Reason / requirement
+Controller
+Arduino Nano ESP32 with headers (ESP32-S3 / NORA-W106, Nano form factor, USB-C)
+FREEZE V0/V1
+Wi-Fi + BLE, native USB-C, 16 MB flash, Arduino ecosystem, Nano carrier-board form factor.
+High pressure
+Sensata Automotive A/C Pressure Sensor - high-side analog configuration
+FAMILY FREEZE; orderable PN TBD
+R134a compatible, 5 V analog option, 0.6-35 barA operating range, automotive temperature/IP rating.
+Low pressure
+Sensata Automotive A/C Pressure Sensor - low-side analog configuration
+FAMILY FREEZE; orderable PN TBD
+R134a compatible, 5 V analog option, 0.6-10.25 barA range gives better low-side resolution.
+Precision ADC
+TI ADS1115-Q1
+RECOMMENDED V1/V2
+Automotive 16-bit, 4-channel I2C ADC; isolates pressure accuracy from ESP32 ADC nonlinearity and provides spare channels.
+Vehicle buck
+TI LM5164-Q1
+FREEZE REFERENCE
+AEC-Q100, 6-100 V input, 1 A; configure ~6.5-7.0 V for Nano VIN after protection.
+Sensor 5 V rail
+Automotive 5 V regulator; TPS7B83-Q1 5 V is current reference
+CANDIDATE
+Pressure sensors require 5 V; independent clean sensor rail simplifies diagnosis and power cycling.
+Storage V0
+Adafruit microSD SPI/SDIO breakout #4682 + 16-64 GB high-endurance microSD
+FREEZE V0
+Fast prototype path; replace breakout with SMD socket/card detect on custom PCB.
+Enclosure
+Hammond 1554D2GY polycarbonate enclosure
+FREEZE V1 FIT-CHECK
+119 x 66 x 61 mm, IP68 family, RF-friendly plastic, engine-bay-friendly form factor.
+Power connector
+Deutsch DTM 2-pin or DT 2-pin
+FREEZE FAMILY
+Sealed 12 V + ground connection.
+Sensor connectors
+Deutsch DTM 3-pin; e.g. DTM06-3S mating family
+FREEZE FAMILY
+5 V / GND / signal per pressure sensor; sealed and serviceable.
+Fuse
+Sealed ATO/Mini blade inline holder + 1 A fuse
+FREEZE V1
+Branch protection close to switched power source.
+Wiring
+18 AWG TXL/GXL power; 20-22 AWG TXL/GXL sensor wiring
+FREEZE SPEC
+Automotive insulation and temperature/abrasion tolerance.
+Harness protection
+High-temp split loom/braided sleeve + adhesive-lined heat shrink + P-clamps
+FREEZE SPEC
+Chafe, vibration, strain-relief and serviceability.
+Mounting
+M3 PCB standoffs; M4/M5 stainless fasteners; rubber isolators; bracket
+FREEZE SPEC
+Separate electronics structure from A/C plumbing; manage vibration.
+USB service
+Nano USB-C internal service port; optional sealed panel extension
+FREEZE FUNCTION
+Bench programming, serial/debug and recovery. Keep sealed during normal engine-bay operation.
+A/C prototype interface
+R134a HIGH + LOW service couplers, short rated hose, supported adapter block
+FREEZE PROTOTYPE CONCEPT
+Avoid heavy direct cantilever at service ports; temporary data-collection path only.
+A/C permanent interface
+A/C-rated tee/dedicated sensor port retaining service access
+DESIGN REQUIRED
+Production path must be mechanically supported, leak tested, refrigerant/PAG compatible and serviceable.
+Line temperatures
+2-3 automotive-rated contact temperature probes
+SELECT
+Needed for superheat/subcooling-style metrics and stronger diagnosis.
+Parameter
+Low side
+High side
+Design implication
+Operating range
+0.6-10.25 barA (~8.7-148.7 psia)
+0.6-35 barA (~8.7-507.6 psia)
+Use the dedicated low-side range rather than one 500-psi sensor for both channels when possible.
+Pressure accuracy
+±1% FS (-20 to 80 C), ±1.5% FS otherwise
+Same family specification
+Pressure analytics must retain sensor range and accuracy metadata.
+Supply
+5 V analog option
+5 V analog option
+Separate regulated sensor supply is required.
+Media
+R134a supported
+R134a supported
+Still freeze the exact purchasable configuration and seal/port before ordering.
+Operating media/ambient
+-40 to +135 C
+-40 to +135 C
+Appropriate class for engine-bay A/C sensing; enclosure electronics have separate limits.
+Ingress
+IP69K family specification
+IP69K family specification
+Sensor body is robust, but harness connector sealing remains critical.
+Thread shown in current datasheet
+3/8-24 UNF-2A
+3/8-24 UNF-2A
+Mechanical adapter/tee must match the exact ordered sensor configuration.
+Pressure response T90
+<=10 ms
+<=10 ms
+10-50 Hz stored pressure is sufficient for A/C performance while limiting log size.
+Do not assume an analog transfer function before the exact sensor configuration is ordered
+The product page confirms a 5 V analog option but the project should store the ordered sensor calibration/transfer function in device configuration. The carrier input must safely tolerate the full sensor-output range and scale/protect it before the ESP32/ADC. Do not hard-code a generic 0.5-4.5 V equation unless it is confirmed for the purchased variant.
+P_gauge = P_absolute - P_atmosphere
+P_high_gauge_psi = psi(P_high_absolute - P_atmosphere)
+P_low_gauge_psi  = psi(P_low_absolute  - P_atmosphere)
+Switched vehicle 12 V
+  -> sealed 1 A fuse near source
+  -> reverse-polarity protection
+  -> automotive TVS / surge / EMI filtering
+  -> LM5164-Q1 configured ~6.5-7.0 V -> Nano ESP32 VIN
+  -> clean automotive 5.0 V sensor rail -> HIGH + LOW pressure sensors
+  -> local 3.3 V logic from Nano / board as required
+  -> voltage-sense dividers for VIN, sensor 5 V and 3.3 V self-test
+Item
+Requirement
+Location
+Coolest practical protected engine-bay zone, away from exhaust/manifold heat, radiator discharge, direct wash and rotating equipment.
+Mount
+Body/chassis bracket or existing stud; rubber isolation; locking hardware; no drilling if a factory mount is available.
+RF
+Polycarbonate lid, antenna end kept clear of metal, orient toward open engine-bay/hood edge when practical.
+Harness
+Route with factory harnesses, use loom and P-clamps, leave service loops, add strain relief at enclosure and sensor connectors.
+USB-C
+Normally sealed/internal. If external service access is required, use an automotive/IP-rated panel feedthrough with cap and strain relief.
+Observation
+Source
+Required for
+High-side absolute pressure
+HIGH sensor
+All pressure/performance calculations
+Low-side absolute pressure
+LOW sensor
+All pressure/performance calculations
+Atmospheric pressure
+Validated local source
+Gauge-pressure conversion
+Ambient temperature
+External sensor or validated vehicle signal
+Ambient-normalized performance
+Suction/low line temperature
+Contact probe
+Superheat-style calculation
+Liquid/high line temperature
+Contact probe
+Subcooling-style calculation
+Cabin return/inlet temperature
+Cabin sensor / manual / vehicle
+Vent delta-T context
+Center vent temperature
+Cabin probe / Android accessory
+Cooling-delivery metric
+Engine RPM
+OBD/CAN gateway or manual test state
+Normalize idle/elevated-idle tests
+Compressor command/state
+OBD/CAN or safe dedicated sense
+Cycle/duty and transient segmentation
+Vehicle speed / condenser airflow context
+OBD/CAN
+Separate stationary airflow from road airflow effects
+Equation ID
+Equation
+Meaning
+AC.PRESSURE.DELTA.v1
+DeltaP = P_high_gauge - P_low_gauge
+Compressor/system pressure lift.
+AC.PRESSURE.RATIO.v1
+PR = P_high_absolute / P_low_absolute
+Compression pressure ratio using absolute pressure.
+AC.R134A.SAT.v1
+T_sat = f_R134a(P_absolute)
+R134a saturation temperature from a versioned property table/interpolator.
+AC.SUPERHEAT.v1
+Superheat = T_suction_line - T_evap_sat
+Requires reliable low-side pressure + suction-line temperature.
+AC.SUBCOOLING.v1
+Subcooling = T_cond_sat - T_liquid_line
+Requires reliable high-side pressure + liquid-line temperature.
+AC.VENT.DELTA.v1
+VentDeltaT = T_cabin_return - T_center_vent
+Delivered cabin cooling under defined blower/recirc conditions.
+AC.COND.APPROACH.v1
+CondenserApproach = T_cond_sat - T_ambient
+Heat-rejection loading/context metric.
+AC.STABILIZE.v1
+Time until rolling pressure/temp slopes remain below configured thresholds
+How quickly the system reaches repeatable steady behavior.
+AC.BASELINE.DELTA.v1
+CurrentMetric - matched historical baseline
+Vehicle-specific degradation/trend signal.
+Diagnostic truth boundary
+Pressure alone is not sufficient to declare low charge, overcharge, restriction, weak compressor or condenser-airflow failure. The software may generate ranked hypotheses, but charge-state or component-fault confidence must increase only when pressure, temperature, compressor state, ambient/airflow context, and trend evidence agree.
+Hypothesis
+Evidence that can support it
+Do not conclude if
+Low refrigerant / leak trend
+Declining matched-baseline pressures/performance, reduced subcooling, leak-rate/service history, vent degradation.
+Only one pressure snapshot exists or ambient/operating state is unknown.
+Weak compressor
+Reduced pressure lift/ratio at matched RPM/ambient, high suction relative to baseline, low discharge relative to baseline.
+Compressor state, RPM or expansion-device behavior is unknown.
+Condenser airflow problem
+High condensing approach/head pressure at low speed that improves with vehicle speed/fan operation.
+Ambient and airflow context are missing.
+Restriction / expansion-device issue
+Abnormal pressure split plus line-temperature evidence and repeatable trend.
+No line temperature or steady-state validation.
+Overcharge / non-condensables
+Persistent high-side behavior plus subcooling/temperature and service-history evidence.
+Only high pressure is elevated during a hot/low-airflow event.
+Evaporator/blower airflow issue
+Pressure behavior near baseline while vent delta-T/cabin delivery degrades; blower/filter context supports.
+Cabin temperature and airflow state are unavailable.
+Task
+Typical cadence
+Responsibility
+sensor_task
+20-50 Hz pressure; 1-5 Hz temperature
+Acquire, timestamp, apply calibration, maintain raw + engineering units.
+health_task
+1 Hz
+Power rails, ADC reference, sensor plausibility, watchdog, storage health.
+logger_task
+5-10 Hz stored baseline; event bursts as needed
+Buffered CSV/JSONL writes, file rotation, power-loss recovery.
+ble_task
+5-10 Hz live notification
+Live telemetry, status, identity and light configuration.
+wifi_task
+On demand
+SoftAP, web dashboard, logs, settings, diagnostics, OTA.
+ota_task
+On demand
+Signed/versioned update, inactive slot, post-boot validation, rollback.
+usb_service
+On demand
+Serial/debug, factory/service commands, recovery flashing.
+analytics_feature_task
+1-5 Hz / windowed
+Local deltas and quality flags; authoritative long-term calculations can run on Android.
+capture_id, timestamp_iso, uptime_ms, sample_counter,
+p_high_abs_kpa, p_low_abs_kpa, p_atm_kpa,
+t_high_line_c, t_low_line_c, t_ambient_c, t_vent_c,
+vin_v, sensor_5v_v, v3v3_v, board_temp_c,
+high_sensor_ok, low_sensor_ok, adc_ref_ok, sd_ok,
+ble_clients, wifi_clients, reset_reason, fault_mask,
+hw_rev, fw_version, calibration_rev, vehicle_profile_rev
+State
+Meaning
+Vehicle behavior
+PASS
+All critical checks pass
+Normal logging and telemetry.
+DEGRADED
+Noncritical function lost, e.g. SD missing
+Continue live telemetry; flag limitation.
+SENSOR_FAULT
+High/low sensor invalid
+Publish fault; exclude bad channel from A/C diagnosis.
+POWER_FAULT
+Rail outside validated range
+Disable affected sensor power if needed; block OTA commit.
+STORAGE_FAULT
+SD mount/write/readback failure
+Continue live telemetry; preserve RAM buffer if possible.
+SAFE_MODE
+Repeated crash, failed OTA or manual recovery
+Minimal service AP/USB diagnostics only.
+Card / view
+Content
+A/C status
+Healthy / Watch / Inspect / Service Soon / Unknown; confidence and current test validity.
+Live
+High pressure, low pressure, ambient, line temperatures, vent temperature, compressor state, RPM.
+Performance
+Pressure lift, pressure ratio, saturation temperatures, superheat/subcooling when available, vent delta-T, stabilization time.
+Trend
+Matched-condition comparison against 7-day, 30-day and post-service baselines.
+Evidence
+Raw capture, calibration, equation version, missing inputs, sensor quality flags.
+Service history
+Refrigerant service, compressor, condenser, expansion valve, leaks, O-rings/fittings, sensor calibration/replacement.
+Device
+Board temp, rails, SD health, BLE RSSI, firmware, OTA status, last POST and fault history.
+Refrigerant safety gate
+Any permanent opening or modification of the refrigerant circuit requires proper recovery, evacuation, vacuum/leak testing and charging procedures. The electronics project does not replace appropriate A/C service equipment or refrigerant-handling practices.
+Priority
+Task
+Exit condition
+P0
+Inventory existing parts already purchased / on hand.
+Board, enclosure, SD hardware, couplers, connectors and wiring status captured.
+P0
+Measure 4Runner high/low service-port clearance and photograph/measure surrounding geometry.
+Mechanical envelope available for hose/adapter/sensor layout.
+P0
+Request/obtain exact Sensata low-side and high-side analog orderable configurations.
+Confirmed output transfer function, connector, 3/8-24 port configuration, price/availability and calibration data.
+P0
+Bench build Nano ESP32 + simulated pressure + microSD + BLE + SoftAP.
+Stable capture/log/stream without refrigerant hardware.
+P0
+Correct power prototype: protected vehicle input -> Nano VIN and independent 5 V sensor rail.
+Crank/brownout bench test passes; USB-C remains usable for service.
+P0
+Implement POST/BIT + /health before vehicle installation.
+Sensor/ADC/SD/power faults are distinguishable.
+P1
+Add real pressure sensors on bench using controlled pressure/reference gauge.
+Calibrated high/low channels match trusted reference within target tolerance.
+P1
+Build temporary supported R134a service-port interface.
+No unsupported sensor cantilever; leak check passes.
+P1
+Collect first labeled 4Runner A/C baseline capture.
+Engine-off, idle, stabilized, elevated-idle/road conditions recorded with reference measurements.
+P1
+Add line and vent temperature channels.
+Superheat/subcooling and vent delta-T calculations become available.
+P1
+Integrate BLE data into Android Vehicle Health OS.
+A/C device page, live view, history, evidence drill-down and device health work offline.
+P2
+Create Flux carrier PCB with LM5164-Q1, ADC, sensor rail, SD, connectors and self-test points.
+ERC/DRC + independent engineering review complete; manufacturing package generated.
+P2
+JLCPCB build + factory test fixture.
+PCBA arrives programmed, emits machine-readable PASS/FAIL, survives bench regression.
+P2
+Design permanent refrigerant tee/sensor-port solution.
+Service access preserved; supported, leak-tested and documented installation.
+Decision
+Why it matters
+Current recommendation
+Exact Sensata orderable PNs
+Locks calibration/output/connector and procurement.
+Obtain manufacturer/distributor configuration quote before sensor order.
+Permanent A/C fitting geometry
+Leak risk, serviceability and mechanical load.
+Prototype with supported hoses; permanent tee/port only after measuring vehicle and professional leak-validation plan.
+Pressure-channel ADC path
+Repeatability and explainability.
+Use ADS1115-Q1 on custom carrier unless bench evidence justifies Nano ADC alone.
+Sensor 5 V regulator
+Noise, thermal margin, independent sensor power.
+Automotive 5 V rail; TPS7B83-Q1 is a current reference, final choice after thermal/availability review.
+Line-temp probe technology
+Superheat/subcooling accuracy and engine-bay durability.
+Select automotive-rated contact probe after physical mounting trial.
+Atmospheric pressure source
+Absolute-to-gauge conversion.
+Add validated local pressure source or explicitly log configured atmospheric pressure for controlled tests.
+Ignition power source
+Battery drain and electrical noise.
+Fused ignition-switched underhood source; exact fuse/stud after vehicle inspection.
+Android head-unit transport
+BLE background behavior and optional USB.
+BLE primary; USB only after the installed head unit model/host behavior is verified.
+Document authority
+This is the focused build specification for the A/C engine-bay node. Where it conflicts with the older telemetry documents on Nano ESP32 power routing, this v1.0 document controls. Vehicle-specific A/C acceptance envelopes and exact refrigerant-fitting part numbers remain subject to physical validation and service information before production use.

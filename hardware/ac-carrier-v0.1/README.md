@@ -15,6 +15,11 @@ active requirement and significant contract to work and tests. The
 [software-generated review](product-build-review/index.html) retains the actual
 inputs and unresolved tasks; its input checks do not authorize circuit creation.
 
+The [draft acquisition comparison](acquisition/README.md) now computes concrete
+analog input proposals from the seven required signals. Its software-generated
+allocation diagram compares complete-scope capacity, shared conversion budgets
+and address collisions. No topology or exact ADC part is selected by this review.
+
 The [source reconciliation](source-reconciliation.md) recovers controller,
 sensor, power, storage and mounting decisions from the parent project, live
 Drive specs, CAD implementation and the owner's earlier request. Its

@@ -1,0 +1,272 @@
+{
+  "artifact_manifest_file": {
+    "name": "manifest.json",
+    "sha256": "571fdfe5cde78e580324f03ce4b37cecea59eb0ad6e14b74c03438790adcd22f",
+    "size_bytes": 1997
+  },
+  "artifact_manifest_sha256": "031f7cd1199f243d7676aeb2a2edf5fe1d3c7510882a93f8ca930cf97558f141",
+  "authorizes_eda_write": false,
+  "authorizes_fabrication": false,
+  "authorizes_order": false,
+  "authorizes_payment": false,
+  "authorizes_schematic_compilation": false,
+  "authorizes_technical_release": false,
+  "authorizes_vehicle_installation": false,
+  "bound_implementation": [
+    {
+      "module": "architecture/acquisition.py",
+      "sha256": "bc7fd62a2982c3a46b08db4f1cb4c4d286d69b88469063acc4ec15fdafafe9a9"
+    },
+    {
+      "module": "architecture/acquisition_review.py",
+      "sha256": "998190760a35590fce64efe2c7810e475d40b9526a7d1942c3e474e1b9f1c54a"
+    },
+    {
+      "module": "requirements/build_plan.py",
+      "sha256": "d8d49d845d5a315d3aff03476313e8f02cf099ccffe600e8d768032552f43148"
+    },
+    {
+      "module": "requirements/product_review.py",
+      "sha256": "1944d3e8bef3f4d5f7cb657750b60e3db0ff43489b6af1d620615b59fa01555f"
+    },
+    {
+      "module": "domain/models.py",
+      "sha256": "6fbd2f58bfff6c258d8bd8d342441b5c42b87fdfd9825d601300f0aaa89d8a6b"
+    },
+    {
+      "module": "domain/hashing.py",
+      "sha256": "966bafe13af2e614fb5cbcbc24902d4154af7cb67f868ff1dd4a676d64c62e92"
+    },
+    {
+      "module": "qualification/review_bundle.py",
+      "sha256": "7672c4c9ba8f655ec12000c102dfc6a98b0ddd5761a5db828fc39e3e5c3ae19a"
+    },
+    {
+      "module": "integrations/kicad/inventory_report.py",
+      "sha256": "941824f32099d294c11220a751e2308ffa0665803eee6ba0c00cb65f644141cf"
+    }
+  ],
+  "capacity_outcomes": {
+    "ads1115_plus_unresolved_path": "INCOMPLETE",
+    "one_ads1115": "FAIL",
+    "two_ads1115": "PASS"
+  },
+  "changed_source_bytes": [
+    {
+      "path": "pcb_agent/__main__.py",
+      "sha256": "32695c4152108e3123d25ade1c901a77020da08558364c4613d7bb1f7547fdcd",
+      "size_bytes": 45891
+    },
+    {
+      "path": "pcb_agent/architecture/__init__.py",
+      "sha256": "dccdea3c4fcac1225885cfe8998b2a82dae9ef1ea09420ba407bab4133dc703b",
+      "size_bytes": 75
+    },
+    {
+      "path": "pcb_agent/architecture/acquisition.py",
+      "sha256": "bc7fd62a2982c3a46b08db4f1cb4c4d286d69b88469063acc4ec15fdafafe9a9",
+      "size_bytes": 10571
+    },
+    {
+      "path": "pcb_agent/architecture/acquisition_review.py",
+      "sha256": "998190760a35590fce64efe2c7810e475d40b9526a7d1942c3e474e1b9f1c54a",
+      "size_bytes": 19050
+    },
+    {
+      "path": "pcb_agent/architecture/ads1115_capacity.json",
+      "sha256": "443224c6915ceb4fcc34b3ed979ea414afc655499eb9aedefbbb9d801d0e7367",
+      "size_bytes": 1246
+    },
+    {
+      "path": "pyproject.toml",
+      "sha256": "123db2621bd95b67e74b143820fd3e494797712441160f1b6893cd0b102a2656",
+      "size_bytes": 1005
+    },
+    {
+      "path": "tests/unit/test_acquisition_allocation.py",
+      "sha256": "cb13dc523a51199c840b328398b758a23c013de0f8ceff928c56ccce7de3017a",
+      "size_bytes": 7955
+    },
+    {
+      "path": "tests/integration/test_acquisition_review.py",
+      "sha256": "11eeef6c6c5f17899312ec57b5a32e7eb9c1cf9bdd67dcb7e2f8325433e4616f",
+      "size_bytes": 17519
+    }
+  ],
+  "engineering_outcome": "INCOMPLETE",
+  "fresh_local_firmware_build": "NOT_RUN",
+  "fresh_native_eda": "NOT_RUN",
+  "local_execution_date": "2026-10-12",
+  "manufacturer_document_sha256": "563981942e426cd0e2f6d309a03c3e6486983eb91bac85786b4f50560c9a9a7a",
+  "manufacturer_profile_sha256": "443224c6915ceb4fcc34b3ed979ea414afc655499eb9aedefbbb9d801d0e7367",
+  "observed_at": "2026-10-13T02:37:29.571941+00:00",
+  "physical_board_tests": "NOT_RUN",
+  "raw_evidence_retained_at": "/Volumes/My Passport/CodexArtifacts/Toyota-AC/ac-acquisition-planner-2026-10-12",
+  "reference_policy": "ONE_INPUT_AND_HEALTH_SAMPLE_PER_KNOWN_ADC",
+  "reference_policy_origin": "EXPLICIT_DRAFT_PLANNING_ASSUMPTION",
+  "release_state": "BLOCKED",
+  "report_input_bindings": [
+    {
+      "path": "docs/prd/2005_Toyota_4Runner_AC_Engine_Bay_Telemetry_Node_Spec_v1.0.txt",
+      "sha256": "4a5e8f440b7d23f1fe8ae38cd5af5b5898709947d4e5cfe86c979b975b3fe2ae",
+      "size_bytes": 30482
+    },
+    {
+      "path": "hardware/ac-carrier-v0.1/acquisition/request.json",
+      "sha256": "81f1544a54513207e56ab9c9a4017c8fce71b0cbd399d7be4e9e4793a3f7f483",
+      "size_bytes": 2363
+    },
+    {
+      "path": "hardware/ac-carrier-v0.1/boardspec.json",
+      "sha256": "23ae9bd4d1bbff1974293a6a89ebcf9516b1dff9fb9e771c5293a3811ff0ea78",
+      "size_bytes": 67760
+    },
+    {
+      "path": "hardware/ac-carrier-v0.1/design-inputs.json",
+      "sha256": "bf32b3aedda4e42970237d9f777c46b0625ff9464187717f84ca77f69005a7f6",
+      "size_bytes": 11601
+    }
+  ],
+  "report_sha256": "8db5736b6c2af966668c5ca2d181f62b5936639510de16327dbf763b559f73a7",
+  "repositories": {
+    "pcb_agent": {
+      "base_commit": "82b5e4bad0e6a695a37af795877356084c0d9ffb",
+      "url": "https://github.com/IsaiahDupree/pcb-agent"
+    },
+    "product": {
+      "base_commit": "4414706c479eb6592b5d5978f233a924861ea47b",
+      "url": "https://github.com/IsaiahDupree/4runner-ac-telemetry-node"
+    }
+  },
+  "schema_version": "pcb-autopilot.acquisition-software-execution.v1",
+  "scope": "Source-bound analog acquisition capacity software and documentation; no hardware qualification",
+  "selected_candidate_id": null,
+  "software_checks": {
+    "full_pcb_suite": {
+      "combined_line_and_branch_coverage_percent": 92.83855578445191,
+      "coverage_json": {
+        "name": "ac-acquisition-coverage-20261013.json",
+        "sha256": "5ba29130f402ac6cf7758e7617e3ed484146c8d2a0cf1dfdf2e4e9abdf33d5bb",
+        "size_bytes": 1130100
+      },
+      "coverage_totals": {
+        "covered_branches": 4039,
+        "covered_lines": 13086,
+        "excluded_lines": 41,
+        "missing_branches": 611,
+        "missing_lines": 710,
+        "num_branches": 4650,
+        "num_partial_branches": 557,
+        "num_statements": 13796,
+        "percent_branches_covered": 86.86021505376344,
+        "percent_branches_covered_display": "87",
+        "percent_covered": 92.83855578445191,
+        "percent_covered_display": "93",
+        "percent_statements_covered": 94.85358074804292,
+        "percent_statements_covered_display": "95"
+      },
+      "duration_seconds": 178.61,
+      "failed": 0,
+      "log": {
+        "name": "ac-acquisition-full-suite-20261013.log",
+        "sha256": "953c39a6acc6d8fd893e2f5bf1f7aa5ab1d3af97bd424d903062e1f21e7544c4",
+        "size_bytes": 11581
+      },
+      "native_skip_reason": "Pinned native KiCad CLI/candidate/runtime unavailable locally; native EDA stays on Orion",
+      "passed": 2025,
+      "skipped": 22
+    },
+    "new_acquisition_tests": {
+      "duration_seconds": 2.43,
+      "failed": 0,
+      "log": {
+        "name": "acquisition-tests.log",
+        "sha256": "99d70105dbe227bda449e1c71096b6352606d68e6559ac45ee4dfeb72185e5b0",
+        "size_bytes": 179
+      },
+      "passed": 83,
+      "skipped": 0
+    },
+    "portable_replays": {
+      "all_three_byte_identical": true,
+      "files_per_bundle": 10,
+      "isolated_installed_wheel_outside_checkout": "PASS",
+      "live_product": "PASS",
+      "retained_actual_input_fixture": "PASS"
+    },
+    "product_verification": {
+      "checks": [
+        {
+          "check": "firmware_source_files",
+          "status": "PASS",
+          "verified_files": 18
+        },
+        {
+          "check": "build_artifacts",
+          "status": "PASS",
+          "verified_files": 6
+        },
+        {
+          "command": [
+            "python3",
+            "tools/verify_repository.py",
+            "--recovery-build-dir",
+            "/private/tmp/ac-carrier-verification-20261012-7a7bcfa7/attempt4/compiled/firmware/ac-sensor-node-esp32s3/build",
+            "--temperature-build-dir",
+            "/private/tmp/ac-carrier-verification-20261012-7a7bcfa7/attempt4/compiled/firmware/ac-temperature-bench-esp32s3/build"
+          ],
+          "exit_code": 0,
+          "log_bytes": 122,
+          "log_name": "product-check-1.log",
+          "log_sha256": "19f4b7dc313074cda7273e72cdbd6c52a35aceea7bbb18f7b698200cfd75db56"
+        },
+        {
+          "command": [
+            "python3",
+            "-m",
+            "unittest",
+            "discover",
+            "-s",
+            "tests",
+            "-v"
+          ],
+          "exit_code": 0,
+          "log_bytes": 2324,
+          "log_name": "product-check-2.log",
+          "log_sha256": "acdd12a94fc5f6f6beeafdd45aca73289dfe7c0c0c58087ddc012f942784828c"
+        }
+      ],
+      "firmware_build_scope": "reused_existing_unchanged_sources_and_hash_verified_compiled_artifacts; no fresh build this local replay",
+      "observed_at": "2026-10-13T02:35:20.564300+00:00",
+      "prior_orion_job_id": "job_ac_carrier_verification_7a7bcfa7_attempt4",
+      "prior_receipt_sha256": "daa2736a9aaf0f887b3c0286ef16a5fab199e9edbf9e5ed91b8cb35addffc911",
+      "product_base_commit": "4414706c479eb6592b5d5978f233a924861ea47b",
+      "schema_version": "ac-acquisition.product-verification/1",
+      "status": "PASS"
+    },
+    "ruff": "PASS",
+    "schema_export": "PASS"
+  },
+  "status": "PASS",
+  "unresolved_canonical_fields": [
+    "contracts.board_role",
+    "contracts.connectors_harness",
+    "contracts.controller",
+    "contracts.environment_and_test",
+    "contracts.fabrication_rules",
+    "contracts.final_pcb_mechanics",
+    "contracts.measurement_routing",
+    "contracts.pi_boundary",
+    "contracts.power_envelope",
+    "contracts.pressure_high",
+    "contracts.pressure_low",
+    "contracts.sensor_rail",
+    "contracts.storage_interface",
+    "contracts.temperature_interfaces"
+  ],
+  "wheel": {
+    "name": "pcb_autopilot-0.1.0-py3-none-any.whl",
+    "sha256": "017087c0ac77b2a5776f2b7def1f29431643d35d086c3070d44a1dda205e47e5",
+    "size_bytes": 374544
+  }
+}
