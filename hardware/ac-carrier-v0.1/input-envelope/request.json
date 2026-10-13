@@ -1,0 +1,52 @@
+{
+  "schema_version": "pcb-autopilot.ac-carrier-input-envelope-request.v1",
+  "project_id": "4runner-ac-telemetry-node",
+  "revision_id": "ac-carrier-v0.1.discovery",
+  "board_spec": {
+    "path": "hardware/ac-carrier-v0.1/boardspec.json",
+    "sha256": "23ae9bd4d1bbff1974293a6a89ebcf9516b1dff9fb9e771c5293a3811ff0ea78"
+  },
+  "design_inputs": {
+    "path": "hardware/ac-carrier-v0.1/design-inputs.json",
+    "sha256": "bf32b3aedda4e42970237d9f777c46b0625ff9464187717f84ca77f69005a7f6"
+  },
+  "focused_spec": {
+    "path": "docs/prd/2005_Toyota_4Runner_AC_Engine_Bay_Telemetry_Node_Spec_v1.0.txt",
+    "sha256": "4a5e8f440b7d23f1fe8ae38cd5af5b5898709947d4e5cfe86c979b975b3fe2ae"
+  },
+  "proposal_basis": "UNSELECTED_NUMERIC_DOMAIN_PROPOSALS",
+  "candidates": [
+    {
+      "candidate_id": "adc_3v3_direct_i2c",
+      "rationale": "Unselected nominal 3.3 V ADC and direct 3.3 V pull-up hypothesis. PGA scaling does not enlarge the pin operating window. Actual supply tolerances, ordered sensor output and conditioning remain unknown.",
+      "adc_supply_uv": {"minimum_uv": 3300000, "maximum_uv": 3300000},
+      "positive_full_scale_uv": 4096000,
+      "i2c_interface": "DIRECT_OPEN_DRAIN",
+      "direct_i2c_pullup_uv": {"minimum_uv": 3300000, "maximum_uv": 3300000}
+    },
+    {
+      "candidate_id": "adc_5v_direct_3v3_i2c",
+      "rationale": "Unselected nominal 5 V ADC with a direct 3.3 V bus. Test the declared high-level compatibility instead of assuming that a larger analog window also solves the digital interface.",
+      "adc_supply_uv": {"minimum_uv": 5000000, "maximum_uv": 5000000},
+      "positive_full_scale_uv": 6144000,
+      "i2c_interface": "DIRECT_OPEN_DRAIN",
+      "direct_i2c_pullup_uv": {"minimum_uv": 3300000, "maximum_uv": 3300000}
+    },
+    {
+      "candidate_id": "adc_5v_translation_unresolved",
+      "rationale": "Unselected nominal 5 V ADC hypothesis requiring a separately reviewed interface. No level translator, direction, power-state behavior or working bus is invented.",
+      "adc_supply_uv": {"minimum_uv": 5000000, "maximum_uv": 5000000},
+      "positive_full_scale_uv": 6144000,
+      "i2c_interface": "UNRESOLVED_LEVEL_TRANSLATION",
+      "direct_i2c_pullup_uv": null
+    },
+    {
+      "candidate_id": "voltage_domain_unresolved",
+      "rationale": "Preserve an unspecified supply, PGA and interface while exact parts and controller connections are unresolved.",
+      "adc_supply_uv": null,
+      "positive_full_scale_uv": null,
+      "i2c_interface": "DIRECT_OPEN_DRAIN",
+      "direct_i2c_pullup_uv": null
+    }
+  ]
+}

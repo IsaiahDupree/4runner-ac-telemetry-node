@@ -3,3 +3,4 @@ hardware/ac-carrier-v0.1/sources/*.json -text whitespace=blank-at-eol,blank-at-e
 # Product-review inputs retain the same exact source bytes and line endings.
 hardware/ac-carrier-v0.1/product-build-review/inputs/** -text whitespace=-blank-at-eol,-blank-at-eof,cr-at-eol
 hardware/ac-carrier-v0.1/acquisition/review/inputs/** -text whitespace=-blank-at-eol,-blank-at-eof,cr-at-eol
+hardware/ac-carrier-v0.1/input-envelope/review/inputs/** -text whitespace=-blank-at-eol,-blank-at-eof,cr-at-eol

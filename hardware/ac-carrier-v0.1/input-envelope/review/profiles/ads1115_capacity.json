@@ -1,0 +1,24 @@
+{
+  "schema_version": "pcb-autopilot.adc-capacity-profile.v1",
+  "family": "ADS1115-Q1",
+  "source_url": "https://www.ti.com/lit/ds/symlink/ads1115-q1.pdf",
+  "document": "SBAS563E",
+  "revision": "E",
+  "captured_at": "2026-10-13T02:05:44.060097+00:00",
+  "original_pdf_sha256": "563981942e426cd0e2f6d309a03c3e6486983eb91bac85786b4f50560c9a9a7a",
+  "original_pdf_size_bytes": 1956425,
+  "single_ended_inputs": ["AIN0", "AIN1", "AIN2", "AIN3"],
+  "conversion_engines_per_device": 1,
+  "supported_data_rates_sps": [8, 16, 32, 64, 128, 250, 475, 860],
+  "slow_rate_numerator": 9,
+  "slow_rate_denominator": 10,
+  "address_pin_to_7bit_address": {"GND": 72, "VDD": 73, "SDA": 74, "SCL": 75},
+  "locators": {
+    "single_ended_inputs": "printed pages 1 and 4, Device Information and Table 5-1",
+    "conversion_engines_per_device": "printed page 14, Figure 8-1",
+    "supported_data_rates_sps": "printed pages 17 and 28, section 8.3.6 and Table 8-6",
+    "slow_rate_ratio": "printed page 7, section 6.5, data-rate variation -10% to +10%",
+    "addresses": "printed page 22, Table 8-2"
+  },
+  "scope": "Manually transcribed manufacturer numeric facts for necessary capacity checks; not a qualified component, complete timing model or circuit asset."
+}

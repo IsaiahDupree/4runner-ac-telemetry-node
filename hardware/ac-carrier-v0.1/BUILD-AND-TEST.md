@@ -54,13 +54,14 @@ retained native evidence. A/C circuit generation needs additional capabilities:
 | --- | --- | --- |
 | Product handoff and readiness report — implemented | Read a canonical BoardSpec plus typed build/test plan; verify actual local source hashes; map every significant field and active requirement to work and tests; retain exact input bytes and readable reports | Replay the real A/C snapshot; reject missing/changed sources, stale hashes, omitted requirements/fields, invalid dependencies and claims of completed tests or approval |
 | Acquisition capacity planning — implemented | Allocate actual pressure/rail/reference demands against pinned channel and shared conversion limits; reserve reference inputs under an explicit draft policy; leave unspecified paths without invented capacity | Real-input replay, per-engine/aggregate traps, missing observations, stale source/cadence, strict rate settings, address collisions and exact rational boundaries; the two-ADC proposal fits necessary bounds while timing/electrical qualification stays incomplete |
+| ADC input-envelope planning — implemented | Compare unselected supply/PGA/direct-bus domains against pinned operating, stress, ideal clipping and digital high-level limits; keep ordered sensor outputs unknown | Exact microvolt/rational boundaries, powered-off cases, supply corners, source/contract mutations and invented-output/approval refusal; the proposed 5 V ADC/direct 3.3 V bus misses its necessary high-level bound |
 | Reviewed circuit assets | Exact controller/header, automotive power, sensor switch, analog conditioning, ADC/reference, probe, storage, connector and test-point blocks | Manufacturer pin/part/footprint checks and preregistered normal/fault cases for each actual block |
 | A/C schematic compiler | Compile only resolved, reviewed block instances into editable schematic and unrouted PCB with stable requirement/net identities | Deterministic replay, native reopen and oracle comparison; unresolved or unsupported inputs refuse compilation |
 | Placement/routing | Place mounting/connectors first, then power/analog/digital blocks; apply reviewed net/geometry constraints | Actual enclosure STEP cross-fit, return-path/thermal review, complete native DRC/parity and routing mutations |
 | Complete verifier/release workflow | Connect native EDA, calculations/simulations, manufacturing checks and identity-bound approvals | Open/short/polarity/pin/rail/part/coordinate/export mutations detected; changed artifacts invalidate approval |
 | Firmware and physical loop | Acquire real selected sensors; retain raw values/calibration, health and power-loss evidence; relate each physical unit to the release | Actual fixture/hardware measurements, failure-to-revision records and repeatable unit tests |
 
-The first two rows are implemented using the current incomplete product
+The first three rows are implemented using the current incomplete product
 inputs. The later rows depend on exact electrical contracts, reviewed assets,
 native verification profiles and hardware. A source/readiness report does not
 satisfy those dependencies or change the generator's supported design family.
@@ -122,6 +123,12 @@ eight input connections and 106 conversions/s. The unselected allocation uses
 schedule remain unresolved. Its 83 software regressions passed. The separate
 [acquisition execution receipt](evidence/acquisition-test-2026-10-12.json) records
 the broader suite and installed-package checks for that increment.
+
+The third software increment is the [draft ADC input-envelope review](input-envelope/README.md).
+Its 73 new regressions cover operating/code/stress separation, powered-off
+inputs, declared supply corners, direct I2C high-level compatibility and source
+integrity. It inserts no generic sensor output or pressure equation. See its
+[execution receipt](evidence/input-envelope-test-2026-10-12.json).
 
 Do not mark schematic/layout generation, sensor acquisition or physical tests
 complete from a planning or software-integrity pass.

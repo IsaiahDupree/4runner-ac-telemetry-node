@@ -1,0 +1,23 @@
+{
+  "schema_version": "pcb-autopilot.adc-input-limit-profile.v1",
+  "family": "ADS1115-Q1",
+  "source_url": "https://www.ti.com/lit/ds/symlink/ads1115-q1.pdf",
+  "document": "SBAS563E",
+  "revision": "E",
+  "captured_at": "2026-10-13T03:00:03.397465+00:00",
+  "original_pdf_sha256": "563981942e426cd0e2f6d309a03c3e6486983eb91bac85786b4f50560c9a9a7a",
+  "original_pdf_size_bytes": 1956425,
+  "recommended_supply_uv": {"minimum": 2000000, "maximum": 5500000},
+  "recommended_analog_input": "GND_TO_VDD",
+  "absolute_analog_margin_uv": 300000,
+  "positive_full_scale_settings_uv": [256000, 512000, 1024000, 2048000, 4096000, 6144000],
+  "ideal_positive_clipping_ratio": {"numerator": 32767, "denominator": 32768},
+  "digital_high_minimum_vdd_ratio": {"numerator": 7, "denominator": 10},
+  "locators": {
+    "supply_and_analog_pin_limits": "printed page 5, sections 6.1 and 6.3",
+    "pga_settings": "printed page 17, section 8.3.3 and Table 8-1",
+    "ideal_positive_clipping_ratio": "printed page 25, Table 8-3",
+    "digital_high_minimum_vdd_ratio": "printed page 7, section 6.5, VIH"
+  },
+  "scope": "Manually transcribed necessary voltage-domain facts; no component qualification, sensor output, clamp, injection-current, timing or complete circuit model."
+}

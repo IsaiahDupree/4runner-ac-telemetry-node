@@ -20,6 +20,10 @@ analog input proposals from the seven required signals. Its software-generated
 allocation diagram compares complete-scope capacity, shared conversion budgets
 and address collisions. No topology or exact ADC part is selected by this review.
 
+The [draft input-envelope review](input-envelope/README.md) compares proposed
+ADC pin, PGA and direct I2C voltage domains. It preserves the ordered pressure
+outputs as unknown and identifies the proposed 5 V ADC/direct 3.3 V bus mismatch.
+
 The [source reconciliation](source-reconciliation.md) recovers controller,
 sensor, power, storage and mounting decisions from the parent project, live
 Drive specs, CAD implementation and the owner's earlier request. Its
