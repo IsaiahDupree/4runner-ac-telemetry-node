@@ -1,0 +1,58 @@
+{
+  "schema_version": "pcb-autopilot.ac-carrier-controller-pin-request.v1",
+  "project_id": "4runner-ac-telemetry-node",
+  "revision_id": "ac-carrier-v0.1.discovery",
+  "board_spec": {
+    "path": "hardware/ac-carrier-v0.1/boardspec.json",
+    "sha256": "23ae9bd4d1bbff1974293a6a89ebcf9516b1dff9fb9e771c5293a3811ff0ea78"
+  },
+  "design_inputs": {
+    "path": "hardware/ac-carrier-v0.1/design-inputs.json",
+    "sha256": "bf32b3aedda4e42970237d9f777c46b0625ff9464187717f84ca77f69005a7f6"
+  },
+  "focused_spec": {
+    "path": "docs/prd/2005_Toyota_4Runner_AC_Engine_Bay_Telemetry_Node_Spec_v1.0.txt",
+    "sha256": "4a5e8f440b7d23f1fe8ae38cd5af5b5898709947d4e5cfe86c979b975b3fe2ae"
+  },
+  "source_reconciliation": {
+    "path": "hardware/ac-carrier-v0.1/source-reconciliation.md",
+    "sha256": "23a74f812bc46db41d6a98b1ebe8b3a61717a1ebb6890a462af0fd126340e3a9"
+  },
+  "board_reference": "ARDUINO_NANO_ESP32_FOCUSED_BASELINE",
+  "proposal_basis": "UNSELECTED_PARTIAL_HEADER_RESERVATIONS",
+  "bus_policy": "MANUFACTURER_DEFAULT_BUS_LABELS_ONLY",
+  "candidates": [
+    {
+      "candidate_id": "nano_reference_polling",
+      "rationale": "Partial Nano baseline reservation for default ADC I2C, SD SPI, separate HIGH/LOW power enables and future custom-socket detect. No final controller, temperature interface, Pi link, switch polarity or physical wiring selected.",
+      "reservations": [
+        {"role": "ADC_I2C_SDA", "board_label": "A4"},
+        {"role": "ADC_I2C_SCL", "board_label": "A5"},
+        {"role": "SD_SPI_MOSI", "board_label": "D11"},
+        {"role": "SD_SPI_MISO", "board_label": "D12"},
+        {"role": "SD_SPI_SCK", "board_label": "D13"},
+        {"role": "SD_CS", "board_label": "D10"},
+        {"role": "SD_CARD_DETECT_RESERVED", "board_label": "D6"},
+        {"role": "PRESSURE_HIGH_ENABLE", "board_label": "D2"},
+        {"role": "PRESSURE_LOW_ENABLE", "board_label": "D3"}
+      ]
+    },
+    {
+      "candidate_id": "nano_reference_two_irqs",
+      "rationale": "The same unselected partial reservation with two optional ADC interrupt inputs. These inputs preserve an option without selecting an ADC topology or implementing a timing schedule. All complete electrical and controller contracts remain open.",
+      "reservations": [
+        {"role": "ADC_I2C_SDA", "board_label": "A4"},
+        {"role": "ADC_I2C_SCL", "board_label": "A5"},
+        {"role": "SD_SPI_MOSI", "board_label": "D11"},
+        {"role": "SD_SPI_MISO", "board_label": "D12"},
+        {"role": "SD_SPI_SCK", "board_label": "D13"},
+        {"role": "SD_CS", "board_label": "D10"},
+        {"role": "SD_CARD_DETECT_RESERVED", "board_label": "D6"},
+        {"role": "PRESSURE_HIGH_ENABLE", "board_label": "D2"},
+        {"role": "PRESSURE_LOW_ENABLE", "board_label": "D3"},
+        {"role": "ADC_PRIMARY_IRQ", "board_label": "D4"},
+        {"role": "ADC_SECONDARY_IRQ", "board_label": "D5"}
+      ]
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "schema_version": "pcb-autopilot.nano-esp32-reference-pinout.v1",
+  "board_reference": "ARDUINO_NANO_ESP32_FOCUSED_BASELINE",
+  "scope": "Manually transcribed reference header facts; no owned-board identity, electrical migration, wiring or qualification.",
+  "sources": [
+    {
+      "id": "arduino-full-pinout",
+      "url": "https://docs.arduino.cc/resources/pinouts/ABX00083-full-pinout.pdf",
+      "sha256": "2418c2a90c9099d20f3425647607ce0b2ba426a0f1ff04ced50416fc789dc47d",
+      "size_bytes": 1946902,
+      "location": "Page 1 header labels/raw GPIO/default buses; page 3 advanced pin notes",
+      "license": "CC-BY-SA-4.0; Arduino SA"
+    },
+    {
+      "id": "arduino-reference-schematic",
+      "url": "https://docs.arduino.cc/resources/schematics/ABX00083-schematics.pdf",
+      "sha256": "ff7a7c1d0a997a9701ef16c4b598fe253ea8c1237a6ba0d380c78a6148de296a",
+      "size_bytes": 1335606,
+      "location": "Sheet 1: JP1/JP2 header numbering, GPIO0/46 boot straps, LED and USB nets; drawing V0.3 / ABX00083 and ABX00092",
+      "license": "CC-BY-SA-4.0; Arduino SA"
+    },
+    {
+      "id": "espressif-idf-5.5.3-gpio",
+      "url": "https://docs.espressif.com/projects/esp-idf/en/v5.5.3/esp32s3/api-reference/peripherals/gpio.html",
+      "sha256": "b005d37fda645dff9a00a1e543f84e361aa58f5f47f065ee4a6d4c4ec33b25c5",
+      "size_bytes": 244164,
+      "location": "GPIO Summary: strapping GPIO0/3/45/46; USB-JTAG GPIO19/20; flash/PSRAM GPIO26..37"
+    }
+  ],
+  "pins": [
+    {"label": "D0", "raw_gpio": 44, "arduino_number": 0, "header": "JP2.2"},
+    {"label": "D1", "raw_gpio": 43, "arduino_number": 1, "header": "JP2.1"},
+    {"label": "D2", "raw_gpio": 5, "arduino_number": 2, "header": "JP2.5"},
+    {"label": "D3", "raw_gpio": 6, "arduino_number": 3, "header": "JP2.6"},
+    {"label": "D4", "raw_gpio": 7, "arduino_number": 4, "header": "JP2.7"},
+    {"label": "D5", "raw_gpio": 8, "arduino_number": 5, "header": "JP2.8"},
+    {"label": "D6", "raw_gpio": 9, "arduino_number": 6, "header": "JP2.9"},
+    {"label": "D7", "raw_gpio": 10, "arduino_number": 7, "header": "JP2.10"},
+    {"label": "D8", "raw_gpio": 17, "arduino_number": 8, "header": "JP2.11"},
+    {"label": "D9", "raw_gpio": 18, "arduino_number": 9, "header": "JP2.12"},
+    {"label": "D10", "raw_gpio": 21, "arduino_number": 10, "header": "JP2.13"},
+    {"label": "D11", "raw_gpio": 38, "arduino_number": 11, "header": "JP2.14"},
+    {"label": "D12", "raw_gpio": 47, "arduino_number": 12, "header": "JP2.15"},
+    {"label": "D13", "raw_gpio": 48, "arduino_number": 13, "header": "JP1.1"},
+    {"label": "A0", "raw_gpio": 1, "arduino_number": 17, "header": "JP1.4"},
+    {"label": "A1", "raw_gpio": 2, "arduino_number": 18, "header": "JP1.5"},
+    {"label": "A2", "raw_gpio": 3, "arduino_number": 19, "header": "JP1.6"},
+    {"label": "A3", "raw_gpio": 4, "arduino_number": 20, "header": "JP1.7"},
+    {"label": "A4", "raw_gpio": 11, "arduino_number": 21, "header": "JP1.8"},
+    {"label": "A5", "raw_gpio": 12, "arduino_number": 22, "header": "JP1.9"},
+    {"label": "A6", "raw_gpio": 13, "arduino_number": 23, "header": "JP1.10"},
+    {"label": "A7", "raw_gpio": 14, "arduino_number": 24, "header": "JP1.11"},
+    {"label": "B0", "raw_gpio": 46, "arduino_number": 14, "header": "JP1.3"},
+    {"label": "B1", "raw_gpio": 0, "arduino_number": 15, "header": "JP1.13"}
+  ],
+  "default_bus_labels": {
+    "ADC_I2C_SDA": "A4", "ADC_I2C_SCL": "A5",
+    "SD_SPI_MOSI": "D11", "SD_SPI_MISO": "D12", "SD_SPI_SCK": "D13"
+  },
+  "policy_reserved_header_labels": {
+    "D0": "Preserve the reference UART RX route for service; V1 policy, not a silicon prohibition.",
+    "D1": "Preserve the reference UART TX route (499 ohm series resistor); V1 policy.",
+    "A2": "GPIO3 is a strapping pin; exclude it until reset-time behavior is separately qualified.",
+    "B0": "GPIO46 is a strapping pin and on-board RGB red route; V1 exclusion.",
+    "B1": "GPIO0 is a strapping pin and on-board RGB green route; V1 exclusion. Legacy schematic label RESETN here is not the system RESET pin."
+  },
+  "shared_header_functions": {"D13": "GPIO48 also drives the on-board SCK LED; loading and signaling are unqualified."},
+  "internal_routes_excluded": {
+    "usb_raw_gpio": [19, 20], "rgb_nonheader_raw_gpio": [45],
+    "flash_psram_raw_gpio_range": [26, 37]
+  },
+  "limitations": [
+    "Header references identify manufacturer drawing pins, not a qualified carrier footprint or measured owned board.",
+    "The latest pinout calls JP1.3 B0 and JP1.13 B1; the reference schematic retains legacy AREF and RESETN names at those positions.",
+    "Default bus pins are a bounded review policy. ESP32-S3 GPIO matrix remaps require a separate proposal and qualification.",
+    "Logic, power-up state, pulls, drive, timing, bus loading and current are not qualified by this pin map."
+  ]
+}

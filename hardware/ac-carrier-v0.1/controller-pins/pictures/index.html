@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src 'self'; style-src 'unsafe-inline'; base-uri 'none'; form-action 'none'">
+<title>A/C controller reference and design pictures</title>
+<style>body{font:16px system-ui;background:#f5f7fb;color:#172033;max-width:1120px;margin:32px auto;padding:0 20px}section{background:white;padding:24px;margin:24px 0;border:1px solid #ccd5e5;border-radius:12px}img{display:block;max-width:100%;height:auto;margin:16px auto}a{color:#1456a0}small{line-height:1.5}</style></head>
+<body><h1>PCB progress and A/C controller reference</h1>
+<p>2026-10-13 · Engineering INCOMPLETE · Release BLOCKED</p>
+<p><a href="../review/index.html">Pin report and exact inputs</a> · <a href="../../input-envelope/review/index.html">Voltage-window report</a> · <a href="pictures.json">Picture provenance</a></p>
+<section><h2>Actual generated LED PCB export</h2>
+<p>This 20 mm series LED example is the supported native creation path. Its retained Orion run reports zero ERC/DRC findings for the exact candidate. It is not the A/C board or an assembled-board photograph; electrical, physical and release qualification remain incomplete.</p>
+<img src="led-board-dark.png" alt="Actual native export of the generated series LED PCB on a dark viewing background">
+<small>Original geometry from the retained native SVG; the dark viewing background changes display only.</small></section>
+<section><h2>Nano ESP32 manufacturer reference</h2>
+<p>The focused A/C specification names this Nano baseline. The later owned UNO-format controller still needs identity, header and power-path verification; this reference does not identify that board.</p>
+<img src="nano-pinout-page-1.png" alt="Arduino Nano ESP32 official full pinout, page 1, manufacturer reference">
+<small>© Arduino SA, <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>. Page 1 rasterized from the <a href="https://docs.arduino.cc/resources/pinouts/ABX00083-full-pinout.pdf">official pinout PDF</a>; no content changes. Arduino does not endorse or verify this project.</small></section>
+<section><h2>Draft A/C pin reservations</h2>
+<p>Two unselected partial Nano-reference proposals fit the checked pin budget. Printed D2 means GPIO5 in ESP-IDF. The checker detects duplicate GPIO, reserved boot/UART pins and bus routes outside the reviewed default-pin policy. Temperature, Pi link, boot/power behavior and the complete controller assignment remain unresolved.</p>
+<img src="ac-pin-reservations.png" alt="Draft partial Nano pin reservation diagram; not a wired schematic or PCB">
+<small>Deterministic software report diagram. No nets, footprints, firmware pin configuration, actual wiring, physical tests or A/C PCB generated. All fourteen significant product contracts remain incomplete.</small></section>
+</body></html>

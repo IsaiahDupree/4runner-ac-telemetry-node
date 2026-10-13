@@ -1,0 +1,328 @@
+{
+  "authorizes_eda_write": false,
+  "authorizes_fabrication": false,
+  "authorizes_order": false,
+  "authorizes_payment": false,
+  "authorizes_schematic_compilation": false,
+  "authorizes_technical_release": false,
+  "authorizes_vehicle_installation": false,
+  "blocking_field_paths": [
+    "contracts.board_role",
+    "contracts.connectors_harness",
+    "contracts.controller",
+    "contracts.environment_and_test",
+    "contracts.fabrication_rules",
+    "contracts.final_pcb_mechanics",
+    "contracts.measurement_routing",
+    "contracts.pi_boundary",
+    "contracts.power_envelope",
+    "contracts.pressure_high",
+    "contracts.pressure_low",
+    "contracts.sensor_rail",
+    "contracts.storage_interface",
+    "contracts.temperature_interfaces"
+  ],
+  "ci_workflow": {
+    "name": "ci.yml",
+    "sha256": "e67d579a8a0526d539f04d2c1fd06e3fbc175a0b1f9d1438492b9347e2b3c386",
+    "size_bytes": 12038
+  },
+  "cli_module": {
+    "name": "__main__.py",
+    "sha256": "773024e8a41362a76b5df508359f56e5940897fbb7069fe2c4f95f153f43faf4",
+    "size_bytes": 50385
+  },
+  "engineering_outcome": "INCOMPLETE",
+  "implementation_bindings": [
+    {
+      "module": "architecture/controller_pins.py",
+      "sha256": "d06bbde8c5e9c941edf736cac78e1af5b9402f117d81e347234530a5dc969af4"
+    },
+    {
+      "module": "architecture/controller_pin_review.py",
+      "sha256": "493299dfac065751010be9dfabdaf7b485a202e09ec8ae0705cf3ac3ed516f85"
+    },
+    {
+      "module": "architecture/input_envelope_review.py",
+      "sha256": "c283254af2acd959ae8bf49df0ded367405401fa9b55169b285b4a3a1673fa2c"
+    },
+    {
+      "module": "architecture/input_envelope.py",
+      "sha256": "98e4c4a0cc300cce08b4f50d44aee3a57e8ca3a8192c029962d3bbcd6089bc6a"
+    },
+    {
+      "module": "architecture/acquisition.py",
+      "sha256": "bc7fd62a2982c3a46b08db4f1cb4c4d286d69b88469063acc4ec15fdafafe9a9"
+    },
+    {
+      "module": "architecture/acquisition_review.py",
+      "sha256": "998190760a35590fce64efe2c7810e475d40b9526a7d1942c3e474e1b9f1c54a"
+    },
+    {
+      "module": "requirements/build_plan.py",
+      "sha256": "d8d49d845d5a315d3aff03476313e8f02cf099ccffe600e8d768032552f43148"
+    },
+    {
+      "module": "requirements/product_review.py",
+      "sha256": "1944d3e8bef3f4d5f7cb657750b60e3db0ff43489b6af1d620615b59fa01555f"
+    },
+    {
+      "module": "domain/models.py",
+      "sha256": "6fbd2f58bfff6c258d8bd8d342441b5c42b87fdfd9825d601300f0aaa89d8a6b"
+    },
+    {
+      "module": "domain/hashing.py",
+      "sha256": "966bafe13af2e614fb5cbcbc24902d4154af7cb67f868ff1dd4a676d64c62e92"
+    },
+    {
+      "module": "qualification/review_bundle.py",
+      "sha256": "7672c4c9ba8f655ec12000c102dfc6a98b0ddd5761a5db828fc39e3e5c3ae19a"
+    },
+    {
+      "module": "integrations/kicad/inventory_report.py",
+      "sha256": "941824f32099d294c11220a751e2308ffa0665803eee6ba0c00cb65f644141cf"
+    }
+  ],
+  "input_bindings": [
+    {
+      "path": "docs/prd/2005_Toyota_4Runner_AC_Engine_Bay_Telemetry_Node_Spec_v1.0.txt",
+      "sha256": "4a5e8f440b7d23f1fe8ae38cd5af5b5898709947d4e5cfe86c979b975b3fe2ae",
+      "size_bytes": 30482
+    },
+    {
+      "path": "hardware/ac-carrier-v0.1/boardspec.json",
+      "sha256": "23ae9bd4d1bbff1974293a6a89ebcf9516b1dff9fb9e771c5293a3811ff0ea78",
+      "size_bytes": 67760
+    },
+    {
+      "path": "hardware/ac-carrier-v0.1/controller-pins/request.json",
+      "sha256": "7e7ae5bd69332251821d7a0f1fc02feece05e187a8d8e864d5dadec109326a39",
+      "size_bytes": 2906
+    },
+    {
+      "path": "hardware/ac-carrier-v0.1/design-inputs.json",
+      "sha256": "bf32b3aedda4e42970237d9f777c46b0625ff9464187717f84ca77f69005a7f6",
+      "size_bytes": 11601
+    },
+    {
+      "path": "hardware/ac-carrier-v0.1/source-reconciliation.md",
+      "sha256": "23a74f812bc46db41d6a98b1ebe8b3a61717a1ebb6890a462af0fd126340e3a9",
+      "size_bytes": 10603
+    }
+  ],
+  "local_execution_date": "2026-10-13",
+  "manifest_file": {
+    "name": "manifest.json",
+    "sha256": "84acf7ca142193af6d5a423b12c8e4eadab5802da987210d231a132133f8c948",
+    "size_bytes": 2212
+  },
+  "manufacturer_documents": [
+    {
+      "name": "nano-pinout.pdf",
+      "sha256": "2418c2a90c9099d20f3425647607ce0b2ba426a0f1ff04ced50416fc789dc47d",
+      "size_bytes": 1946902,
+      "url": "https://docs.arduino.cc/resources/pinouts/ABX00083-full-pinout.pdf"
+    },
+    {
+      "name": "nano-schematic.pdf",
+      "sha256": "ff7a7c1d0a997a9701ef16c4b598fe253ea8c1237a6ba0d380c78a6148de296a",
+      "size_bytes": 1335606,
+      "url": "https://docs.arduino.cc/resources/schematics/ABX00083-schematics.pdf"
+    },
+    {
+      "name": "esp32s3-gpio-v5.5.3.html",
+      "sha256": "b005d37fda645dff9a00a1e543f84e361aa58f5f47f065ee4a6d4c4ec33b25c5",
+      "size_bytes": 244164,
+      "url": "https://docs.espressif.com/projects/esp-idf/en/v5.5.3/esp32s3/api-reference/peripherals/gpio.html"
+    }
+  ],
+  "new_local_firmware_build": "NOT_RUN",
+  "new_native_eda": "NOT_RUN",
+  "observed_at": "2026-10-13T04:23:44.793157+00:00",
+  "owned_controller_identity_verified": false,
+  "partial_reservation_outcomes": {
+    "nano_reference_polling": "PASS",
+    "nano_reference_two_irqs": "PASS"
+  },
+  "pcb_source_base_commit": "70014769cb078f9d735095ab611f17c0d679f062",
+  "physical_board_tests": "NOT_RUN",
+  "pinout_profile_sha256": "bd94b14fac18815aae55f49fe36471aa1ab719f9595d270f5de8e3e9c53dc731",
+  "product_source_base_commit": "4cb034046bf4a171c326f3d0aaa09b0245c8f9cf",
+  "raw_evidence_retained_at": "/Volumes/My Passport/CodexArtifacts/Toyota-AC/ac-pin-budget-2026-10-12",
+  "release_state": "BLOCKED",
+  "report_manifest_sha256": "75c5cb32fb87068b0fde259fe40a4f115af6a4c5a6e6361857f0287835ffe49f",
+  "report_sha256": "8c61cd4a189494516eea6d13f97ed4c7e94ad3ec8603dc2f11f3e787d3dd535f",
+  "schema_version": "pcb-autopilot.controller-pin-software-execution.v1",
+  "scope": "Partial reference pin reservations, source/wheel replay and actual-source pictures; no controller selection, circuit or physical qualification",
+  "selected_candidate_id": null,
+  "software_verification": {
+    "combined_line_and_branch_coverage_percent": 93.0348782155821,
+    "coverage_json": {
+      "name": "coverage.json",
+      "sha256": "82441360f2bccc8ec3ecd86872fae62d152cffffc06bc4403c6d1c42e9e3f4b7",
+      "size_bytes": 1160600
+    },
+    "coverage_totals": {
+      "covered_branches": 4147,
+      "covered_lines": 13538,
+      "excluded_lines": 41,
+      "missing_branches": 611,
+      "missing_lines": 713,
+      "num_branches": 4758,
+      "num_partial_branches": 557,
+      "num_statements": 14251,
+      "percent_branches_covered": 87.1584699453552,
+      "percent_branches_covered_display": "87",
+      "percent_covered": 93.0348782155821,
+      "percent_covered_display": "93",
+      "percent_statements_covered": 94.99684232685425,
+      "percent_statements_covered_display": "95"
+    },
+    "development_correction": "One newly added test initially expected schema re-export refusal; corrected to assert supported idempotent export and preservation of owner files. Initial failed logs retained.",
+    "full_suite_duration_seconds": 182.69,
+    "full_suite_log": {
+      "name": "full-suite.log",
+      "sha256": "15a27387d862b4cf88db89d8db6081532ec3b002e0dc1c93f40a82a5e2ebbc39",
+      "size_bytes": 11626
+    },
+    "full_suite_passed": 2219,
+    "full_suite_skipped": 14,
+    "junit": {
+      "name": "junit.xml",
+      "sha256": "bc5f552040921dc00250675b9c1d5feb4f949e60525f7b8b6a262d941123c3eb",
+      "size_bytes": 4574520
+    },
+    "native_skip_reason": "Exact pinned local KiCad candidate/runtime unavailable; no fresh native EDA on the Mac",
+    "new_tests_passed": 113,
+    "package_replays": {
+      "checks": [
+        {
+          "command": [
+            "/Users/isaiahdupree/Documents/Software/pcb-agent/.venv/bin/python",
+            "-m",
+            "pcb_agent",
+            "architecture",
+            "review-controller-pins",
+            "--product-root",
+            "/Users/isaiahdupree/Documents/Software/pcb-agent/tests/fixtures/products/ac_carrier_controller_pins/product",
+            "--request",
+            "/Users/isaiahdupree/Documents/Software/pcb-agent/tests/fixtures/products/ac_carrier_controller_pins/product/hardware/ac-carrier-v0.1/controller-pins/request.json",
+            "--output",
+            "/Volumes/PCBPinReviewScratch/fixture-review"
+          ],
+          "exit_code": 0,
+          "log": "fixture-review.log",
+          "log_sha256": "ece787fdd9b24069c5b89b6c3310904eac74a6fe5f02155a6839cc8278ee87c6"
+        },
+        {
+          "command": [
+            "/Volumes/PCBPinReviewScratch/wheel-env/bin/python",
+            "-m",
+            "pcb_agent",
+            "architecture",
+            "review-controller-pins",
+            "--product-root",
+            "/Users/isaiahdupree/Documents/Software/4runner-ac-telemetry-node",
+            "--request",
+            "/Users/isaiahdupree/Documents/Software/4runner-ac-telemetry-node/hardware/ac-carrier-v0.1/controller-pins/request.json",
+            "--output",
+            "/Volumes/PCBPinReviewScratch/wheel-live-review"
+          ],
+          "exit_code": 0,
+          "log": "wheel-live-review.log",
+          "log_sha256": "12e057ad9eedd31151a0ff2b2017fd62ddbc545659f2389f709addd99f3f166b"
+        },
+        {
+          "command": [
+            "/Volumes/PCBPinReviewScratch/wheel-env/bin/python",
+            "-m",
+            "pcb_agent",
+            "architecture",
+            "review-controller-pins",
+            "--product-root",
+            "/Users/isaiahdupree/Documents/Software/pcb-agent/tests/fixtures/products/ac_carrier_controller_pins/product",
+            "--request",
+            "/Users/isaiahdupree/Documents/Software/pcb-agent/tests/fixtures/products/ac_carrier_controller_pins/product/hardware/ac-carrier-v0.1/controller-pins/request.json",
+            "--output",
+            "/Volumes/PCBPinReviewScratch/wheel-fixture-review"
+          ],
+          "exit_code": 0,
+          "log": "wheel-fixture-review.log",
+          "log_sha256": "d4b5968d54f225778b39efcad4edd4fa088962b2fbfe8a2c4ebf16ca940489fb"
+        }
+      ],
+      "files_per_bundle": 12,
+      "live_product_fixture_source_wheel_byte_identical": true,
+      "previous_review_implementation_bindings_unchanged": true,
+      "schema_source_wheel_byte_identical": true,
+      "source_python": "3.12.12",
+      "status": "PASS"
+    },
+    "product_verification": {
+      "checks": [
+        {
+          "command": [
+            "python3",
+            "tools/verify_repository.py",
+            "--recovery-build-dir",
+            "/private/tmp/ac-carrier-verification-20261012-7a7bcfa7/attempt4/compiled/firmware/ac-sensor-node-esp32s3/build",
+            "--temperature-build-dir",
+            "/private/tmp/ac-carrier-verification-20261012-7a7bcfa7/attempt4/compiled/firmware/ac-temperature-bench-esp32s3/build"
+          ],
+          "exit_code": 0,
+          "log": "product-check-1.log",
+          "log_sha256": "19f4b7dc313074cda7273e72cdbd6c52a35aceea7bbb18f7b698200cfd75db56"
+        },
+        {
+          "command": [
+            "python3",
+            "-m",
+            "unittest",
+            "discover",
+            "-s",
+            "tests",
+            "-v"
+          ],
+          "exit_code": 0,
+          "log": "product-check-2.log",
+          "log_sha256": "93de9e46699fd19e9de4dfc06ea2f498e81858982a5c262cb7e72d63419eb67d"
+        }
+      ],
+      "firmware_build_scope": "Reuse of unchanged hash-bound Orion build; no new local build",
+      "observed_at": "2026-10-13T04:22:39.034039+00:00",
+      "prior_orion_build_receipt_sha256": "daa2736a9aaf0f887b3c0286ef16a5fab199e9edbf9e5ed91b8cb35addffc911",
+      "regression_test_count": 15,
+      "source_base_commit": "4cb034046bf4a171c326f3d0aaa09b0245c8f9cf",
+      "status": "PASS",
+      "unchanged_verified_firmware_source_files": 18,
+      "verified_compiled_artifacts": 6
+    },
+    "ruff": {
+      "exit_code": 0,
+      "log": {
+        "name": "ruff.log",
+        "sha256": "82b3e6a6c090a57601d22943bd23fca9218d1031dbe5a7b754092f9a156b4f18",
+        "size_bytes": 19
+      }
+    },
+    "workflow_yaml": {
+      "exit_code": 0,
+      "log": {
+        "name": "workflow-yaml.log",
+        "sha256": "0364c5bcc092afe8d4f412e0f2edff40fc53990040a91cddbc984589dd47f764",
+        "size_bytes": 29
+      }
+    }
+  },
+  "source_distribution": {
+    "name": "pcb_autopilot-0.1.0.tar.gz",
+    "sha256": "03bd170055eca3dbe1350980a42fc2701c5bfea32c225485dbf1eb2f85f914df",
+    "size_bytes": 350496
+  },
+  "status": "PASS",
+  "wheel": {
+    "name": "pcb_autopilot-0.1.0-py3-none-any.whl",
+    "sha256": "6d52fc5e73987d157294130dc95d4f567f32bd62c23fe4d07cd2e54fdfef9042",
+    "size_bytes": 395986
+  }
+}

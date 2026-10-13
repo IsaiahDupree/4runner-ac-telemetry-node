@@ -1,0 +1,62 @@
+{
+  "schema_version": "pcb-autopilot.ac-pin-pictures.v1",
+  "date": "2026-10-13",
+  "engineering_outcome": "INCOMPLETE",
+  "release_state": "BLOCKED",
+  "new_native_eda": "NOT_RUN",
+  "physical_tests": "NOT_RUN",
+  "pictures": [
+    {
+      "path": "led-board-dark.png",
+      "sha256": "f0ef8c0cbd1157a5a81ca4c23e0fa73855cbfdb94ac32872e697ee2ffec07219",
+      "size_bytes": 37015,
+      "kind": "ACTUAL_RETAINED_NATIVE_PCB_EXPORT",
+      "native_source": "evidence/exports/kicad-v10.0.6-led-indicator/attempt-3/raw/exports/board.svg",
+      "native_svg_sha256": "85fa41100e0cabc0bab8431726e71f498befa4ffc93a1eca262015c2e920897b",
+      "scope": "20 mm generated series LED example, existing native evidence; display background only, no assembled photo or A/C board."
+    },
+    {
+      "path": "nano-pinout-page-1.png",
+      "sha256": "724e5f371cad220a85c308c22ebd1e9d352b3e9c127039893634dca2c3192221",
+      "size_bytes": 244861,
+      "kind": "MANUFACTURER_REFERENCE_DOCUMENT",
+      "source": {
+        "id": "arduino-full-pinout",
+        "url": "https://docs.arduino.cc/resources/pinouts/ABX00083-full-pinout.pdf",
+        "sha256": "2418c2a90c9099d20f3425647607ce0b2ba426a0f1ff04ced50416fc789dc47d",
+        "size_bytes": 1946902,
+        "location": "Page 1 header labels/raw GPIO/default buses; page 3 advanced pin notes",
+        "license": "CC-BY-SA-4.0; Arduino SA"
+      },
+      "page": 1,
+      "renderer": "pypdfium2",
+      "copyright": "Arduino SA",
+      "license": "CC-BY-SA-4.0",
+      "changes": "Page 1 rasterized; no document content changes.",
+      "scope": "Documented Nano reference only; no owned UNO-format board identity or photo claim.",
+      "width": 2228,
+      "height": 1572
+    },
+    {
+      "path": "ac-pin-reservations.png",
+      "sha256": "9681a4d4b8e588eec974b059af7708c611dceb66c2c0309143e496871f5b021e",
+      "size_bytes": 162905,
+      "kind": "UNSELECTED_PARTIAL_REFERENCE_RESERVATION_DIAGRAM",
+      "svg_sha256": "6b6af15d58d01b0cdbc9bd0c1b1f638aada396613721eb8483122629dbecce3a",
+      "renderer": {
+        "sharp": "0.35.5",
+        "librsvg": "2.63.2"
+      },
+      "width": 1100,
+      "height": 1011,
+      "scope": "Logical draft reservations only; not a wired schematic, PCB, firmware or physical result."
+    },
+    {
+      "path": "pin-reservations.svg",
+      "sha256": "6b6af15d58d01b0cdbc9bd0c1b1f638aada396613721eb8483122629dbecce3a",
+      "size_bytes": 7194,
+      "kind": "DETERMINISTIC_REPORT_DIAGRAM",
+      "scope": "Logical partial reservations only; all fourteen contracts remain incomplete."
+    }
+  ]
+}

@@ -24,6 +24,13 @@ The [draft input-envelope review](input-envelope/README.md) compares proposed
 ADC pin, PGA and direct I2C voltage domains. It preserves the ordered pressure
 outputs as unknown and identifies the proposed 5 V ADC/direct 3.3 V bus mismatch.
 
+The [partial controller pin review](controller-pins/README.md) checks the
+documented Nano reference's GPIO/header reservations, numerical namespaces,
+default buses and conservative reserved-pin policy. Its
+[pictures](controller-pins/pictures/index.html) distinguish a real native LED
+export, the manufacturer Nano reference and the unselected A/C reservation
+diagram. The owned UNO-format controller still needs electrical reconciliation.
+
 The [source reconciliation](source-reconciliation.md) recovers controller,
 sensor, power, storage and mounting decisions from the parent project, live
 Drive specs, CAD implementation and the owner's earlier request. Its
