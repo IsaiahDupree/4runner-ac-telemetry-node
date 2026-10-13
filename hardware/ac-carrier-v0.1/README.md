@@ -9,6 +9,12 @@ Open [the visual review](review.html) for the mounting pattern, planned circuit
 blocks and unresolved decisions. [design-inputs.json](design-inputs.json) is the
 versioned input record; null values represent genuinely unresolved contracts.
 
+The [build and test plan](BUILD-AND-TEST.md) defines the board, software work and
+acceptance evidence. Its [typed matrix](build-test-plan.json) connects every
+active requirement and significant contract to work and tests. The
+[software-generated review](product-build-review/index.html) retains the actual
+inputs and unresolved tasks; its input checks do not authorize circuit creation.
+
 The [source reconciliation](source-reconciliation.md) recovers controller,
 sensor, power, storage and mounting decisions from the parent project, live
 Drive specs, CAD implementation and the owner's earlier request. Its

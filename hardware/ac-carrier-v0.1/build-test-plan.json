@@ -1,0 +1,812 @@
+{
+  "schema_version": "pcb-autopilot.product-build-plan.v1",
+  "project_id": "4runner-ac-telemetry-node",
+  "revision_id": "ac-carrier-v0.1.discovery",
+  "board_spec": {
+    "path": "hardware/ac-carrier-v0.1/boardspec.json",
+    "sha256": "23ae9bd4d1bbff1974293a6a89ebcf9516b1dff9fb9e771c5293a3811ff0ea78"
+  },
+  "supplemental_inputs": [
+    {
+      "path": "hardware/ac-carrier-v0.1/design-inputs.json",
+      "sha256": "bf32b3aedda4e42970237d9f777c46b0625ff9464187717f84ca77f69005a7f6"
+    },
+    {
+      "path": "hardware/ac-carrier-v0.1/source-reconciliation.md",
+      "sha256": "23a74f812bc46db41d6a98b1ebe8b3a61717a1ebb6890a462af0fd126340e3a9"
+    },
+    {
+      "path": "hardware/ac-carrier-v0.1/evidence/source-research-2026-10-12.json",
+      "sha256": "bf515e50685b1032e56ff9d5ea279f6ee78b984d0c8cb1882cf0ae04c4b8ed55"
+    },
+    {
+      "path": "hardware/ac-carrier-v0.1/mounting-reference.kicad_pcb",
+      "sha256": "0cd90901458b38c46fc853c90fa91be7b0b3cd513bf87394a416fa68c462e630"
+    },
+    {
+      "path": "hardware/ac-carrier-v0.1/mounting-source-inventory.json",
+      "sha256": "7b7ae31facac2493d57fb072738b68de57ea467965d619c43ab28f2e0785c8a1"
+    },
+    {
+      "path": "hardware/ac-carrier-v0.1/scope-input.txt",
+      "sha256": "ab67993e9a3f8edd8af179874add7e8dc3923729e6bfee8acd2c820b446c9f47"
+    }
+  ],
+  "field_tasks": [
+    {
+      "path": "contracts.controller",
+      "next_action": "Reconcile the focused spec's frozen Nano ESP32 with headers against the later owner-requested Pi + Arduino cassette and photographed UNO-format candidate linked to DIYables ESP32-S3-WROOM-1-N16R8. Verify the actual board manufacturer/revision, schematic, header pin numbering and voltage/power limits; the source match is not owned-board verification.",
+      "completion_evidence": [
+        "Owned-board maker/revision, manufacturer schematic and measured header/outline identity.",
+        "Reviewed GPIO, boot/PSRAM reservations, normal/fault I/O and power paths reconciled to the frozen Nano baseline."
+      ]
+    },
+    {
+      "path": "contracts.board_role",
+      "next_action": "Choose a separate sensor PCB, a shield, or an integrated replacement. The current UNO mounting plane already carries the controller; this reference does not create space for a second board.",
+      "completion_evidence": [
+        "Reviewed sidecar/shield/replacement decision with actual mounting location and populated envelope.",
+        "Controller/ADC/storage/service boundaries and inter-board connector/net mapping."
+      ]
+    },
+    {
+      "path": "contracts.pressure_high",
+      "next_action": "The focused spec freezes the Sensata A/C analog family, 5 V option and 0.6-35 barA baseline, but explicitly leaves the orderable PN TBD. Obtain the exact configuration, connector/cavity pin map, supply/output limits, transfer, faults, calibration and refrigerant/port configuration. The older Honeywell candidate is not a substitution.",
+      "completion_evidence": [
+        "Exact Sensata HIGH orderable configuration, datasheet and mating connector/fitting.",
+        "Reviewed supply/output/fault/transfer/absolute-reference limits and calibration procedure."
+      ]
+    },
+    {
+      "path": "contracts.pressure_low",
+      "next_action": "The focused spec freezes the Sensata A/C analog family and 0.6-10.25 barA LOW baseline with exact PN TBD. Resolve its configuration independently; do not copy HIGH calibration or substitute an older sealed-gauge candidate.",
+      "completion_evidence": [
+        "Exact Sensata LOW orderable configuration, datasheet and mating connector/fitting.",
+        "Independent LOW range, transfer, faults and calibration; no copied HIGH calibration."
+      ]
+    },
+    {
+      "path": "contracts.temperature_interfaces",
+      "next_action": "The focused spec leaves automotive contact probes at SELECT. Older bench references are Adafruit PT1000 #3984 with MAX31865 #3648; earlier CAD also lists SHT40 #4885, which is not a line-contact probe. Select final contact/ambient parts, interfaces, excitation, range, attachment, connectors, faults and calibration.",
+      "completion_evidence": [
+        "Selected contact and ambient probes, interfaces, harness and attachment method.",
+        "Range/error/excitation/fault/response/calibration limits approved for the measurement roles."
+      ]
+    },
+    {
+      "path": "contracts.power_envelope",
+      "next_action": "Resolve fused source, continuous/current/startup loads, minimum crank voltage/duration, required hold-up or controlled restart, reverse-polarity and surge waveform limits.",
+      "completion_evidence": [
+        "Vehicle source/connector and measured or authoritative normal/crank/transient/fault envelope.",
+        "Power-tree/current/hold-up-or-restart/protection calculations with reviewed acceptance limits."
+      ]
+    },
+    {
+      "path": "contracts.sensor_rail",
+      "next_action": "Independent sensor 5 V is required; TPS7B83-Q1 is explicitly a candidate. Freeze the regulator, upstream node, tolerance, startup/short limits, independent channel switches, off-state behavior and thermal budget at actual ambient temperature.",
+      "completion_evidence": [
+        "Exact regulator and independent switches with upstream node and normal/fault limits.",
+        "Startup/leakage/back-power/thermal calculations and review at the actual ambient/load envelope."
+      ]
+    },
+    {
+      "path": "contracts.pi_boundary",
+      "next_action": "The owner requested separate Pi and Arduino mounting planes; CAD identifies Waveshare UPS HAT (D). Resolve the actual Pi computer model, bench/vehicle role, separate power budget and communication link. HAT identity does not establish a Pi model, and the modeled lithium UPS is prohibited underhood.",
+      "completion_evidence": [
+        "Actual Pi/HAT identity, bench-only or installation boundary, power budget and communication contract.",
+        "Preserve two mounting planes; exclude the modeled lithium UPS from underhood use."
+      ]
+    },
+    {
+      "path": "contracts.measurement_routing",
+      "next_action": "Resolve the seven analog observations versus four ADC inputs, GPIO assignments, reference source, filtering, divider tolerances, settling and power-off input protection.",
+      "completion_evidence": [
+        "Actual GPIO/ADC/reference/divider/protection allocation for seven analog observations.",
+        "Reviewed and measured conversion/settling/filter schedule at requested channel rates and all power states."
+      ]
+    },
+    {
+      "path": "contracts.storage_interface",
+      "next_action": "The focused V0 baseline freezes Adafruit microSD #4682 plus a 16-64 GB high-endurance card and calls for a socket/card-detect implementation on the custom PCB. Freeze the PCB socket, voltage domain, GPIO/SPI assignments, card detect, insertion clearance and startup/write current.",
+      "completion_evidence": [
+        "Selected socket/breakout/card, SPI pin map, voltage domain, card detect and insertion envelope.",
+        "Measured startup/write load and reviewed power-loss recovery protocol."
+      ]
+    },
+    {
+      "path": "contracts.connectors_harness",
+      "next_action": "Freeze actual sensor/internal disconnect/power connectors, pin maps, locations, cable OD and bend radius, latch/pull travel and strain relief.",
+      "completion_evidence": [
+        "Exact connector halves, seals, cavity/pin map, wire gauge and source/calibration links.",
+        "Measured cable OD, bend/mating travel, strain relief and actual enclosure termination locations."
+      ]
+    },
+    {
+      "path": "contracts.final_pcb_mechanics",
+      "next_action": "Resolve the final board role and outline, attachment, board stacking, populated heights, antenna/USB access and physical mounting coupon evidence.",
+      "completion_evidence": [
+        "Final outline/holes/tolerances, populated heights and antenna/USB/SD/connector keepouts.",
+        "Populated STEP cross-fit and actual mounting/connector coupon evidence for the retained cassette revision."
+      ]
+    },
+    {
+      "path": "contracts.fabrication_rules",
+      "next_action": "Freeze board stackup, copper, supplier rules, finish, assembly/package capabilities and component lifecycle/availability.",
+      "completion_evidence": [
+        "Selected supplier/stackup/copper/finish and explicit fabrication/assembly/package rules.",
+        "Complete approved component/footprint/model provenance and reviewed export/DFM profile."
+      ]
+    },
+    {
+      "path": "contracts.environment_and_test",
+      "next_action": "Resolve actual component/enclosure temperature limits, electrical/transient/environment/EMC acceptance criteria, fixtures, measurement uncertainty and reviewer.",
+      "completion_evidence": [
+        "Application-specific temperature/transient/vibration/ingress/EMC limits and test programme.",
+        "Named engineering reviewer, fixture/instrument/calibration/uncertainty and numeric measurement acceptance limits."
+      ]
+    }
+  ],
+  "tests": [
+    {
+      "test_id": "SW-INPUT",
+      "category": "software",
+      "requirement_ids": [
+        "AC-PRESSURE",
+        "AC-TEMPERATURE",
+        "AC-POWER",
+        "AC-ISOLATE",
+        "AC-ADC",
+        "AC-LOG",
+        "AC-SERVICE",
+        "AC-MECHANICAL",
+        "AC-RELEASE"
+      ],
+      "field_paths": [
+        "contracts.controller",
+        "contracts.board_role",
+        "contracts.pressure_high",
+        "contracts.pressure_low",
+        "contracts.temperature_interfaces",
+        "contracts.power_envelope",
+        "contracts.sensor_rail",
+        "contracts.pi_boundary",
+        "contracts.measurement_routing",
+        "contracts.storage_interface",
+        "contracts.connectors_harness",
+        "contracts.final_pcb_mechanics",
+        "contracts.fabrication_rules",
+        "contracts.environment_and_test"
+      ],
+      "procedure": "Run the real source-bound BoardSpec/build-plan review twice. Mutate source bytes/hashes, identities, field and requirement coverage, dependencies, schema, paths and claimed test/approval states in isolated copies.",
+      "acceptance": "Deterministic exact-byte reports; fourteen current composite blockers visible; unsafe inputs refused without partial output or source edits; all release authorities remain false.",
+      "numeric_limits": "NOT_APPLICABLE"
+    },
+    {
+      "test_id": "SW-CREATE",
+      "category": "software",
+      "requirement_ids": [
+        "AC-RELEASE"
+      ],
+      "field_paths": [
+        "contracts.fabrication_rules"
+      ],
+      "procedure": "Generate the supported LED candidate twice using its retained typed recipe; compare actual native files and replay the retained Orion native export/check evidence. Test unsupported input rejection.",
+      "acceptance": "Source bytes agree across rebuilds and match the retained example. Native evidence is identified as historical replay. Success does not expand generator scope to the automotive A/C board.",
+      "numeric_limits": "NOT_APPLICABLE"
+    },
+    {
+      "test_id": "T-ARCH",
+      "category": "independent_review",
+      "requirement_ids": [
+        "AC-PRESSURE",
+        "AC-TEMPERATURE",
+        "AC-POWER",
+        "AC-ISOLATE",
+        "AC-ADC",
+        "AC-LOG",
+        "AC-SERVICE",
+        "AC-MECHANICAL",
+        "AC-RELEASE"
+      ],
+      "field_paths": [
+        "contracts.controller",
+        "contracts.board_role",
+        "contracts.pressure_high",
+        "contracts.pressure_low",
+        "contracts.temperature_interfaces",
+        "contracts.power_envelope",
+        "contracts.sensor_rail",
+        "contracts.pi_boundary",
+        "contracts.measurement_routing",
+        "contracts.storage_interface",
+        "contracts.connectors_harness",
+        "contracts.final_pcb_mechanics",
+        "contracts.fabrication_rules",
+        "contracts.environment_and_test"
+      ],
+      "procedure": "Review the selected architecture, exact block interfaces, power/fault calculations, GPIO/net/ADC schedule and required manufacturer evidence.",
+      "acceptance": "Exact product contracts and normal/fault limits are resolved and signed by the appropriate independent engineering authority; source contradictions are closed.",
+      "numeric_limits": "REQUIRES_RESOLUTION"
+    },
+    {
+      "test_id": "T-NATIVE",
+      "category": "native_eda",
+      "requirement_ids": [
+        "AC-PRESSURE",
+        "AC-TEMPERATURE",
+        "AC-POWER",
+        "AC-ISOLATE",
+        "AC-ADC",
+        "AC-LOG",
+        "AC-SERVICE",
+        "AC-MECHANICAL",
+        "AC-RELEASE"
+      ],
+      "field_paths": [
+        "contracts.controller",
+        "contracts.board_role",
+        "contracts.pressure_high",
+        "contracts.pressure_low",
+        "contracts.temperature_interfaces",
+        "contracts.power_envelope",
+        "contracts.sensor_rail",
+        "contracts.pi_boundary",
+        "contracts.measurement_routing",
+        "contracts.storage_interface",
+        "contracts.connectors_harness",
+        "contracts.final_pcb_mechanics",
+        "contracts.fabrication_rules",
+        "contracts.environment_and_test"
+      ],
+      "procedure": "Use a pinned, registered Orion profile to reopen the functional schematic/PCB, run full ERC/DRC/parity and applicable simulations, then inject omissions, wrong pins/nets, shorts, polarity and rule violations into isolated copies.",
+      "acceptance": "No unwaived errors, hidden exclusions or ignored severities; each preregistered defect is detected; missing models/evidence block the applicable requirement. Actual raw native reports and source identities retained.",
+      "numeric_limits": "REQUIRES_RESOLUTION"
+    },
+    {
+      "test_id": "T-POWER",
+      "category": "bench",
+      "requirement_ids": [
+        "AC-POWER",
+        "AC-ISOLATE",
+        "AC-ADC",
+        "AC-RELEASE"
+      ],
+      "field_paths": [
+        "contracts.power_envelope",
+        "contracts.sensor_rail",
+        "contracts.measurement_routing",
+        "contracts.environment_and_test"
+      ],
+      "procedure": "On an approved assembled unit and current-limited fixture, measure startup, rails, idle/max load, reverse/fault response and required crank restart/hold-up. Switch each sensor independently and measure off-state signal back-power and thermal behaviour.",
+      "acceptance": "Measured voltages/current/waveforms/temperature and fault response meet exact reviewed limits with instrument uncertainty, assembly identity and calibration recorded.",
+      "numeric_limits": "REQUIRES_RESOLUTION"
+    },
+    {
+      "test_id": "T-PRESSURE",
+      "category": "bench",
+      "requirement_ids": [
+        "AC-PRESSURE",
+        "AC-ADC",
+        "AC-ISOLATE",
+        "AC-RELEASE"
+      ],
+      "field_paths": [
+        "contracts.pressure_high",
+        "contracts.pressure_low",
+        "contracts.measurement_routing",
+        "contracts.sensor_rail",
+        "contracts.environment_and_test"
+      ],
+      "procedure": "Stimulate both exact selected pressure paths at calibrated endpoints and intermediate values; check reference/rail error, open/short/unpowered inputs, ground offset, filtering/settling and actual channel rates.",
+      "acceptance": "Retain raw ADC/voltage and exact calibration/absolute-reference identity; engineering values and fault quality meet reviewed limits. No generic transfer is substituted.",
+      "numeric_limits": "REQUIRES_RESOLUTION"
+    },
+    {
+      "test_id": "T-TEMP",
+      "category": "bench",
+      "requirement_ids": [
+        "AC-TEMPERATURE",
+        "AC-RELEASE"
+      ],
+      "field_paths": [
+        "contracts.temperature_interfaces",
+        "contracts.connectors_harness",
+        "contracts.environment_and_test"
+      ],
+      "procedure": "Stimulate the selected high-line, low-line and ambient probes across approved temperature points. Measure attachment error/response and open/short/stuck behaviour; check firmware role labels.",
+      "acceptance": "Actual external readings meet the selected probe/interface/calibration limits. Missing probes remain unavailable, and die-health temperature is never reported as line temperature.",
+      "numeric_limits": "REQUIRES_RESOLUTION"
+    },
+    {
+      "test_id": "T-LOG",
+      "category": "bench",
+      "requirement_ids": [
+        "AC-LOG",
+        "AC-PRESSURE",
+        "AC-TEMPERATURE",
+        "AC-ADC",
+        "AC-RELEASE"
+      ],
+      "field_paths": [
+        "contracts.storage_interface",
+        "contracts.measurement_routing",
+        "contracts.power_envelope",
+        "contracts.environment_and_test"
+      ],
+      "procedure": "Run acquisition/logging at selected rates with the exact card/socket and inject power loss, card removal/write errors and storage limits. Inspect recovered logs and version/quality lineage.",
+      "acceptance": "Bounded logs preserve raw observations, calibration/version/quality and agreed recovery behaviour; startup/write-current and loss budgets satisfy the reviewed limits.",
+      "numeric_limits": "REQUIRES_RESOLUTION"
+    },
+    {
+      "test_id": "T-SERVICE",
+      "category": "bench",
+      "requirement_ids": [
+        "AC-SERVICE",
+        "AC-RELEASE"
+      ],
+      "field_paths": [
+        "contracts.controller",
+        "contracts.pi_boundary",
+        "contracts.power_envelope",
+        "contracts.environment_and_test"
+      ],
+      "procedure": "On the identified board, exercise backup-first USB service, NVS preservation, probationary boot/rollback and restore. Observe radio absence in EMPTY_RECOVERY and TEMPERATURE_BENCH; test any later approved runtime link separately.",
+      "acceptance": "Unit/flash identity, backup hashes, serial/boot/rollback/restore evidence and radio-profile observations satisfy the approved service contract.",
+      "numeric_limits": "REQUIRES_RESOLUTION"
+    },
+    {
+      "test_id": "T-MECH",
+      "category": "mechanical",
+      "requirement_ids": [
+        "AC-MECHANICAL",
+        "AC-POWER",
+        "AC-SERVICE",
+        "AC-RELEASE"
+      ],
+      "field_paths": [
+        "contracts.board_role",
+        "contracts.controller",
+        "contracts.pi_boundary",
+        "contracts.final_pcb_mechanics",
+        "contracts.connectors_harness",
+        "contracts.storage_interface"
+      ],
+      "procedure": "Cross-fit the exact populated board and connector/harness STEP assembly against the retained shell/cassette; verify the actual boards, screws, holes, cable bends, connector mating travel, USB and card service access.",
+      "acceptance": "Digital and measured physical clearances/tolerances match the reviewed assembly. A rectangular mounting reference or earlier unused space reservation cannot satisfy this test.",
+      "numeric_limits": "REQUIRES_RESOLUTION"
+    },
+    {
+      "test_id": "T-MFG",
+      "category": "native_eda",
+      "requirement_ids": [
+        "AC-RELEASE",
+        "AC-MECHANICAL"
+      ],
+      "field_paths": [
+        "contracts.fabrication_rules",
+        "contracts.connectors_harness",
+        "contracts.final_pcb_mechanics"
+      ],
+      "procedure": "Export the actual native BOM/CPL/Gerber/drill/PDF/STEP set on Orion. Compare references/DNP, exact part/footprint identity, origin/units/side/rotation and independent CAM geometry; mutate omissions, substitutions and coordinates.",
+      "acceptance": "The exact reviewed source and complete manufacturing package agree under the selected supplier profile, with independent rotation/pick-point and technical review. Missing checks remain incomplete.",
+      "numeric_limits": "REQUIRES_RESOLUTION"
+    },
+    {
+      "test_id": "T-REVIEW",
+      "category": "independent_review",
+      "requirement_ids": [
+        "AC-PRESSURE",
+        "AC-TEMPERATURE",
+        "AC-POWER",
+        "AC-ISOLATE",
+        "AC-ADC",
+        "AC-LOG",
+        "AC-SERVICE",
+        "AC-MECHANICAL",
+        "AC-RELEASE"
+      ],
+      "field_paths": [
+        "contracts.controller",
+        "contracts.board_role",
+        "contracts.pressure_high",
+        "contracts.pressure_low",
+        "contracts.temperature_interfaces",
+        "contracts.power_envelope",
+        "contracts.sensor_rail",
+        "contracts.pi_boundary",
+        "contracts.measurement_routing",
+        "contracts.storage_interface",
+        "contracts.connectors_harness",
+        "contracts.final_pcb_mechanics",
+        "contracts.fabrication_rules",
+        "contracts.environment_and_test"
+      ],
+      "procedure": "Review the exact requirement, architecture, schematic, layout, calculation, simulation, export and test hashes through the existing separate engineering/fabrication authority workflow.",
+      "acceptance": "Approvals come from authorized independent participants and bind exact dependencies. Changed sources invalidate approvals; a plan, family rating or software test is not release authority.",
+      "numeric_limits": "NOT_APPLICABLE"
+    },
+    {
+      "test_id": "T-ENV",
+      "category": "environment",
+      "requirement_ids": [
+        "AC-POWER",
+        "AC-MECHANICAL",
+        "AC-RELEASE"
+      ],
+      "field_paths": [
+        "contracts.power_envelope",
+        "contracts.sensor_rail",
+        "contracts.environment_and_test",
+        "contracts.connectors_harness",
+        "contracts.final_pcb_mechanics"
+      ],
+      "procedure": "After installation/service approval, run the application-specific crank/transient, thermal, vibration, ingress/condensation and EMC programme with the actual assembly and fixtures.",
+      "acceptance": "All applicable numeric limits, uncertainty, assembly/calibration identities and observed failures/results are recorded. No public/transportation/military compliance is inferred from component ratings.",
+      "numeric_limits": "REQUIRES_RESOLUTION"
+    }
+  ],
+  "steps": [
+    {
+      "step_id": "S0",
+      "title": "Build and test the product-input review workflow",
+      "stage": "software",
+      "depends_on": [],
+      "requirement_ids": [
+        "AC-PRESSURE",
+        "AC-TEMPERATURE",
+        "AC-POWER",
+        "AC-ISOLATE",
+        "AC-ADC",
+        "AC-LOG",
+        "AC-SERVICE",
+        "AC-MECHANICAL",
+        "AC-RELEASE"
+      ],
+      "required_field_paths": [],
+      "test_ids": [
+        "SW-INPUT",
+        "SW-CREATE"
+      ],
+      "deliverables": [
+        "Typed source-bound review CLI and plan schema.",
+        "Real A/C regression snapshot, unsafe-input mutations and deterministic reports.",
+        "Existing supported creation-path replay with explicit evidence scope."
+      ]
+    },
+    {
+      "step_id": "S1",
+      "title": "Resolve exact product requirements",
+      "stage": "requirements",
+      "depends_on": [
+        "S0"
+      ],
+      "requirement_ids": [
+        "AC-PRESSURE",
+        "AC-TEMPERATURE",
+        "AC-POWER",
+        "AC-ISOLATE",
+        "AC-ADC",
+        "AC-LOG",
+        "AC-SERVICE",
+        "AC-MECHANICAL",
+        "AC-RELEASE"
+      ],
+      "required_field_paths": [
+        "contracts.controller",
+        "contracts.board_role",
+        "contracts.pressure_high",
+        "contracts.pressure_low",
+        "contracts.temperature_interfaces",
+        "contracts.power_envelope",
+        "contracts.sensor_rail",
+        "contracts.pi_boundary",
+        "contracts.measurement_routing",
+        "contracts.storage_interface",
+        "contracts.connectors_harness",
+        "contracts.final_pcb_mechanics",
+        "contracts.fabrication_rules",
+        "contracts.environment_and_test"
+      ],
+      "test_ids": [
+        "SW-INPUT",
+        "T-ARCH"
+      ],
+      "deliverables": [
+        "Exact controller/sensor/probe/connector identities and manufacturer evidence.",
+        "Reviewed revision resolving all fourteen composite contract tasks."
+      ]
+    },
+    {
+      "step_id": "S2",
+      "title": "Design and review circuit architecture and assets",
+      "stage": "architecture",
+      "depends_on": [
+        "S1"
+      ],
+      "requirement_ids": [
+        "AC-PRESSURE",
+        "AC-TEMPERATURE",
+        "AC-POWER",
+        "AC-ISOLATE",
+        "AC-ADC",
+        "AC-LOG",
+        "AC-SERVICE",
+        "AC-MECHANICAL",
+        "AC-RELEASE"
+      ],
+      "required_field_paths": [
+        "contracts.controller",
+        "contracts.board_role",
+        "contracts.pressure_high",
+        "contracts.pressure_low",
+        "contracts.temperature_interfaces",
+        "contracts.power_envelope",
+        "contracts.sensor_rail",
+        "contracts.pi_boundary",
+        "contracts.measurement_routing",
+        "contracts.storage_interface",
+        "contracts.connectors_harness",
+        "contracts.final_pcb_mechanics",
+        "contracts.fabrication_rules",
+        "contracts.environment_and_test"
+      ],
+      "test_ids": [
+        "T-ARCH"
+      ],
+      "deliverables": [
+        "Power tree, GPIO/net/ADC and sampling budget with normal/fault calculations.",
+        "Reviewed exact symbol/footprint/block/model assets and sensor isolation/storage/service interfaces."
+      ]
+    },
+    {
+      "step_id": "S3",
+      "title": "Compile and review the wired schematic and BOM",
+      "stage": "schematic",
+      "depends_on": [
+        "S2"
+      ],
+      "requirement_ids": [
+        "AC-PRESSURE",
+        "AC-TEMPERATURE",
+        "AC-POWER",
+        "AC-ISOLATE",
+        "AC-ADC",
+        "AC-LOG",
+        "AC-SERVICE",
+        "AC-MECHANICAL",
+        "AC-RELEASE"
+      ],
+      "required_field_paths": [
+        "contracts.controller",
+        "contracts.board_role",
+        "contracts.pressure_high",
+        "contracts.pressure_low",
+        "contracts.temperature_interfaces",
+        "contracts.power_envelope",
+        "contracts.sensor_rail",
+        "contracts.pi_boundary",
+        "contracts.measurement_routing",
+        "contracts.storage_interface",
+        "contracts.connectors_harness",
+        "contracts.final_pcb_mechanics",
+        "contracts.fabrication_rules",
+        "contracts.environment_and_test"
+      ],
+      "test_ids": [
+        "T-NATIVE",
+        "T-REVIEW"
+      ],
+      "deliverables": [
+        "Editable hierarchical functional KiCad schematic, complete exact BOM and requirement/net traceability.",
+        "Unrouted PCB carrying only reviewed component and mechanical assets."
+      ]
+    },
+    {
+      "step_id": "S4",
+      "title": "Place and route the populated PCB",
+      "stage": "layout",
+      "depends_on": [
+        "S3"
+      ],
+      "requirement_ids": [
+        "AC-PRESSURE",
+        "AC-TEMPERATURE",
+        "AC-POWER",
+        "AC-ISOLATE",
+        "AC-ADC",
+        "AC-LOG",
+        "AC-SERVICE",
+        "AC-MECHANICAL",
+        "AC-RELEASE"
+      ],
+      "required_field_paths": [
+        "contracts.controller",
+        "contracts.board_role",
+        "contracts.pressure_high",
+        "contracts.pressure_low",
+        "contracts.temperature_interfaces",
+        "contracts.power_envelope",
+        "contracts.sensor_rail",
+        "contracts.pi_boundary",
+        "contracts.measurement_routing",
+        "contracts.storage_interface",
+        "contracts.connectors_harness",
+        "contracts.final_pcb_mechanics",
+        "contracts.fabrication_rules",
+        "contracts.environment_and_test"
+      ],
+      "test_ids": [
+        "T-NATIVE",
+        "T-MECH",
+        "T-REVIEW"
+      ],
+      "deliverables": [
+        "Final populated PCB and STEP assembly with mounting, connectors, test points and reviewed routing rules.",
+        "Actual enclosure/harness fit and placement/thermal/return-path review."
+      ]
+    },
+    {
+      "step_id": "S5",
+      "title": "Execute complete native verification and export comparison",
+      "stage": "verification",
+      "depends_on": [
+        "S4"
+      ],
+      "requirement_ids": [
+        "AC-PRESSURE",
+        "AC-TEMPERATURE",
+        "AC-POWER",
+        "AC-ISOLATE",
+        "AC-ADC",
+        "AC-LOG",
+        "AC-SERVICE",
+        "AC-MECHANICAL",
+        "AC-RELEASE"
+      ],
+      "required_field_paths": [
+        "contracts.controller",
+        "contracts.board_role",
+        "contracts.pressure_high",
+        "contracts.pressure_low",
+        "contracts.temperature_interfaces",
+        "contracts.power_envelope",
+        "contracts.sensor_rail",
+        "contracts.pi_boundary",
+        "contracts.measurement_routing",
+        "contracts.storage_interface",
+        "contracts.connectors_harness",
+        "contracts.final_pcb_mechanics",
+        "contracts.fabrication_rules",
+        "contracts.environment_and_test"
+      ],
+      "test_ids": [
+        "T-NATIVE",
+        "T-MFG",
+        "T-REVIEW"
+      ],
+      "deliverables": [
+        "Pinned Orion native reopen/ERC/DRC/parity and applicable simulation reports.",
+        "Independent preregistered fault detection and complete native source/export fidelity evidence."
+      ]
+    },
+    {
+      "step_id": "S6",
+      "title": "Review exact fabrication and bring-up package",
+      "stage": "release",
+      "depends_on": [
+        "S5"
+      ],
+      "requirement_ids": [
+        "AC-PRESSURE",
+        "AC-TEMPERATURE",
+        "AC-POWER",
+        "AC-ISOLATE",
+        "AC-ADC",
+        "AC-LOG",
+        "AC-SERVICE",
+        "AC-MECHANICAL",
+        "AC-RELEASE"
+      ],
+      "required_field_paths": [
+        "contracts.controller",
+        "contracts.board_role",
+        "contracts.pressure_high",
+        "contracts.pressure_low",
+        "contracts.temperature_interfaces",
+        "contracts.power_envelope",
+        "contracts.sensor_rail",
+        "contracts.pi_boundary",
+        "contracts.measurement_routing",
+        "contracts.storage_interface",
+        "contracts.connectors_harness",
+        "contracts.final_pcb_mechanics",
+        "contracts.fabrication_rules",
+        "contracts.environment_and_test"
+      ],
+      "test_ids": [
+        "T-MFG",
+        "T-REVIEW"
+      ],
+      "deliverables": [
+        "BOM/CPL/Gerber/drill/PDF/STEP, assembly drawings and current-limited bring-up protocol.",
+        "Separate authorized engineering and fabrication approvals over exact artifact/requirement/test hashes."
+      ]
+    },
+    {
+      "step_id": "S7",
+      "title": "Bring up actual hardware and implement acquisition",
+      "stage": "bring_up",
+      "depends_on": [
+        "S6"
+      ],
+      "requirement_ids": [
+        "AC-PRESSURE",
+        "AC-TEMPERATURE",
+        "AC-POWER",
+        "AC-ISOLATE",
+        "AC-ADC",
+        "AC-LOG",
+        "AC-SERVICE",
+        "AC-MECHANICAL",
+        "AC-RELEASE"
+      ],
+      "required_field_paths": [
+        "contracts.controller",
+        "contracts.board_role",
+        "contracts.pressure_high",
+        "contracts.pressure_low",
+        "contracts.temperature_interfaces",
+        "contracts.power_envelope",
+        "contracts.sensor_rail",
+        "contracts.pi_boundary",
+        "contracts.measurement_routing",
+        "contracts.storage_interface",
+        "contracts.connectors_harness",
+        "contracts.final_pcb_mechanics",
+        "contracts.fabrication_rules",
+        "contracts.environment_and_test"
+      ],
+      "test_ids": [
+        "T-POWER",
+        "T-PRESSURE",
+        "T-TEMP",
+        "T-LOG",
+        "T-SERVICE",
+        "T-MECH",
+        "T-REVIEW"
+      ],
+      "deliverables": [
+        "Unit-bound calibrated power/pressure/temperature/storage/service measurements and serial/raw log evidence.",
+        "Real selected-sensor firmware paths and failure-to-revision records."
+      ]
+    },
+    {
+      "step_id": "S8",
+      "title": "Validate installation and application environment",
+      "stage": "vehicle",
+      "depends_on": [
+        "S7"
+      ],
+      "requirement_ids": [
+        "AC-POWER",
+        "AC-MECHANICAL",
+        "AC-RELEASE"
+      ],
+      "required_field_paths": [
+        "contracts.power_envelope",
+        "contracts.sensor_rail",
+        "contracts.environment_and_test",
+        "contracts.connectors_harness",
+        "contracts.final_pcb_mechanics"
+      ],
+      "test_ids": [
+        "T-ENV",
+        "T-REVIEW"
+      ],
+      "deliverables": [
+        "Qualified installation/service and application-specific measured environmental/EMC results.",
+        "Declared compliance scope with exact supporting evidence and documented remaining limitations."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,2877 @@
+{
+  "artifacts": [
+    {
+      "bytes": 53025,
+      "file": "_build_freecad.py",
+      "sha256": "5a7da077ed0ba677e0d570ca73d5e2173cfc7f986b485aba130c817c7073fa71"
+    },
+    {
+      "bytes": 4963,
+      "file": "_render.py",
+      "sha256": "34f89416b057d65207ebc7d9eb80ba3528727ba0220eca166199ff8d5766ab37"
+    },
+    {
+      "bytes": 4539422,
+      "file": "ac-v4-dual-board-slide-kit.zip",
+      "sha256": "f4bc961e820eca2e6d4f2906ab62c18b8f1f462744395a6da457f9bdbe7fd839"
+    },
+    {
+      "bytes": 33046,
+      "file": "arduino_uno_mounting_plane.step",
+      "sha256": "12bcdd1bfea1b472ef63cb6f4189390e248efeef87198819ae2bac3842fb4f48"
+    },
+    {
+      "bytes": 138284,
+      "file": "arduino_uno_mounting_plane.stl",
+      "sha256": "7ae40b1a9b729332ea11535db5d9cc268d59c7678e8fed03c3e7a0ec1d3d23f5"
+    },
+    {
+      "bytes": 66907,
+      "file": "assembly.FCStd",
+      "sha256": "a9b6b1b624e1b162a5354a9c622d4e2684ee8e88ad15fa9b033ec3eb72706afe"
+    },
+    {
+      "bytes": 387882,
+      "file": "assembly.step",
+      "sha256": "aebc6b98197ef2ee7447b6963fb9ef6df01a2f9c3f7b17f9bef73d675dba388e"
+    },
+    {
+      "bytes": 1388484,
+      "file": "assembly.stl",
+      "sha256": "7767ec7aacecee6fc3834191b5cec9225ac223cc6ecf65c3a0c8813947360565"
+    },
+    {
+      "bytes": 1898,
+      "file": "blender.log",
+      "sha256": "55ad1d440d2ee3dcf2b0b750e0dbfa88c1ad91508c31a7ba9f80fc4bb1bf5790"
+    },
+    {
+      "bytes": 23491,
+      "file": "blind_m25_board_insert_coupon.step",
+      "sha256": "50ecdc0f2dc3f5d19729d581d45971e89cddf6de044faa7773c5263a6fc3de32"
+    },
+    {
+      "bytes": 102684,
+      "file": "blind_m25_board_insert_coupon.stl",
+      "sha256": "165837677337c9a89914769ddf82b7003783d5644c69555cbb72c48ebad949b9"
+    },
+    {
+      "bytes": 28473,
+      "file": "blind_m3_insert_boss_coupon.step",
+      "sha256": "6f07e8cc73a956dfa5a1db70306ce2d17ab495b49deefca6414c0a22cf7b5ca8"
+    },
+    {
+      "bytes": 141184,
+      "file": "blind_m3_insert_boss_coupon.stl",
+      "sha256": "082fb1e08507ae252e02b04def4dddb21575e8197d11b83a49c1a98722600374"
+    },
+    {
+      "bytes": 421,
+      "file": "COMPATIBLE_SHELL.json",
+      "sha256": "d1caeb0b7c6353ccdecb667bef58d4ea7f1eff0b83b9896614964c8a5f9ffdb3"
+    },
+    {
+      "bytes": 7778,
+      "file": "DESIGN_NOTES.md",
+      "sha256": "71725d00f4e2a6ea430ba4c722fe5d88aab1ea09f44ad520477f43acb4d01e2e"
+    },
+    {
+      "bytes": 97703,
+      "file": "dual_board_rail_frame.step",
+      "sha256": "a2c8491cabfca8fd40f2b26db74820b1267b89e301bcff8411f5d46a476995f7"
+    },
+    {
+      "bytes": 46884,
+      "file": "dual_board_rail_frame.stl",
+      "sha256": "e6ae2b3525e439248782522f6e42758417cb5a4121c1049525636473aac0ec91"
+    },
+    {
+      "bytes": 91046,
+      "file": "dual_board_slide_tray.step",
+      "sha256": "cabaab7089959fb1affebcbcc1627b1a911a09ca702a993d12297c8407915609"
+    },
+    {
+      "bytes": 266184,
+      "file": "dual_board_slide_tray.stl",
+      "sha256": "2da63ed68eb92360927aa539e5bd9e3e35799b38a78a813a048a9959092af45b"
+    },
+    {
+      "bytes": 69810,
+      "file": "freecad.log",
+      "sha256": "bc2e9c282199b93d883673d5259cdc3239804441a8989f98abf5fd2105d36f88"
+    },
+    {
+      "bytes": 132924,
+      "file": "freecad_result.json",
+      "sha256": "5d2b16df33725352c6325cd6ac2c0d9f2d100fcc602a1637770137a9573a5089"
+    },
+    {
+      "bytes": 12295,
+      "file": "platform_step_export_checks.json",
+      "sha256": "a9377227f9911d1e353d55cdb830752850dd359b2978c83f93b9de93e6d88ee6"
+    },
+    {
+      "bytes": 663576,
+      "file": "preview_cable_routes_top.png",
+      "sha256": "05f683a862a9512d59a2e95d42a4e21658c08f84ac4a894933a5a6d953e5f17c"
+    },
+    {
+      "bytes": 809311,
+      "file": "preview_dual_board_slide_assembled.png",
+      "sha256": "424ba1130e442e28a59114fab453e1afeeb825466cd3062b797cae2d1226fd98"
+    },
+    {
+      "bytes": 884440,
+      "file": "preview_dual_board_slide_extracted.png",
+      "sha256": "e04c4a26ac8b8fc13aa8df15b0d703c75adec885b7bd1e65c6de19f2297945b8"
+    },
+    {
+      "bytes": 759844,
+      "file": "preview_platforms_lifted.png",
+      "sha256": "d171ecac4065ecdbffe73a725c13482e084f665c401d0337f8c0cf294f295123"
+    },
+    {
+      "bytes": 713004,
+      "file": "preview_rounded_platforms.png",
+      "sha256": "accb3b307530f20357f44770418a8f37e58757b855bc4e7e6a0d9f775e8b86a8"
+    },
+    {
+      "bytes": 3020,
+      "file": "PRINTING.md",
+      "sha256": "067b5bf5acdbcfb66507364980be86393f923be36f73a4229464403709ceba5f"
+    },
+    {
+      "bytes": 33014,
+      "file": "raspberry_pi_mounting_plane.step",
+      "sha256": "bbae7fdc0a801e711b89af7823f1080c69b13311aa9753a7c12feb7d2ef9546f"
+    },
+    {
+      "bytes": 136684,
+      "file": "raspberry_pi_mounting_plane.stl",
+      "sha256": "9c0f2e29a168c24e50c22528f892f75a405fa55e84948cdcb307c5f7d4d5d5e1"
+    },
+    {
+      "bytes": 7086,
+      "file": "reference_arduino_uno_component_envelope.step",
+      "sha256": "4ff83ce4d178abba115fb7d245a1c9a821dfc8ce4cc6dfb02c608dd66ab1492d"
+    },
+    {
+      "bytes": 684,
+      "file": "reference_arduino_uno_component_envelope.stl",
+      "sha256": "960b474fa0295965e69ed40bdf4d1bb4c2114ccbe09aba29f888aa5026db8bdd"
+    },
+    {
+      "bytes": 16736,
+      "file": "reference_arduino_uno_mount_hardware.step",
+      "sha256": "cdaf87568c73fb6829c3d0f634eb48ee0b70ae328a808f1d023fbd03ec18ad62"
+    },
+    {
+      "bytes": 80884,
+      "file": "reference_arduino_uno_mount_hardware.stl",
+      "sha256": "d29f173e818c304aef015f23b4864fe62559f082c3c683bc8df563367a3514cf"
+    },
+    {
+      "bytes": 33712,
+      "file": "reference_arduino_uno_mounting_plane_installed.step",
+      "sha256": "7f4c44aaaef2cfb2ae7a800451de23b2b20f0ddd01fcc498c1f798f53bbebe50"
+    },
+    {
+      "bytes": 138284,
+      "file": "reference_arduino_uno_mounting_plane_installed.stl",
+      "sha256": "d1bf2349a5d076c98fd03e85cca0101877a071524177eedf626be8e0bed5c662"
+    },
+    {
+      "bytes": 17507,
+      "file": "reference_board_driver_access_tray_extracted_hat_off.step",
+      "sha256": "38f65d3eaef3db68448a8373c3df9eb520406a99110cc0cc74259bd429957a0f"
+    },
+    {
+      "bytes": 80084,
+      "file": "reference_board_driver_access_tray_extracted_hat_off.stl",
+      "sha256": "7a8dc2a28096e25dcf03bac45e4c7a7a126db04a7c4d334078a413e73bfc37b4"
+    },
+    {
+      "bytes": 17419,
+      "file": "reference_deck_driver_access_tray_extracted_boards_off.step",
+      "sha256": "af0ecb55b8c141f5c9175ab81eff757b6b8b1aab612b767da910efec27bcf87d"
+    },
+    {
+      "bytes": 80084,
+      "file": "reference_deck_driver_access_tray_extracted_boards_off.stl",
+      "sha256": "bc9e80ad7dcbce7b536c63b541699a3384cb2af015b558294244104acca169aa"
+    },
+    {
+      "bytes": 31098,
+      "file": "reference_deck_m3_fasteners.step",
+      "sha256": "4f3da7b7030016c9954e85e7f60b68626dbf2c7926b3539a78519f36c580e617"
+    },
+    {
+      "bytes": 161684,
+      "file": "reference_deck_m3_fasteners.stl",
+      "sha256": "c3febce66923dac47c5f1616f0c7bc0e86d3a43a75fb200d7fc6193543958d8c"
+    },
+    {
+      "bytes": 98650,
+      "file": "reference_dual_board_rail_frame_installed.step",
+      "sha256": "d847c3e16a935b2a60098b69f6708af7000dd6d5bd29e7efc21ebde37a062a78"
+    },
+    {
+      "bytes": 46884,
+      "file": "reference_dual_board_rail_frame_installed.stl",
+      "sha256": "76988a76fd010885987b775ab88bc7ea5cd6732443c2f4607235bd7dfaf50ed0"
+    },
+    {
+      "bytes": 91797,
+      "file": "reference_dual_board_slide_tray_installed.step",
+      "sha256": "2af7f8a691dc503f452531032ec32a42901df8982f6e47150346dc48da6a13c7"
+    },
+    {
+      "bytes": 266184,
+      "file": "reference_dual_board_slide_tray_installed.stl",
+      "sha256": "b99d246a948ec5d167e69202448058df1548059a1422c4e3afb3a073f90ed632"
+    },
+    {
+      "bytes": 3523,
+      "file": "reference_high_pressure_gland_keepout.step",
+      "sha256": "e49fd110af4674a955d2e5b93dd6205eee68739c914db19cd4547cfdf1cecdc2"
+    },
+    {
+      "bytes": 10084,
+      "file": "reference_high_pressure_gland_keepout.stl",
+      "sha256": "d1e0f558eed93e64bfde31470ca473aec13ca1f32d31aada33e0847e9a977b53"
+    },
+    {
+      "bytes": 3523,
+      "file": "reference_high_temperature_gland_keepout.step",
+      "sha256": "038b6da899c00e240db5fcdcb8b528e1e78952d40b48e7b65773433495345cf2"
+    },
+    {
+      "bytes": 10084,
+      "file": "reference_high_temperature_gland_keepout.stl",
+      "sha256": "e6ba3c6af51f08ad765419c3cba00f64a7f14af54c8fa9223ae497b473fa77e6"
+    },
+    {
+      "bytes": 5456,
+      "file": "reference_installed_rack_screw_heads.step",
+      "sha256": "1e80343b56cafb8dbd454ad2f3f27931e35aac079b0c4ba7ade39fa500678348"
+    },
+    {
+      "bytes": 20084,
+      "file": "reference_installed_rack_screw_heads.stl",
+      "sha256": "c6a4bdd8da040be37d94ff329a48b6573e43140693ef24021be3020b9d4250de"
+    },
+    {
+      "bytes": 7026,
+      "file": "reference_interboard_wire_corridor.step",
+      "sha256": "9a4ea0eb86eaadd4e7a38d2c8f71364e9ca9e26793767993af8b7da5d30d39a6"
+    },
+    {
+      "bytes": 684,
+      "file": "reference_interboard_wire_corridor.stl",
+      "sha256": "d3d5c7abaf68587912fa01ef03e92002351b58b511c5c0dc9c2ada1fb52943b3"
+    },
+    {
+      "bytes": 3523,
+      "file": "reference_low_pressure_gland_keepout.step",
+      "sha256": "da0b052e3151581f4b2347e968b26b5be272635cf386ee7813d07d858d105166"
+    },
+    {
+      "bytes": 10084,
+      "file": "reference_low_pressure_gland_keepout.stl",
+      "sha256": "a30c255eace348a99dafb0fef60b5ad62c865e0074570970a18641284ed4a9f6"
+    },
+    {
+      "bytes": 3523,
+      "file": "reference_low_temperature_gland_keepout.step",
+      "sha256": "a152c1c7e784e6b2b42585dfb580f858b5fb129fb2007f9c38ebd494f20a1b24"
+    },
+    {
+      "bytes": 10084,
+      "file": "reference_low_temperature_gland_keepout.stl",
+      "sha256": "a4268a0d02ae855b22b9fbc1b566306976d3a19265d446b2d4b52b751bb5d0e2"
+    },
+    {
+      "bytes": 5438,
+      "file": "reference_rack_driver_access_tray_and_cap_off.step",
+      "sha256": "8c8a1d997be2ad88d6ddbcf2584396528a03a291f808c1d56ed1fb9717a59a85"
+    },
+    {
+      "bytes": 20084,
+      "file": "reference_rack_driver_access_tray_and_cap_off.stl",
+      "sha256": "fd0808974d6d9992a07469fc6ed4d24e4d57da00824df7765809f7c24acbd157"
+    },
+    {
+      "bytes": 7060,
+      "file": "reference_raspberry_pi_board.step",
+      "sha256": "2490c9a609fe75f2689bc4e51526360f90c25d16390e89f995407879af78186c"
+    },
+    {
+      "bytes": 684,
+      "file": "reference_raspberry_pi_board.stl",
+      "sha256": "32376f2a75bd3e6b5220c75b84557839cece7b68c446c3954209640317b1636a"
+    },
+    {
+      "bytes": 7018,
+      "file": "reference_raspberry_pi_hat_assembly_keepout.step",
+      "sha256": "a7a7373ed7975728a11bba2b4ceffa0f8a47a8f695c8acd9f7a9dca7ee9781a2"
+    },
+    {
+      "bytes": 684,
+      "file": "reference_raspberry_pi_hat_assembly_keepout.stl",
+      "sha256": "5dadc936dac00c1b715db29c3865472484bccaf5f601dc710bddbc87e825347e"
+    },
+    {
+      "bytes": 16620,
+      "file": "reference_raspberry_pi_mount_hardware.step",
+      "sha256": "4083e2dc5a2ab6a5b57270f08dfbf02e3601d5efcd096b4bca65ae15bf106ee7"
+    },
+    {
+      "bytes": 80884,
+      "file": "reference_raspberry_pi_mount_hardware.stl",
+      "sha256": "64af503084d42b0a53be0fb559ff9620ac24eb08222190a3b3afa97e3b5ab207"
+    },
+    {
+      "bytes": 33476,
+      "file": "reference_raspberry_pi_mounting_plane_installed.step",
+      "sha256": "8ec20078fe1d307ad0103fab81f3a7e9ed39946e74965e61743213a4bdba6722"
+    },
+    {
+      "bytes": 136684,
+      "file": "reference_raspberry_pi_mounting_plane_installed.stl",
+      "sha256": "6237e5158e132958a4940dc77cdfa9a2504c92adc0310345655ac7b2598db5e4"
+    },
+    {
+      "bytes": 7043,
+      "file": "reference_right_pigtail_service_zone.step",
+      "sha256": "847b08f8ff67aa972e0d035d920f8d038fecdf43269944bcde8c79534cffa573"
+    },
+    {
+      "bytes": 684,
+      "file": "reference_right_pigtail_service_zone.stl",
+      "sha256": "1e026a691a0dbd6276d09d50c4ec838653ab165e4c7c758a97c81276e01b95b2"
+    },
+    {
+      "bytes": 6999,
+      "file": "reference_routing_access_high_pressure.step",
+      "sha256": "900aca5a3d39a3f9c22b38d375f91b542ac9a0f7180f82b1946f96016d8eb51e"
+    },
+    {
+      "bytes": 684,
+      "file": "reference_routing_access_high_pressure.stl",
+      "sha256": "449edcada89f9e6b0c393f2d54ea7828f6251c1f0e304563666a97bf947e2185"
+    },
+    {
+      "bytes": 6999,
+      "file": "reference_routing_access_high_temperature.step",
+      "sha256": "f9b82d019986948a592fefd4f35ff9ed17dbc925cfa17e8dafe19856198f64bf"
+    },
+    {
+      "bytes": 684,
+      "file": "reference_routing_access_high_temperature.stl",
+      "sha256": "0a33cd84a91afa2882666bbab3db47599dd34c40c5958d0ce062e435ee0aa794"
+    },
+    {
+      "bytes": 6999,
+      "file": "reference_routing_access_low_pressure.step",
+      "sha256": "fdf56ae05974db34476e04e627b883d7fbd41520b5feeba41e77c06c0abb9563"
+    },
+    {
+      "bytes": 684,
+      "file": "reference_routing_access_low_pressure.stl",
+      "sha256": "4aeba67b9782a338e6150b39992550d77966ca382d0b44333f95236cca795a80"
+    },
+    {
+      "bytes": 6999,
+      "file": "reference_routing_access_low_temperature.step",
+      "sha256": "98b635d89e3e95c7eca1b1267d7b2d134a7805e45481cf24afb49837417d6c94"
+    },
+    {
+      "bytes": 684,
+      "file": "reference_routing_access_low_temperature.stl",
+      "sha256": "62b7c4603520422ad1ed525d22dae3682489bc9d78eb9f7d8f88ff2b705df962"
+    },
+    {
+      "bytes": 6208,
+      "file": "reference_routing_cable_high_pressure.step",
+      "sha256": "cbcf8df202032117e31decf2300ba3fd459ad08d7cee60d9f0c8e1367465d4c8"
+    },
+    {
+      "bytes": 81484,
+      "file": "reference_routing_cable_high_pressure.stl",
+      "sha256": "654727c355719bc44800cdd817015f3dc087f80f18fca9c33e15a8e3e0dd280f"
+    },
+    {
+      "bytes": 6208,
+      "file": "reference_routing_cable_high_temperature.step",
+      "sha256": "0064fb5ac41646f7cbc6c6f55fb24bd847820c2973c8a6a2757de8fbe896bcb2"
+    },
+    {
+      "bytes": 81484,
+      "file": "reference_routing_cable_high_temperature.stl",
+      "sha256": "5b56c16a59bf3759e9dd3193868e9ec71c77b81c258c74adc16ec6bad3023dea"
+    },
+    {
+      "bytes": 6208,
+      "file": "reference_routing_cable_low_pressure.step",
+      "sha256": "4894dc4800e32f1cc624cd525f7f63f0ef60a76f13c81056badefb6cd48ec3f2"
+    },
+    {
+      "bytes": 81484,
+      "file": "reference_routing_cable_low_pressure.stl",
+      "sha256": "e2295c778daa10e1dfb1775743cf43d0efce4b731b8c796727465d13a49501e2"
+    },
+    {
+      "bytes": 6208,
+      "file": "reference_routing_cable_low_temperature.step",
+      "sha256": "c945ad0dee5d4a20ba2913c1fc7c14179c72a2a75bc5f3cbd09df459598d51f1"
+    },
+    {
+      "bytes": 81484,
+      "file": "reference_routing_cable_low_temperature.stl",
+      "sha256": "8b8db15ec2e5e0705861f1951f40d360e581966a05ca6a449a93b37e2062c926"
+    },
+    {
+      "bytes": 6999,
+      "file": "reference_routing_connector_high_pressure.step",
+      "sha256": "9a514380cc3152464824ce1459c34c5576f8589e1cdea3b8aaa087c3625f8623"
+    },
+    {
+      "bytes": 684,
+      "file": "reference_routing_connector_high_pressure.stl",
+      "sha256": "addd25bd474214e89c1cf6622b973fe4c9d6fc352fcfbbd9596ba4f2cc725234"
+    },
+    {
+      "bytes": 6999,
+      "file": "reference_routing_connector_high_temperature.step",
+      "sha256": "8488b8d0635680ed0df7933ad44f53a73ce38f7b3a3811a8ff9cdb75d825a0ac"
+    },
+    {
+      "bytes": 684,
+      "file": "reference_routing_connector_high_temperature.stl",
+      "sha256": "4a8d141027ddfa85bb70bfe6f580b671c9df6d6b757b5cd06ea0010e58977862"
+    },
+    {
+      "bytes": 6999,
+      "file": "reference_routing_connector_low_pressure.step",
+      "sha256": "d77c825c803e89b692a75d9d6d72bb1a15db2f3cbd71a3d3eaaa3047f8c2b693"
+    },
+    {
+      "bytes": 684,
+      "file": "reference_routing_connector_low_pressure.stl",
+      "sha256": "8ca8814a400c1e245a1eb664fb23049f79586430aafafd018e386aba258a0928"
+    },
+    {
+      "bytes": 6999,
+      "file": "reference_routing_connector_low_temperature.step",
+      "sha256": "8ad0d882e2e0febda37a1b77d37aa145b1de30fa5b114159ee83bbb443d603b9"
+    },
+    {
+      "bytes": 684,
+      "file": "reference_routing_connector_low_temperature.stl",
+      "sha256": "ea7e2f1664d8334f6497da25dee6dd1efc0bbc3ebb331c27d4a9b3e32402e3df"
+    },
+    {
+      "bytes": 5495,
+      "file": "reference_routing_interboard_loop.step",
+      "sha256": "38ff620f65595fcd129aa0cc5e8d800a4a744026674ad909b2a898a0001e31b8"
+    },
+    {
+      "bytes": 147784,
+      "file": "reference_routing_interboard_loop.stl",
+      "sha256": "14e2f1acf60278bc82d605c1a121b1480da752fdae34b18fa692131a3d0c2a98"
+    },
+    {
+      "bytes": 6999,
+      "file": "reference_routing_pull_high_pressure.step",
+      "sha256": "d47439f6b9bcf73514b37244f0edac2bf75453a7203541254489f4c63c190b47"
+    },
+    {
+      "bytes": 684,
+      "file": "reference_routing_pull_high_pressure.stl",
+      "sha256": "4dc2cbda31d8d98e72754d3da62ebc0497069d9fe22561a5e06c177051ce0e72"
+    },
+    {
+      "bytes": 6999,
+      "file": "reference_routing_pull_high_temperature.step",
+      "sha256": "1a5681460264ef0383b2d4bbe2bbf2bfe7643112e92c1468ab565ed7844519af"
+    },
+    {
+      "bytes": 684,
+      "file": "reference_routing_pull_high_temperature.stl",
+      "sha256": "2f0ea9ccf09c97b1724168caf1be070fad23229d13a7d1db6cd3c78ca404959d"
+    },
+    {
+      "bytes": 6999,
+      "file": "reference_routing_pull_low_pressure.step",
+      "sha256": "903782493c8d4a0a3ad8dade4366cd736b7c64d7c9f43c730d69a9bec23759fc"
+    },
+    {
+      "bytes": 684,
+      "file": "reference_routing_pull_low_pressure.stl",
+      "sha256": "6d1f73dd7b008c8ba77828eea67d646ff4dc4587b4193cffb97646b73bf60952"
+    },
+    {
+      "bytes": 6999,
+      "file": "reference_routing_pull_low_temperature.step",
+      "sha256": "2090d8c9e983f106dc4dec4b0ce41586f2e7bb0817690f369cc044a7ae0d5e9e"
+    },
+    {
+      "bytes": 684,
+      "file": "reference_routing_pull_low_temperature.stl",
+      "sha256": "cb504b185673197eaa3befda2c3e239c08c59965b3ce4a148471f1fa5fb36348"
+    },
+    {
+      "bytes": 12085,
+      "file": "routing_step_export_checks.json",
+      "sha256": "a9c672926e2e8a54c32c2bf65612dc2aa8f2d7452d5de86d5e0d8209184683e3"
+    },
+    {
+      "bytes": 11660,
+      "file": "slide_rail_coupon_fixed.step",
+      "sha256": "9c6c29257fdcf7ed41fdb658b5fea80d9624d2e76c164f2cf89a01d5aa02c37b"
+    },
+    {
+      "bytes": 1484,
+      "file": "slide_rail_coupon_fixed.stl",
+      "sha256": "619fa36740615604d218eff7af757fcf1a6d215cf504d4e5096011755317398a"
+    },
+    {
+      "bytes": 11707,
+      "file": "slide_rail_coupon_slider.step",
+      "sha256": "d288a4fd45712b9df30f1a2517259c916c3180a54ebb94111f9d30f70b572021"
+    },
+    {
+      "bytes": 1484,
+      "file": "slide_rail_coupon_slider.stl",
+      "sha256": "4b042faca469d2f59910877574112143c6adbb339b785888f40f0951970b8c4e"
+    },
+    {
+      "bytes": 5899,
+      "file": "stl_mesh_audit.json",
+      "sha256": "a8fca47255a96ecc494b7b5fd63ff7a31f6c7ca61fe6e96f8aff09ab4eaf0dea"
+    }
+  ],
+  "attachment_pattern_revision": "2026-10-12-v4-routes-datum-relative",
+  "fixed_dimensions": {
+    "arduino_deck_left_margin_mm": 1.8,
+    "backplane_mount_pad_d_mm": 10.0,
+    "backplane_standoff_mm": 8.2,
+    "board_driver_d_mm": 6.0,
+    "board_insert_boss_height_mm": 8.0,
+    "board_insert_boss_od_mm": 8.4,
+    "board_insert_length_mm": 4.0,
+    "board_insert_max_od_mm": 4.6,
+    "board_insert_min_floor_mm": 3.0,
+    "board_insert_min_radial_wall_mm": 1.6,
+    "board_insert_pocket_depth_mm": 5.0,
+    "board_m25_head_d_mm": 5.0,
+    "board_m25_head_h_mm": 2.0,
+    "board_m25_screw_length_mm": 6.0,
+    "board_m25_washer_od_mm": 5.0,
+    "board_m25_washer_thickness_mm": 0.5,
+    "cable_tie_slot_length_mm": 6.0,
+    "cable_tie_slot_width_mm": 2.0,
+    "deck_boss_height_mm": 8.2,
+    "deck_boss_od_mm": 12.0,
+    "deck_boss_root_height_mm": 4.0,
+    "deck_boss_root_od_mm": 16.0,
+    "deck_driver_d_mm": 8.0,
+    "deck_m3_clearance_d_mm": 4.0,
+    "deck_m3_head_d_mm": 5.5,
+    "deck_m3_head_h_mm": 2.4,
+    "deck_m3_screw_length_mm": 8.0,
+    "deck_tab_axis_beyond_tray_mm": 2.0,
+    "deck_tab_radius_mm": 8.0,
+    "deck_thickness_mm": 3.0,
+    "fdm_surface_allowance_mm": 0.2,
+    "front_right_seal_rail_mm": 3.2,
+    "gland_keepout_d_mm": 16.0,
+    "gland_keepout_length_mm": 14.0,
+    "interboard_wiring_corridor_mm": 18.0,
+    "m3_insert_bottom_mm": 1.5,
+    "m3_insert_length_mm": 5.7,
+    "m3_insert_max_od_mm": 4.6,
+    "m3_insert_min_radial_wall_mm": 1.6,
+    "m3_insert_pocket_depth_mm": 6.7,
+    "maximum_finished_bundle_od_mm": 6.0,
+    "minimum_board_gap_mm": 18.0,
+    "minimum_board_to_throat_mm": 1.5,
+    "minimum_deck_hardware_clearance_mm": 1.0,
+    "minimum_loaded_top_clearance_mm": 4.0,
+    "minimum_right_pigtail_service_gap_mm": 14.0,
+    "minimum_service_loop_height_mm": 46.0,
+    "minimum_slot_roof_mm": 1.4,
+    "minimum_static_inside_bend_radius_mm": 15.0,
+    "minimum_tray_to_throat_mm": 0.8,
+    "minimum_worst_case_sliding_clearance_each_side_mm": 0.4,
+    "minimum_worst_case_vertical_slot_clearance_mm": 0.6,
+    "minimum_worst_pose_external_clearance_mm": 0.6,
+    "pcb_thickness_mm": 1.6,
+    "rack_driver_d_mm": 8.0,
+    "rack_m3_head_d_mm": 5.5,
+    "rack_m3_head_h_mm": 2.4,
+    "rack_m3_screw_length_mm": 8.0,
+    "rack_mount_pad_thickness_mm": 4.0,
+    "rail_crossbar_height_mm": 3.0,
+    "rail_foot_depth_mm": 8.0,
+    "rail_foot_to_front_land_clearance_mm": 1.2,
+    "rail_foot_width_mm": 12.0,
+    "rail_height_mm": 8.0,
+    "rail_slot_vertical_clearance_mm": 1.0,
+    "rail_width_mm": 8.0,
+    "right_panel_web_mm": 3.2,
+    "right_recess_depth_mm": 12.0,
+    "service_driver_length_mm": 50.0,
+    "shell_cap_registration_clearance_mm": 0.6,
+    "shell_front_gland_column_shift_mm": 20.0,
+    "shell_mount_clearance_d_mm": 4.0,
+    "shell_rear_gland_column_shift_mm": 6.5,
+    "tray_face_clearance_mm": 0.9,
+    "tray_front_clearance_mm": 5.0,
+    "tray_thickness_mm": 4.6,
+    "tray_to_mount_connector_clearance_mm": 2.4,
+    "tray_to_shell_boss_clearance_mm": 2.4,
+    "tray_to_shell_reinforcement_clearance_mm": 1.2,
+    "v400_bed_diameter_mm": 300.0,
+    "v400_height_mm": 410.0
+  },
+  "job": "ac_diagnostic_enclosure_dual_board_slide",
+  "parameters": {
+    "back_wall_mm": 4.0,
+    "case_depth_mm": 92.0,
+    "case_height_mm": 92.0,
+    "case_width_mm": 264.0,
+    "gasket_cord_d_mm": 2.5,
+    "m25_insert_pilot_d_mm": 4.0,
+    "m3_insert_pilot_d_mm": 4.0,
+    "slide_clearance_mm": 0.9,
+    "wall_mm": 3.2
+  },
+  "preview": {
+    "files": [
+      "preview_dual_board_slide_assembled.png",
+      "preview_dual_board_slide_extracted.png",
+      "preview_cable_routes_top.png",
+      "preview_rounded_platforms.png",
+      "preview_platforms_lifted.png"
+    ],
+    "status": "rendered"
+  },
+  "profile": "ac_v4_dual_board_front_slide_v4_routes",
+  "routing_helper_sha256": "1c3ae4e390039e42493cec8d720eea949432de890f75be76a3148469aa710f08",
+  "status": "complete",
+  "stl_mesh_checks": [
+    {
+      "bbox_max_mm": [
+        233.8000030517578,
+        62.4640007019043,
+        20.0
+      ],
+      "bbox_min_mm": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "bed_contact_area_mm2": 575.9999999999964,
+      "boundary_edges": 0,
+      "brim_mm": 6.0,
+      "bytes": 46884,
+      "connected_components": 1,
+      "degenerate_triangles": 0,
+      "failures": [],
+      "file": "dual_board_rail_frame.stl",
+      "finite": true,
+      "format": "binary_stl",
+      "inconsistent_winding_edges": 0,
+      "nonmanifold_edges": 0,
+      "pass": true,
+      "required_radius_mm": 127.0001991844326,
+      "signed_volume_mm3": 19732.69232218963,
+      "size_mm": [
+        233.8000030517578,
+        62.4640007019043,
+        20.0
+      ],
+      "triangle_count": 936
+    },
+    {
+      "bbox_max_mm": [
+        173.3800048828125,
+        72.46389770507812,
+        12.800000190734863
+      ],
+      "bbox_min_mm": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "bed_contact_area_mm2": 10083.270986619955,
+      "boundary_edges": 0,
+      "brim_mm": 6.0,
+      "bytes": 266184,
+      "connected_components": 1,
+      "degenerate_triangles": 0,
+      "failures": [],
+      "file": "dual_board_slide_tray.stl",
+      "finite": true,
+      "format": "binary_stl",
+      "inconsistent_winding_edges": 0,
+      "nonmanifold_edges": 0,
+      "pass": true,
+      "required_radius_mm": 99.95696164172205,
+      "signed_volume_mm3": 56145.82569372285,
+      "size_mm": [
+        173.3800048828125,
+        72.46389770507812,
+        12.800000190734863
+      ],
+      "triangle_count": 5322
+    },
+    {
+      "bbox_max_mm": [
+        86.0,
+        72.46389770507812,
+        11.0
+      ],
+      "bbox_min_mm": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "bed_contact_area_mm2": 5585.603682052371,
+      "boundary_edges": 0,
+      "brim_mm": 6.0,
+      "bytes": 136684,
+      "connected_components": 1,
+      "degenerate_triangles": 0,
+      "failures": [],
+      "file": "raspberry_pi_mounting_plane.stl",
+      "finite": true,
+      "format": "binary_stl",
+      "inconsistent_winding_edges": 0,
+      "nonmanifold_edges": 0,
+      "pass": true,
+      "required_radius_mm": 62.229477301972196,
+      "signed_volume_mm3": 18275.002528597928,
+      "size_mm": [
+        86.0,
+        72.46389770507812,
+        11.0
+      ],
+      "triangle_count": 2732
+    },
+    {
+      "bbox_max_mm": [
+        70.37999725341797,
+        69.89054870605469,
+        11.0
+      ],
+      "bbox_min_mm": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "bed_contact_area_mm2": 4323.426120418202,
+      "boundary_edges": 0,
+      "brim_mm": 6.0,
+      "bytes": 138284,
+      "connected_components": 1,
+      "degenerate_triangles": 0,
+      "failures": [],
+      "file": "arduino_uno_mounting_plane.stl",
+      "finite": true,
+      "format": "binary_stl",
+      "inconsistent_winding_edges": 0,
+      "nonmanifold_edges": 0,
+      "pass": true,
+      "required_radius_mm": 55.59342903002504,
+      "signed_volume_mm3": 14488.46979034271,
+      "size_mm": [
+        70.37999725341797,
+        69.89054870605469,
+        11.0
+      ],
+      "triangle_count": 2764
+    },
+    {
+      "bbox_max_mm": [
+        24.0,
+        36.0,
+        11.0
+      ],
+      "bbox_min_mm": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "bed_contact_area_mm2": 864.0,
+      "boundary_edges": 0,
+      "brim_mm": 6.0,
+      "bytes": 1484,
+      "connected_components": 1,
+      "degenerate_triangles": 0,
+      "failures": [],
+      "file": "slide_rail_coupon_fixed.stl",
+      "finite": true,
+      "format": "binary_stl",
+      "inconsistent_winding_edges": 0,
+      "nonmanifold_edges": 0,
+      "pass": true,
+      "required_radius_mm": 27.633307652783937,
+      "signed_volume_mm3": 4896.0,
+      "size_mm": [
+        24.0,
+        36.0,
+        11.0
+      ],
+      "triangle_count": 28
+    },
+    {
+      "bbox_max_mm": [
+        24.0,
+        36.0,
+        4.599999904632568
+      ],
+      "bbox_min_mm": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "bed_contact_area_mm2": 511.2000102996826,
+      "boundary_edges": 0,
+      "brim_mm": 6.0,
+      "bytes": 1484,
+      "connected_components": 1,
+      "degenerate_triangles": 0,
+      "failures": [],
+      "file": "slide_rail_coupon_slider.stl",
+      "finite": true,
+      "format": "binary_stl",
+      "inconsistent_winding_edges": 0,
+      "nonmanifold_edges": 0,
+      "pass": true,
+      "required_radius_mm": 27.633307652783937,
+      "signed_volume_mm3": 2845.4399337387085,
+      "size_mm": [
+        24.0,
+        36.0,
+        4.599999904632568
+      ],
+      "triangle_count": 28
+    },
+    {
+      "bbox_max_mm": [
+        88.0,
+        18.0,
+        8.199999809265137
+      ],
+      "bbox_min_mm": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "bed_contact_area_mm2": 1584.0,
+      "boundary_edges": 0,
+      "brim_mm": 6.0,
+      "bytes": 141184,
+      "connected_components": 1,
+      "degenerate_triangles": 0,
+      "failures": [],
+      "file": "blind_m3_insert_boss_coupon.stl",
+      "finite": true,
+      "format": "binary_stl",
+      "inconsistent_winding_edges": 0,
+      "nonmanifold_edges": 0,
+      "pass": true,
+      "required_radius_mm": 50.91102314577124,
+      "signed_volume_mm3": 6044.500360273966,
+      "size_mm": [
+        88.0,
+        18.0,
+        8.199999809265137
+      ],
+      "triangle_count": 2822
+    },
+    {
+      "bbox_max_mm": [
+        60.0,
+        12.0,
+        11.0
+      ],
+      "bbox_min_mm": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "bed_contact_area_mm2": 720.0,
+      "boundary_edges": 0,
+      "brim_mm": 6.0,
+      "bytes": 102684,
+      "connected_components": 1,
+      "degenerate_triangles": 0,
+      "failures": [],
+      "file": "blind_m25_board_insert_coupon.stl",
+      "finite": true,
+      "format": "binary_stl",
+      "inconsistent_winding_edges": 0,
+      "nonmanifold_edges": 0,
+      "pass": true,
+      "required_radius_mm": 36.59411708155671,
+      "signed_volume_mm3": 4057.347593522697,
+      "size_mm": [
+        60.0,
+        12.0,
+        11.0
+      ],
+      "triangle_count": 2052
+    }
+  ],
+  "tools": {
+    "blender": "C:\\Program Files\\Blender Foundation\\Blender 4.4\\blender.exe",
+    "freecad": "C:\\Program Files\\FreeCAD 1.0\\bin\\FreeCADCmd.exe"
+  },
+  "validation": {
+    "battery_policy": "prohibited_underhood_bench_fit_reference_only",
+    "board_fasteners": {
+      "blind_pocket_bottoming_margin_mm": 1.0999999999999996,
+      "insert": {
+        "family": "CNC Kitchen M2.5 x 4 standard",
+        "length_mm": 4.0,
+        "max_od_mm": 4.6,
+        "minimum_bore_depth_mm": 5.0,
+        "minimum_radial_wall_mm": 1.6,
+        "pilot_d_mm": 4.0,
+        "source": "https://cnckitchen.store/products/gewindeeinsatz-threaded-insert-m2-5-standard-100-stk-pcs",
+        "thread": "M2.5"
+      },
+      "insert_count": 8,
+      "pilot_d_mm": 4.0,
+      "screw": "M2.5 x 6 low-profile",
+      "screw_count": 8,
+      "separate_standoff_count": 0,
+      "thread_engagement_mm": 3.9000000000000004
+    },
+    "board_insert_boss_checks": [
+      {
+        "boss": 1,
+        "floor_above_plane_mm": 3.0,
+        "full_boss_footprint_inside_plane": true,
+        "pass": true,
+        "plane": "pi_deck",
+        "radial_wall_mm": 1.9000000000000004,
+        "worst_outer_surface_radial_wall_mm": 1.7000000000000004
+      },
+      {
+        "boss": 2,
+        "floor_above_plane_mm": 3.0,
+        "full_boss_footprint_inside_plane": true,
+        "pass": true,
+        "plane": "pi_deck",
+        "radial_wall_mm": 1.9000000000000004,
+        "worst_outer_surface_radial_wall_mm": 1.7000000000000004
+      },
+      {
+        "boss": 3,
+        "floor_above_plane_mm": 3.0,
+        "full_boss_footprint_inside_plane": true,
+        "pass": true,
+        "plane": "pi_deck",
+        "radial_wall_mm": 1.9000000000000004,
+        "worst_outer_surface_radial_wall_mm": 1.7000000000000004
+      },
+      {
+        "boss": 4,
+        "floor_above_plane_mm": 3.0,
+        "full_boss_footprint_inside_plane": true,
+        "pass": true,
+        "plane": "pi_deck",
+        "radial_wall_mm": 1.9000000000000004,
+        "worst_outer_surface_radial_wall_mm": 1.7000000000000004
+      },
+      {
+        "boss": 1,
+        "floor_above_plane_mm": 3.0,
+        "full_boss_footprint_inside_plane": true,
+        "pass": true,
+        "plane": "arduino_deck",
+        "radial_wall_mm": 1.9000000000000004,
+        "worst_outer_surface_radial_wall_mm": 1.7000000000000004
+      },
+      {
+        "boss": 2,
+        "floor_above_plane_mm": 3.0,
+        "full_boss_footprint_inside_plane": true,
+        "pass": true,
+        "plane": "arduino_deck",
+        "radial_wall_mm": 1.9000000000000004,
+        "worst_outer_surface_radial_wall_mm": 1.7000000000000004
+      },
+      {
+        "boss": 3,
+        "floor_above_plane_mm": 3.0,
+        "full_boss_footprint_inside_plane": true,
+        "pass": true,
+        "plane": "arduino_deck",
+        "radial_wall_mm": 1.9000000000000004,
+        "worst_outer_surface_radial_wall_mm": 1.7000000000000004
+      },
+      {
+        "boss": 4,
+        "floor_above_plane_mm": 3.0,
+        "full_boss_footprint_inside_plane": true,
+        "pass": true,
+        "plane": "arduino_deck",
+        "radial_wall_mm": 1.9000000000000004,
+        "worst_outer_surface_radial_wall_mm": 1.7000000000000004
+      }
+    ],
+    "clearance_hole_bearing": {
+      "deck_m3": {
+        "head_d_mm": 5.5,
+        "nominal_hole_d_mm": 4.0,
+        "worst_case_large_hole_d_mm": 4.4,
+        "worst_case_radial_bearing_mm": 0.5499999999999998
+      },
+      "rack_m3": {
+        "head_d_mm": 5.5,
+        "nominal_hole_d_mm": 4.0,
+        "worst_case_large_hole_d_mm": 4.4,
+        "worst_case_radial_bearing_mm": 0.5499999999999998
+      }
+    },
+    "common_fastener_revision": "m3_case_set_v1",
+    "compatible_shell_job": {
+      "job_type": "cad.ac_diagnostic_enclosure_slot_mount",
+      "profile": "firewall_hood_flange_v4",
+      "required_overrides": {
+        "back_wall_mm": 4.0,
+        "cap_registration_clearance_mm": 0.6,
+        "case_depth_mm": 92.0,
+        "case_height_mm": 92.0,
+        "case_width_mm": 264.0,
+        "front_gland_column_shift_mm": 20.0,
+        "gasket_cord_d_mm": 2.5,
+        "rear_gland_column_shift_mm": 6.5,
+        "wall_mm": 3.2
+      }
+    },
+    "deck_board_hardware_clearance_checks": [
+      {
+        "axis_spacing_mm": 10.67956103966825,
+        "board_fastener": 1,
+        "deck_fastener": 1,
+        "deck_head_to_board_boss_gap_mm": 3.7295610396682504,
+        "driver_to_board_boss_gap_mm": 2.4795610396682513,
+        "pass": true
+      },
+      {
+        "axis_spacing_mm": 45.57618922200494,
+        "board_fastener": 2,
+        "deck_fastener": 1,
+        "deck_head_to_board_boss_gap_mm": 38.62618922200494,
+        "driver_to_board_boss_gap_mm": 37.37618922200494,
+        "pass": true
+      },
+      {
+        "axis_spacing_mm": 48.50621634388731,
+        "board_fastener": 3,
+        "deck_fastener": 1,
+        "deck_head_to_board_boss_gap_mm": 41.55621634388731,
+        "driver_to_board_boss_gap_mm": 40.306216343887314,
+        "pass": true
+      },
+      {
+        "axis_spacing_mm": 65.69618728663026,
+        "board_fastener": 4,
+        "deck_fastener": 1,
+        "deck_head_to_board_boss_gap_mm": 58.74618728663026,
+        "driver_to_board_boss_gap_mm": 57.49618728663026,
+        "pass": true
+      },
+      {
+        "axis_spacing_mm": 101.93008547038502,
+        "board_fastener": 5,
+        "deck_fastener": 1,
+        "deck_head_to_board_boss_gap_mm": 94.98008547038502,
+        "driver_to_board_boss_gap_mm": 93.73008547038502,
+        "pass": true
+      },
+      {
+        "axis_spacing_mm": 94.79706622042687,
+        "board_fastener": 6,
+        "deck_fastener": 1,
+        "deck_head_to_board_boss_gap_mm": 87.84706622042687,
+        "driver_to_board_boss_gap_mm": 86.59706622042687,
+        "pass": true
+      },
+      {
+        "axis_spacing_mm": 152.73390698859242,
+        "board_fastener": 7,
+        "deck_fastener": 1,
+        "deck_head_to_board_boss_gap_mm": 145.78390698859243,
+        "driver_to_board_boss_gap_mm": 144.53390698859243,
+        "pass": true
+      },
+      {
+        "axis_spacing_mm": 144.99792137820458,
+        "board_fastener": 8,
+        "deck_fastener": 1,
+        "deck_head_to_board_boss_gap_mm": 138.0479213782046,
+        "driver_to_board_boss_gap_mm": 136.7979213782046,
+        "pass": true
+      },
+      {
+        "axis_spacing_mm": 67.64771262947477,
+        "board_fastener": 1,
+        "deck_fastener": 2,
+        "deck_head_to_board_boss_gap_mm": 60.697712629474765,
+        "driver_to_board_boss_gap_mm": 59.447712629474765,
+        "pass": true
+      },
+      {
+        "axis_spacing_mm": 80.866241559751,
+        "board_fastener": 2,
+        "deck_fastener": 2,
+        "deck_head_to_board_boss_gap_mm": 73.916241559751,
+        "driver_to_board_boss_gap_mm": 72.666241559751,
+        "pass": true
+      },
+      {
+        "axis_spacing_mm": 10.498239090437977,
+        "board_fastener": 3,
+        "deck_fastener": 2,
+        "deck_head_to_board_boss_gap_mm": 3.548239090437977,
+        "driver_to_board_boss_gap_mm": 2.2982390904379777,
+        "pass": true
+      },
+      {
+        "axis_spacing_mm": 45.534042473736065,
+        "board_fastener": 4,
+        "deck_fastener": 2,
+        "deck_head_to_board_boss_gap_mm": 38.58404247373606,
+        "driver_to_board_boss_gap_mm": 37.33404247373606,
+        "pass": true
+      },
+      {
+        "axis_spacing_mm": 53.36664055381413,
+        "board_fastener": 5,
+        "deck_fastener": 2,
+        "deck_head_to_board_boss_gap_mm": 46.416640553814126,
+        "driver_to_board_boss_gap_mm": 45.16664055381413,
+        "pass": true
+      },
+      {
+        "axis_spacing_mm": 38.009732490508256,
+        "board_fastener": 6,
+        "deck_fastener": 2,
+        "deck_head_to_board_boss_gap_mm": 31.059732490508257,
+        "driver_to_board_boss_gap_mm": 29.809732490508257,
+        "pass": true
+      },
+      {
+        "axis_spacing_mm": 98.82616224462024,
+        "board_fastener": 7,
+        "deck_fastener": 2,
+        "deck_head_to_board_boss_gap_mm": 91.87616224462023,
+        "driver_to_board_boss_gap_mm": 90.62616224462023,
+        "pass": true
+      },
+      {
+        "axis_spacing_mm": 87.23630668477432,
+        "board_fastener": 8,
+        "deck_fastener": 2,
+        "deck_head_to_board_boss_gap_mm": 80.28630668477432,
+        "driver_to_board_boss_gap_mm": 79.03630668477432,
+        "pass": true
+      },
+      {
+        "axis_spacing_mm": 58.54121474653562,
+        "board_fastener": 1,
+        "deck_fastener": 3,
+        "deck_head_to_board_boss_gap_mm": 51.59121474653562,
+        "driver_to_board_boss_gap_mm": 50.34121474653563,
+        "pass": true
+      },
+      {
+        "axis_spacing_mm": 13.051353339788175,
+        "board_fastener": 2,
+        "deck_fastener": 3,
+        "deck_head_to_board_boss_gap_mm": 6.101353339788175,
+        "driver_to_board_boss_gap_mm": 4.851353339788176,
+        "pass": true
+      },
+      {
+        "axis_spacing_mm": 75.27199893718779,
+        "board_fastener": 3,
+        "deck_fastener": 3,
+        "deck_head_to_board_boss_gap_mm": 68.32199893718779,
+        "driver_to_board_boss_gap_mm": 67.07199893718779,
+        "pass": true
+      },
+      {
+        "axis_spacing_mm": 49.08296877736717,
+        "board_fastener": 4,
+        "deck_fastener": 3,
+        "deck_head_to_board_boss_gap_mm": 42.13296877736717,
+        "driver_to_board_boss_gap_mm": 40.88296877736717,
+        "pass": true
+      },
+      {
+        "axis_spacing_mm": 95.2022516750523,
+        "board_fastener": 5,
+        "deck_fastener": 3,
+        "deck_head_to_board_boss_gap_mm": 88.25225167505229,
+        "driver_to_board_boss_gap_mm": 87.00225167505229,
+        "pass": true
+      },
+      {
+        "axis_spacing_mm": 103.13390559849849,
+        "board_fastener": 6,
+        "deck_fastener": 3,
+        "deck_head_to_board_boss_gap_mm": 96.18390559849848,
+        "driver_to_board_boss_gap_mm": 94.93390559849848,
+        "pass": true
+      },
+      {
+        "axis_spacing_mm": 146.49303909742608,
+        "board_fastener": 7,
+        "deck_fastener": 3,
+        "deck_head_to_board_boss_gap_mm": 139.5430390974261,
+        "driver_to_board_boss_gap_mm": 138.2930390974261,
+        "pass": true
+      },
+      {
+        "axis_spacing_mm": 155.8781660271893,
+        "board_fastener": 8,
+        "deck_fastener": 3,
+        "deck_head_to_board_boss_gap_mm": 148.92816602718932,
+        "driver_to_board_boss_gap_mm": 147.67816602718932,
+        "pass": true
+      },
+      {
+        "axis_spacing_mm": 88.82135905287646,
+        "board_fastener": 1,
+        "deck_fastener": 4,
+        "deck_head_to_board_boss_gap_mm": 81.87135905287646,
+        "driver_to_board_boss_gap_mm": 80.62135905287646,
+        "pass": true
+      },
+      {
+        "axis_spacing_mm": 68.06245531862629,
+        "board_fastener": 2,
+        "deck_fastener": 4,
+        "deck_head_to_board_boss_gap_mm": 61.11245531862629,
+        "driver_to_board_boss_gap_mm": 59.86245531862629,
+        "pass": true
+      },
+      {
+        "axis_spacing_mm": 58.508408147889305,
+        "board_fastener": 3,
+        "deck_fastener": 4,
+        "deck_head_to_board_boss_gap_mm": 51.5584081478893,
+        "driver_to_board_boss_gap_mm": 50.30840814788931,
+        "pass": true
+      },
+      {
+        "axis_spacing_mm": 12.903403582001145,
+        "board_fastener": 4,
+        "deck_fastener": 4,
+        "deck_head_to_board_boss_gap_mm": 5.953403582001145,
+        "driver_to_board_boss_gap_mm": 4.703403582001146,
+        "pass": true
+      },
+      {
+        "axis_spacing_mm": 39.009290226816475,
+        "board_fastener": 5,
+        "deck_fastener": 4,
+        "deck_head_to_board_boss_gap_mm": 32.05929022681647,
+        "driver_to_board_boss_gap_mm": 30.809290226816476,
+        "pass": true
+      },
+      {
+        "axis_spacing_mm": 55.631452290947784,
+        "board_fastener": 6,
+        "deck_fastener": 4,
+        "deck_head_to_board_boss_gap_mm": 48.68145229094778,
+        "driver_to_board_boss_gap_mm": 47.43145229094779,
+        "pass": true
+      },
+      {
+        "axis_spacing_mm": 88.8773002740295,
+        "board_fastener": 7,
+        "deck_fastener": 4,
+        "deck_head_to_board_boss_gap_mm": 81.92730027402949,
+        "driver_to_board_boss_gap_mm": 80.67730027402949,
+        "pass": true
+      },
+      {
+        "axis_spacing_mm": 104.32534995867495,
+        "board_fastener": 8,
+        "deck_fastener": 4,
+        "deck_head_to_board_boss_gap_mm": 97.37534995867495,
+        "driver_to_board_boss_gap_mm": 96.12534995867495,
+        "pass": true
+      },
+      {
+        "axis_spacing_mm": 109.39128404036585,
+        "board_fastener": 1,
+        "deck_fastener": 5,
+        "deck_head_to_board_boss_gap_mm": 102.44128404036584,
+        "driver_to_board_boss_gap_mm": 101.19128404036584,
+        "pass": true
+      },
+      {
+        "axis_spacing_mm": 118.02367992907186,
+        "board_fastener": 2,
+        "deck_fastener": 5,
+        "deck_head_to_board_boss_gap_mm": 111.07367992907186,
+        "driver_to_board_boss_gap_mm": 109.82367992907186,
+        "pass": true
+      },
+      {
+        "axis_spacing_mm": 51.49420379032964,
+        "board_fastener": 3,
+        "deck_fastener": 5,
+        "deck_head_to_board_boss_gap_mm": 44.54420379032964,
+        "driver_to_board_boss_gap_mm": 43.29420379032965,
+        "pass": true
+      },
+      {
+        "axis_spacing_mm": 67.9322384733493,
+        "board_fastener": 4,
+        "deck_fastener": 5,
+        "deck_head_to_board_boss_gap_mm": 60.9822384733493,
+        "driver_to_board_boss_gap_mm": 59.7322384733493,
+        "pass": true
+      },
+      {
+        "axis_spacing_mm": 39.46155501244217,
+        "board_fastener": 5,
+        "deck_fastener": 5,
+        "deck_head_to_board_boss_gap_mm": 32.511555012442166,
+        "driver_to_board_boss_gap_mm": 31.26155501244217,
+        "pass": true
+      },
+      {
+        "axis_spacing_mm": 12.40789119874929,
+        "board_fastener": 6,
+        "deck_fastener": 5,
+        "deck_head_to_board_boss_gap_mm": 5.45789119874929,
+        "driver_to_board_boss_gap_mm": 4.207891198749291,
+        "pass": true
+      },
+      {
+        "axis_spacing_mm": 64.20883384706501,
+        "board_fastener": 7,
+        "deck_fastener": 5,
+        "deck_head_to_board_boss_gap_mm": 57.258833847065006,
+        "driver_to_board_boss_gap_mm": 56.008833847065006,
+        "pass": true
+      },
+      {
+        "axis_spacing_mm": 45.52481964818752,
+        "board_fastener": 8,
+        "deck_fastener": 5,
+        "deck_head_to_board_boss_gap_mm": 38.574819648187514,
+        "driver_to_board_boss_gap_mm": 37.324819648187514,
+        "pass": true
+      },
+      {
+        "axis_spacing_mm": 162.0214190284729,
+        "board_fastener": 1,
+        "deck_fastener": 6,
+        "deck_head_to_board_boss_gap_mm": 155.07141902847292,
+        "driver_to_board_boss_gap_mm": 153.82141902847292,
+        "pass": true
+      },
+      {
+        "axis_spacing_mm": 167.29816563250176,
+        "board_fastener": 2,
+        "deck_fastener": 6,
+        "deck_head_to_board_boss_gap_mm": 160.34816563250178,
+        "driver_to_board_boss_gap_mm": 159.09816563250178,
+        "pass": true
+      },
+      {
+        "axis_spacing_mm": 104.10024122930741,
+        "board_fastener": 3,
+        "deck_fastener": 6,
+        "deck_head_to_board_boss_gap_mm": 97.15024122930741,
+        "driver_to_board_boss_gap_mm": 95.90024122930741,
+        "pass": true
+      },
+      {
+        "axis_spacing_mm": 112.13650709737662,
+        "board_fastener": 4,
+        "deck_fastener": 6,
+        "deck_head_to_board_boss_gap_mm": 105.18650709737662,
+        "driver_to_board_boss_gap_mm": 103.93650709737662,
+        "pass": true
+      },
+      {
+        "axis_spacing_mm": 68.71358762282755,
+        "board_fastener": 5,
+        "deck_fastener": 6,
+        "deck_head_to_board_boss_gap_mm": 61.763587622827544,
+        "driver_to_board_boss_gap_mm": 60.513587622827544,
+        "pass": true
+      },
+      {
+        "axis_spacing_mm": 58.70964626021859,
+        "board_fastener": 6,
+        "deck_fastener": 6,
+        "deck_head_to_board_boss_gap_mm": 51.75964626021859,
+        "driver_to_board_boss_gap_mm": 50.50964626021859,
+        "pass": true
+      },
+      {
+        "axis_spacing_mm": 42.28555242633114,
+        "board_fastener": 7,
+        "deck_fastener": 6,
+        "deck_head_to_board_boss_gap_mm": 35.335552426331134,
+        "driver_to_board_boss_gap_mm": 34.085552426331134,
+        "pass": true
+      },
+      {
+        "axis_spacing_mm": 9.661884081275234,
+        "board_fastener": 8,
+        "deck_fastener": 6,
+        "deck_head_to_board_boss_gap_mm": 2.711884081275234,
+        "driver_to_board_boss_gap_mm": 1.461884081275235,
+        "pass": true
+      },
+      {
+        "axis_spacing_mm": 126.27063722021838,
+        "board_fastener": 1,
+        "deck_fastener": 7,
+        "deck_head_to_board_boss_gap_mm": 119.32063722021837,
+        "driver_to_board_boss_gap_mm": 118.07063722021837,
+        "pass": true
+      },
+      {
+        "axis_spacing_mm": 112.63897116007408,
+        "board_fastener": 2,
+        "deck_fastener": 7,
+        "deck_head_to_board_boss_gap_mm": 105.68897116007408,
+        "driver_to_board_boss_gap_mm": 104.43897116007408,
+        "pass": true
+      },
+      {
+        "axis_spacing_mm": 79.25574946967569,
+        "board_fastener": 3,
+        "deck_fastener": 7,
+        "deck_head_to_board_boss_gap_mm": 72.30574946967569,
+        "driver_to_board_boss_gap_mm": 71.05574946967569,
+        "pass": true
+      },
+      {
+        "axis_spacing_mm": 54.997616530173374,
+        "board_fastener": 4,
+        "deck_fastener": 7,
+        "deck_head_to_board_boss_gap_mm": 48.04761653017337,
+        "driver_to_board_boss_gap_mm": 46.79761653017337,
+        "pass": true
+      },
+      {
+        "axis_spacing_mm": 16.513652654697573,
+        "board_fastener": 5,
+        "deck_fastener": 7,
+        "deck_head_to_board_boss_gap_mm": 9.563652654697574,
+        "driver_to_board_boss_gap_mm": 8.313652654697574,
+        "pass": true
+      },
+      {
+        "axis_spacing_mm": 42.96317590681583,
+        "board_fastener": 6,
+        "deck_fastener": 7,
+        "deck_head_to_board_boss_gap_mm": 36.013175906815825,
+        "driver_to_board_boss_gap_mm": 34.76317590681583,
+        "pass": true
+      },
+      {
+        "axis_spacing_mm": 44.54973068380999,
+        "board_fastener": 7,
+        "deck_fastener": 7,
+        "deck_head_to_board_boss_gap_mm": 37.59973068380999,
+        "driver_to_board_boss_gap_mm": 36.349730683809995,
+        "pass": true
+      },
+      {
+        "axis_spacing_mm": 71.29568460993976,
+        "board_fastener": 8,
+        "deck_fastener": 7,
+        "deck_head_to_board_boss_gap_mm": 64.34568460993975,
+        "driver_to_board_boss_gap_mm": 63.09568460993975,
+        "pass": true
+      },
+      {
+        "axis_spacing_mm": 171.86657099040522,
+        "board_fastener": 1,
+        "deck_fastener": 8,
+        "deck_head_to_board_boss_gap_mm": 164.91657099040523,
+        "driver_to_board_boss_gap_mm": 163.66657099040523,
+        "pass": true
+      },
+      {
+        "axis_spacing_mm": 162.1153361776732,
+        "board_fastener": 2,
+        "deck_fastener": 8,
+        "deck_head_to_board_boss_gap_mm": 155.16533617767323,
+        "driver_to_board_boss_gap_mm": 153.91533617767323,
+        "pass": true
+      },
+      {
+        "axis_spacing_mm": 118.8445969491251,
+        "board_fastener": 3,
+        "deck_fastener": 8,
+        "deck_head_to_board_boss_gap_mm": 111.8945969491251,
+        "driver_to_board_boss_gap_mm": 110.6445969491251,
+        "pass": true
+      },
+      {
+        "axis_spacing_mm": 104.24635352855272,
+        "board_fastener": 4,
+        "deck_fastener": 8,
+        "deck_head_to_board_boss_gap_mm": 97.29635352855271,
+        "driver_to_board_boss_gap_mm": 96.04635352855271,
+        "pass": true
+      },
+      {
+        "axis_spacing_mm": 59.74755830994267,
+        "board_fastener": 5,
+        "deck_fastener": 8,
+        "deck_head_to_board_boss_gap_mm": 52.797558309942666,
+        "driver_to_board_boss_gap_mm": 51.54755830994267,
+        "pass": true
+      },
+      {
+        "axis_spacing_mm": 71.71404662965269,
+        "board_fastener": 6,
+        "deck_fastener": 8,
+        "deck_head_to_board_boss_gap_mm": 64.76404662965268,
+        "driver_to_board_boss_gap_mm": 63.51404662965268,
+        "pass": true
+      },
+      {
+        "axis_spacing_mm": 10.885187366324923,
+        "board_fastener": 7,
+        "deck_fastener": 8,
+        "deck_head_to_board_boss_gap_mm": 3.9351873663249224,
+        "driver_to_board_boss_gap_mm": 2.6851873663249233,
+        "pass": true
+      },
+      {
+        "axis_spacing_mm": 57.81709646808632,
+        "board_fastener": 8,
+        "deck_fastener": 8,
+        "deck_head_to_board_boss_gap_mm": 50.86709646808632,
+        "driver_to_board_boss_gap_mm": 49.61709646808632,
+        "pass": true
+      }
+    ],
+    "deck_fastener": {
+      "blind_pocket_bottoming_margin_mm": 1.7000000000000002,
+      "screw": "M3 x 8 low-profile ISO 14580 TX10",
+      "thread_engagement_mm": 5.0
+    },
+    "engine_bay_release": "blocked_pending_exact_populated_board_heights_connectors_wiring_thermal_vibration_material_and_vehicle_fit_tests",
+    "fdm_tolerance_stack": {
+      "front_foot_nominal_clearance_mm": 15.335999999999999,
+      "front_foot_worst_case_clearance_mm": 14.935999999999998,
+      "front_lid_nominal_clearance_mm": 12.036000000000001,
+      "front_lid_worst_case_clearance_mm": 11.636000000000001,
+      "left_shell_boss_nominal_clearance_mm": 2.3999999999999986,
+      "left_shell_boss_worst_case_clearance_mm": 0.6999999999999985,
+      "m25_insert_pilot_d_mm": 4.0,
+      "m3_worst_case_hole_d_mm": 3.6,
+      "maximum_downward_settling_including_print_error_mm": 1.4,
+      "maximum_lateral_free_play_including_print_error_mm": 1.3,
+      "pigtail_worst_pose_service_gap_mm": 36.02000000000003,
+      "rack_connector_nominal_clearance_mm": 2.4,
+      "rack_connector_worst_pose_clearance_mm": 0.6,
+      "rail_nominal_clearance_each_side_mm": 0.9,
+      "rail_worst_case_clearance_each_side_mm": 0.5,
+      "rear_shell_nominal_clearance_mm": 1.2000000000000002,
+      "rear_shell_worst_case_clearance_mm": 0.8000000000000002,
+      "surface_allowance_each_surface_mm": 0.2,
+      "vertical_nominal_clearance_mm": 1.0,
+      "vertical_worst_case_clearance_mm": 0.6
+    },
+    "insert_boss": {
+      "closed_bottom_mm": 1.4999999999999991,
+      "closed_bottom_required": true,
+      "pilot_d_mm": 4.0,
+      "pocket_depth_mm": 6.7,
+      "radial_wall_at_insert_max_od_mm": 3.7,
+      "root_height_mm": 4.0,
+      "root_od_mm": 16.0
+    },
+    "layout": {
+      "arduino_board_hole_centers_xy_mm": [
+        [
+          131.04,
+          57.782
+        ],
+        [
+          131.04,
+          29.842
+        ],
+        [
+          183.11,
+          62.861999999999995
+        ],
+        [
+          181.84,
+          14.601999999999997
+        ]
+      ],
+      "arduino_component_envelope": {
+        "origin_mm": [
+          128.5,
+          12.061999999999998,
+          44.8
+        ],
+        "size_mm": [
+          68.58,
+          53.34,
+          18.0
+        ]
+      },
+      "arduino_deck": {
+        "attachment_centers_xy_mm": [
+          [
+            136.5,
+            18.7
+          ],
+          [
+            189.07999999999998,
+            21.0
+          ],
+          [
+            139.5,
+            71.964
+          ],
+          [
+            189.07999999999998,
+            71.964
+          ]
+        ],
+        "origin_mm": [
+          126.7,
+          10.061999999999998,
+          33.8
+        ],
+        "rounded_tab_centers_xy_mm": [
+          [
+            139.5,
+            71.964
+          ],
+          [
+            189.07999999999998,
+            71.964
+          ]
+        ],
+        "rounded_tab_radius_mm": 8.0,
+        "size_mm": [
+          70.38,
+          57.34,
+          3.0
+        ]
+      },
+      "board_edge_gap_mm": 19.799999999999997,
+      "board_mounting_style": "integrated_m25_insert_bosses",
+      "board_z_mm": 44.8,
+      "body_cap_interface_x_mm": 248.8,
+      "cable_routes": {
+        "access_probe_xz_mm": [
+          8.0,
+          12.0
+        ],
+        "board_port_terminations_modeled": false,
+        "branches": [
+          {
+            "access_origin_xyz_mm": [
+              199.8,
+              60.2,
+              60.0
+            ],
+            "access_size_xyz_mm": [
+              8.0,
+              43.8,
+              12.0
+            ],
+            "arc_center_xyz_mm": [
+              221.8,
+              43.2,
+              66.0
+            ],
+            "arc_end_xyz_mm": [
+              203.8,
+              43.2,
+              66.0
+            ],
+            "arc_start_xyz_mm": [
+              221.8,
+              25.2,
+              66.0
+            ],
+            "connector_origin_xyz_mm": [
+              199.8,
+              44.2,
+              61.0
+            ],
+            "connector_size_xyz_mm": [
+              8.0,
+              16.0,
+              10.0
+            ],
+            "end_xyz_mm": [
+              203.8,
+              44.2,
+              66.0
+            ],
+            "id": "high_pressure",
+            "pull_origin_xyz_mm": [
+              199.8,
+              44.2,
+              61.0
+            ],
+            "pull_size_xyz_mm": [
+              8.0,
+              26.0,
+              10.0
+            ],
+            "start_xyz_mm": [
+              234.8,
+              25.2,
+              66.0
+            ],
+            "straight_gland_lead_mm": 13.0
+          },
+          {
+            "access_origin_xyz_mm": [
+              209.8,
+              88.3,
+              60.0
+            ],
+            "access_size_xyz_mm": [
+              8.0,
+              15.700000000000003,
+              12.0
+            ],
+            "arc_center_xyz_mm": [
+              231.8,
+              71.3,
+              66.0
+            ],
+            "arc_end_xyz_mm": [
+              213.8,
+              71.3,
+              66.0
+            ],
+            "arc_start_xyz_mm": [
+              231.8,
+              53.3,
+              66.0
+            ],
+            "connector_origin_xyz_mm": [
+              209.8,
+              72.3,
+              61.0
+            ],
+            "connector_size_xyz_mm": [
+              8.0,
+              16.0,
+              10.0
+            ],
+            "end_xyz_mm": [
+              213.8,
+              72.3,
+              66.0
+            ],
+            "id": "high_temperature",
+            "pull_origin_xyz_mm": [
+              209.8,
+              72.3,
+              61.0
+            ],
+            "pull_size_xyz_mm": [
+              8.0,
+              26.0,
+              10.0
+            ],
+            "start_xyz_mm": [
+              234.8,
+              53.3,
+              66.0
+            ],
+            "straight_gland_lead_mm": 3.0
+          },
+          {
+            "access_origin_xyz_mm": [
+              199.8,
+              60.2,
+              20.0
+            ],
+            "access_size_xyz_mm": [
+              8.0,
+              43.8,
+              12.0
+            ],
+            "arc_center_xyz_mm": [
+              221.8,
+              43.2,
+              26.0
+            ],
+            "arc_end_xyz_mm": [
+              203.8,
+              43.2,
+              26.0
+            ],
+            "arc_start_xyz_mm": [
+              221.8,
+              25.2,
+              26.0
+            ],
+            "connector_origin_xyz_mm": [
+              199.8,
+              44.2,
+              21.0
+            ],
+            "connector_size_xyz_mm": [
+              8.0,
+              16.0,
+              10.0
+            ],
+            "end_xyz_mm": [
+              203.8,
+              44.2,
+              26.0
+            ],
+            "id": "low_pressure",
+            "pull_origin_xyz_mm": [
+              199.8,
+              44.2,
+              21.0
+            ],
+            "pull_size_xyz_mm": [
+              8.0,
+              26.0,
+              10.0
+            ],
+            "start_xyz_mm": [
+              234.8,
+              25.2,
+              26.0
+            ],
+            "straight_gland_lead_mm": 13.0
+          },
+          {
+            "access_origin_xyz_mm": [
+              209.8,
+              88.3,
+              20.0
+            ],
+            "access_size_xyz_mm": [
+              8.0,
+              15.700000000000003,
+              12.0
+            ],
+            "arc_center_xyz_mm": [
+              231.8,
+              71.3,
+              26.0
+            ],
+            "arc_end_xyz_mm": [
+              213.8,
+              71.3,
+              26.0
+            ],
+            "arc_start_xyz_mm": [
+              231.8,
+              53.3,
+              26.0
+            ],
+            "connector_origin_xyz_mm": [
+              209.8,
+              72.3,
+              21.0
+            ],
+            "connector_size_xyz_mm": [
+              8.0,
+              16.0,
+              10.0
+            ],
+            "end_xyz_mm": [
+              213.8,
+              72.3,
+              26.0
+            ],
+            "id": "low_temperature",
+            "pull_origin_xyz_mm": [
+              209.8,
+              72.3,
+              21.0
+            ],
+            "pull_size_xyz_mm": [
+              8.0,
+              26.0,
+              10.0
+            ],
+            "start_xyz_mm": [
+              234.8,
+              53.3,
+              26.0
+            ],
+            "straight_gland_lead_mm": 3.0
+          }
+        ],
+        "cable_od_mm": 6.0,
+        "centerline_bend_radius_mm": 18.0,
+        "connected_harness_extraction_verified": false,
+        "connector_envelope_xyz_mm": [
+          8.0,
+          16.0,
+          10.0
+        ],
+        "contract": "ac_provisional_cable_routes_v1",
+        "disconnect_direction": "+Y",
+        "disconnect_stroke_mm": 10.0,
+        "finger_access_verified": false,
+        "hardware_measurement_status": "assumed_unmeasured",
+        "inside_bend_radius_mm": 15.0,
+        "loop": {
+          "arc_y_mm": 31.5,
+          "center_z_mm": 48.6,
+          "corridor_vertical_margin_each_mm": 2.0,
+          "end_y_mm": 64.964,
+          "lower_z_mm": 30.6,
+          "upper_z_mm": 66.6,
+          "x_mm": 117.7
+        },
+        "power_entry_modeled": false,
+        "retention_status": "existing_tray_tie_slots_only_hardware_and_cap_retention_unqualified",
+        "service_state": "disconnect_and_park_cap_side_plugs_before_tray_extraction"
+      },
+      "cable_tie_slots": [
+        {
+          "origin_xyz_mm": [
+            109.7,
+            19.5,
+            20.8
+          ],
+          "size_xyz_mm": [
+            2.0,
+            6.0,
+            5.0
+          ]
+        },
+        {
+          "origin_xyz_mm": [
+            123.7,
+            19.5,
+            20.8
+          ],
+          "size_xyz_mm": [
+            2.0,
+            6.0,
+            5.0
+          ]
+        },
+        {
+          "origin_xyz_mm": [
+            109.7,
+            51.964,
+            20.8
+          ],
+          "size_xyz_mm": [
+            2.0,
+            6.0,
+            5.0
+          ]
+        },
+        {
+          "origin_xyz_mm": [
+            123.7,
+            51.964,
+            20.8
+          ],
+          "size_xyz_mm": [
+            2.0,
+            6.0,
+            5.0
+          ]
+        }
+      ],
+      "deck_z_mm": 33.8,
+      "face_flange_mm": 10.8,
+      "front_foot_to_shell_land_clearance_mm": 15.335999999999999,
+      "interboard_wire_corridor": {
+        "maximum_finished_bundle_od_mm": 6.0,
+        "minimum_static_inside_bend_radius_mm": 15.0,
+        "origin_xyz_mm": [
+          108.7,
+          7.5,
+          25.6
+        ],
+        "section_xz_mm": [
+          18.0,
+          46.0
+        ],
+        "size_xyz_mm": [
+          18.0,
+          62.464,
+          46.0
+        ]
+      },
+      "pi_assembly_keepout": {
+        "origin_mm": [
+          23.7,
+          7.5,
+          44.8
+        ],
+        "size_mm": [
+          85.0,
+          62.464,
+          31.38
+        ]
+      },
+      "pi_board": {
+        "origin_mm": [
+          23.7,
+          10.732,
+          44.8
+        ],
+        "size_mm": [
+          85.0,
+          56.0,
+          1.6
+        ]
+      },
+      "pi_board_hole_centers_xy_mm": [
+        [
+          27.2,
+          14.232
+        ],
+        [
+          27.2,
+          63.232
+        ],
+        [
+          85.2,
+          14.232
+        ],
+        [
+          85.2,
+          63.232
+        ]
+      ],
+      "pi_deck": {
+        "attachment_centers_xy_mm": [
+          [
+            36.9,
+            18.7
+          ],
+          [
+            94.7,
+            18.7
+          ],
+          [
+            36.9,
+            71.964
+          ],
+          [
+            94.7,
+            71.964
+          ]
+        ],
+        "origin_mm": [
+          22.7,
+          7.5,
+          33.8
+        ],
+        "rounded_tab_centers_xy_mm": [
+          [
+            36.9,
+            71.964
+          ],
+          [
+            94.7,
+            71.964
+          ]
+        ],
+        "rounded_tab_radius_mm": 8.0,
+        "size_mm": [
+          86.0,
+          62.464,
+          3.0
+        ]
+      },
+      "pi_keepout_top_clearance_mm": 5.02000000000001,
+      "rail": {
+        "bottom_z_mm": 15.2,
+        "center_x_mm": [
+          41.7,
+          179.07999999999998
+        ],
+        "foot_center_y_mm": [
+          13.5,
+          38.732,
+          63.964
+        ],
+        "mount_connector_bottom_z_mm": 13.700000000000001,
+        "mount_connector_height_mm": 4.9,
+        "mount_connector_rail_overlap_mm": 3.400000000000002,
+        "mount_connector_top_z_mm": 18.6,
+        "slot_depth_mm": 3.1999999999999993,
+        "slot_width_mm": 9.8,
+        "top_z_mm": 23.2,
+        "width_mm": 8.0,
+        "y_max_mm": 69.964,
+        "y_min_mm": 7.5
+      },
+      "rail_frame_shell_mount_centers_xz_mm": [
+        [
+          16.3,
+          16.700000000000003
+        ],
+        [
+          240.10000000000002,
+          16.700000000000003
+        ]
+      ],
+      "right_cap_gland_keepouts": [
+        {
+          "center_yz_mm": [
+            25.2,
+            66.0
+          ],
+          "id": "HIGH_PRESSURE",
+          "origin_xyz_mm": [
+            234.8,
+            17.2,
+            58.0
+          ],
+          "size_xyz_mm": [
+            14.0,
+            16.0,
+            16.0
+          ]
+        },
+        {
+          "center_yz_mm": [
+            53.3,
+            66.0
+          ],
+          "id": "HIGH_TEMPERATURE",
+          "origin_xyz_mm": [
+            234.8,
+            45.3,
+            58.0
+          ],
+          "size_xyz_mm": [
+            14.0,
+            16.0,
+            16.0
+          ]
+        },
+        {
+          "center_yz_mm": [
+            25.2,
+            26.0
+          ],
+          "id": "LOW_PRESSURE",
+          "origin_xyz_mm": [
+            234.8,
+            17.2,
+            18.0
+          ],
+          "size_xyz_mm": [
+            14.0,
+            16.0,
+            16.0
+          ]
+        },
+        {
+          "center_yz_mm": [
+            53.3,
+            26.0
+          ],
+          "id": "LOW_TEMPERATURE",
+          "origin_xyz_mm": [
+            234.8,
+            45.3,
+            18.0
+          ],
+          "size_xyz_mm": [
+            14.0,
+            16.0,
+            16.0
+          ]
+        }
+      ],
+      "right_pigtail_service_gap_mm": 37.72000000000003,
+      "right_pigtail_service_zone": {
+        "origin_xyz_mm": [
+          197.07999999999998,
+          7.5,
+          44.8
+        ],
+        "size_xyz_mm": [
+          37.72000000000003,
+          62.464,
+          36.400000000000006
+        ]
+      },
+      "service_throat": {
+        "x_max": 245.60000000000002,
+        "x_min": 10.8,
+        "z_max": 81.2,
+        "z_min": 10.8
+      },
+      "shell_backplane_mount_centers_xz_mm": [
+        [
+          16.3,
+          16.700000000000003
+        ],
+        [
+          240.10000000000002,
+          16.700000000000003
+        ],
+        [
+          16.3,
+          75.3
+        ],
+        [
+          240.10000000000002,
+          75.3
+        ]
+      ],
+      "shell_insert_face_y_mm": 12.2,
+      "shell_rear_reinforcement_y_max_mm": 6.3,
+      "tray": {
+        "origin_mm": [
+          23.7,
+          7.5,
+          21.0
+        ],
+        "rounded_tab_centers_xy_mm": [
+          [
+            36.9,
+            71.964
+          ],
+          [
+            94.7,
+            71.964
+          ],
+          [
+            139.5,
+            71.964
+          ],
+          [
+            189.07999999999998,
+            71.964
+          ]
+        ],
+        "rounded_tab_radius_mm": 8.0,
+        "size_mm": [
+          173.38,
+          62.464,
+          4.6
+        ]
+      },
+      "tray_front_clearance_mm": 12.036000000000001,
+      "tray_left_shell_boss_clearance_mm": 2.3999999999999986,
+      "tray_rear_shell_clearance_mm": 1.2000000000000002
+    },
+    "profile": "ac_v4_dual_board_front_slide_v4_routes",
+    "rack_fastener": {
+      "quantity": 2,
+      "screw": "M3 x 8 low-profile ISO 14580 TX10",
+      "thread_engagement_mm": 4.0
+    },
+    "rail_slot_roof_mm": 1.4000000000000004,
+    "service_access": {
+      "board_insert_installation": "heat-set from above with both boards and mounting planes removed from tray",
+      "board_m25": "tray fully extracted; remove Pi HAT before Pi board screws",
+      "deck_m3": "tray fully extracted and boards off; install mounting planes before PCBs",
+      "driver_path_checks": [
+        {
+          "axis_xy_mm": [
+            36.9,
+            18.7
+          ],
+          "driver_d_mm": 8.0,
+          "fastener": 1,
+          "group": "deck_m3",
+          "opening_margins_mm": {
+            "back": 10.7,
+            "front": 69.3,
+            "left": 22.099999999999998,
+            "right": 204.70000000000002
+          },
+          "pass": true
+        },
+        {
+          "axis_xy_mm": [
+            94.7,
+            18.7
+          ],
+          "driver_d_mm": 8.0,
+          "fastener": 2,
+          "group": "deck_m3",
+          "opening_margins_mm": {
+            "back": 10.7,
+            "front": 69.3,
+            "left": 79.9,
+            "right": 146.90000000000003
+          },
+          "pass": true
+        },
+        {
+          "axis_xy_mm": [
+            36.9,
+            71.964
+          ],
+          "driver_d_mm": 8.0,
+          "fastener": 3,
+          "group": "deck_m3",
+          "opening_margins_mm": {
+            "back": 63.964,
+            "front": 16.036,
+            "left": 22.099999999999998,
+            "right": 204.70000000000002
+          },
+          "pass": true
+        },
+        {
+          "axis_xy_mm": [
+            94.7,
+            71.964
+          ],
+          "driver_d_mm": 8.0,
+          "fastener": 4,
+          "group": "deck_m3",
+          "opening_margins_mm": {
+            "back": 63.964,
+            "front": 16.036,
+            "left": 79.9,
+            "right": 146.90000000000003
+          },
+          "pass": true
+        },
+        {
+          "axis_xy_mm": [
+            136.5,
+            18.7
+          ],
+          "driver_d_mm": 8.0,
+          "fastener": 5,
+          "group": "deck_m3",
+          "opening_margins_mm": {
+            "back": 10.7,
+            "front": 69.3,
+            "left": 121.7,
+            "right": 105.10000000000002
+          },
+          "pass": true
+        },
+        {
+          "axis_xy_mm": [
+            189.07999999999998,
+            21.0
+          ],
+          "driver_d_mm": 8.0,
+          "fastener": 6,
+          "group": "deck_m3",
+          "opening_margins_mm": {
+            "back": 13.0,
+            "front": 67.0,
+            "left": 174.27999999999997,
+            "right": 52.52000000000004
+          },
+          "pass": true
+        },
+        {
+          "axis_xy_mm": [
+            139.5,
+            71.964
+          ],
+          "driver_d_mm": 8.0,
+          "fastener": 7,
+          "group": "deck_m3",
+          "opening_margins_mm": {
+            "back": 63.964,
+            "front": 16.036,
+            "left": 124.7,
+            "right": 102.10000000000002
+          },
+          "pass": true
+        },
+        {
+          "axis_xy_mm": [
+            189.07999999999998,
+            71.964
+          ],
+          "driver_d_mm": 8.0,
+          "fastener": 8,
+          "group": "deck_m3",
+          "opening_margins_mm": {
+            "back": 63.964,
+            "front": 16.036,
+            "left": 174.27999999999997,
+            "right": 52.52000000000004
+          },
+          "pass": true
+        },
+        {
+          "axis_xy_mm": [
+            27.2,
+            14.232
+          ],
+          "driver_d_mm": 6.0,
+          "fastener": 1,
+          "group": "board_m25",
+          "opening_margins_mm": {
+            "back": 7.231999999999999,
+            "front": 74.768,
+            "left": 13.399999999999999,
+            "right": 215.40000000000003
+          },
+          "pass": true
+        },
+        {
+          "axis_xy_mm": [
+            27.2,
+            63.232
+          ],
+          "driver_d_mm": 6.0,
+          "fastener": 2,
+          "group": "board_m25",
+          "opening_margins_mm": {
+            "back": 56.232,
+            "front": 25.768,
+            "left": 13.399999999999999,
+            "right": 215.40000000000003
+          },
+          "pass": true
+        },
+        {
+          "axis_xy_mm": [
+            85.2,
+            14.232
+          ],
+          "driver_d_mm": 6.0,
+          "fastener": 3,
+          "group": "board_m25",
+          "opening_margins_mm": {
+            "back": 7.231999999999999,
+            "front": 74.768,
+            "left": 71.4,
+            "right": 157.40000000000003
+          },
+          "pass": true
+        },
+        {
+          "axis_xy_mm": [
+            85.2,
+            63.232
+          ],
+          "driver_d_mm": 6.0,
+          "fastener": 4,
+          "group": "board_m25",
+          "opening_margins_mm": {
+            "back": 56.232,
+            "front": 25.768,
+            "left": 71.4,
+            "right": 157.40000000000003
+          },
+          "pass": true
+        },
+        {
+          "axis_xy_mm": [
+            131.04,
+            57.782
+          ],
+          "driver_d_mm": 6.0,
+          "fastener": 5,
+          "group": "board_m25",
+          "opening_margins_mm": {
+            "back": 50.782,
+            "front": 31.218000000000004,
+            "left": 117.24,
+            "right": 111.56000000000003
+          },
+          "pass": true
+        },
+        {
+          "axis_xy_mm": [
+            131.04,
+            29.842
+          ],
+          "driver_d_mm": 6.0,
+          "fastener": 6,
+          "group": "board_m25",
+          "opening_margins_mm": {
+            "back": 22.842,
+            "front": 59.158,
+            "left": 117.24,
+            "right": 111.56000000000003
+          },
+          "pass": true
+        },
+        {
+          "axis_xy_mm": [
+            183.11,
+            62.861999999999995
+          ],
+          "driver_d_mm": 6.0,
+          "fastener": 7,
+          "group": "board_m25",
+          "opening_margins_mm": {
+            "back": 55.861999999999995,
+            "front": 26.138000000000005,
+            "left": 169.31,
+            "right": 59.49000000000001
+          },
+          "pass": true
+        },
+        {
+          "axis_xy_mm": [
+            181.84,
+            14.601999999999997
+          ],
+          "driver_d_mm": 6.0,
+          "fastener": 8,
+          "group": "board_m25",
+          "opening_margins_mm": {
+            "back": 7.601999999999997,
+            "front": 74.398,
+            "left": 168.04,
+            "right": 60.76000000000002
+          },
+          "pass": true
+        },
+        {
+          "axis_xz_mm": [
+            16.3,
+            16.700000000000003
+          ],
+          "driver_d_mm": 8.0,
+          "fastener": 1,
+          "group": "rack_m3",
+          "opening_margins_mm": {
+            "bottom": 1.9000000000000021,
+            "left": 1.5,
+            "right": 225.3,
+            "top": 60.5
+          },
+          "pass": true
+        },
+        {
+          "axis_xz_mm": [
+            240.10000000000002,
+            16.700000000000003
+          ],
+          "driver_d_mm": 8.0,
+          "fastener": 2,
+          "group": "rack_m3",
+          "opening_margins_mm": {
+            "bottom": 1.9000000000000021,
+            "left": 225.3,
+            "right": 1.5,
+            "top": 60.5
+          },
+          "pass": true
+        }
+      ],
+      "populated_component_driver_access": "requires measured board and connector geometry; not established by an envelope",
+      "rack_m3": "tray and removable right cap off"
+    },
+    "slide_clearance_each_side_mm": 0.9,
+    "status": "pass",
+    "wire_routing": {
+      "cable_routes": {
+        "access_probe_xz_mm": [
+          8.0,
+          12.0
+        ],
+        "board_port_terminations_modeled": false,
+        "branches": [
+          {
+            "access_origin_xyz_mm": [
+              199.8,
+              60.2,
+              60.0
+            ],
+            "access_size_xyz_mm": [
+              8.0,
+              43.8,
+              12.0
+            ],
+            "arc_center_xyz_mm": [
+              221.8,
+              43.2,
+              66.0
+            ],
+            "arc_end_xyz_mm": [
+              203.8,
+              43.2,
+              66.0
+            ],
+            "arc_start_xyz_mm": [
+              221.8,
+              25.2,
+              66.0
+            ],
+            "connector_origin_xyz_mm": [
+              199.8,
+              44.2,
+              61.0
+            ],
+            "connector_size_xyz_mm": [
+              8.0,
+              16.0,
+              10.0
+            ],
+            "end_xyz_mm": [
+              203.8,
+              44.2,
+              66.0
+            ],
+            "id": "high_pressure",
+            "pull_origin_xyz_mm": [
+              199.8,
+              44.2,
+              61.0
+            ],
+            "pull_size_xyz_mm": [
+              8.0,
+              26.0,
+              10.0
+            ],
+            "start_xyz_mm": [
+              234.8,
+              25.2,
+              66.0
+            ],
+            "straight_gland_lead_mm": 13.0
+          },
+          {
+            "access_origin_xyz_mm": [
+              209.8,
+              88.3,
+              60.0
+            ],
+            "access_size_xyz_mm": [
+              8.0,
+              15.700000000000003,
+              12.0
+            ],
+            "arc_center_xyz_mm": [
+              231.8,
+              71.3,
+              66.0
+            ],
+            "arc_end_xyz_mm": [
+              213.8,
+              71.3,
+              66.0
+            ],
+            "arc_start_xyz_mm": [
+              231.8,
+              53.3,
+              66.0
+            ],
+            "connector_origin_xyz_mm": [
+              209.8,
+              72.3,
+              61.0
+            ],
+            "connector_size_xyz_mm": [
+              8.0,
+              16.0,
+              10.0
+            ],
+            "end_xyz_mm": [
+              213.8,
+              72.3,
+              66.0
+            ],
+            "id": "high_temperature",
+            "pull_origin_xyz_mm": [
+              209.8,
+              72.3,
+              61.0
+            ],
+            "pull_size_xyz_mm": [
+              8.0,
+              26.0,
+              10.0
+            ],
+            "start_xyz_mm": [
+              234.8,
+              53.3,
+              66.0
+            ],
+            "straight_gland_lead_mm": 3.0
+          },
+          {
+            "access_origin_xyz_mm": [
+              199.8,
+              60.2,
+              20.0
+            ],
+            "access_size_xyz_mm": [
+              8.0,
+              43.8,
+              12.0
+            ],
+            "arc_center_xyz_mm": [
+              221.8,
+              43.2,
+              26.0
+            ],
+            "arc_end_xyz_mm": [
+              203.8,
+              43.2,
+              26.0
+            ],
+            "arc_start_xyz_mm": [
+              221.8,
+              25.2,
+              26.0
+            ],
+            "connector_origin_xyz_mm": [
+              199.8,
+              44.2,
+              21.0
+            ],
+            "connector_size_xyz_mm": [
+              8.0,
+              16.0,
+              10.0
+            ],
+            "end_xyz_mm": [
+              203.8,
+              44.2,
+              26.0
+            ],
+            "id": "low_pressure",
+            "pull_origin_xyz_mm": [
+              199.8,
+              44.2,
+              21.0
+            ],
+            "pull_size_xyz_mm": [
+              8.0,
+              26.0,
+              10.0
+            ],
+            "start_xyz_mm": [
+              234.8,
+              25.2,
+              26.0
+            ],
+            "straight_gland_lead_mm": 13.0
+          },
+          {
+            "access_origin_xyz_mm": [
+              209.8,
+              88.3,
+              20.0
+            ],
+            "access_size_xyz_mm": [
+              8.0,
+              15.700000000000003,
+              12.0
+            ],
+            "arc_center_xyz_mm": [
+              231.8,
+              71.3,
+              26.0
+            ],
+            "arc_end_xyz_mm": [
+              213.8,
+              71.3,
+              26.0
+            ],
+            "arc_start_xyz_mm": [
+              231.8,
+              53.3,
+              26.0
+            ],
+            "connector_origin_xyz_mm": [
+              209.8,
+              72.3,
+              21.0
+            ],
+            "connector_size_xyz_mm": [
+              8.0,
+              16.0,
+              10.0
+            ],
+            "end_xyz_mm": [
+              213.8,
+              72.3,
+              26.0
+            ],
+            "id": "low_temperature",
+            "pull_origin_xyz_mm": [
+              209.8,
+              72.3,
+              21.0
+            ],
+            "pull_size_xyz_mm": [
+              8.0,
+              26.0,
+              10.0
+            ],
+            "start_xyz_mm": [
+              234.8,
+              53.3,
+              26.0
+            ],
+            "straight_gland_lead_mm": 3.0
+          }
+        ],
+        "cable_od_mm": 6.0,
+        "centerline_bend_radius_mm": 18.0,
+        "connected_harness_extraction_verified": false,
+        "connector_envelope_xyz_mm": [
+          8.0,
+          16.0,
+          10.0
+        ],
+        "contract": "ac_provisional_cable_routes_v1",
+        "disconnect_direction": "+Y",
+        "disconnect_stroke_mm": 10.0,
+        "finger_access_verified": false,
+        "hardware_measurement_status": "assumed_unmeasured",
+        "inside_bend_radius_mm": 15.0,
+        "loop": {
+          "arc_y_mm": 31.5,
+          "center_z_mm": 48.6,
+          "corridor_vertical_margin_each_mm": 2.0,
+          "end_y_mm": 64.964,
+          "lower_z_mm": 30.6,
+          "upper_z_mm": 66.6,
+          "x_mm": 117.7
+        },
+        "power_entry_modeled": false,
+        "retention_status": "existing_tray_tie_slots_only_hardware_and_cap_retention_unqualified",
+        "service_state": "disconnect_and_park_cap_side_plugs_before_tray_extraction"
+      },
+      "connected_harness_extraction_verified": false,
+      "connector_fit_status": "provisional_8x16x10_envelope_requires_measured_hardware",
+      "continuous_cable_routes_modeled": true,
+      "external_pigtails_must_be_disconnected_for_extraction": true,
+      "external_unplugging_alone_frees_tray": false,
+      "fixed_cap_to_moving_tray_connections_must_be_disconnected": true,
+      "interboard_corridor_width_mm": 18.0,
+      "right_pigtail_service_gap_mm": 37.72000000000003,
+      "service_loop_height_mm": 46.0,
+      "tie_slot_count": 4
+    }
+  }
+}

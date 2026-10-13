@@ -1,0 +1,6119 @@
+{
+  "arduino_board_hole_centers_xy_mm": [
+    [
+      131.04,
+      57.782
+    ],
+    [
+      131.04,
+      29.842
+    ],
+    [
+      183.11,
+      62.861999999999995
+    ],
+    [
+      181.84,
+      14.601999999999997
+    ]
+  ],
+  "battery_policy": "prohibited_underhood_bench_fit_reference_only",
+  "board_insert_bore_geometry_checks": [
+    {
+      "actual_pocket_depth_mm": 5.0,
+      "boss": 1,
+      "center_xy_mm": [
+        27.2,
+        14.232
+      ],
+      "closed_floor_above_plane_mm": 3.0,
+      "pass": true,
+      "plane": "Raspberry Pi mounting plane",
+      "total_backing_to_platform_underside_mm": 6.0
+    },
+    {
+      "actual_pocket_depth_mm": 5.0,
+      "boss": 2,
+      "center_xy_mm": [
+        27.2,
+        63.232
+      ],
+      "closed_floor_above_plane_mm": 3.0,
+      "pass": true,
+      "plane": "Raspberry Pi mounting plane",
+      "total_backing_to_platform_underside_mm": 6.0
+    },
+    {
+      "actual_pocket_depth_mm": 5.0,
+      "boss": 3,
+      "center_xy_mm": [
+        85.2,
+        14.232
+      ],
+      "closed_floor_above_plane_mm": 3.0,
+      "pass": true,
+      "plane": "Raspberry Pi mounting plane",
+      "total_backing_to_platform_underside_mm": 6.0
+    },
+    {
+      "actual_pocket_depth_mm": 5.0,
+      "boss": 4,
+      "center_xy_mm": [
+        85.2,
+        63.232
+      ],
+      "closed_floor_above_plane_mm": 3.0,
+      "pass": true,
+      "plane": "Raspberry Pi mounting plane",
+      "total_backing_to_platform_underside_mm": 6.0
+    },
+    {
+      "actual_pocket_depth_mm": 5.0,
+      "boss": 1,
+      "center_xy_mm": [
+        131.04,
+        57.782
+      ],
+      "closed_floor_above_plane_mm": 3.0,
+      "pass": true,
+      "plane": "Arduino UNO mounting plane",
+      "total_backing_to_platform_underside_mm": 6.0
+    },
+    {
+      "actual_pocket_depth_mm": 5.0,
+      "boss": 2,
+      "center_xy_mm": [
+        131.04,
+        29.842
+      ],
+      "closed_floor_above_plane_mm": 3.0,
+      "pass": true,
+      "plane": "Arduino UNO mounting plane",
+      "total_backing_to_platform_underside_mm": 6.0
+    },
+    {
+      "actual_pocket_depth_mm": 5.0,
+      "boss": 3,
+      "center_xy_mm": [
+        183.11,
+        62.861999999999995
+      ],
+      "closed_floor_above_plane_mm": 3.0,
+      "pass": true,
+      "plane": "Arduino UNO mounting plane",
+      "total_backing_to_platform_underside_mm": 6.0
+    },
+    {
+      "actual_pocket_depth_mm": 5.0,
+      "boss": 4,
+      "center_xy_mm": [
+        181.84,
+        14.601999999999997
+      ],
+      "closed_floor_above_plane_mm": 3.0,
+      "pass": true,
+      "plane": "Arduino UNO mounting plane",
+      "total_backing_to_platform_underside_mm": 6.0
+    }
+  ],
+  "cable_routes": {
+    "access_probe_xz_mm": [
+      8.0,
+      12.0
+    ],
+    "board_port_terminations_modeled": false,
+    "branches": [
+      {
+        "access_origin_xyz_mm": [
+          199.8,
+          60.2,
+          60.0
+        ],
+        "access_size_xyz_mm": [
+          8.0,
+          43.8,
+          12.0
+        ],
+        "arc_center_xyz_mm": [
+          221.8,
+          43.2,
+          66.0
+        ],
+        "arc_end_xyz_mm": [
+          203.8,
+          43.2,
+          66.0
+        ],
+        "arc_start_xyz_mm": [
+          221.8,
+          25.2,
+          66.0
+        ],
+        "connector_origin_xyz_mm": [
+          199.8,
+          44.2,
+          61.0
+        ],
+        "connector_size_xyz_mm": [
+          8.0,
+          16.0,
+          10.0
+        ],
+        "end_xyz_mm": [
+          203.8,
+          44.2,
+          66.0
+        ],
+        "id": "high_pressure",
+        "pull_origin_xyz_mm": [
+          199.8,
+          44.2,
+          61.0
+        ],
+        "pull_size_xyz_mm": [
+          8.0,
+          26.0,
+          10.0
+        ],
+        "start_xyz_mm": [
+          234.8,
+          25.2,
+          66.0
+        ],
+        "straight_gland_lead_mm": 13.0
+      },
+      {
+        "access_origin_xyz_mm": [
+          209.8,
+          88.3,
+          60.0
+        ],
+        "access_size_xyz_mm": [
+          8.0,
+          15.700000000000003,
+          12.0
+        ],
+        "arc_center_xyz_mm": [
+          231.8,
+          71.3,
+          66.0
+        ],
+        "arc_end_xyz_mm": [
+          213.8,
+          71.3,
+          66.0
+        ],
+        "arc_start_xyz_mm": [
+          231.8,
+          53.3,
+          66.0
+        ],
+        "connector_origin_xyz_mm": [
+          209.8,
+          72.3,
+          61.0
+        ],
+        "connector_size_xyz_mm": [
+          8.0,
+          16.0,
+          10.0
+        ],
+        "end_xyz_mm": [
+          213.8,
+          72.3,
+          66.0
+        ],
+        "id": "high_temperature",
+        "pull_origin_xyz_mm": [
+          209.8,
+          72.3,
+          61.0
+        ],
+        "pull_size_xyz_mm": [
+          8.0,
+          26.0,
+          10.0
+        ],
+        "start_xyz_mm": [
+          234.8,
+          53.3,
+          66.0
+        ],
+        "straight_gland_lead_mm": 3.0
+      },
+      {
+        "access_origin_xyz_mm": [
+          199.8,
+          60.2,
+          20.0
+        ],
+        "access_size_xyz_mm": [
+          8.0,
+          43.8,
+          12.0
+        ],
+        "arc_center_xyz_mm": [
+          221.8,
+          43.2,
+          26.0
+        ],
+        "arc_end_xyz_mm": [
+          203.8,
+          43.2,
+          26.0
+        ],
+        "arc_start_xyz_mm": [
+          221.8,
+          25.2,
+          26.0
+        ],
+        "connector_origin_xyz_mm": [
+          199.8,
+          44.2,
+          21.0
+        ],
+        "connector_size_xyz_mm": [
+          8.0,
+          16.0,
+          10.0
+        ],
+        "end_xyz_mm": [
+          203.8,
+          44.2,
+          26.0
+        ],
+        "id": "low_pressure",
+        "pull_origin_xyz_mm": [
+          199.8,
+          44.2,
+          21.0
+        ],
+        "pull_size_xyz_mm": [
+          8.0,
+          26.0,
+          10.0
+        ],
+        "start_xyz_mm": [
+          234.8,
+          25.2,
+          26.0
+        ],
+        "straight_gland_lead_mm": 13.0
+      },
+      {
+        "access_origin_xyz_mm": [
+          209.8,
+          88.3,
+          20.0
+        ],
+        "access_size_xyz_mm": [
+          8.0,
+          15.700000000000003,
+          12.0
+        ],
+        "arc_center_xyz_mm": [
+          231.8,
+          71.3,
+          26.0
+        ],
+        "arc_end_xyz_mm": [
+          213.8,
+          71.3,
+          26.0
+        ],
+        "arc_start_xyz_mm": [
+          231.8,
+          53.3,
+          26.0
+        ],
+        "connector_origin_xyz_mm": [
+          209.8,
+          72.3,
+          21.0
+        ],
+        "connector_size_xyz_mm": [
+          8.0,
+          16.0,
+          10.0
+        ],
+        "end_xyz_mm": [
+          213.8,
+          72.3,
+          26.0
+        ],
+        "id": "low_temperature",
+        "pull_origin_xyz_mm": [
+          209.8,
+          72.3,
+          21.0
+        ],
+        "pull_size_xyz_mm": [
+          8.0,
+          26.0,
+          10.0
+        ],
+        "start_xyz_mm": [
+          234.8,
+          53.3,
+          26.0
+        ],
+        "straight_gland_lead_mm": 3.0
+      }
+    ],
+    "cable_od_mm": 6.0,
+    "centerline_bend_radius_mm": 18.0,
+    "connected_harness_extraction_verified": false,
+    "connector_envelope_xyz_mm": [
+      8.0,
+      16.0,
+      10.0
+    ],
+    "contract": "ac_provisional_cable_routes_v1",
+    "disconnect_direction": "+Y",
+    "disconnect_stroke_mm": 10.0,
+    "finger_access_verified": false,
+    "hardware_measurement_status": "assumed_unmeasured",
+    "inside_bend_radius_mm": 15.0,
+    "loop": {
+      "arc_y_mm": 31.5,
+      "center_z_mm": 48.6,
+      "corridor_vertical_margin_each_mm": 2.0,
+      "end_y_mm": 64.964,
+      "lower_z_mm": 30.6,
+      "upper_z_mm": 66.6,
+      "x_mm": 117.7
+    },
+    "power_entry_modeled": false,
+    "retention_status": "existing_tray_tie_slots_only_hardware_and_cap_retention_unqualified",
+    "service_state": "disconnect_and_park_cap_side_plugs_before_tray_extraction"
+  },
+  "cable_tie_slot_count": 4,
+  "collision_checks": [
+    {
+      "left": "rail_frame",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "slide_tray"
+    },
+    {
+      "left": "pi_mounting_plane",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "arduino_mounting_plane"
+    },
+    {
+      "left": "pi_board",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "arduino_envelope"
+    },
+    {
+      "left": "pi_keepout",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "arduino_envelope"
+    },
+    {
+      "left": "pi_mounting_plane",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "wire_corridor"
+    },
+    {
+      "left": "arduino_mounting_plane",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "wire_corridor"
+    },
+    {
+      "left": "pi_mount_hardware",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "tray"
+    },
+    {
+      "left": "pi_mount_hardware",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "rail_frame"
+    },
+    {
+      "left": "pi_mount_hardware",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "pi_mounting_plane"
+    },
+    {
+      "left": "pi_mount_hardware",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "arduino_mounting_plane"
+    },
+    {
+      "left": "pi_mount_hardware",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "wire_corridor"
+    },
+    {
+      "left": "arduino_mount_hardware",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "tray"
+    },
+    {
+      "left": "arduino_mount_hardware",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "rail_frame"
+    },
+    {
+      "left": "arduino_mount_hardware",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "pi_mounting_plane"
+    },
+    {
+      "left": "arduino_mount_hardware",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "arduino_mounting_plane"
+    },
+    {
+      "left": "arduino_mount_hardware",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "wire_corridor"
+    },
+    {
+      "left": "deck_fasteners",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "tray"
+    },
+    {
+      "left": "deck_fasteners",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "rail_frame"
+    },
+    {
+      "left": "deck_fasteners",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "pi_mounting_plane"
+    },
+    {
+      "left": "deck_fasteners",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "arduino_mounting_plane"
+    },
+    {
+      "left": "deck_fasteners",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "wire_corridor"
+    },
+    {
+      "left": "pi_mount_hardware",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "deck_fasteners"
+    },
+    {
+      "left": "arduino_mount_hardware",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "deck_fasteners"
+    },
+    {
+      "left": "rail_frame",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "HIGH_PRESSURE_gland_keepout"
+    },
+    {
+      "left": "slide_tray",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "HIGH_PRESSURE_gland_keepout"
+    },
+    {
+      "left": "arduino_envelope",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "HIGH_PRESSURE_gland_keepout"
+    },
+    {
+      "left": "installed_rack_screw_heads",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "HIGH_PRESSURE_gland_keepout"
+    },
+    {
+      "left": "rail_frame",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "HIGH_TEMPERATURE_gland_keepout"
+    },
+    {
+      "left": "slide_tray",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "HIGH_TEMPERATURE_gland_keepout"
+    },
+    {
+      "left": "arduino_envelope",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "HIGH_TEMPERATURE_gland_keepout"
+    },
+    {
+      "left": "installed_rack_screw_heads",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "HIGH_TEMPERATURE_gland_keepout"
+    },
+    {
+      "left": "rail_frame",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "LOW_PRESSURE_gland_keepout"
+    },
+    {
+      "left": "slide_tray",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "LOW_PRESSURE_gland_keepout"
+    },
+    {
+      "left": "arduino_envelope",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "LOW_PRESSURE_gland_keepout"
+    },
+    {
+      "left": "installed_rack_screw_heads",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "LOW_PRESSURE_gland_keepout"
+    },
+    {
+      "left": "rail_frame",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "LOW_TEMPERATURE_gland_keepout"
+    },
+    {
+      "left": "slide_tray",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "LOW_TEMPERATURE_gland_keepout"
+    },
+    {
+      "left": "arduino_envelope",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "LOW_TEMPERATURE_gland_keepout"
+    },
+    {
+      "left": "installed_rack_screw_heads",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "LOW_TEMPERATURE_gland_keepout"
+    },
+    {
+      "left": "cable_high_pressure",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "tray"
+    },
+    {
+      "left": "cable_high_pressure",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "rail_frame"
+    },
+    {
+      "left": "cable_high_pressure",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "pi_plane"
+    },
+    {
+      "left": "cable_high_pressure",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "arduino_plane"
+    },
+    {
+      "left": "cable_high_pressure",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "pi_keepout"
+    },
+    {
+      "left": "cable_high_pressure",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "arduino_envelope"
+    },
+    {
+      "left": "cable_high_pressure",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "pi_hardware"
+    },
+    {
+      "left": "cable_high_pressure",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "arduino_hardware"
+    },
+    {
+      "left": "cable_high_pressure",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "deck_hardware"
+    },
+    {
+      "left": "cable_high_pressure",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "rack_screw_heads"
+    },
+    {
+      "left": "connector_high_pressure",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "tray"
+    },
+    {
+      "left": "connector_high_pressure",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "rail_frame"
+    },
+    {
+      "left": "connector_high_pressure",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "pi_plane"
+    },
+    {
+      "left": "connector_high_pressure",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "arduino_plane"
+    },
+    {
+      "left": "connector_high_pressure",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "pi_keepout"
+    },
+    {
+      "left": "connector_high_pressure",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "arduino_envelope"
+    },
+    {
+      "left": "connector_high_pressure",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "pi_hardware"
+    },
+    {
+      "left": "connector_high_pressure",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "arduino_hardware"
+    },
+    {
+      "left": "connector_high_pressure",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "deck_hardware"
+    },
+    {
+      "left": "connector_high_pressure",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "rack_screw_heads"
+    },
+    {
+      "left": "pull_high_pressure",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "tray"
+    },
+    {
+      "left": "pull_high_pressure",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "rail_frame"
+    },
+    {
+      "left": "pull_high_pressure",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "pi_plane"
+    },
+    {
+      "left": "pull_high_pressure",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "arduino_plane"
+    },
+    {
+      "left": "pull_high_pressure",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "pi_keepout"
+    },
+    {
+      "left": "pull_high_pressure",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "arduino_envelope"
+    },
+    {
+      "left": "pull_high_pressure",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "pi_hardware"
+    },
+    {
+      "left": "pull_high_pressure",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "arduino_hardware"
+    },
+    {
+      "left": "pull_high_pressure",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "deck_hardware"
+    },
+    {
+      "left": "pull_high_pressure",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "rack_screw_heads"
+    },
+    {
+      "left": "access_high_pressure",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "tray"
+    },
+    {
+      "left": "access_high_pressure",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "rail_frame"
+    },
+    {
+      "left": "access_high_pressure",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "pi_plane"
+    },
+    {
+      "left": "access_high_pressure",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "arduino_plane"
+    },
+    {
+      "left": "access_high_pressure",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "pi_keepout"
+    },
+    {
+      "left": "access_high_pressure",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "arduino_envelope"
+    },
+    {
+      "left": "access_high_pressure",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "pi_hardware"
+    },
+    {
+      "left": "access_high_pressure",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "arduino_hardware"
+    },
+    {
+      "left": "access_high_pressure",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "deck_hardware"
+    },
+    {
+      "left": "access_high_pressure",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "rack_screw_heads"
+    },
+    {
+      "left": "cable_high_temperature",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "tray"
+    },
+    {
+      "left": "cable_high_temperature",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "rail_frame"
+    },
+    {
+      "left": "cable_high_temperature",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "pi_plane"
+    },
+    {
+      "left": "cable_high_temperature",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "arduino_plane"
+    },
+    {
+      "left": "cable_high_temperature",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "pi_keepout"
+    },
+    {
+      "left": "cable_high_temperature",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "arduino_envelope"
+    },
+    {
+      "left": "cable_high_temperature",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "pi_hardware"
+    },
+    {
+      "left": "cable_high_temperature",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "arduino_hardware"
+    },
+    {
+      "left": "cable_high_temperature",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "deck_hardware"
+    },
+    {
+      "left": "cable_high_temperature",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "rack_screw_heads"
+    },
+    {
+      "left": "connector_high_temperature",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "tray"
+    },
+    {
+      "left": "connector_high_temperature",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "rail_frame"
+    },
+    {
+      "left": "connector_high_temperature",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "pi_plane"
+    },
+    {
+      "left": "connector_high_temperature",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "arduino_plane"
+    },
+    {
+      "left": "connector_high_temperature",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "pi_keepout"
+    },
+    {
+      "left": "connector_high_temperature",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "arduino_envelope"
+    },
+    {
+      "left": "connector_high_temperature",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "pi_hardware"
+    },
+    {
+      "left": "connector_high_temperature",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "arduino_hardware"
+    },
+    {
+      "left": "connector_high_temperature",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "deck_hardware"
+    },
+    {
+      "left": "connector_high_temperature",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "rack_screw_heads"
+    },
+    {
+      "left": "pull_high_temperature",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "tray"
+    },
+    {
+      "left": "pull_high_temperature",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "rail_frame"
+    },
+    {
+      "left": "pull_high_temperature",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "pi_plane"
+    },
+    {
+      "left": "pull_high_temperature",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "arduino_plane"
+    },
+    {
+      "left": "pull_high_temperature",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "pi_keepout"
+    },
+    {
+      "left": "pull_high_temperature",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "arduino_envelope"
+    },
+    {
+      "left": "pull_high_temperature",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "pi_hardware"
+    },
+    {
+      "left": "pull_high_temperature",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "arduino_hardware"
+    },
+    {
+      "left": "pull_high_temperature",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "deck_hardware"
+    },
+    {
+      "left": "pull_high_temperature",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "rack_screw_heads"
+    },
+    {
+      "left": "access_high_temperature",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "tray"
+    },
+    {
+      "left": "access_high_temperature",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "rail_frame"
+    },
+    {
+      "left": "access_high_temperature",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "pi_plane"
+    },
+    {
+      "left": "access_high_temperature",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "arduino_plane"
+    },
+    {
+      "left": "access_high_temperature",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "pi_keepout"
+    },
+    {
+      "left": "access_high_temperature",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "arduino_envelope"
+    },
+    {
+      "left": "access_high_temperature",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "pi_hardware"
+    },
+    {
+      "left": "access_high_temperature",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "arduino_hardware"
+    },
+    {
+      "left": "access_high_temperature",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "deck_hardware"
+    },
+    {
+      "left": "access_high_temperature",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "rack_screw_heads"
+    },
+    {
+      "left": "cable_low_pressure",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "tray"
+    },
+    {
+      "left": "cable_low_pressure",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "rail_frame"
+    },
+    {
+      "left": "cable_low_pressure",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "pi_plane"
+    },
+    {
+      "left": "cable_low_pressure",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "arduino_plane"
+    },
+    {
+      "left": "cable_low_pressure",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "pi_keepout"
+    },
+    {
+      "left": "cable_low_pressure",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "arduino_envelope"
+    },
+    {
+      "left": "cable_low_pressure",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "pi_hardware"
+    },
+    {
+      "left": "cable_low_pressure",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "arduino_hardware"
+    },
+    {
+      "left": "cable_low_pressure",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "deck_hardware"
+    },
+    {
+      "left": "cable_low_pressure",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "rack_screw_heads"
+    },
+    {
+      "left": "connector_low_pressure",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "tray"
+    },
+    {
+      "left": "connector_low_pressure",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "rail_frame"
+    },
+    {
+      "left": "connector_low_pressure",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "pi_plane"
+    },
+    {
+      "left": "connector_low_pressure",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "arduino_plane"
+    },
+    {
+      "left": "connector_low_pressure",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "pi_keepout"
+    },
+    {
+      "left": "connector_low_pressure",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "arduino_envelope"
+    },
+    {
+      "left": "connector_low_pressure",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "pi_hardware"
+    },
+    {
+      "left": "connector_low_pressure",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "arduino_hardware"
+    },
+    {
+      "left": "connector_low_pressure",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "deck_hardware"
+    },
+    {
+      "left": "connector_low_pressure",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "rack_screw_heads"
+    },
+    {
+      "left": "pull_low_pressure",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "tray"
+    },
+    {
+      "left": "pull_low_pressure",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "rail_frame"
+    },
+    {
+      "left": "pull_low_pressure",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "pi_plane"
+    },
+    {
+      "left": "pull_low_pressure",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "arduino_plane"
+    },
+    {
+      "left": "pull_low_pressure",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "pi_keepout"
+    },
+    {
+      "left": "pull_low_pressure",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "arduino_envelope"
+    },
+    {
+      "left": "pull_low_pressure",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "pi_hardware"
+    },
+    {
+      "left": "pull_low_pressure",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "arduino_hardware"
+    },
+    {
+      "left": "pull_low_pressure",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "deck_hardware"
+    },
+    {
+      "left": "pull_low_pressure",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "rack_screw_heads"
+    },
+    {
+      "left": "access_low_pressure",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "tray"
+    },
+    {
+      "left": "access_low_pressure",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "rail_frame"
+    },
+    {
+      "left": "access_low_pressure",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "pi_plane"
+    },
+    {
+      "left": "access_low_pressure",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "arduino_plane"
+    },
+    {
+      "left": "access_low_pressure",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "pi_keepout"
+    },
+    {
+      "left": "access_low_pressure",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "arduino_envelope"
+    },
+    {
+      "left": "access_low_pressure",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "pi_hardware"
+    },
+    {
+      "left": "access_low_pressure",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "arduino_hardware"
+    },
+    {
+      "left": "access_low_pressure",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "deck_hardware"
+    },
+    {
+      "left": "access_low_pressure",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "rack_screw_heads"
+    },
+    {
+      "left": "cable_low_temperature",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "tray"
+    },
+    {
+      "left": "cable_low_temperature",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "rail_frame"
+    },
+    {
+      "left": "cable_low_temperature",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "pi_plane"
+    },
+    {
+      "left": "cable_low_temperature",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "arduino_plane"
+    },
+    {
+      "left": "cable_low_temperature",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "pi_keepout"
+    },
+    {
+      "left": "cable_low_temperature",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "arduino_envelope"
+    },
+    {
+      "left": "cable_low_temperature",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "pi_hardware"
+    },
+    {
+      "left": "cable_low_temperature",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "arduino_hardware"
+    },
+    {
+      "left": "cable_low_temperature",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "deck_hardware"
+    },
+    {
+      "left": "cable_low_temperature",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "rack_screw_heads"
+    },
+    {
+      "left": "connector_low_temperature",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "tray"
+    },
+    {
+      "left": "connector_low_temperature",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "rail_frame"
+    },
+    {
+      "left": "connector_low_temperature",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "pi_plane"
+    },
+    {
+      "left": "connector_low_temperature",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "arduino_plane"
+    },
+    {
+      "left": "connector_low_temperature",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "pi_keepout"
+    },
+    {
+      "left": "connector_low_temperature",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "arduino_envelope"
+    },
+    {
+      "left": "connector_low_temperature",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "pi_hardware"
+    },
+    {
+      "left": "connector_low_temperature",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "arduino_hardware"
+    },
+    {
+      "left": "connector_low_temperature",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "deck_hardware"
+    },
+    {
+      "left": "connector_low_temperature",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "rack_screw_heads"
+    },
+    {
+      "left": "pull_low_temperature",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "tray"
+    },
+    {
+      "left": "pull_low_temperature",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "rail_frame"
+    },
+    {
+      "left": "pull_low_temperature",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "pi_plane"
+    },
+    {
+      "left": "pull_low_temperature",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "arduino_plane"
+    },
+    {
+      "left": "pull_low_temperature",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "pi_keepout"
+    },
+    {
+      "left": "pull_low_temperature",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "arduino_envelope"
+    },
+    {
+      "left": "pull_low_temperature",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "pi_hardware"
+    },
+    {
+      "left": "pull_low_temperature",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "arduino_hardware"
+    },
+    {
+      "left": "pull_low_temperature",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "deck_hardware"
+    },
+    {
+      "left": "pull_low_temperature",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "rack_screw_heads"
+    },
+    {
+      "left": "access_low_temperature",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "tray"
+    },
+    {
+      "left": "access_low_temperature",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "rail_frame"
+    },
+    {
+      "left": "access_low_temperature",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "pi_plane"
+    },
+    {
+      "left": "access_low_temperature",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "arduino_plane"
+    },
+    {
+      "left": "access_low_temperature",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "pi_keepout"
+    },
+    {
+      "left": "access_low_temperature",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "arduino_envelope"
+    },
+    {
+      "left": "access_low_temperature",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "pi_hardware"
+    },
+    {
+      "left": "access_low_temperature",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "arduino_hardware"
+    },
+    {
+      "left": "access_low_temperature",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "deck_hardware"
+    },
+    {
+      "left": "access_low_temperature",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "rack_screw_heads"
+    },
+    {
+      "left": "interboard_loop",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "tray"
+    },
+    {
+      "left": "interboard_loop",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "rail_frame"
+    },
+    {
+      "left": "interboard_loop",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "pi_plane"
+    },
+    {
+      "left": "interboard_loop",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "arduino_plane"
+    },
+    {
+      "left": "interboard_loop",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "pi_keepout"
+    },
+    {
+      "left": "interboard_loop",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "arduino_envelope"
+    },
+    {
+      "left": "interboard_loop",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "pi_hardware"
+    },
+    {
+      "left": "interboard_loop",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "arduino_hardware"
+    },
+    {
+      "left": "interboard_loop",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "deck_hardware"
+    },
+    {
+      "left": "interboard_loop",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "rack_screw_heads"
+    },
+    {
+      "left": "cable_high_pressure",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "connector_high_pressure"
+    },
+    {
+      "left": "cable_high_pressure",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "cable_high_temperature"
+    },
+    {
+      "left": "cable_high_pressure",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "connector_high_temperature"
+    },
+    {
+      "left": "cable_high_pressure",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "cable_low_pressure"
+    },
+    {
+      "left": "cable_high_pressure",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "connector_low_pressure"
+    },
+    {
+      "left": "cable_high_pressure",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "cable_low_temperature"
+    },
+    {
+      "left": "cable_high_pressure",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "connector_low_temperature"
+    },
+    {
+      "left": "connector_high_pressure",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "cable_high_temperature"
+    },
+    {
+      "left": "connector_high_pressure",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "connector_high_temperature"
+    },
+    {
+      "left": "connector_high_pressure",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "cable_low_pressure"
+    },
+    {
+      "left": "connector_high_pressure",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "connector_low_pressure"
+    },
+    {
+      "left": "connector_high_pressure",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "cable_low_temperature"
+    },
+    {
+      "left": "connector_high_pressure",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "connector_low_temperature"
+    },
+    {
+      "left": "cable_high_temperature",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "connector_high_temperature"
+    },
+    {
+      "left": "cable_high_temperature",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "cable_low_pressure"
+    },
+    {
+      "left": "cable_high_temperature",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "connector_low_pressure"
+    },
+    {
+      "left": "cable_high_temperature",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "cable_low_temperature"
+    },
+    {
+      "left": "cable_high_temperature",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "connector_low_temperature"
+    },
+    {
+      "left": "connector_high_temperature",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "cable_low_pressure"
+    },
+    {
+      "left": "connector_high_temperature",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "connector_low_pressure"
+    },
+    {
+      "left": "connector_high_temperature",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "cable_low_temperature"
+    },
+    {
+      "left": "connector_high_temperature",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "connector_low_temperature"
+    },
+    {
+      "left": "cable_low_pressure",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "connector_low_pressure"
+    },
+    {
+      "left": "cable_low_pressure",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "cable_low_temperature"
+    },
+    {
+      "left": "cable_low_pressure",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "connector_low_temperature"
+    },
+    {
+      "left": "connector_low_pressure",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "cable_low_temperature"
+    },
+    {
+      "left": "connector_low_pressure",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "connector_low_temperature"
+    },
+    {
+      "left": "cable_low_temperature",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "connector_low_temperature"
+    },
+    {
+      "left": "pull_high_pressure",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "cable_high_temperature"
+    },
+    {
+      "left": "pull_high_pressure",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "connector_high_temperature"
+    },
+    {
+      "left": "pull_high_pressure",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "cable_low_pressure"
+    },
+    {
+      "left": "pull_high_pressure",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "connector_low_pressure"
+    },
+    {
+      "left": "pull_high_pressure",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "cable_low_temperature"
+    },
+    {
+      "left": "pull_high_pressure",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "connector_low_temperature"
+    },
+    {
+      "left": "access_high_pressure",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "cable_high_temperature"
+    },
+    {
+      "left": "access_high_pressure",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "connector_high_temperature"
+    },
+    {
+      "left": "access_high_pressure",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "cable_low_pressure"
+    },
+    {
+      "left": "access_high_pressure",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "connector_low_pressure"
+    },
+    {
+      "left": "access_high_pressure",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "cable_low_temperature"
+    },
+    {
+      "left": "access_high_pressure",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "connector_low_temperature"
+    },
+    {
+      "left": "pull_high_temperature",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "cable_high_pressure"
+    },
+    {
+      "left": "pull_high_temperature",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "connector_high_pressure"
+    },
+    {
+      "left": "pull_high_temperature",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "cable_low_pressure"
+    },
+    {
+      "left": "pull_high_temperature",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "connector_low_pressure"
+    },
+    {
+      "left": "pull_high_temperature",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "cable_low_temperature"
+    },
+    {
+      "left": "pull_high_temperature",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "connector_low_temperature"
+    },
+    {
+      "left": "access_high_temperature",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "cable_high_pressure"
+    },
+    {
+      "left": "access_high_temperature",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "connector_high_pressure"
+    },
+    {
+      "left": "access_high_temperature",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "cable_low_pressure"
+    },
+    {
+      "left": "access_high_temperature",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "connector_low_pressure"
+    },
+    {
+      "left": "access_high_temperature",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "cable_low_temperature"
+    },
+    {
+      "left": "access_high_temperature",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "connector_low_temperature"
+    },
+    {
+      "left": "pull_low_pressure",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "cable_high_pressure"
+    },
+    {
+      "left": "pull_low_pressure",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "connector_high_pressure"
+    },
+    {
+      "left": "pull_low_pressure",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "cable_high_temperature"
+    },
+    {
+      "left": "pull_low_pressure",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "connector_high_temperature"
+    },
+    {
+      "left": "pull_low_pressure",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "cable_low_temperature"
+    },
+    {
+      "left": "pull_low_pressure",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "connector_low_temperature"
+    },
+    {
+      "left": "access_low_pressure",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "cable_high_pressure"
+    },
+    {
+      "left": "access_low_pressure",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "connector_high_pressure"
+    },
+    {
+      "left": "access_low_pressure",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "cable_high_temperature"
+    },
+    {
+      "left": "access_low_pressure",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "connector_high_temperature"
+    },
+    {
+      "left": "access_low_pressure",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "cable_low_temperature"
+    },
+    {
+      "left": "access_low_pressure",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "connector_low_temperature"
+    },
+    {
+      "left": "pull_low_temperature",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "cable_high_pressure"
+    },
+    {
+      "left": "pull_low_temperature",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "connector_high_pressure"
+    },
+    {
+      "left": "pull_low_temperature",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "cable_high_temperature"
+    },
+    {
+      "left": "pull_low_temperature",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "connector_high_temperature"
+    },
+    {
+      "left": "pull_low_temperature",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "cable_low_pressure"
+    },
+    {
+      "left": "pull_low_temperature",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "connector_low_pressure"
+    },
+    {
+      "left": "access_low_temperature",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "cable_high_pressure"
+    },
+    {
+      "left": "access_low_temperature",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "connector_high_pressure"
+    },
+    {
+      "left": "access_low_temperature",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "cable_high_temperature"
+    },
+    {
+      "left": "access_low_temperature",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "connector_high_temperature"
+    },
+    {
+      "left": "access_low_temperature",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "cable_low_pressure"
+    },
+    {
+      "left": "access_low_temperature",
+      "limit_mm3": 0.01,
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "right": "connector_low_pressure"
+    }
+  ],
+  "deck_attachment_boss_count": 8,
+  "deck_attachment_planes": 2,
+  "fdm_tolerance_stack": {
+    "front_foot_nominal_clearance_mm": 15.335999999999999,
+    "front_foot_worst_case_clearance_mm": 14.935999999999998,
+    "front_lid_nominal_clearance_mm": 12.036000000000001,
+    "front_lid_worst_case_clearance_mm": 11.636000000000001,
+    "left_shell_boss_nominal_clearance_mm": 2.3999999999999986,
+    "left_shell_boss_worst_case_clearance_mm": 0.6999999999999985,
+    "m25_insert_pilot_d_mm": 4.0,
+    "m3_worst_case_hole_d_mm": 3.6,
+    "maximum_downward_settling_including_print_error_mm": 1.4,
+    "maximum_lateral_free_play_including_print_error_mm": 1.3,
+    "pigtail_worst_pose_service_gap_mm": 36.02000000000003,
+    "rack_connector_nominal_clearance_mm": 2.4,
+    "rack_connector_worst_pose_clearance_mm": 0.6,
+    "rail_nominal_clearance_each_side_mm": 0.9,
+    "rail_worst_case_clearance_each_side_mm": 0.5,
+    "rear_shell_nominal_clearance_mm": 1.2000000000000002,
+    "rear_shell_worst_case_clearance_mm": 0.8000000000000002,
+    "surface_allowance_each_surface_mm": 0.2,
+    "vertical_nominal_clearance_mm": 1.0,
+    "vertical_worst_case_clearance_mm": 0.6
+  },
+  "freecad_version": [
+    "1",
+    "0",
+    "0",
+    "39109 (Git)",
+    "https://github.com/FreeCAD/FreeCAD",
+    "2024/11/18 16:48:00",
+    "(HEAD detached at 1.0.0)",
+    "2fcc5317fe3aee96ca73475986a577719fc78e20"
+  ],
+  "hardware_bom_counts": {
+    "board_m25_heat_set_inserts": 8,
+    "board_m25_screws": 8,
+    "board_standoffs": 0,
+    "board_washers": 8,
+    "deck_m3_screws": 8,
+    "note": "fused collision envelopes represent multiple purchased parts"
+  },
+  "hardware_shape_validation": {
+    "arduino_mount_hardware": {
+      "expected_disjoint_solids": 4,
+      "input_geometry_piece_count": 12,
+      "pass": true,
+      "solids": 4,
+      "valid": true,
+      "volume_mm3": 304.3417883165115
+    },
+    "deck_fasteners": {
+      "expected_disjoint_solids": 8,
+      "input_geometry_piece_count": 16,
+      "pass": true,
+      "solids": 8,
+      "valid": true,
+      "volume_mm3": 908.5485954181681
+    },
+    "pi_mount_hardware": {
+      "expected_disjoint_solids": 4,
+      "input_geometry_piece_count": 12,
+      "pass": true,
+      "solids": 4,
+      "valid": true,
+      "volume_mm3": 304.34178831651116
+    }
+  },
+  "insert_bore_geometry_checks": [
+    {
+      "actual_pocket_depth_mm": 6.699999999999999,
+      "boss": 1,
+      "center_xy_mm": [
+        36.9,
+        18.7
+      ],
+      "closed_bottom_mm": 1.4999999999999964,
+      "pass": true,
+      "radial_wall_mm": 3.7
+    },
+    {
+      "actual_pocket_depth_mm": 6.699999999999999,
+      "boss": 2,
+      "center_xy_mm": [
+        94.7,
+        18.7
+      ],
+      "closed_bottom_mm": 1.4999999999999964,
+      "pass": true,
+      "radial_wall_mm": 3.7
+    },
+    {
+      "actual_pocket_depth_mm": 6.699999999999999,
+      "boss": 3,
+      "center_xy_mm": [
+        36.9,
+        71.964
+      ],
+      "closed_bottom_mm": 1.4999999999999964,
+      "pass": true,
+      "radial_wall_mm": 3.7
+    },
+    {
+      "actual_pocket_depth_mm": 6.699999999999999,
+      "boss": 4,
+      "center_xy_mm": [
+        94.7,
+        71.964
+      ],
+      "closed_bottom_mm": 1.4999999999999964,
+      "pass": true,
+      "radial_wall_mm": 3.7
+    },
+    {
+      "actual_pocket_depth_mm": 6.699999999999999,
+      "boss": 5,
+      "center_xy_mm": [
+        136.5,
+        18.7
+      ],
+      "closed_bottom_mm": 1.4999999999999964,
+      "pass": true,
+      "radial_wall_mm": 3.7
+    },
+    {
+      "actual_pocket_depth_mm": 6.699999999999999,
+      "boss": 6,
+      "center_xy_mm": [
+        189.07999999999998,
+        21.0
+      ],
+      "closed_bottom_mm": 1.4999999999999964,
+      "pass": true,
+      "radial_wall_mm": 3.7
+    },
+    {
+      "actual_pocket_depth_mm": 6.699999999999999,
+      "boss": 7,
+      "center_xy_mm": [
+        139.5,
+        71.964
+      ],
+      "closed_bottom_mm": 1.4999999999999964,
+      "pass": true,
+      "radial_wall_mm": 3.7
+    },
+    {
+      "actual_pocket_depth_mm": 6.699999999999999,
+      "boss": 8,
+      "center_xy_mm": [
+        189.07999999999998,
+        71.964
+      ],
+      "closed_bottom_mm": 1.4999999999999964,
+      "pass": true,
+      "radial_wall_mm": 3.7
+    }
+  ],
+  "pi_board_hole_centers_xy_mm": [
+    [
+      27.2,
+      14.232
+    ],
+    [
+      27.2,
+      63.232
+    ],
+    [
+      85.2,
+      14.232
+    ],
+    [
+      85.2,
+      63.232
+    ]
+  ],
+  "platform_material_checks": [
+    {
+      "feature": "insert radial wall 1",
+      "limit_mm3": 0.01,
+      "missing_material_mm3": 0.0,
+      "pass": true,
+      "required_volume_mm3": 791.122145212289
+    },
+    {
+      "feature": "insert flared root 1",
+      "limit_mm3": 0.01,
+      "missing_material_mm3": 0.0,
+      "pass": true,
+      "required_volume_mm3": 553.464849758426
+    },
+    {
+      "feature": "insert radial wall 2",
+      "limit_mm3": 0.01,
+      "missing_material_mm3": 0.0,
+      "pass": true,
+      "required_volume_mm3": 791.1221452122891
+    },
+    {
+      "feature": "insert flared root 2",
+      "limit_mm3": 0.01,
+      "missing_material_mm3": 0.0,
+      "pass": true,
+      "required_volume_mm3": 553.464849758426
+    },
+    {
+      "feature": "insert radial wall 3",
+      "limit_mm3": 0.01,
+      "missing_material_mm3": 0.0,
+      "pass": true,
+      "required_volume_mm3": 791.1221452122888
+    },
+    {
+      "feature": "insert flared root 3",
+      "limit_mm3": 0.01,
+      "missing_material_mm3": 0.0,
+      "pass": true,
+      "required_volume_mm3": 553.4648497584258
+    },
+    {
+      "feature": "insert radial wall 4",
+      "limit_mm3": 0.01,
+      "missing_material_mm3": 0.0,
+      "pass": true,
+      "required_volume_mm3": 791.1221452122888
+    },
+    {
+      "feature": "insert flared root 4",
+      "limit_mm3": 0.01,
+      "missing_material_mm3": 0.0,
+      "pass": true,
+      "required_volume_mm3": 553.4648497584259
+    },
+    {
+      "feature": "insert radial wall 5",
+      "limit_mm3": 0.01,
+      "missing_material_mm3": 0.0,
+      "pass": true,
+      "required_volume_mm3": 791.122145212288
+    },
+    {
+      "feature": "insert flared root 5",
+      "limit_mm3": 0.01,
+      "missing_material_mm3": 0.0,
+      "pass": true,
+      "required_volume_mm3": 553.4648497584258
+    },
+    {
+      "feature": "insert radial wall 6",
+      "limit_mm3": 0.01,
+      "missing_material_mm3": 0.0,
+      "pass": true,
+      "required_volume_mm3": 791.1221452122883
+    },
+    {
+      "feature": "insert flared root 6",
+      "limit_mm3": 0.01,
+      "missing_material_mm3": 0.0,
+      "pass": true,
+      "required_volume_mm3": 553.4648497584257
+    },
+    {
+      "feature": "insert radial wall 7",
+      "limit_mm3": 0.01,
+      "missing_material_mm3": 0.0,
+      "pass": true,
+      "required_volume_mm3": 791.122145212288
+    },
+    {
+      "feature": "insert flared root 7",
+      "limit_mm3": 0.01,
+      "missing_material_mm3": 0.0,
+      "pass": true,
+      "required_volume_mm3": 553.4648497584257
+    },
+    {
+      "feature": "insert radial wall 8",
+      "limit_mm3": 0.01,
+      "missing_material_mm3": 0.0,
+      "pass": true,
+      "required_volume_mm3": 791.122145212288
+    },
+    {
+      "feature": "insert flared root 8",
+      "limit_mm3": 0.01,
+      "missing_material_mm3": 0.0,
+      "pass": true,
+      "required_volume_mm3": 553.4648497584257
+    },
+    {
+      "feature": "Raspberry Pi mounting plane PCB insert wall 1",
+      "limit_mm3": 0.01,
+      "missing_material_mm3": 0.0,
+      "pass": true,
+      "required_volume_mm3": 310.38935417467155
+    },
+    {
+      "feature": "Raspberry Pi mounting plane PCB insert floor 1",
+      "limit_mm3": 0.01,
+      "missing_material_mm3": 0.0,
+      "pass": true,
+      "required_volume_mm3": 37.69911184307751
+    },
+    {
+      "feature": "Raspberry Pi mounting plane PCB insert wall 2",
+      "limit_mm3": 0.01,
+      "missing_material_mm3": 0.0,
+      "pass": true,
+      "required_volume_mm3": 310.3893541746716
+    },
+    {
+      "feature": "Raspberry Pi mounting plane PCB insert floor 2",
+      "limit_mm3": 0.01,
+      "missing_material_mm3": 0.0,
+      "pass": true,
+      "required_volume_mm3": 37.699111843077496
+    },
+    {
+      "feature": "Raspberry Pi mounting plane PCB insert wall 3",
+      "limit_mm3": 0.01,
+      "missing_material_mm3": 0.0,
+      "pass": true,
+      "required_volume_mm3": 310.3893541746718
+    },
+    {
+      "feature": "Raspberry Pi mounting plane PCB insert floor 3",
+      "limit_mm3": 0.01,
+      "missing_material_mm3": 0.0,
+      "pass": true,
+      "required_volume_mm3": 37.699111843077496
+    },
+    {
+      "feature": "Raspberry Pi mounting plane PCB insert wall 4",
+      "limit_mm3": 0.01,
+      "missing_material_mm3": 0.0,
+      "pass": true,
+      "required_volume_mm3": 310.3893541746718
+    },
+    {
+      "feature": "Raspberry Pi mounting plane PCB insert floor 4",
+      "limit_mm3": 0.01,
+      "missing_material_mm3": 0.0,
+      "pass": true,
+      "required_volume_mm3": 37.69911184307748
+    },
+    {
+      "feature": "Raspberry Pi mounting plane screw tab 1",
+      "limit_mm3": 0.01,
+      "missing_material_mm3": 0.0,
+      "pass": true,
+      "required_volume_mm3": 565.4866776461629
+    },
+    {
+      "feature": "Raspberry Pi mounting plane tray tab floor 1",
+      "limit_mm3": 0.01,
+      "missing_material_mm3": 0.0,
+      "pass": true,
+      "required_volume_mm3": 586.6142968293985
+    },
+    {
+      "feature": "Raspberry Pi mounting plane screw tab 2",
+      "limit_mm3": 0.01,
+      "missing_material_mm3": 0.0,
+      "pass": true,
+      "required_volume_mm3": 565.4866776461629
+    },
+    {
+      "feature": "Raspberry Pi mounting plane tray tab floor 2",
+      "limit_mm3": 0.01,
+      "missing_material_mm3": 0.0,
+      "pass": true,
+      "required_volume_mm3": 586.6142968293985
+    },
+    {
+      "feature": "Arduino UNO mounting plane PCB insert wall 1",
+      "limit_mm3": 0.01,
+      "missing_material_mm3": 0.0,
+      "pass": true,
+      "required_volume_mm3": 310.3893541746714
+    },
+    {
+      "feature": "Arduino UNO mounting plane PCB insert floor 1",
+      "limit_mm3": 0.01,
+      "missing_material_mm3": 0.0,
+      "pass": true,
+      "required_volume_mm3": 37.69911184307756
+    },
+    {
+      "feature": "Arduino UNO mounting plane PCB insert wall 2",
+      "limit_mm3": 0.01,
+      "missing_material_mm3": 0.0,
+      "pass": true,
+      "required_volume_mm3": 310.38935417467144
+    },
+    {
+      "feature": "Arduino UNO mounting plane PCB insert floor 2",
+      "limit_mm3": 0.01,
+      "missing_material_mm3": 0.0,
+      "pass": true,
+      "required_volume_mm3": 37.69911184307757
+    },
+    {
+      "feature": "Arduino UNO mounting plane PCB insert wall 3",
+      "limit_mm3": 0.01,
+      "missing_material_mm3": 0.0,
+      "pass": true,
+      "required_volume_mm3": 310.3893541746714
+    },
+    {
+      "feature": "Arduino UNO mounting plane PCB insert floor 3",
+      "limit_mm3": 0.01,
+      "missing_material_mm3": 0.0,
+      "pass": true,
+      "required_volume_mm3": 37.699111843077546
+    },
+    {
+      "feature": "Arduino UNO mounting plane PCB insert wall 4",
+      "limit_mm3": 0.01,
+      "missing_material_mm3": 0.0,
+      "pass": true,
+      "required_volume_mm3": 310.38935417467144
+    },
+    {
+      "feature": "Arduino UNO mounting plane PCB insert floor 4",
+      "limit_mm3": 0.01,
+      "missing_material_mm3": 0.0,
+      "pass": true,
+      "required_volume_mm3": 37.69911184307757
+    },
+    {
+      "feature": "Arduino UNO mounting plane screw tab 1",
+      "limit_mm3": 0.01,
+      "missing_material_mm3": 0.0,
+      "pass": true,
+      "required_volume_mm3": 565.486677646163
+    },
+    {
+      "feature": "Arduino UNO mounting plane tray tab floor 1",
+      "limit_mm3": 0.01,
+      "missing_material_mm3": 0.0,
+      "pass": true,
+      "required_volume_mm3": 586.6142968293987
+    },
+    {
+      "feature": "Arduino UNO mounting plane screw tab 2",
+      "limit_mm3": 0.01,
+      "missing_material_mm3": 0.0,
+      "pass": true,
+      "required_volume_mm3": 565.4866776461629
+    },
+    {
+      "feature": "Arduino UNO mounting plane tray tab floor 2",
+      "limit_mm3": 0.01,
+      "missing_material_mm3": 0.0,
+      "pass": true,
+      "required_volume_mm3": 586.6142968293987
+    }
+  ],
+  "platform_revision": "raised_board_insert_platforms_v2",
+  "platform_step_export_checks": [
+    {
+      "construction_bbox": {
+        "max": [
+          233.8,
+          62.464,
+          20.0
+        ],
+        "min": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "size": [
+          233.8,
+          62.464,
+          20.0
+        ]
+      },
+      "exported_step_bbox": {
+        "max": [
+          233.8,
+          62.464,
+          20.0
+        ],
+        "min": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "size": [
+          233.8,
+          62.464,
+          20.0
+        ]
+      },
+      "extra_mm3": 0.0,
+      "limit_mm3": 0.01,
+      "missing_mm3": 0.0,
+      "name": "dual_board_rail_frame",
+      "pass": true,
+      "volume_delta_mm3": 7.312337402254343e-10
+    },
+    {
+      "construction_bbox": {
+        "max": [
+          173.38000000000002,
+          72.4638953025114,
+          12.799999999999997
+        ],
+        "min": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "size": [
+          173.38000000000002,
+          72.4638953025114,
+          12.799999999999997
+        ]
+      },
+      "exported_step_bbox": {
+        "max": [
+          173.38,
+          72.464,
+          12.8
+        ],
+        "min": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "size": [
+          173.38,
+          72.464,
+          12.8
+        ]
+      },
+      "extra_mm3": 0.0,
+      "limit_mm3": 0.01,
+      "missing_mm3": 0.0,
+      "name": "dual_board_slide_tray",
+      "pass": true,
+      "volume_delta_mm3": 5.311449058353901e-10
+    },
+    {
+      "construction_bbox": {
+        "max": [
+          86.0,
+          72.4638953025114,
+          11.0
+        ],
+        "min": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "size": [
+          86.0,
+          72.4638953025114,
+          11.0
+        ]
+      },
+      "exported_step_bbox": {
+        "max": [
+          86.0,
+          72.464,
+          11.0
+        ],
+        "min": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "size": [
+          86.0,
+          72.464,
+          11.0
+        ]
+      },
+      "extra_mm3": 0.0,
+      "limit_mm3": 0.01,
+      "missing_mm3": 0.0,
+      "name": "raspberry_pi_mounting_plane",
+      "pass": true,
+      "volume_delta_mm3": 2.9103830456733704e-11
+    },
+    {
+      "construction_bbox": {
+        "max": [
+          70.37999999999998,
+          69.89054878600514,
+          11.0
+        ],
+        "min": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "size": [
+          70.37999999999998,
+          69.89054878600514,
+          11.0
+        ]
+      },
+      "exported_step_bbox": {
+        "max": [
+          70.38,
+          69.902,
+          11.0
+        ],
+        "min": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "size": [
+          70.38,
+          69.902,
+          11.0
+        ]
+      },
+      "extra_mm3": 0.0,
+      "limit_mm3": 0.01,
+      "missing_mm3": 0.0,
+      "name": "arduino_uno_mounting_plane",
+      "pass": true,
+      "volume_delta_mm3": 4.729372449219227e-11
+    },
+    {
+      "construction_bbox": {
+        "max": [
+          24.0,
+          36.0,
+          11.0
+        ],
+        "min": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "size": [
+          24.0,
+          36.0,
+          11.0
+        ]
+      },
+      "exported_step_bbox": {
+        "max": [
+          24.0,
+          36.0,
+          11.0
+        ],
+        "min": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "size": [
+          24.0,
+          36.0,
+          11.0
+        ]
+      },
+      "extra_mm3": 0.0,
+      "limit_mm3": 0.01,
+      "missing_mm3": 0.0,
+      "name": "slide_rail_coupon_fixed",
+      "pass": true,
+      "volume_delta_mm3": 0.0
+    },
+    {
+      "construction_bbox": {
+        "max": [
+          24.0,
+          36.0,
+          4.6
+        ],
+        "min": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "size": [
+          24.0,
+          36.0,
+          4.6
+        ]
+      },
+      "exported_step_bbox": {
+        "max": [
+          24.0,
+          36.0,
+          4.6
+        ],
+        "min": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "size": [
+          24.0,
+          36.0,
+          4.6
+        ]
+      },
+      "extra_mm3": 0.0,
+      "limit_mm3": 0.01,
+      "missing_mm3": 0.0,
+      "name": "slide_rail_coupon_slider",
+      "pass": true,
+      "volume_delta_mm3": 0.0
+    },
+    {
+      "construction_bbox": {
+        "max": [
+          88.0,
+          18.0,
+          8.2
+        ],
+        "min": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "size": [
+          88.0,
+          18.0,
+          8.2
+        ]
+      },
+      "exported_step_bbox": {
+        "max": [
+          88.0,
+          18.0,
+          8.2
+        ],
+        "min": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "size": [
+          88.0,
+          18.0,
+          8.2
+        ]
+      },
+      "extra_mm3": 0.0,
+      "limit_mm3": 0.01,
+      "missing_mm3": 0.0,
+      "name": "blind_m3_insert_boss_coupon",
+      "pass": true,
+      "volume_delta_mm3": 3.4560798667371273e-10
+    },
+    {
+      "construction_bbox": {
+        "max": [
+          60.0,
+          12.0,
+          11.0
+        ],
+        "min": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "size": [
+          60.0,
+          12.0,
+          11.0
+        ]
+      },
+      "exported_step_bbox": {
+        "max": [
+          60.0,
+          12.0,
+          11.0
+        ],
+        "min": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "size": [
+          60.0,
+          12.0,
+          11.0
+        ]
+      },
+      "extra_mm3": 0.0,
+      "limit_mm3": 0.01,
+      "missing_mm3": 0.0,
+      "name": "blind_m25_board_insert_coupon",
+      "pass": true,
+      "volume_delta_mm3": 0.0
+    },
+    {
+      "construction_bbox": {
+        "max": [
+          245.10000000000002,
+          69.964,
+          23.2
+        ],
+        "min": [
+          11.3,
+          7.5,
+          3.2
+        ],
+        "size": [
+          233.8,
+          62.464,
+          20.0
+        ]
+      },
+      "exported_step_bbox": {
+        "max": [
+          245.1,
+          69.964,
+          23.2
+        ],
+        "min": [
+          11.3,
+          7.5,
+          3.2
+        ],
+        "size": [
+          233.79999999999998,
+          62.464,
+          20.0
+        ]
+      },
+      "extra_mm3": 0.0,
+      "limit_mm3": 0.01,
+      "missing_mm3": 0.0,
+      "name": "reference_dual_board_rail_frame_installed",
+      "pass": true,
+      "volume_delta_mm3": 7.312337402254343e-10
+    },
+    {
+      "construction_bbox": {
+        "max": [
+          197.08,
+          79.9638953025114,
+          33.8
+        ],
+        "min": [
+          23.7,
+          7.5,
+          21.0
+        ],
+        "size": [
+          173.38000000000002,
+          72.4638953025114,
+          12.799999999999997
+        ]
+      },
+      "exported_step_bbox": {
+        "max": [
+          197.08,
+          79.964,
+          33.8
+        ],
+        "min": [
+          23.7,
+          7.5,
+          21.0
+        ],
+        "size": [
+          173.38000000000002,
+          72.464,
+          12.799999999999997
+        ]
+      },
+      "extra_mm3": 0.0,
+      "limit_mm3": 0.01,
+      "missing_mm3": 0.0,
+      "name": "reference_dual_board_slide_tray_installed",
+      "pass": true,
+      "volume_delta_mm3": 5.602487362921238e-10
+    },
+    {
+      "construction_bbox": {
+        "max": [
+          108.7,
+          79.9638953025114,
+          44.8
+        ],
+        "min": [
+          22.7,
+          7.5,
+          33.8
+        ],
+        "size": [
+          86.0,
+          72.4638953025114,
+          11.0
+        ]
+      },
+      "exported_step_bbox": {
+        "max": [
+          108.7,
+          79.964,
+          44.8
+        ],
+        "min": [
+          22.7,
+          7.5,
+          33.8
+        ],
+        "size": [
+          86.0,
+          72.464,
+          11.0
+        ]
+      },
+      "extra_mm3": 0.0,
+      "limit_mm3": 0.01,
+      "missing_mm3": 0.0,
+      "name": "reference_raspberry_pi_mounting_plane_installed",
+      "pass": true,
+      "volume_delta_mm3": 8.36735125631094e-11
+    },
+    {
+      "construction_bbox": {
+        "max": [
+          197.07999999999998,
+          79.95254878600514,
+          44.8
+        ],
+        "min": [
+          126.7,
+          10.061999999999998,
+          33.8
+        ],
+        "size": [
+          70.37999999999998,
+          69.89054878600514,
+          11.0
+        ]
+      },
+      "exported_step_bbox": {
+        "max": [
+          197.08,
+          79.964,
+          44.8
+        ],
+        "min": [
+          126.7,
+          10.062,
+          33.8
+        ],
+        "size": [
+          70.38000000000001,
+          69.902,
+          11.0
+        ]
+      },
+      "extra_mm3": 0.0,
+      "limit_mm3": 0.01,
+      "missing_mm3": 0.0,
+      "name": "reference_arduino_uno_mounting_plane_installed",
+      "pass": true,
+      "volume_delta_mm3": 4.001776687800884e-11
+    },
+    {
+      "construction_bbox": {
+        "max": [
+          108.7,
+          66.732,
+          46.4
+        ],
+        "min": [
+          23.7,
+          10.732,
+          44.8
+        ],
+        "size": [
+          85.0,
+          56.0,
+          1.6000000000000014
+        ]
+      },
+      "exported_step_bbox": {
+        "max": [
+          108.7,
+          66.732,
+          46.4
+        ],
+        "min": [
+          23.7,
+          10.732,
+          44.8
+        ],
+        "size": [
+          85.0,
+          56.0,
+          1.6000000000000014
+        ]
+      },
+      "extra_mm3": 0.0,
+      "limit_mm3": 0.01,
+      "missing_mm3": 0.0,
+      "name": "reference_raspberry_pi_board",
+      "pass": true,
+      "volume_delta_mm3": 0.0
+    },
+    {
+      "construction_bbox": {
+        "max": [
+          108.7,
+          69.964,
+          76.17999999999999
+        ],
+        "min": [
+          23.7,
+          7.5,
+          44.8
+        ],
+        "size": [
+          85.0,
+          62.464,
+          31.379999999999995
+        ]
+      },
+      "exported_step_bbox": {
+        "max": [
+          108.7,
+          69.964,
+          76.18
+        ],
+        "min": [
+          23.7,
+          7.5,
+          44.8
+        ],
+        "size": [
+          85.0,
+          62.464,
+          31.38000000000001
+        ]
+      },
+      "extra_mm3": 0.0,
+      "limit_mm3": 0.01,
+      "missing_mm3": 0.0,
+      "name": "reference_raspberry_pi_hat_assembly_keepout",
+      "pass": true,
+      "volume_delta_mm3": 8.731149137020111e-11
+    },
+    {
+      "construction_bbox": {
+        "max": [
+          197.07999999999998,
+          65.402,
+          62.8
+        ],
+        "min": [
+          128.5,
+          12.061999999999998,
+          44.8
+        ],
+        "size": [
+          68.57999999999998,
+          53.34,
+          18.0
+        ]
+      },
+      "exported_step_bbox": {
+        "max": [
+          197.08,
+          65.402,
+          62.8
+        ],
+        "min": [
+          128.5,
+          12.062,
+          44.8
+        ],
+        "size": [
+          68.58000000000001,
+          53.34,
+          18.0
+        ]
+      },
+      "extra_mm3": 0.0,
+      "limit_mm3": 0.01,
+      "missing_mm3": 0.0,
+      "name": "reference_arduino_uno_component_envelope",
+      "pass": true,
+      "volume_delta_mm3": 2.9103830456733704e-11
+    },
+    {
+      "construction_bbox": {
+        "max": [
+          126.7,
+          69.964,
+          71.6
+        ],
+        "min": [
+          108.7,
+          7.5,
+          25.6
+        ],
+        "size": [
+          18.0,
+          62.464,
+          45.99999999999999
+        ]
+      },
+      "exported_step_bbox": {
+        "max": [
+          126.7,
+          69.964,
+          71.6
+        ],
+        "min": [
+          108.7,
+          7.5,
+          25.6
+        ],
+        "size": [
+          18.0,
+          62.464,
+          45.99999999999999
+        ]
+      },
+      "extra_mm3": 0.0,
+      "limit_mm3": 0.01,
+      "missing_mm3": 0.0,
+      "name": "reference_interboard_wire_corridor",
+      "pass": true,
+      "volume_delta_mm3": 0.0
+    },
+    {
+      "construction_bbox": {
+        "max": [
+          234.8,
+          69.964,
+          81.2
+        ],
+        "min": [
+          197.07999999999998,
+          7.5,
+          44.8
+        ],
+        "size": [
+          37.72000000000003,
+          62.464,
+          36.400000000000006
+        ]
+      },
+      "exported_step_bbox": {
+        "max": [
+          234.8,
+          69.964,
+          81.2
+        ],
+        "min": [
+          197.08,
+          7.5,
+          44.8
+        ],
+        "size": [
+          37.72,
+          62.464,
+          36.400000000000006
+        ]
+      },
+      "extra_mm3": 0.0,
+      "limit_mm3": 0.01,
+      "missing_mm3": 0.0,
+      "name": "reference_right_pigtail_service_zone",
+      "pass": true,
+      "volume_delta_mm3": 7.275957614183426e-11
+    }
+  ],
+  "print_volume_checks": [
+    {
+      "brim_mm": 6.0,
+      "footprint_mm": [
+        233.8,
+        62.464
+      ],
+      "height_mm": 20.0,
+      "part": "dual_board_rail_frame",
+      "pass": true,
+      "required_radius_mm": 127.00019761967334
+    },
+    {
+      "brim_mm": 6.0,
+      "footprint_mm": [
+        173.38000000000002,
+        72.4638953025114
+      ],
+      "height_mm": 12.799999999999997,
+      "part": "dual_board_slide_tray",
+      "pass": true,
+      "required_radius_mm": 99.95695892590041
+    },
+    {
+      "brim_mm": 6.0,
+      "footprint_mm": [
+        86.0,
+        72.4638953025114
+      ],
+      "height_mm": 11.0,
+      "part": "raspberry_pi_mounting_plane",
+      "pass": true,
+      "required_radius_mm": 62.229476527914905
+    },
+    {
+      "brim_mm": 6.0,
+      "footprint_mm": [
+        70.37999999999998,
+        69.89054878600514
+      ],
+      "height_mm": 11.0,
+      "part": "arduino_uno_mounting_plane",
+      "pass": true,
+      "required_radius_mm": 55.59343003263881
+    },
+    {
+      "brim_mm": 6.0,
+      "footprint_mm": [
+        24.0,
+        36.0
+      ],
+      "height_mm": 11.0,
+      "part": "slide_rail_coupon_fixed",
+      "pass": true,
+      "required_radius_mm": 27.633307652783937
+    },
+    {
+      "brim_mm": 6.0,
+      "footprint_mm": [
+        24.0,
+        36.0
+      ],
+      "height_mm": 4.6,
+      "part": "slide_rail_coupon_slider",
+      "pass": true,
+      "required_radius_mm": 27.633307652783937
+    },
+    {
+      "brim_mm": 6.0,
+      "footprint_mm": [
+        88.0,
+        18.0
+      ],
+      "height_mm": 8.2,
+      "part": "blind_m3_insert_boss_coupon",
+      "pass": true,
+      "required_radius_mm": 50.91102314577124
+    },
+    {
+      "brim_mm": 6.0,
+      "footprint_mm": [
+        60.0,
+        12.0
+      ],
+      "height_mm": 11.0,
+      "part": "blind_m25_board_insert_coupon",
+      "pass": true,
+      "required_radius_mm": 36.59411708155671
+    }
+  ],
+  "rail_width_mm": 8.0,
+  "right_cap_gland_keepout_count": 4,
+  "routing_geometry_checks": [
+    {
+      "centerline_length_mm": 42.27433388230813,
+      "construction": "analytic_tangent_cylinder_torus_union",
+      "continuous_wire": true,
+      "expected_volume_mm3": 1195.2786308405516,
+      "inside_bend_radius_mm": 15.0,
+      "name": "high_pressure",
+      "pass": true,
+      "tangent_joins": [
+        {
+          "endpoint_gap_mm": 0.0,
+          "pass": true,
+          "tangent_dot": 1.0
+        },
+        {
+          "endpoint_gap_mm": 0.0,
+          "pass": true,
+          "tangent_dot": 1.0
+        }
+      ],
+      "volume_mm3": 1195.2786308405516
+    },
+    {
+      "centerline_length_mm": 32.27433388230813,
+      "construction": "analytic_tangent_cylinder_torus_union",
+      "continuous_wire": true,
+      "expected_volume_mm3": 912.5352920174703,
+      "inside_bend_radius_mm": 15.0,
+      "name": "high_temperature",
+      "pass": true,
+      "tangent_joins": [
+        {
+          "endpoint_gap_mm": 1.4210854715202004e-14,
+          "pass": true,
+          "tangent_dot": 1.0
+        },
+        {
+          "endpoint_gap_mm": 0.0,
+          "pass": true,
+          "tangent_dot": 1.0
+        }
+      ],
+      "volume_mm3": 912.5352920174705
+    },
+    {
+      "centerline_length_mm": 42.27433388230813,
+      "construction": "analytic_tangent_cylinder_torus_union",
+      "continuous_wire": true,
+      "expected_volume_mm3": 1195.2786308405516,
+      "inside_bend_radius_mm": 15.0,
+      "name": "low_pressure",
+      "pass": true,
+      "tangent_joins": [
+        {
+          "endpoint_gap_mm": 0.0,
+          "pass": true,
+          "tangent_dot": 1.0
+        },
+        {
+          "endpoint_gap_mm": 0.0,
+          "pass": true,
+          "tangent_dot": 1.0
+        }
+      ],
+      "volume_mm3": 1195.2786308405516
+    },
+    {
+      "centerline_length_mm": 32.27433388230813,
+      "construction": "analytic_tangent_cylinder_torus_union",
+      "continuous_wire": true,
+      "expected_volume_mm3": 912.5352920174703,
+      "inside_bend_radius_mm": 15.0,
+      "name": "low_temperature",
+      "pass": true,
+      "tangent_joins": [
+        {
+          "endpoint_gap_mm": 1.4210854715202004e-14,
+          "pass": true,
+          "tangent_dot": 1.0
+        },
+        {
+          "endpoint_gap_mm": 0.0,
+          "pass": true,
+          "tangent_dot": 1.0
+        }
+      ],
+      "volume_mm3": 912.5352920174705
+    },
+    {
+      "centerline_length_mm": 123.47666776461628,
+      "construction": "analytic_tangent_cylinder_torus_union",
+      "continuous_wire": true,
+      "expected_volume_mm3": 3491.220531051595,
+      "inside_bend_radius_mm": 15.0,
+      "name": "interboard_loop",
+      "pass": true,
+      "tangent_joins": [
+        {
+          "endpoint_gap_mm": 3.552713678800501e-15,
+          "pass": true,
+          "tangent_dot": 1.0
+        },
+        {
+          "endpoint_gap_mm": 0.0,
+          "pass": true,
+          "tangent_dot": 1.0
+        }
+      ],
+      "volume_mm3": 3491.2205310515956
+    }
+  ],
+  "routing_step_export_checks": [
+    {
+      "construction_bbox": {
+        "max": [
+          234.8,
+          44.2,
+          69.0
+        ],
+        "min": [
+          200.8,
+          22.200000000000003,
+          63.00000000000001
+        ],
+        "size": [
+          34.0,
+          22.0,
+          5.999999999999993
+        ]
+      },
+      "exported_step_bbox": {
+        "max": [
+          234.8,
+          44.2,
+          69.0
+        ],
+        "min": [
+          199.06976379385975,
+          20.46976379385973,
+          63.0
+        ],
+        "size": [
+          35.73023620614026,
+          23.730236206140273,
+          6.0
+        ]
+      },
+      "extra_mm3": 0.0,
+      "limit_mm3": 0.01,
+      "missing_mm3": 0.0,
+      "name": "reference_routing_cable_high_pressure",
+      "pass": true,
+      "volume_delta_mm3": 2.2737367544323206e-13
+    },
+    {
+      "construction_bbox": {
+        "max": [
+          207.8,
+          60.2,
+          71.0
+        ],
+        "min": [
+          199.8,
+          44.2,
+          61.0
+        ],
+        "size": [
+          8.0,
+          16.0,
+          10.0
+        ]
+      },
+      "exported_step_bbox": {
+        "max": [
+          207.8,
+          60.2,
+          71.0
+        ],
+        "min": [
+          199.8,
+          44.2,
+          61.0
+        ],
+        "size": [
+          8.0,
+          16.0,
+          10.0
+        ]
+      },
+      "extra_mm3": 0.0,
+      "limit_mm3": 0.01,
+      "missing_mm3": 0.0,
+      "name": "reference_routing_connector_high_pressure",
+      "pass": true,
+      "volume_delta_mm3": 0.0
+    },
+    {
+      "construction_bbox": {
+        "max": [
+          207.8,
+          70.2,
+          71.0
+        ],
+        "min": [
+          199.8,
+          44.2,
+          61.0
+        ],
+        "size": [
+          8.0,
+          26.0,
+          10.0
+        ]
+      },
+      "exported_step_bbox": {
+        "max": [
+          207.8,
+          70.2,
+          71.0
+        ],
+        "min": [
+          199.8,
+          44.2,
+          61.0
+        ],
+        "size": [
+          8.0,
+          26.0,
+          10.0
+        ]
+      },
+      "extra_mm3": 0.0,
+      "limit_mm3": 0.01,
+      "missing_mm3": 0.0,
+      "name": "reference_routing_pull_high_pressure",
+      "pass": true,
+      "volume_delta_mm3": 0.0
+    },
+    {
+      "construction_bbox": {
+        "max": [
+          207.8,
+          104.0,
+          72.0
+        ],
+        "min": [
+          199.8,
+          60.2,
+          60.0
+        ],
+        "size": [
+          8.0,
+          43.8,
+          12.0
+        ]
+      },
+      "exported_step_bbox": {
+        "max": [
+          207.8,
+          104.0,
+          72.0
+        ],
+        "min": [
+          199.8,
+          60.2,
+          60.0
+        ],
+        "size": [
+          8.0,
+          43.8,
+          12.0
+        ]
+      },
+      "extra_mm3": 0.0,
+      "limit_mm3": 0.01,
+      "missing_mm3": 0.0,
+      "name": "reference_routing_access_high_pressure",
+      "pass": true,
+      "volume_delta_mm3": 0.0
+    },
+    {
+      "construction_bbox": {
+        "max": [
+          234.8,
+          72.3,
+          69.0
+        ],
+        "min": [
+          210.8,
+          50.3,
+          63.0
+        ],
+        "size": [
+          24.0,
+          22.0,
+          6.0
+        ]
+      },
+      "exported_step_bbox": {
+        "max": [
+          234.8,
+          72.3,
+          69.0
+        ],
+        "min": [
+          209.06976379385975,
+          48.56976379385972,
+          63.0
+        ],
+        "size": [
+          25.730236206140262,
+          23.730236206140276,
+          6.0
+        ]
+      },
+      "extra_mm3": 0.0,
+      "limit_mm3": 0.01,
+      "missing_mm3": 0.0,
+      "name": "reference_routing_cable_high_temperature",
+      "pass": true,
+      "volume_delta_mm3": 0.0
+    },
+    {
+      "construction_bbox": {
+        "max": [
+          217.8,
+          88.3,
+          71.0
+        ],
+        "min": [
+          209.8,
+          72.3,
+          61.0
+        ],
+        "size": [
+          8.0,
+          16.0,
+          10.0
+        ]
+      },
+      "exported_step_bbox": {
+        "max": [
+          217.8,
+          88.3,
+          71.0
+        ],
+        "min": [
+          209.8,
+          72.3,
+          61.0
+        ],
+        "size": [
+          8.0,
+          16.0,
+          10.0
+        ]
+      },
+      "extra_mm3": 0.0,
+      "limit_mm3": 0.01,
+      "missing_mm3": 0.0,
+      "name": "reference_routing_connector_high_temperature",
+      "pass": true,
+      "volume_delta_mm3": 0.0
+    },
+    {
+      "construction_bbox": {
+        "max": [
+          217.8,
+          98.3,
+          71.0
+        ],
+        "min": [
+          209.8,
+          72.3,
+          61.0
+        ],
+        "size": [
+          8.0,
+          26.0,
+          10.0
+        ]
+      },
+      "exported_step_bbox": {
+        "max": [
+          217.8,
+          98.3,
+          71.0
+        ],
+        "min": [
+          209.8,
+          72.3,
+          61.0
+        ],
+        "size": [
+          8.0,
+          26.0,
+          10.0
+        ]
+      },
+      "extra_mm3": 0.0,
+      "limit_mm3": 0.01,
+      "missing_mm3": 0.0,
+      "name": "reference_routing_pull_high_temperature",
+      "pass": true,
+      "volume_delta_mm3": 0.0
+    },
+    {
+      "construction_bbox": {
+        "max": [
+          217.8,
+          104.0,
+          72.0
+        ],
+        "min": [
+          209.8,
+          88.3,
+          60.0
+        ],
+        "size": [
+          8.0,
+          15.700000000000003,
+          12.0
+        ]
+      },
+      "exported_step_bbox": {
+        "max": [
+          217.8,
+          104.0,
+          72.0
+        ],
+        "min": [
+          209.8,
+          88.3,
+          60.0
+        ],
+        "size": [
+          8.0,
+          15.700000000000003,
+          12.0
+        ]
+      },
+      "extra_mm3": 0.0,
+      "limit_mm3": 0.01,
+      "missing_mm3": 0.0,
+      "name": "reference_routing_access_high_temperature",
+      "pass": true,
+      "volume_delta_mm3": 0.0
+    },
+    {
+      "construction_bbox": {
+        "max": [
+          234.8,
+          44.2,
+          29.0
+        ],
+        "min": [
+          200.8,
+          22.200000000000003,
+          23.0
+        ],
+        "size": [
+          34.0,
+          22.0,
+          6.0
+        ]
+      },
+      "exported_step_bbox": {
+        "max": [
+          234.8,
+          44.2,
+          29.0
+        ],
+        "min": [
+          199.06976379385975,
+          20.46976379385973,
+          23.0
+        ],
+        "size": [
+          35.73023620614026,
+          23.730236206140273,
+          6.0
+        ]
+      },
+      "extra_mm3": 0.0,
+      "limit_mm3": 0.01,
+      "missing_mm3": 0.0,
+      "name": "reference_routing_cable_low_pressure",
+      "pass": true,
+      "volume_delta_mm3": 2.2737367544323206e-13
+    },
+    {
+      "construction_bbox": {
+        "max": [
+          207.8,
+          60.2,
+          31.0
+        ],
+        "min": [
+          199.8,
+          44.2,
+          21.0
+        ],
+        "size": [
+          8.0,
+          16.0,
+          10.0
+        ]
+      },
+      "exported_step_bbox": {
+        "max": [
+          207.8,
+          60.2,
+          31.0
+        ],
+        "min": [
+          199.8,
+          44.2,
+          21.0
+        ],
+        "size": [
+          8.0,
+          16.0,
+          10.0
+        ]
+      },
+      "extra_mm3": 0.0,
+      "limit_mm3": 0.01,
+      "missing_mm3": 0.0,
+      "name": "reference_routing_connector_low_pressure",
+      "pass": true,
+      "volume_delta_mm3": 0.0
+    },
+    {
+      "construction_bbox": {
+        "max": [
+          207.8,
+          70.2,
+          31.0
+        ],
+        "min": [
+          199.8,
+          44.2,
+          21.0
+        ],
+        "size": [
+          8.0,
+          26.0,
+          10.0
+        ]
+      },
+      "exported_step_bbox": {
+        "max": [
+          207.8,
+          70.2,
+          31.0
+        ],
+        "min": [
+          199.8,
+          44.2,
+          21.0
+        ],
+        "size": [
+          8.0,
+          26.0,
+          10.0
+        ]
+      },
+      "extra_mm3": 0.0,
+      "limit_mm3": 0.01,
+      "missing_mm3": 0.0,
+      "name": "reference_routing_pull_low_pressure",
+      "pass": true,
+      "volume_delta_mm3": 0.0
+    },
+    {
+      "construction_bbox": {
+        "max": [
+          207.8,
+          104.0,
+          32.0
+        ],
+        "min": [
+          199.8,
+          60.2,
+          20.0
+        ],
+        "size": [
+          8.0,
+          43.8,
+          12.0
+        ]
+      },
+      "exported_step_bbox": {
+        "max": [
+          207.8,
+          104.0,
+          32.0
+        ],
+        "min": [
+          199.8,
+          60.2,
+          20.0
+        ],
+        "size": [
+          8.0,
+          43.8,
+          12.0
+        ]
+      },
+      "extra_mm3": 0.0,
+      "limit_mm3": 0.01,
+      "missing_mm3": 0.0,
+      "name": "reference_routing_access_low_pressure",
+      "pass": true,
+      "volume_delta_mm3": 0.0
+    },
+    {
+      "construction_bbox": {
+        "max": [
+          234.8,
+          72.3,
+          29.0
+        ],
+        "min": [
+          210.8,
+          50.3,
+          23.0
+        ],
+        "size": [
+          24.0,
+          22.0,
+          6.0
+        ]
+      },
+      "exported_step_bbox": {
+        "max": [
+          234.8,
+          72.3,
+          29.0
+        ],
+        "min": [
+          209.06976379385975,
+          48.56976379385972,
+          23.0
+        ],
+        "size": [
+          25.730236206140262,
+          23.730236206140276,
+          6.0
+        ]
+      },
+      "extra_mm3": 0.0,
+      "limit_mm3": 0.01,
+      "missing_mm3": 0.0,
+      "name": "reference_routing_cable_low_temperature",
+      "pass": true,
+      "volume_delta_mm3": 0.0
+    },
+    {
+      "construction_bbox": {
+        "max": [
+          217.8,
+          88.3,
+          31.0
+        ],
+        "min": [
+          209.8,
+          72.3,
+          21.0
+        ],
+        "size": [
+          8.0,
+          16.0,
+          10.0
+        ]
+      },
+      "exported_step_bbox": {
+        "max": [
+          217.8,
+          88.3,
+          31.0
+        ],
+        "min": [
+          209.8,
+          72.3,
+          21.0
+        ],
+        "size": [
+          8.0,
+          16.0,
+          10.0
+        ]
+      },
+      "extra_mm3": 0.0,
+      "limit_mm3": 0.01,
+      "missing_mm3": 0.0,
+      "name": "reference_routing_connector_low_temperature",
+      "pass": true,
+      "volume_delta_mm3": 0.0
+    },
+    {
+      "construction_bbox": {
+        "max": [
+          217.8,
+          98.3,
+          31.0
+        ],
+        "min": [
+          209.8,
+          72.3,
+          21.0
+        ],
+        "size": [
+          8.0,
+          26.0,
+          10.0
+        ]
+      },
+      "exported_step_bbox": {
+        "max": [
+          217.8,
+          98.3,
+          31.0
+        ],
+        "min": [
+          209.8,
+          72.3,
+          21.0
+        ],
+        "size": [
+          8.0,
+          26.0,
+          10.0
+        ]
+      },
+      "extra_mm3": 0.0,
+      "limit_mm3": 0.01,
+      "missing_mm3": 0.0,
+      "name": "reference_routing_pull_low_temperature",
+      "pass": true,
+      "volume_delta_mm3": 0.0
+    },
+    {
+      "construction_bbox": {
+        "max": [
+          217.8,
+          104.0,
+          32.0
+        ],
+        "min": [
+          209.8,
+          88.3,
+          20.0
+        ],
+        "size": [
+          8.0,
+          15.700000000000003,
+          12.0
+        ]
+      },
+      "exported_step_bbox": {
+        "max": [
+          217.8,
+          104.0,
+          32.0
+        ],
+        "min": [
+          209.8,
+          88.3,
+          20.0
+        ],
+        "size": [
+          8.0,
+          15.700000000000003,
+          12.0
+        ]
+      },
+      "extra_mm3": 0.0,
+      "limit_mm3": 0.01,
+      "missing_mm3": 0.0,
+      "name": "reference_routing_access_low_temperature",
+      "pass": true,
+      "volume_delta_mm3": 0.0
+    },
+    {
+      "construction_bbox": {
+        "max": [
+          120.6985771591401,
+          64.964,
+          69.6
+        ],
+        "min": [
+          114.7014228408599,
+          10.5,
+          27.6
+        ],
+        "size": [
+          5.997154318280195,
+          54.464,
+          41.99999999999999
+        ]
+      },
+      "exported_step_bbox": {
+        "max": [
+          120.7,
+          64.964,
+          71.33023620614027
+        ],
+        "min": [
+          114.7,
+          8.769763793859727,
+          25.86976379385973
+        ],
+        "size": [
+          6.0,
+          56.194236206140275,
+          45.46047241228054
+        ]
+      },
+      "extra_mm3": 0.0,
+      "limit_mm3": 0.01,
+      "missing_mm3": 0.0,
+      "name": "reference_routing_interboard_loop",
+      "pass": true,
+      "volume_delta_mm3": 0.0
+    }
+  ],
+  "service_access_checks": [
+    {
+      "condition": "tray_and_removable_right_cap_off",
+      "fastener": "rack_m3",
+      "limit_mm3": 0.01,
+      "obstacle": "rack",
+      "overlap_mm3": 0.0,
+      "pass": true
+    },
+    {
+      "condition": "tray_and_removable_right_cap_off",
+      "fastener": "rack_m3",
+      "limit_mm3": 0.01,
+      "obstacle": "rack_heads",
+      "overlap_mm3": 0.0,
+      "pass": true
+    },
+    {
+      "condition": "tray_fully_extracted_and_boards_off",
+      "fastener": "deck_m3",
+      "limit_mm3": 0.01,
+      "obstacle": "tray",
+      "overlap_mm3": 0.0,
+      "pass": true
+    },
+    {
+      "condition": "tray_fully_extracted_and_boards_off",
+      "fastener": "deck_m3",
+      "limit_mm3": 0.01,
+      "obstacle": "pi_plane",
+      "overlap_mm3": 0.0,
+      "pass": true
+    },
+    {
+      "condition": "tray_fully_extracted_and_boards_off",
+      "fastener": "deck_m3",
+      "limit_mm3": 0.01,
+      "obstacle": "arduino_plane",
+      "overlap_mm3": 0.0,
+      "pass": true
+    },
+    {
+      "condition": "tray_fully_extracted_and_boards_off",
+      "fastener": "deck_m3",
+      "limit_mm3": 0.01,
+      "obstacle": "pi_board_bosses",
+      "overlap_mm3": 0.0,
+      "pass": true
+    },
+    {
+      "condition": "tray_fully_extracted_and_boards_off",
+      "fastener": "deck_m3",
+      "limit_mm3": 0.01,
+      "obstacle": "arduino_board_bosses",
+      "overlap_mm3": 0.0,
+      "pass": true
+    },
+    {
+      "condition": "tray_fully_extracted_and_boards_off",
+      "fastener": "deck_m3",
+      "limit_mm3": 0.01,
+      "obstacle": "deck_fasteners",
+      "overlap_mm3": 0.0,
+      "pass": true
+    },
+    {
+      "condition": "tray_fully_extracted_and_pi_hat_off",
+      "fastener": "board_m25",
+      "limit_mm3": 0.01,
+      "obstacle": "tray",
+      "overlap_mm3": 0.0,
+      "pass": true
+    },
+    {
+      "condition": "tray_fully_extracted_and_pi_hat_off",
+      "fastener": "board_m25",
+      "limit_mm3": 0.01,
+      "obstacle": "pi_plane",
+      "overlap_mm3": 0.0,
+      "pass": true
+    },
+    {
+      "condition": "tray_fully_extracted_and_pi_hat_off",
+      "fastener": "board_m25",
+      "limit_mm3": 0.01,
+      "obstacle": "arduino_plane",
+      "overlap_mm3": 0.0,
+      "pass": true
+    },
+    {
+      "condition": "tray_fully_extracted_and_pi_hat_off",
+      "fastener": "board_m25",
+      "limit_mm3": 0.01,
+      "obstacle": "pi_hardware",
+      "overlap_mm3": 0.0,
+      "pass": true
+    },
+    {
+      "condition": "tray_fully_extracted_and_pi_hat_off",
+      "fastener": "board_m25",
+      "limit_mm3": 0.01,
+      "obstacle": "arduino_hardware",
+      "overlap_mm3": 0.0,
+      "pass": true
+    },
+    {
+      "condition": "tray_fully_extracted_and_pi_hat_off",
+      "fastener": "board_m25",
+      "limit_mm3": 0.01,
+      "obstacle": "deck_fasteners",
+      "overlap_mm3": 0.0,
+      "pass": true
+    }
+  ],
+  "service_access_limits": {
+    "board_insert_fit": "intentional_heat_set_interference_requires_actual_insert_coupon",
+    "populated_component_driver_access": "unverified_without_measured_component_geometry",
+    "shell_tool_path_requires_cross_artifact_audit": true
+  },
+  "service_sweep_checks": [
+    {
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "travel_y_mm": 1
+    },
+    {
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "travel_y_mm": 2
+    },
+    {
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "travel_y_mm": 3
+    },
+    {
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "travel_y_mm": 4
+    },
+    {
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "travel_y_mm": 5
+    },
+    {
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "travel_y_mm": 6
+    },
+    {
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "travel_y_mm": 7
+    },
+    {
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "travel_y_mm": 8
+    },
+    {
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "travel_y_mm": 9
+    },
+    {
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "travel_y_mm": 10
+    },
+    {
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "travel_y_mm": 11
+    },
+    {
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "travel_y_mm": 12
+    },
+    {
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "travel_y_mm": 13
+    },
+    {
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "travel_y_mm": 14
+    },
+    {
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "travel_y_mm": 15
+    },
+    {
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "travel_y_mm": 16
+    },
+    {
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "travel_y_mm": 17
+    },
+    {
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "travel_y_mm": 18
+    },
+    {
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "travel_y_mm": 19
+    },
+    {
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "travel_y_mm": 20
+    },
+    {
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "travel_y_mm": 21
+    },
+    {
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "travel_y_mm": 22
+    },
+    {
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "travel_y_mm": 23
+    },
+    {
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "travel_y_mm": 24
+    },
+    {
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "travel_y_mm": 25
+    },
+    {
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "travel_y_mm": 26
+    },
+    {
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "travel_y_mm": 27
+    },
+    {
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "travel_y_mm": 28
+    },
+    {
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "travel_y_mm": 29
+    },
+    {
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "travel_y_mm": 30
+    },
+    {
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "travel_y_mm": 31
+    },
+    {
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "travel_y_mm": 32
+    },
+    {
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "travel_y_mm": 33
+    },
+    {
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "travel_y_mm": 34
+    },
+    {
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "travel_y_mm": 35
+    },
+    {
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "travel_y_mm": 36
+    },
+    {
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "travel_y_mm": 37
+    },
+    {
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "travel_y_mm": 38
+    },
+    {
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "travel_y_mm": 39
+    },
+    {
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "travel_y_mm": 40
+    },
+    {
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "travel_y_mm": 41
+    },
+    {
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "travel_y_mm": 42
+    },
+    {
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "travel_y_mm": 43
+    },
+    {
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "travel_y_mm": 44
+    },
+    {
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "travel_y_mm": 45
+    },
+    {
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "travel_y_mm": 46
+    },
+    {
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "travel_y_mm": 47
+    },
+    {
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "travel_y_mm": 48
+    },
+    {
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "travel_y_mm": 49
+    },
+    {
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "travel_y_mm": 50
+    },
+    {
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "travel_y_mm": 51
+    },
+    {
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "travel_y_mm": 52
+    },
+    {
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "travel_y_mm": 53
+    },
+    {
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "travel_y_mm": 54
+    },
+    {
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "travel_y_mm": 55
+    },
+    {
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "travel_y_mm": 56
+    },
+    {
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "travel_y_mm": 57
+    },
+    {
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "travel_y_mm": 58
+    },
+    {
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "travel_y_mm": 59
+    },
+    {
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "travel_y_mm": 60
+    },
+    {
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "travel_y_mm": 61
+    },
+    {
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "travel_y_mm": 62
+    },
+    {
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "travel_y_mm": 63
+    },
+    {
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "travel_y_mm": 64
+    },
+    {
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "travel_y_mm": 65
+    },
+    {
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "travel_y_mm": 66
+    },
+    {
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "travel_y_mm": 67
+    },
+    {
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "travel_y_mm": 68
+    },
+    {
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "travel_y_mm": 69
+    },
+    {
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "travel_y_mm": 70
+    },
+    {
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "travel_y_mm": 71
+    },
+    {
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "travel_y_mm": 72
+    },
+    {
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "travel_y_mm": 73
+    },
+    {
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "travel_y_mm": 74
+    },
+    {
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "travel_y_mm": 75
+    },
+    {
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "travel_y_mm": 76
+    },
+    {
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "travel_y_mm": 77
+    },
+    {
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "travel_y_mm": 78
+    },
+    {
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "travel_y_mm": 79
+    },
+    {
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "travel_y_mm": 80
+    },
+    {
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "travel_y_mm": 81
+    },
+    {
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "travel_y_mm": 82
+    },
+    {
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "travel_y_mm": 83
+    },
+    {
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "travel_y_mm": 84
+    },
+    {
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "travel_y_mm": 85
+    },
+    {
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "travel_y_mm": 86
+    },
+    {
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "travel_y_mm": 87
+    },
+    {
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "travel_y_mm": 88
+    },
+    {
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "travel_y_mm": 89
+    },
+    {
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "travel_y_mm": 90
+    },
+    {
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "travel_y_mm": 91
+    },
+    {
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "travel_y_mm": 92
+    },
+    {
+      "overlap_mm3": 0.0,
+      "pass": true,
+      "travel_y_mm": 93
+    }
+  ],
+  "shape_validation": {
+    "arduino_uno_mounting_plane": {
+      "bbox": {
+        "max": [
+          70.38,
+          69.902,
+          11.0
+        ],
+        "min": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "size": [
+          70.38,
+          69.902,
+          11.0
+        ]
+      },
+      "solids": 1,
+      "valid": true,
+      "volume_mm3": 14494.093328657014
+    },
+    "blind_m25_board_insert_coupon": {
+      "bbox": {
+        "max": [
+          60.0,
+          12.0,
+          11.0
+        ],
+        "min": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "size": [
+          60.0,
+          12.0,
+          11.0
+        ]
+      },
+      "solids": 1,
+      "valid": true,
+      "volume_mm3": 4062.155811932281
+    },
+    "blind_m3_insert_boss_coupon": {
+      "bbox": {
+        "max": [
+          88.0,
+          18.0,
+          8.2
+        ],
+        "min": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "size": [
+          88.0,
+          18.0,
+          8.2
+        ]
+      },
+      "solids": 1,
+      "valid": true,
+      "volume_mm3": 6058.238496324633
+    },
+    "dual_board_rail_frame": {
+      "bbox": {
+        "max": [
+          233.8,
+          62.464,
+          20.0
+        ],
+        "min": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "size": [
+          233.8,
+          62.464,
+          20.0
+        ]
+      },
+      "solids": 1,
+      "valid": true,
+      "volume_mm3": 19733.24784104775
+    },
+    "dual_board_slide_tray": {
+      "bbox": {
+        "max": [
+          173.38,
+          72.464,
+          12.8
+        ],
+        "min": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "size": [
+          173.38,
+          72.464,
+          12.8
+        ]
+      },
+      "solids": 1,
+      "valid": true,
+      "volume_mm3": 56191.167683036205
+    },
+    "raspberry_pi_mounting_plane": {
+      "bbox": {
+        "max": [
+          86.0,
+          72.464,
+          11.0
+        ],
+        "min": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "size": [
+          86.0,
+          72.464,
+          11.0
+        ]
+      },
+      "solids": 1,
+      "valid": true,
+      "volume_mm3": 18280.120969211675
+    },
+    "reference_arduino_uno_component_envelope": {
+      "bbox": {
+        "max": [
+          197.08,
+          65.402,
+          62.8
+        ],
+        "min": [
+          128.5,
+          12.062,
+          44.8
+        ],
+        "size": [
+          68.58000000000001,
+          53.34,
+          18.0
+        ]
+      },
+      "solids": 1,
+      "valid": true,
+      "volume_mm3": 65845.02959999998
+    },
+    "reference_arduino_uno_mounting_plane_installed": {
+      "bbox": {
+        "max": [
+          197.08,
+          79.964,
+          44.8
+        ],
+        "min": [
+          126.7,
+          10.062,
+          33.8
+        ],
+        "size": [
+          70.38000000000001,
+          69.902,
+          11.0
+        ]
+      },
+      "solids": 1,
+      "valid": true,
+      "volume_mm3": 14494.093328657016
+    },
+    "reference_dual_board_rail_frame_installed": {
+      "bbox": {
+        "max": [
+          245.1,
+          69.964,
+          23.2
+        ],
+        "min": [
+          11.3,
+          7.5,
+          3.2
+        ],
+        "size": [
+          233.79999999999998,
+          62.464,
+          20.0
+        ]
+      },
+      "solids": 1,
+      "valid": true,
+      "volume_mm3": 19733.247841047745
+    },
+    "reference_dual_board_slide_tray_installed": {
+      "bbox": {
+        "max": [
+          197.08,
+          79.964,
+          33.8
+        ],
+        "min": [
+          23.7,
+          7.5,
+          21.0
+        ],
+        "size": [
+          173.38000000000002,
+          72.464,
+          12.799999999999997
+        ]
+      },
+      "solids": 1,
+      "valid": true,
+      "volume_mm3": 56191.16768303623
+    },
+    "reference_interboard_wire_corridor": {
+      "bbox": {
+        "max": [
+          126.7,
+          69.964,
+          71.6
+        ],
+        "min": [
+          108.7,
+          7.5,
+          25.6
+        ],
+        "size": [
+          18.0,
+          62.464,
+          45.99999999999999
+        ]
+      },
+      "solids": 1,
+      "valid": true,
+      "volume_mm3": 51720.191999999995
+    },
+    "reference_raspberry_pi_board": {
+      "bbox": {
+        "max": [
+          108.7,
+          66.732,
+          46.4
+        ],
+        "min": [
+          23.7,
+          10.732,
+          44.8
+        ],
+        "size": [
+          85.0,
+          56.0,
+          1.6000000000000014
+        ]
+      },
+      "solids": 1,
+      "valid": true,
+      "volume_mm3": 7616.0000000000055
+    },
+    "reference_raspberry_pi_hat_assembly_keepout": {
+      "bbox": {
+        "max": [
+          108.7,
+          69.964,
+          76.18
+        ],
+        "min": [
+          23.7,
+          7.5,
+          44.8
+        ],
+        "size": [
+          85.0,
+          62.464,
+          31.38000000000001
+        ]
+      },
+      "solids": 1,
+      "valid": true,
+      "volume_mm3": 166610.22719999994
+    },
+    "reference_raspberry_pi_mounting_plane_installed": {
+      "bbox": {
+        "max": [
+          108.7,
+          79.964,
+          44.8
+        ],
+        "min": [
+          22.7,
+          7.5,
+          33.8
+        ],
+        "size": [
+          86.0,
+          72.464,
+          11.0
+        ]
+      },
+      "solids": 1,
+      "valid": true,
+      "volume_mm3": 18280.120969211675
+    },
+    "reference_right_pigtail_service_zone": {
+      "bbox": {
+        "max": [
+          234.8,
+          69.964,
+          81.2
+        ],
+        "min": [
+          197.08,
+          7.5,
+          44.8
+        ],
+        "size": [
+          37.72,
+          62.464,
+          36.400000000000006
+        ]
+      },
+      "solids": 1,
+      "valid": true,
+      "volume_mm3": 85763.57171200009
+    },
+    "reference_routing_access_high_pressure": {
+      "bbox": {
+        "max": [
+          207.8,
+          104.0,
+          72.0
+        ],
+        "min": [
+          199.8,
+          60.2,
+          60.0
+        ],
+        "size": [
+          8.0,
+          43.8,
+          12.0
+        ]
+      },
+      "solids": 1,
+      "valid": true,
+      "volume_mm3": 4204.8
+    },
+    "reference_routing_access_high_temperature": {
+      "bbox": {
+        "max": [
+          217.8,
+          104.0,
+          72.0
+        ],
+        "min": [
+          209.8,
+          88.3,
+          60.0
+        ],
+        "size": [
+          8.0,
+          15.700000000000003,
+          12.0
+        ]
+      },
+      "solids": 1,
+      "valid": true,
+      "volume_mm3": 1507.2000000000003
+    },
+    "reference_routing_access_low_pressure": {
+      "bbox": {
+        "max": [
+          207.8,
+          104.0,
+          32.0
+        ],
+        "min": [
+          199.8,
+          60.2,
+          20.0
+        ],
+        "size": [
+          8.0,
+          43.8,
+          12.0
+        ]
+      },
+      "solids": 1,
+      "valid": true,
+      "volume_mm3": 4204.8
+    },
+    "reference_routing_access_low_temperature": {
+      "bbox": {
+        "max": [
+          217.8,
+          104.0,
+          32.0
+        ],
+        "min": [
+          209.8,
+          88.3,
+          20.0
+        ],
+        "size": [
+          8.0,
+          15.700000000000003,
+          12.0
+        ]
+      },
+      "solids": 1,
+      "valid": true,
+      "volume_mm3": 1507.2000000000003
+    },
+    "reference_routing_cable_high_pressure": {
+      "bbox": {
+        "max": [
+          234.8,
+          44.2,
+          69.0
+        ],
+        "min": [
+          199.06976379385975,
+          20.46976379385973,
+          63.0
+        ],
+        "size": [
+          35.73023620614026,
+          23.730236206140273,
+          6.0
+        ]
+      },
+      "solids": 1,
+      "valid": true,
+      "volume_mm3": 1195.2786308405516
+    },
+    "reference_routing_cable_high_temperature": {
+      "bbox": {
+        "max": [
+          234.8,
+          72.3,
+          69.0
+        ],
+        "min": [
+          209.06976379385975,
+          48.56976379385972,
+          63.0
+        ],
+        "size": [
+          25.730236206140262,
+          23.730236206140276,
+          6.0
+        ]
+      },
+      "solids": 1,
+      "valid": true,
+      "volume_mm3": 912.5352920174705
+    },
+    "reference_routing_cable_low_pressure": {
+      "bbox": {
+        "max": [
+          234.8,
+          44.2,
+          29.0
+        ],
+        "min": [
+          199.06976379385975,
+          20.46976379385973,
+          23.0
+        ],
+        "size": [
+          35.73023620614026,
+          23.730236206140273,
+          6.0
+        ]
+      },
+      "solids": 1,
+      "valid": true,
+      "volume_mm3": 1195.2786308405516
+    },
+    "reference_routing_cable_low_temperature": {
+      "bbox": {
+        "max": [
+          234.8,
+          72.3,
+          29.0
+        ],
+        "min": [
+          209.06976379385975,
+          48.56976379385972,
+          23.0
+        ],
+        "size": [
+          25.730236206140262,
+          23.730236206140276,
+          6.0
+        ]
+      },
+      "solids": 1,
+      "valid": true,
+      "volume_mm3": 912.5352920174705
+    },
+    "reference_routing_connector_high_pressure": {
+      "bbox": {
+        "max": [
+          207.8,
+          60.2,
+          71.0
+        ],
+        "min": [
+          199.8,
+          44.2,
+          61.0
+        ],
+        "size": [
+          8.0,
+          16.0,
+          10.0
+        ]
+      },
+      "solids": 1,
+      "valid": true,
+      "volume_mm3": 1279.9999999999998
+    },
+    "reference_routing_connector_high_temperature": {
+      "bbox": {
+        "max": [
+          217.8,
+          88.3,
+          71.0
+        ],
+        "min": [
+          209.8,
+          72.3,
+          61.0
+        ],
+        "size": [
+          8.0,
+          16.0,
+          10.0
+        ]
+      },
+      "solids": 1,
+      "valid": true,
+      "volume_mm3": 1279.9999999999998
+    },
+    "reference_routing_connector_low_pressure": {
+      "bbox": {
+        "max": [
+          207.8,
+          60.2,
+          31.0
+        ],
+        "min": [
+          199.8,
+          44.2,
+          21.0
+        ],
+        "size": [
+          8.0,
+          16.0,
+          10.0
+        ]
+      },
+      "solids": 1,
+      "valid": true,
+      "volume_mm3": 1279.9999999999998
+    },
+    "reference_routing_connector_low_temperature": {
+      "bbox": {
+        "max": [
+          217.8,
+          88.3,
+          31.0
+        ],
+        "min": [
+          209.8,
+          72.3,
+          21.0
+        ],
+        "size": [
+          8.0,
+          16.0,
+          10.0
+        ]
+      },
+      "solids": 1,
+      "valid": true,
+      "volume_mm3": 1279.9999999999998
+    },
+    "reference_routing_interboard_loop": {
+      "bbox": {
+        "max": [
+          120.7,
+          64.964,
+          71.33023620614027
+        ],
+        "min": [
+          114.7,
+          8.769763793859727,
+          25.86976379385973
+        ],
+        "size": [
+          6.0,
+          56.194236206140275,
+          45.46047241228054
+        ]
+      },
+      "solids": 1,
+      "valid": true,
+      "volume_mm3": 3491.2205310515956
+    },
+    "reference_routing_pull_high_pressure": {
+      "bbox": {
+        "max": [
+          207.8,
+          70.2,
+          71.0
+        ],
+        "min": [
+          199.8,
+          44.2,
+          61.0
+        ],
+        "size": [
+          8.0,
+          26.0,
+          10.0
+        ]
+      },
+      "solids": 1,
+      "valid": true,
+      "volume_mm3": 2080.0
+    },
+    "reference_routing_pull_high_temperature": {
+      "bbox": {
+        "max": [
+          217.8,
+          98.3,
+          71.0
+        ],
+        "min": [
+          209.8,
+          72.3,
+          61.0
+        ],
+        "size": [
+          8.0,
+          26.0,
+          10.0
+        ]
+      },
+      "solids": 1,
+      "valid": true,
+      "volume_mm3": 2079.9999999999995
+    },
+    "reference_routing_pull_low_pressure": {
+      "bbox": {
+        "max": [
+          207.8,
+          70.2,
+          31.0
+        ],
+        "min": [
+          199.8,
+          44.2,
+          21.0
+        ],
+        "size": [
+          8.0,
+          26.0,
+          10.0
+        ]
+      },
+      "solids": 1,
+      "valid": true,
+      "volume_mm3": 2080.0
+    },
+    "reference_routing_pull_low_temperature": {
+      "bbox": {
+        "max": [
+          217.8,
+          98.3,
+          31.0
+        ],
+        "min": [
+          209.8,
+          72.3,
+          21.0
+        ],
+        "size": [
+          8.0,
+          26.0,
+          10.0
+        ]
+      },
+      "solids": 1,
+      "valid": true,
+      "volume_mm3": 2079.9999999999995
+    },
+    "slide_rail_coupon_fixed": {
+      "bbox": {
+        "max": [
+          24.0,
+          36.0,
+          11.0
+        ],
+        "min": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "size": [
+          24.0,
+          36.0,
+          11.0
+        ]
+      },
+      "solids": 1,
+      "valid": true,
+      "volume_mm3": 4896.0
+    },
+    "slide_rail_coupon_slider": {
+      "bbox": {
+        "max": [
+          24.0,
+          36.0,
+          4.6
+        ],
+        "min": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "size": [
+          24.0,
+          36.0,
+          4.6
+        ]
+      },
+      "solids": 1,
+      "valid": true,
+      "volume_mm3": 2845.4399999999996
+    }
+  },
+  "slide_clearance_each_side_mm": 0.9,
+  "slot_roof_geometry_checks": [
+    {
+      "actual_depth_mm": 3.1999999999999993,
+      "pass": true,
+      "roof_mm": 1.4000000000000021,
+      "slot": 1
+    },
+    {
+      "actual_depth_mm": 3.1999999999999993,
+      "pass": true,
+      "roof_mm": 1.4000000000000021,
+      "slot": 2
+    }
+  ],
+  "slot_vertical_clearance_mm": 1.0,
+  "slot_width_mm": 9.8,
+  "wire_routing": {
+    "cable_routes": {
+      "access_probe_xz_mm": [
+        8.0,
+        12.0
+      ],
+      "board_port_terminations_modeled": false,
+      "branches": [
+        {
+          "access_origin_xyz_mm": [
+            199.8,
+            60.2,
+            60.0
+          ],
+          "access_size_xyz_mm": [
+            8.0,
+            43.8,
+            12.0
+          ],
+          "arc_center_xyz_mm": [
+            221.8,
+            43.2,
+            66.0
+          ],
+          "arc_end_xyz_mm": [
+            203.8,
+            43.2,
+            66.0
+          ],
+          "arc_start_xyz_mm": [
+            221.8,
+            25.2,
+            66.0
+          ],
+          "connector_origin_xyz_mm": [
+            199.8,
+            44.2,
+            61.0
+          ],
+          "connector_size_xyz_mm": [
+            8.0,
+            16.0,
+            10.0
+          ],
+          "end_xyz_mm": [
+            203.8,
+            44.2,
+            66.0
+          ],
+          "id": "high_pressure",
+          "pull_origin_xyz_mm": [
+            199.8,
+            44.2,
+            61.0
+          ],
+          "pull_size_xyz_mm": [
+            8.0,
+            26.0,
+            10.0
+          ],
+          "start_xyz_mm": [
+            234.8,
+            25.2,
+            66.0
+          ],
+          "straight_gland_lead_mm": 13.0
+        },
+        {
+          "access_origin_xyz_mm": [
+            209.8,
+            88.3,
+            60.0
+          ],
+          "access_size_xyz_mm": [
+            8.0,
+            15.700000000000003,
+            12.0
+          ],
+          "arc_center_xyz_mm": [
+            231.8,
+            71.3,
+            66.0
+          ],
+          "arc_end_xyz_mm": [
+            213.8,
+            71.3,
+            66.0
+          ],
+          "arc_start_xyz_mm": [
+            231.8,
+            53.3,
+            66.0
+          ],
+          "connector_origin_xyz_mm": [
+            209.8,
+            72.3,
+            61.0
+          ],
+          "connector_size_xyz_mm": [
+            8.0,
+            16.0,
+            10.0
+          ],
+          "end_xyz_mm": [
+            213.8,
+            72.3,
+            66.0
+          ],
+          "id": "high_temperature",
+          "pull_origin_xyz_mm": [
+            209.8,
+            72.3,
+            61.0
+          ],
+          "pull_size_xyz_mm": [
+            8.0,
+            26.0,
+            10.0
+          ],
+          "start_xyz_mm": [
+            234.8,
+            53.3,
+            66.0
+          ],
+          "straight_gland_lead_mm": 3.0
+        },
+        {
+          "access_origin_xyz_mm": [
+            199.8,
+            60.2,
+            20.0
+          ],
+          "access_size_xyz_mm": [
+            8.0,
+            43.8,
+            12.0
+          ],
+          "arc_center_xyz_mm": [
+            221.8,
+            43.2,
+            26.0
+          ],
+          "arc_end_xyz_mm": [
+            203.8,
+            43.2,
+            26.0
+          ],
+          "arc_start_xyz_mm": [
+            221.8,
+            25.2,
+            26.0
+          ],
+          "connector_origin_xyz_mm": [
+            199.8,
+            44.2,
+            21.0
+          ],
+          "connector_size_xyz_mm": [
+            8.0,
+            16.0,
+            10.0
+          ],
+          "end_xyz_mm": [
+            203.8,
+            44.2,
+            26.0
+          ],
+          "id": "low_pressure",
+          "pull_origin_xyz_mm": [
+            199.8,
+            44.2,
+            21.0
+          ],
+          "pull_size_xyz_mm": [
+            8.0,
+            26.0,
+            10.0
+          ],
+          "start_xyz_mm": [
+            234.8,
+            25.2,
+            26.0
+          ],
+          "straight_gland_lead_mm": 13.0
+        },
+        {
+          "access_origin_xyz_mm": [
+            209.8,
+            88.3,
+            20.0
+          ],
+          "access_size_xyz_mm": [
+            8.0,
+            15.700000000000003,
+            12.0
+          ],
+          "arc_center_xyz_mm": [
+            231.8,
+            71.3,
+            26.0
+          ],
+          "arc_end_xyz_mm": [
+            213.8,
+            71.3,
+            26.0
+          ],
+          "arc_start_xyz_mm": [
+            231.8,
+            53.3,
+            26.0
+          ],
+          "connector_origin_xyz_mm": [
+            209.8,
+            72.3,
+            21.0
+          ],
+          "connector_size_xyz_mm": [
+            8.0,
+            16.0,
+            10.0
+          ],
+          "end_xyz_mm": [
+            213.8,
+            72.3,
+            26.0
+          ],
+          "id": "low_temperature",
+          "pull_origin_xyz_mm": [
+            209.8,
+            72.3,
+            21.0
+          ],
+          "pull_size_xyz_mm": [
+            8.0,
+            26.0,
+            10.0
+          ],
+          "start_xyz_mm": [
+            234.8,
+            53.3,
+            26.0
+          ],
+          "straight_gland_lead_mm": 3.0
+        }
+      ],
+      "cable_od_mm": 6.0,
+      "centerline_bend_radius_mm": 18.0,
+      "connected_harness_extraction_verified": false,
+      "connector_envelope_xyz_mm": [
+        8.0,
+        16.0,
+        10.0
+      ],
+      "contract": "ac_provisional_cable_routes_v1",
+      "disconnect_direction": "+Y",
+      "disconnect_stroke_mm": 10.0,
+      "finger_access_verified": false,
+      "hardware_measurement_status": "assumed_unmeasured",
+      "inside_bend_radius_mm": 15.0,
+      "loop": {
+        "arc_y_mm": 31.5,
+        "center_z_mm": 48.6,
+        "corridor_vertical_margin_each_mm": 2.0,
+        "end_y_mm": 64.964,
+        "lower_z_mm": 30.6,
+        "upper_z_mm": 66.6,
+        "x_mm": 117.7
+      },
+      "power_entry_modeled": false,
+      "retention_status": "existing_tray_tie_slots_only_hardware_and_cap_retention_unqualified",
+      "service_state": "disconnect_and_park_cap_side_plugs_before_tray_extraction"
+    },
+    "connected_harness_extraction_verified": false,
+    "connector_fit_status": "provisional_8x16x10_envelope_requires_measured_hardware",
+    "continuous_cable_routes_modeled": true,
+    "external_pigtails_must_be_disconnected_for_extraction": true,
+    "external_unplugging_alone_frees_tray": false,
+    "fixed_cap_to_moving_tray_connections_must_be_disconnected": true,
+    "interboard_corridor_width_mm": 18.0,
+    "right_pigtail_service_gap_mm": 37.72000000000003,
+    "service_loop_height_mm": 46.0,
+    "tie_slot_count": 4
+  }
+}

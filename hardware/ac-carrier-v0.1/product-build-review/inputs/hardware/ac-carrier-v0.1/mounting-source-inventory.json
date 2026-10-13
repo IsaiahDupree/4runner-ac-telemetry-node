@@ -1,0 +1,973 @@
+{
+  "scope": "bounded_source_metadata_only_native_acceptance_unperformed",
+  "pcb_agent_source_commit": "da755f7c1135c22949c5c116763e4f659acad312",
+  "inventory": {
+    "version": 20241229,
+    "generator": "pcbnew",
+    "generator_version": "10.0",
+    "nets": [
+      {
+        "code": 0,
+        "name": "",
+        "provenance": {
+          "relative_path": "mounting-reference.kicad_pcb",
+          "source_sha256": "0cd90901458b38c46fc853c90fa91be7b0b3cd513bf87394a416fa68c462e630",
+          "node_start_byte": 503,
+          "node_end_byte": 513,
+          "node_sha256": "6a894f636107a4bac70bd5344a98f8143ec814ea6e1bcf4dd24a44cffa3f0631",
+          "semantic_path": "/kicad_pcb/net[0]"
+        }
+      }
+    ],
+    "layers": [
+      {
+        "number": 0,
+        "name": "F.Cu",
+        "layer_type": "signal",
+        "user_name": null,
+        "provenance": {
+          "relative_path": "mounting-reference.kicad_pcb",
+          "source_sha256": "0cd90901458b38c46fc853c90fa91be7b0b3cd513bf87394a416fa68c462e630",
+          "node_start_byte": 163,
+          "node_end_byte": 180,
+          "node_sha256": "bf4b934b98769c587a0a93fac1261a221ba207fee6de68af1d7df61e3db8df87",
+          "semantic_path": "/kicad_pcb/layers[0]/0[0]"
+        }
+      },
+      {
+        "number": 2,
+        "name": "B.Cu",
+        "layer_type": "signal",
+        "user_name": null,
+        "provenance": {
+          "relative_path": "mounting-reference.kicad_pcb",
+          "source_sha256": "0cd90901458b38c46fc853c90fa91be7b0b3cd513bf87394a416fa68c462e630",
+          "node_start_byte": 181,
+          "node_end_byte": 198,
+          "node_sha256": "72804cb25fad4d7c3e998ae286db4b40cddc23e381e80039eba34a10a4770333",
+          "semantic_path": "/kicad_pcb/layers[0]/2[0]"
+        }
+      },
+      {
+        "number": 5,
+        "name": "F.SilkS",
+        "layer_type": "user",
+        "user_name": "F.Silkscreen",
+        "provenance": {
+          "relative_path": "mounting-reference.kicad_pcb",
+          "source_sha256": "0cd90901458b38c46fc853c90fa91be7b0b3cd513bf87394a416fa68c462e630",
+          "node_start_byte": 203,
+          "node_end_byte": 236,
+          "node_sha256": "d3d874cbcdea8461f761b470cda8044a4723db5d2275e429fe1f7709ee6749e5",
+          "semantic_path": "/kicad_pcb/layers[0]/5[0]"
+        }
+      },
+      {
+        "number": 7,
+        "name": "B.SilkS",
+        "layer_type": "user",
+        "user_name": "B.Silkscreen",
+        "provenance": {
+          "relative_path": "mounting-reference.kicad_pcb",
+          "source_sha256": "0cd90901458b38c46fc853c90fa91be7b0b3cd513bf87394a416fa68c462e630",
+          "node_start_byte": 237,
+          "node_end_byte": 270,
+          "node_sha256": "aebb7c08b395505a7efd798305882fef367aa13668fe67f286e309613a10a234",
+          "semantic_path": "/kicad_pcb/layers[0]/7[0]"
+        }
+      },
+      {
+        "number": 1,
+        "name": "F.Mask",
+        "layer_type": "user",
+        "user_name": null,
+        "provenance": {
+          "relative_path": "mounting-reference.kicad_pcb",
+          "source_sha256": "0cd90901458b38c46fc853c90fa91be7b0b3cd513bf87394a416fa68c462e630",
+          "node_start_byte": 275,
+          "node_end_byte": 292,
+          "node_sha256": "193ac248011b6a14caf8b338c40a43fd549709a1fae62f55c84cb2506f7af59e",
+          "semantic_path": "/kicad_pcb/layers[0]/1[0]"
+        }
+      },
+      {
+        "number": 3,
+        "name": "B.Mask",
+        "layer_type": "user",
+        "user_name": null,
+        "provenance": {
+          "relative_path": "mounting-reference.kicad_pcb",
+          "source_sha256": "0cd90901458b38c46fc853c90fa91be7b0b3cd513bf87394a416fa68c462e630",
+          "node_start_byte": 293,
+          "node_end_byte": 310,
+          "node_sha256": "44b0b7aa1e7c4d5ffd6588f12c7cdd0d7493cb8dbac040e273204a08bf649e01",
+          "semantic_path": "/kicad_pcb/layers[0]/3[0]"
+        }
+      },
+      {
+        "number": 17,
+        "name": "Dwgs.User",
+        "layer_type": "user",
+        "user_name": "User.Drawings",
+        "provenance": {
+          "relative_path": "mounting-reference.kicad_pcb",
+          "source_sha256": "0cd90901458b38c46fc853c90fa91be7b0b3cd513bf87394a416fa68c462e630",
+          "node_start_byte": 315,
+          "node_end_byte": 352,
+          "node_sha256": "91695e2bf9cd9d1bddf2fe9a1aef828c57177145814651b3363ffbda59874383",
+          "semantic_path": "/kicad_pcb/layers[0]/17[0]"
+        }
+      },
+      {
+        "number": 19,
+        "name": "Cmts.User",
+        "layer_type": "user",
+        "user_name": "User.Comments",
+        "provenance": {
+          "relative_path": "mounting-reference.kicad_pcb",
+          "source_sha256": "0cd90901458b38c46fc853c90fa91be7b0b3cd513bf87394a416fa68c462e630",
+          "node_start_byte": 357,
+          "node_end_byte": 394,
+          "node_sha256": "e5c3600c9ba42fa0ab15f08453f113fd5beacad6797a879f9f2330053146b184",
+          "semantic_path": "/kicad_pcb/layers[0]/19[0]"
+        }
+      },
+      {
+        "number": 25,
+        "name": "Edge.Cuts",
+        "layer_type": "user",
+        "user_name": null,
+        "provenance": {
+          "relative_path": "mounting-reference.kicad_pcb",
+          "source_sha256": "0cd90901458b38c46fc853c90fa91be7b0b3cd513bf87394a416fa68c462e630",
+          "node_start_byte": 399,
+          "node_end_byte": 420,
+          "node_sha256": "8dbfb9b33cec4d90c98a7e064ec418659b7bd05140075b241e3e9ec92300f6d6",
+          "semantic_path": "/kicad_pcb/layers[0]/25[0]"
+        }
+      },
+      {
+        "number": 35,
+        "name": "F.Fab",
+        "layer_type": "user",
+        "user_name": null,
+        "provenance": {
+          "relative_path": "mounting-reference.kicad_pcb",
+          "source_sha256": "0cd90901458b38c46fc853c90fa91be7b0b3cd513bf87394a416fa68c462e630",
+          "node_start_byte": 425,
+          "node_end_byte": 442,
+          "node_sha256": "69ca729a36099846c9fbe391cdee22fd8cce9b3a1cbed1d89166b80da7608475",
+          "semantic_path": "/kicad_pcb/layers[0]/35[0]"
+        }
+      },
+      {
+        "number": 33,
+        "name": "B.Fab",
+        "layer_type": "user",
+        "user_name": null,
+        "provenance": {
+          "relative_path": "mounting-reference.kicad_pcb",
+          "source_sha256": "0cd90901458b38c46fc853c90fa91be7b0b3cd513bf87394a416fa68c462e630",
+          "node_start_byte": 443,
+          "node_end_byte": 460,
+          "node_sha256": "eca5a3ef564ec346dc3650186b4ade1d4e2a5fabc8780097374c3577d1abc4f0",
+          "semantic_path": "/kicad_pcb/layers[0]/33[0]"
+        }
+      }
+    ],
+    "footprints": [
+      {
+        "uuid": "7a2c7c86-bd2e-582e-99a0-12b5a7142f92",
+        "reference": "H1",
+        "value": "MOUNT_REF_ONLY",
+        "library_id": "AC_MountingReference:NPTH_3.2mm",
+        "layer": "F.Cu",
+        "at": {
+          "x_mm": "102.54",
+          "y_mm": "145.72",
+          "rotation_degrees": "0"
+        },
+        "coordinate_frame": "board_mm",
+        "attributes": [
+          "board_only",
+          "exclude_from_pos_files",
+          "exclude_from_bom"
+        ],
+        "properties": [
+          {
+            "name": "Reference",
+            "value": "H1",
+            "at": {
+              "x_mm": "0",
+              "y_mm": "0",
+              "rotation_degrees": "0"
+            },
+            "provenance": {
+              "relative_path": "mounting-reference.kicad_pcb",
+              "source_sha256": "0cd90901458b38c46fc853c90fa91be7b0b3cd513bf87394a416fa68c462e630",
+              "node_start_byte": 1358,
+              "node_end_byte": 1518,
+              "node_sha256": "eac56b06709f200fd0c6d38b8aaa704baad5c9b4adeae5d2fee320f855339ae8",
+              "semantic_path": "/kicad_pcb/footprint[0]/property[0]"
+            }
+          },
+          {
+            "name": "Value",
+            "value": "MOUNT_REF_ONLY",
+            "at": {
+              "x_mm": "0",
+              "y_mm": "0",
+              "rotation_degrees": "0"
+            },
+            "provenance": {
+              "relative_path": "mounting-reference.kicad_pcb",
+              "source_sha256": "0cd90901458b38c46fc853c90fa91be7b0b3cd513bf87394a416fa68c462e630",
+              "node_start_byte": 1523,
+              "node_end_byte": 1691,
+              "node_sha256": "13b715a258e896ca0885ffa6ff1d8f8b1c43220cdb11d1898ec27d9c68354b61",
+              "semantic_path": "/kicad_pcb/footprint[0]/property[1]"
+            }
+          }
+        ],
+        "pads": [
+          {
+            "uuid": "1a7c1e5a-f4e8-5b81-858e-9669f66e7e30",
+            "number": "",
+            "pad_type": "np_thru_hole",
+            "shape": "circle",
+            "at": {
+              "x_mm": "0",
+              "y_mm": "0",
+              "rotation_degrees": "0"
+            },
+            "coordinate_frame": "footprint_local_mm",
+            "size": {
+              "x_mm": "3.2",
+              "y_mm": "3.2"
+            },
+            "drill": {
+              "shape": "circle",
+              "diameter_mm": "3.2",
+              "width_mm": null,
+              "offset": null,
+              "provenance": {
+                "relative_path": "mounting-reference.kicad_pcb",
+                "source_sha256": "0cd90901458b38c46fc853c90fa91be7b0b3cd513bf87394a416fa68c462e630",
+                "node_start_byte": 1810,
+                "node_end_byte": 1821,
+                "node_sha256": "41fc9f6b1737b39237e2c8ff84e0a5a196ca775ba21479345a8c297164eaf60c",
+                "semantic_path": "/kicad_pcb/footprint[0]/pad[0]/drill[0]"
+              }
+            },
+            "layers": [
+              "*.Cu",
+              "*.Mask"
+            ],
+            "net_code": null,
+            "net_name": null,
+            "pin_function": null,
+            "pin_type": null,
+            "provenance": {
+              "relative_path": "mounting-reference.kicad_pcb",
+              "source_sha256": "0cd90901458b38c46fc853c90fa91be7b0b3cd513bf87394a416fa68c462e630",
+              "node_start_byte": 1758,
+              "node_end_byte": 1899,
+              "node_sha256": "de9786977ec1f6dbc1137288c8bfe010c4a3e35a65c7d76accb3e254d9c06175",
+              "semantic_path": "/kicad_pcb/footprint[0]/pad[0]"
+            }
+          }
+        ],
+        "provenance": {
+          "relative_path": "mounting-reference.kicad_pcb",
+          "source_sha256": "0cd90901458b38c46fc853c90fa91be7b0b3cd513bf87394a416fa68c462e630",
+          "node_start_byte": 1225,
+          "node_end_byte": 1900,
+          "node_sha256": "a1091f89f2071d92c10b7cc7133050093be3d13162e5b6e6824ad306e30a79c7",
+          "semantic_path": "/kicad_pcb/footprint[0]"
+        }
+      },
+      {
+        "uuid": "4e952b67-1d90-5410-9c19-cb84ff55db02",
+        "reference": "H2",
+        "value": "MOUNT_REF_ONLY",
+        "library_id": "AC_MountingReference:NPTH_3.2mm",
+        "layer": "F.Cu",
+        "at": {
+          "x_mm": "102.54",
+          "y_mm": "117.78",
+          "rotation_degrees": "0"
+        },
+        "coordinate_frame": "board_mm",
+        "attributes": [
+          "board_only",
+          "exclude_from_pos_files",
+          "exclude_from_bom"
+        ],
+        "properties": [
+          {
+            "name": "Reference",
+            "value": "H2",
+            "at": {
+              "x_mm": "0",
+              "y_mm": "0",
+              "rotation_degrees": "0"
+            },
+            "provenance": {
+              "relative_path": "mounting-reference.kicad_pcb",
+              "source_sha256": "0cd90901458b38c46fc853c90fa91be7b0b3cd513bf87394a416fa68c462e630",
+              "node_start_byte": 2036,
+              "node_end_byte": 2196,
+              "node_sha256": "b9a2edfb706471d360bbe576ca6de05449cc9a50d4a68741b163089f8c15bad1",
+              "semantic_path": "/kicad_pcb/footprint[1]/property[0]"
+            }
+          },
+          {
+            "name": "Value",
+            "value": "MOUNT_REF_ONLY",
+            "at": {
+              "x_mm": "0",
+              "y_mm": "0",
+              "rotation_degrees": "0"
+            },
+            "provenance": {
+              "relative_path": "mounting-reference.kicad_pcb",
+              "source_sha256": "0cd90901458b38c46fc853c90fa91be7b0b3cd513bf87394a416fa68c462e630",
+              "node_start_byte": 2201,
+              "node_end_byte": 2369,
+              "node_sha256": "010bb9e2ebfc6b57379e28e11022c3487944c08bbe8ef0ea8d15f1f621b83587",
+              "semantic_path": "/kicad_pcb/footprint[1]/property[1]"
+            }
+          }
+        ],
+        "pads": [
+          {
+            "uuid": "0672d85e-4fe3-5bc4-a5cb-82dbda5fc6aa",
+            "number": "",
+            "pad_type": "np_thru_hole",
+            "shape": "circle",
+            "at": {
+              "x_mm": "0",
+              "y_mm": "0",
+              "rotation_degrees": "0"
+            },
+            "coordinate_frame": "footprint_local_mm",
+            "size": {
+              "x_mm": "3.2",
+              "y_mm": "3.2"
+            },
+            "drill": {
+              "shape": "circle",
+              "diameter_mm": "3.2",
+              "width_mm": null,
+              "offset": null,
+              "provenance": {
+                "relative_path": "mounting-reference.kicad_pcb",
+                "source_sha256": "0cd90901458b38c46fc853c90fa91be7b0b3cd513bf87394a416fa68c462e630",
+                "node_start_byte": 2488,
+                "node_end_byte": 2499,
+                "node_sha256": "41fc9f6b1737b39237e2c8ff84e0a5a196ca775ba21479345a8c297164eaf60c",
+                "semantic_path": "/kicad_pcb/footprint[1]/pad[0]/drill[0]"
+              }
+            },
+            "layers": [
+              "*.Cu",
+              "*.Mask"
+            ],
+            "net_code": null,
+            "net_name": null,
+            "pin_function": null,
+            "pin_type": null,
+            "provenance": {
+              "relative_path": "mounting-reference.kicad_pcb",
+              "source_sha256": "0cd90901458b38c46fc853c90fa91be7b0b3cd513bf87394a416fa68c462e630",
+              "node_start_byte": 2436,
+              "node_end_byte": 2577,
+              "node_sha256": "7961ae76ed158bc7a8ce8f23a4aedb3e8e50d5657703f86fdfeb45dec67c904a",
+              "semantic_path": "/kicad_pcb/footprint[1]/pad[0]"
+            }
+          }
+        ],
+        "provenance": {
+          "relative_path": "mounting-reference.kicad_pcb",
+          "source_sha256": "0cd90901458b38c46fc853c90fa91be7b0b3cd513bf87394a416fa68c462e630",
+          "node_start_byte": 1903,
+          "node_end_byte": 2578,
+          "node_sha256": "e48104262eb2992dd6595e33aed2fbe070c18f94af81e4adc3826c8798526ef7",
+          "semantic_path": "/kicad_pcb/footprint[1]"
+        }
+      },
+      {
+        "uuid": "213a5d0d-04a2-53f5-b7a3-eb0903b8307f",
+        "reference": "H3",
+        "value": "MOUNT_REF_ONLY",
+        "library_id": "AC_MountingReference:NPTH_3.2mm",
+        "layer": "F.Cu",
+        "at": {
+          "x_mm": "154.61",
+          "y_mm": "150.8",
+          "rotation_degrees": "0"
+        },
+        "coordinate_frame": "board_mm",
+        "attributes": [
+          "board_only",
+          "exclude_from_pos_files",
+          "exclude_from_bom"
+        ],
+        "properties": [
+          {
+            "name": "Reference",
+            "value": "H3",
+            "at": {
+              "x_mm": "0",
+              "y_mm": "0",
+              "rotation_degrees": "0"
+            },
+            "provenance": {
+              "relative_path": "mounting-reference.kicad_pcb",
+              "source_sha256": "0cd90901458b38c46fc853c90fa91be7b0b3cd513bf87394a416fa68c462e630",
+              "node_start_byte": 2713,
+              "node_end_byte": 2873,
+              "node_sha256": "af7ce0c63b18bb6e1a501a7c6a23e794bdf169fe18f153065baf0291f3d32252",
+              "semantic_path": "/kicad_pcb/footprint[2]/property[0]"
+            }
+          },
+          {
+            "name": "Value",
+            "value": "MOUNT_REF_ONLY",
+            "at": {
+              "x_mm": "0",
+              "y_mm": "0",
+              "rotation_degrees": "0"
+            },
+            "provenance": {
+              "relative_path": "mounting-reference.kicad_pcb",
+              "source_sha256": "0cd90901458b38c46fc853c90fa91be7b0b3cd513bf87394a416fa68c462e630",
+              "node_start_byte": 2878,
+              "node_end_byte": 3046,
+              "node_sha256": "2726e191a9dda847f8d8f45610011bfccf62e788dcf5731b9df30e0ce2c8491b",
+              "semantic_path": "/kicad_pcb/footprint[2]/property[1]"
+            }
+          }
+        ],
+        "pads": [
+          {
+            "uuid": "c802d48a-18c4-5e17-a71c-f0904e0b2639",
+            "number": "",
+            "pad_type": "np_thru_hole",
+            "shape": "circle",
+            "at": {
+              "x_mm": "0",
+              "y_mm": "0",
+              "rotation_degrees": "0"
+            },
+            "coordinate_frame": "footprint_local_mm",
+            "size": {
+              "x_mm": "3.2",
+              "y_mm": "3.2"
+            },
+            "drill": {
+              "shape": "circle",
+              "diameter_mm": "3.2",
+              "width_mm": null,
+              "offset": null,
+              "provenance": {
+                "relative_path": "mounting-reference.kicad_pcb",
+                "source_sha256": "0cd90901458b38c46fc853c90fa91be7b0b3cd513bf87394a416fa68c462e630",
+                "node_start_byte": 3165,
+                "node_end_byte": 3176,
+                "node_sha256": "41fc9f6b1737b39237e2c8ff84e0a5a196ca775ba21479345a8c297164eaf60c",
+                "semantic_path": "/kicad_pcb/footprint[2]/pad[0]/drill[0]"
+              }
+            },
+            "layers": [
+              "*.Cu",
+              "*.Mask"
+            ],
+            "net_code": null,
+            "net_name": null,
+            "pin_function": null,
+            "pin_type": null,
+            "provenance": {
+              "relative_path": "mounting-reference.kicad_pcb",
+              "source_sha256": "0cd90901458b38c46fc853c90fa91be7b0b3cd513bf87394a416fa68c462e630",
+              "node_start_byte": 3113,
+              "node_end_byte": 3254,
+              "node_sha256": "2b2d43401991055848eb37f9a34978ff6475f14322a86ce6cb25fea66dc9f102",
+              "semantic_path": "/kicad_pcb/footprint[2]/pad[0]"
+            }
+          }
+        ],
+        "provenance": {
+          "relative_path": "mounting-reference.kicad_pcb",
+          "source_sha256": "0cd90901458b38c46fc853c90fa91be7b0b3cd513bf87394a416fa68c462e630",
+          "node_start_byte": 2581,
+          "node_end_byte": 3255,
+          "node_sha256": "a14520813172fbf637b74ac7220491d3232f48a58d45dde11ce740fd9b35ecd5",
+          "semantic_path": "/kicad_pcb/footprint[2]"
+        }
+      },
+      {
+        "uuid": "dc272442-ec5d-54ce-a024-84c8977fb5ca",
+        "reference": "H4",
+        "value": "MOUNT_REF_ONLY",
+        "library_id": "AC_MountingReference:NPTH_3.2mm",
+        "layer": "F.Cu",
+        "at": {
+          "x_mm": "153.34",
+          "y_mm": "102.54",
+          "rotation_degrees": "0"
+        },
+        "coordinate_frame": "board_mm",
+        "attributes": [
+          "board_only",
+          "exclude_from_pos_files",
+          "exclude_from_bom"
+        ],
+        "properties": [
+          {
+            "name": "Reference",
+            "value": "H4",
+            "at": {
+              "x_mm": "0",
+              "y_mm": "0",
+              "rotation_degrees": "0"
+            },
+            "provenance": {
+              "relative_path": "mounting-reference.kicad_pcb",
+              "source_sha256": "0cd90901458b38c46fc853c90fa91be7b0b3cd513bf87394a416fa68c462e630",
+              "node_start_byte": 3391,
+              "node_end_byte": 3551,
+              "node_sha256": "12948d7a832a401fb261cfa7e13cb6ea09a7fd8ec1c54f086e99b7ee59c8e328",
+              "semantic_path": "/kicad_pcb/footprint[3]/property[0]"
+            }
+          },
+          {
+            "name": "Value",
+            "value": "MOUNT_REF_ONLY",
+            "at": {
+              "x_mm": "0",
+              "y_mm": "0",
+              "rotation_degrees": "0"
+            },
+            "provenance": {
+              "relative_path": "mounting-reference.kicad_pcb",
+              "source_sha256": "0cd90901458b38c46fc853c90fa91be7b0b3cd513bf87394a416fa68c462e630",
+              "node_start_byte": 3556,
+              "node_end_byte": 3724,
+              "node_sha256": "525feb9ca6667ab75bd0e281e6205832f89062fdcd14cdf0091b65cc9cc7434e",
+              "semantic_path": "/kicad_pcb/footprint[3]/property[1]"
+            }
+          }
+        ],
+        "pads": [
+          {
+            "uuid": "0499af21-d3cb-53e0-ac77-4d6a320938c8",
+            "number": "",
+            "pad_type": "np_thru_hole",
+            "shape": "circle",
+            "at": {
+              "x_mm": "0",
+              "y_mm": "0",
+              "rotation_degrees": "0"
+            },
+            "coordinate_frame": "footprint_local_mm",
+            "size": {
+              "x_mm": "3.2",
+              "y_mm": "3.2"
+            },
+            "drill": {
+              "shape": "circle",
+              "diameter_mm": "3.2",
+              "width_mm": null,
+              "offset": null,
+              "provenance": {
+                "relative_path": "mounting-reference.kicad_pcb",
+                "source_sha256": "0cd90901458b38c46fc853c90fa91be7b0b3cd513bf87394a416fa68c462e630",
+                "node_start_byte": 3843,
+                "node_end_byte": 3854,
+                "node_sha256": "41fc9f6b1737b39237e2c8ff84e0a5a196ca775ba21479345a8c297164eaf60c",
+                "semantic_path": "/kicad_pcb/footprint[3]/pad[0]/drill[0]"
+              }
+            },
+            "layers": [
+              "*.Cu",
+              "*.Mask"
+            ],
+            "net_code": null,
+            "net_name": null,
+            "pin_function": null,
+            "pin_type": null,
+            "provenance": {
+              "relative_path": "mounting-reference.kicad_pcb",
+              "source_sha256": "0cd90901458b38c46fc853c90fa91be7b0b3cd513bf87394a416fa68c462e630",
+              "node_start_byte": 3791,
+              "node_end_byte": 3932,
+              "node_sha256": "413236179401612b99f2831c1c35a455ed4e3b768635cd5dbbf7e98aa28b1d75",
+              "semantic_path": "/kicad_pcb/footprint[3]/pad[0]"
+            }
+          }
+        ],
+        "provenance": {
+          "relative_path": "mounting-reference.kicad_pcb",
+          "source_sha256": "0cd90901458b38c46fc853c90fa91be7b0b3cd513bf87394a416fa68c462e630",
+          "node_start_byte": 3258,
+          "node_end_byte": 3933,
+          "node_sha256": "39a143fee1078afe73005373856604aa12a12000c8a40a8bc361f7aefe0477a9",
+          "semantic_path": "/kicad_pcb/footprint[3]"
+        }
+      }
+    ],
+    "segments": [],
+    "outline_primitives": [
+      {
+        "kind": "gr_rect",
+        "uuid": "2fa80075-3eec-54df-a574-765c54b12aaf",
+        "layer": "Edge.Cuts",
+        "start": {
+          "x_mm": "100",
+          "y_mm": "100"
+        },
+        "end": {
+          "x_mm": "168.58",
+          "y_mm": "153.34"
+        },
+        "mid": null,
+        "center": null,
+        "points": [],
+        "angle_degrees": null,
+        "stroke_width_mm": "0.1",
+        "provenance": {
+          "relative_path": "mounting-reference.kicad_pcb",
+          "source_sha256": "0cd90901458b38c46fc853c90fa91be7b0b3cd513bf87394a416fa68c462e630",
+          "node_start_byte": 516,
+          "node_end_byte": 681,
+          "node_sha256": "704871205534fdc795db303b49a0858417b7fcd928421ddf191f81ae0b5a3b85",
+          "semantic_path": "/kicad_pcb/gr_rect[0]"
+        }
+      }
+    ],
+    "provenance": {
+      "relative_path": "mounting-reference.kicad_pcb",
+      "source_sha256": "0cd90901458b38c46fc853c90fa91be7b0b3cd513bf87394a416fa68c462e630",
+      "node_start_byte": 0,
+      "node_end_byte": 4631,
+      "node_sha256": "9359cbb0e24bac3dceaff210e7fa9dae65fdeeca5df01f3371515a384d26ac81",
+      "semantic_path": "/kicad_pcb"
+    }
+  },
+  "limitations": [
+    {
+      "code": "unsupported_hide",
+      "message": "hide source node is preserved by digest but its semantics are not inventoried",
+      "provenance": {
+        "relative_path": "mounting-reference.kicad_pcb",
+        "source_sha256": "0cd90901458b38c46fc853c90fa91be7b0b3cd513bf87394a416fa68c462e630",
+        "node_start_byte": 1410,
+        "node_end_byte": 1420,
+        "node_sha256": "87f09190ac0f748799d516d136ccd312862f5bf36ff600fc53bef83b7404bd7c",
+        "semantic_path": "/kicad_pcb/footprint[0]/property[0]/hide[0]"
+      }
+    },
+    {
+      "code": "unsupported_effects",
+      "message": "effects source node is preserved by digest but its semantics are not inventoried",
+      "provenance": {
+        "relative_path": "mounting-reference.kicad_pcb",
+        "source_sha256": "0cd90901458b38c46fc853c90fa91be7b0b3cd513bf87394a416fa68c462e630",
+        "node_start_byte": 1473,
+        "node_end_byte": 1517,
+        "node_sha256": "7f89a943d5e962103bb88535f4ce2b25d76a4d0dd5f4c9e6894587150b9aeebb",
+        "semantic_path": "/kicad_pcb/footprint[0]/property[0]/effects[0]"
+      }
+    },
+    {
+      "code": "unsupported_hide",
+      "message": "hide source node is preserved by digest but its semantics are not inventoried",
+      "provenance": {
+        "relative_path": "mounting-reference.kicad_pcb",
+        "source_sha256": "0cd90901458b38c46fc853c90fa91be7b0b3cd513bf87394a416fa68c462e630",
+        "node_start_byte": 1583,
+        "node_end_byte": 1593,
+        "node_sha256": "87f09190ac0f748799d516d136ccd312862f5bf36ff600fc53bef83b7404bd7c",
+        "semantic_path": "/kicad_pcb/footprint[0]/property[1]/hide[0]"
+      }
+    },
+    {
+      "code": "unsupported_effects",
+      "message": "effects source node is preserved by digest but its semantics are not inventoried",
+      "provenance": {
+        "relative_path": "mounting-reference.kicad_pcb",
+        "source_sha256": "0cd90901458b38c46fc853c90fa91be7b0b3cd513bf87394a416fa68c462e630",
+        "node_start_byte": 1646,
+        "node_end_byte": 1690,
+        "node_sha256": "7f89a943d5e962103bb88535f4ce2b25d76a4d0dd5f4c9e6894587150b9aeebb",
+        "semantic_path": "/kicad_pcb/footprint[0]/property[1]/effects[0]"
+      }
+    },
+    {
+      "code": "unsupported_hide",
+      "message": "hide source node is preserved by digest but its semantics are not inventoried",
+      "provenance": {
+        "relative_path": "mounting-reference.kicad_pcb",
+        "source_sha256": "0cd90901458b38c46fc853c90fa91be7b0b3cd513bf87394a416fa68c462e630",
+        "node_start_byte": 2088,
+        "node_end_byte": 2098,
+        "node_sha256": "87f09190ac0f748799d516d136ccd312862f5bf36ff600fc53bef83b7404bd7c",
+        "semantic_path": "/kicad_pcb/footprint[1]/property[0]/hide[0]"
+      }
+    },
+    {
+      "code": "unsupported_effects",
+      "message": "effects source node is preserved by digest but its semantics are not inventoried",
+      "provenance": {
+        "relative_path": "mounting-reference.kicad_pcb",
+        "source_sha256": "0cd90901458b38c46fc853c90fa91be7b0b3cd513bf87394a416fa68c462e630",
+        "node_start_byte": 2151,
+        "node_end_byte": 2195,
+        "node_sha256": "7f89a943d5e962103bb88535f4ce2b25d76a4d0dd5f4c9e6894587150b9aeebb",
+        "semantic_path": "/kicad_pcb/footprint[1]/property[0]/effects[0]"
+      }
+    },
+    {
+      "code": "unsupported_hide",
+      "message": "hide source node is preserved by digest but its semantics are not inventoried",
+      "provenance": {
+        "relative_path": "mounting-reference.kicad_pcb",
+        "source_sha256": "0cd90901458b38c46fc853c90fa91be7b0b3cd513bf87394a416fa68c462e630",
+        "node_start_byte": 2261,
+        "node_end_byte": 2271,
+        "node_sha256": "87f09190ac0f748799d516d136ccd312862f5bf36ff600fc53bef83b7404bd7c",
+        "semantic_path": "/kicad_pcb/footprint[1]/property[1]/hide[0]"
+      }
+    },
+    {
+      "code": "unsupported_effects",
+      "message": "effects source node is preserved by digest but its semantics are not inventoried",
+      "provenance": {
+        "relative_path": "mounting-reference.kicad_pcb",
+        "source_sha256": "0cd90901458b38c46fc853c90fa91be7b0b3cd513bf87394a416fa68c462e630",
+        "node_start_byte": 2324,
+        "node_end_byte": 2368,
+        "node_sha256": "7f89a943d5e962103bb88535f4ce2b25d76a4d0dd5f4c9e6894587150b9aeebb",
+        "semantic_path": "/kicad_pcb/footprint[1]/property[1]/effects[0]"
+      }
+    },
+    {
+      "code": "unsupported_hide",
+      "message": "hide source node is preserved by digest but its semantics are not inventoried",
+      "provenance": {
+        "relative_path": "mounting-reference.kicad_pcb",
+        "source_sha256": "0cd90901458b38c46fc853c90fa91be7b0b3cd513bf87394a416fa68c462e630",
+        "node_start_byte": 2765,
+        "node_end_byte": 2775,
+        "node_sha256": "87f09190ac0f748799d516d136ccd312862f5bf36ff600fc53bef83b7404bd7c",
+        "semantic_path": "/kicad_pcb/footprint[2]/property[0]/hide[0]"
+      }
+    },
+    {
+      "code": "unsupported_effects",
+      "message": "effects source node is preserved by digest but its semantics are not inventoried",
+      "provenance": {
+        "relative_path": "mounting-reference.kicad_pcb",
+        "source_sha256": "0cd90901458b38c46fc853c90fa91be7b0b3cd513bf87394a416fa68c462e630",
+        "node_start_byte": 2828,
+        "node_end_byte": 2872,
+        "node_sha256": "7f89a943d5e962103bb88535f4ce2b25d76a4d0dd5f4c9e6894587150b9aeebb",
+        "semantic_path": "/kicad_pcb/footprint[2]/property[0]/effects[0]"
+      }
+    },
+    {
+      "code": "unsupported_hide",
+      "message": "hide source node is preserved by digest but its semantics are not inventoried",
+      "provenance": {
+        "relative_path": "mounting-reference.kicad_pcb",
+        "source_sha256": "0cd90901458b38c46fc853c90fa91be7b0b3cd513bf87394a416fa68c462e630",
+        "node_start_byte": 2938,
+        "node_end_byte": 2948,
+        "node_sha256": "87f09190ac0f748799d516d136ccd312862f5bf36ff600fc53bef83b7404bd7c",
+        "semantic_path": "/kicad_pcb/footprint[2]/property[1]/hide[0]"
+      }
+    },
+    {
+      "code": "unsupported_effects",
+      "message": "effects source node is preserved by digest but its semantics are not inventoried",
+      "provenance": {
+        "relative_path": "mounting-reference.kicad_pcb",
+        "source_sha256": "0cd90901458b38c46fc853c90fa91be7b0b3cd513bf87394a416fa68c462e630",
+        "node_start_byte": 3001,
+        "node_end_byte": 3045,
+        "node_sha256": "7f89a943d5e962103bb88535f4ce2b25d76a4d0dd5f4c9e6894587150b9aeebb",
+        "semantic_path": "/kicad_pcb/footprint[2]/property[1]/effects[0]"
+      }
+    },
+    {
+      "code": "unsupported_hide",
+      "message": "hide source node is preserved by digest but its semantics are not inventoried",
+      "provenance": {
+        "relative_path": "mounting-reference.kicad_pcb",
+        "source_sha256": "0cd90901458b38c46fc853c90fa91be7b0b3cd513bf87394a416fa68c462e630",
+        "node_start_byte": 3443,
+        "node_end_byte": 3453,
+        "node_sha256": "87f09190ac0f748799d516d136ccd312862f5bf36ff600fc53bef83b7404bd7c",
+        "semantic_path": "/kicad_pcb/footprint[3]/property[0]/hide[0]"
+      }
+    },
+    {
+      "code": "unsupported_effects",
+      "message": "effects source node is preserved by digest but its semantics are not inventoried",
+      "provenance": {
+        "relative_path": "mounting-reference.kicad_pcb",
+        "source_sha256": "0cd90901458b38c46fc853c90fa91be7b0b3cd513bf87394a416fa68c462e630",
+        "node_start_byte": 3506,
+        "node_end_byte": 3550,
+        "node_sha256": "7f89a943d5e962103bb88535f4ce2b25d76a4d0dd5f4c9e6894587150b9aeebb",
+        "semantic_path": "/kicad_pcb/footprint[3]/property[0]/effects[0]"
+      }
+    },
+    {
+      "code": "unsupported_hide",
+      "message": "hide source node is preserved by digest but its semantics are not inventoried",
+      "provenance": {
+        "relative_path": "mounting-reference.kicad_pcb",
+        "source_sha256": "0cd90901458b38c46fc853c90fa91be7b0b3cd513bf87394a416fa68c462e630",
+        "node_start_byte": 3616,
+        "node_end_byte": 3626,
+        "node_sha256": "87f09190ac0f748799d516d136ccd312862f5bf36ff600fc53bef83b7404bd7c",
+        "semantic_path": "/kicad_pcb/footprint[3]/property[1]/hide[0]"
+      }
+    },
+    {
+      "code": "unsupported_effects",
+      "message": "effects source node is preserved by digest but its semantics are not inventoried",
+      "provenance": {
+        "relative_path": "mounting-reference.kicad_pcb",
+        "source_sha256": "0cd90901458b38c46fc853c90fa91be7b0b3cd513bf87394a416fa68c462e630",
+        "node_start_byte": 3679,
+        "node_end_byte": 3723,
+        "node_sha256": "7f89a943d5e962103bb88535f4ce2b25d76a4d0dd5f4c9e6894587150b9aeebb",
+        "semantic_path": "/kicad_pcb/footprint[3]/property[1]/effects[0]"
+      }
+    },
+    {
+      "code": "non_outline_graphics_unobserved",
+      "message": "board graphic is not an Edge.Cuts outline observation",
+      "provenance": {
+        "relative_path": "mounting-reference.kicad_pcb",
+        "source_sha256": "0cd90901458b38c46fc853c90fa91be7b0b3cd513bf87394a416fa68c462e630",
+        "node_start_byte": 3936,
+        "node_end_byte": 4102,
+        "node_sha256": "53cf267bb4166cbac5e9cb6a7df6fdfb0a4b499c81bb10d75e53cc4802f00aa4",
+        "semantic_path": "/kicad_pcb/gr_circle[0]"
+      }
+    },
+    {
+      "code": "non_outline_graphics_unobserved",
+      "message": "board graphic is not an Edge.Cuts outline observation",
+      "provenance": {
+        "relative_path": "mounting-reference.kicad_pcb",
+        "source_sha256": "0cd90901458b38c46fc853c90fa91be7b0b3cd513bf87394a416fa68c462e630",
+        "node_start_byte": 4105,
+        "node_end_byte": 4271,
+        "node_sha256": "a8d724a3b44d1de2c1e50e5d35ced56676b5246e5b9676d49e470429932cda8a",
+        "semantic_path": "/kicad_pcb/gr_circle[1]"
+      }
+    },
+    {
+      "code": "non_outline_graphics_unobserved",
+      "message": "board graphic is not an Edge.Cuts outline observation",
+      "provenance": {
+        "relative_path": "mounting-reference.kicad_pcb",
+        "source_sha256": "0cd90901458b38c46fc853c90fa91be7b0b3cd513bf87394a416fa68c462e630",
+        "node_start_byte": 4274,
+        "node_end_byte": 4438,
+        "node_sha256": "cdda5f7874039b6584e9f593a5ce44f21e44abedfadd04dba2b836abc28d774f",
+        "semantic_path": "/kicad_pcb/gr_circle[2]"
+      }
+    },
+    {
+      "code": "non_outline_graphics_unobserved",
+      "message": "board graphic is not an Edge.Cuts outline observation",
+      "provenance": {
+        "relative_path": "mounting-reference.kicad_pcb",
+        "source_sha256": "0cd90901458b38c46fc853c90fa91be7b0b3cd513bf87394a416fa68c462e630",
+        "node_start_byte": 4441,
+        "node_end_byte": 4607,
+        "node_sha256": "a4f17aceaf2a2bc4a8e687550ce744c8691acda6c957148ef99943ff9a29e6a9",
+        "semantic_path": "/kicad_pcb/gr_circle[3]"
+      }
+    },
+    {
+      "code": "unsupported_general",
+      "message": "general source node is preserved by digest but its semantics are not inventoried",
+      "provenance": {
+        "relative_path": "mounting-reference.kicad_pcb",
+        "source_sha256": "0cd90901458b38c46fc853c90fa91be7b0b3cd513bf87394a416fa68c462e630",
+        "node_start_byte": 86,
+        "node_end_byte": 133,
+        "node_sha256": "893cc8dec3eab53f30d770547edc20e8d942d62a42771e244a67c2ce1c22ed83",
+        "semantic_path": "/kicad_pcb/general[0]"
+      }
+    },
+    {
+      "code": "unsupported_paper",
+      "message": "paper source node is preserved by digest but its semantics are not inventoried",
+      "provenance": {
+        "relative_path": "mounting-reference.kicad_pcb",
+        "source_sha256": "0cd90901458b38c46fc853c90fa91be7b0b3cd513bf87394a416fa68c462e630",
+        "node_start_byte": 136,
+        "node_end_byte": 148,
+        "node_sha256": "f7927174fa3e2fd6de00c9b7965ddef15c8a0b2f5a1b67330da73dd8caf0aa04",
+        "semantic_path": "/kicad_pcb/paper[0]"
+      }
+    },
+    {
+      "code": "unsupported_setup",
+      "message": "setup source node is preserved by digest but its semantics are not inventoried",
+      "provenance": {
+        "relative_path": "mounting-reference.kicad_pcb",
+        "source_sha256": "0cd90901458b38c46fc853c90fa91be7b0b3cd513bf87394a416fa68c462e630",
+        "node_start_byte": 467,
+        "node_end_byte": 500,
+        "node_sha256": "5a330ed935ce945ebe9ed01a0fc1ccda4215e41e137f127a3fbe31fb2deef1ca",
+        "semantic_path": "/kicad_pcb/setup[0]"
+      }
+    },
+    {
+      "code": "unsupported_gr_text",
+      "message": "gr_text source node is preserved by digest but its semantics are not inventoried",
+      "provenance": {
+        "relative_path": "mounting-reference.kicad_pcb",
+        "source_sha256": "0cd90901458b38c46fc853c90fa91be7b0b3cd513bf87394a416fa68c462e630",
+        "node_start_byte": 684,
+        "node_end_byte": 852,
+        "node_sha256": "1bbac57b431b7b49772ccd6dd57928e35f556d3b724bc6bd4bc508d1541d5003",
+        "semantic_path": "/kicad_pcb/gr_text[0]"
+      }
+    },
+    {
+      "code": "unsupported_gr_text",
+      "message": "gr_text source node is preserved by digest but its semantics are not inventoried",
+      "provenance": {
+        "relative_path": "mounting-reference.kicad_pcb",
+        "source_sha256": "0cd90901458b38c46fc853c90fa91be7b0b3cd513bf87394a416fa68c462e630",
+        "node_start_byte": 855,
+        "node_end_byte": 1027,
+        "node_sha256": "c0ea42df52a1004016b18adb5cb32c7381e636cb5642f73bb43692d9265a49e2",
+        "semantic_path": "/kicad_pcb/gr_text[1]"
+      }
+    },
+    {
+      "code": "unsupported_gr_text",
+      "message": "gr_text source node is preserved by digest but its semantics are not inventoried",
+      "provenance": {
+        "relative_path": "mounting-reference.kicad_pcb",
+        "source_sha256": "0cd90901458b38c46fc853c90fa91be7b0b3cd513bf87394a416fa68c462e630",
+        "node_start_byte": 1030,
+        "node_end_byte": 1222,
+        "node_sha256": "055fdde0706e55c90c20cfdde964f26f19d3cdef033e6a6ed4ac22975ad50d85",
+        "semantic_path": "/kicad_pcb/gr_text[2]"
+      }
+    }
+  ],
+  "release": "BLOCKED"
+}

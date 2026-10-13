@@ -1,2 +1,4 @@
 # Retain the exact hashed Windows CAD receipts, including their CRLF endings.
 hardware/ac-carrier-v0.1/sources/*.json -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+# Product-review inputs retain the same exact source bytes and line endings.
+hardware/ac-carrier-v0.1/product-build-review/inputs/** -text whitespace=-blank-at-eol,-blank-at-eof,cr-at-eol

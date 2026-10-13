@@ -1,0 +1,163 @@
+{
+  "schema_version": "ac-product-build-test-execution/1",
+  "observed_at": "2026-10-13T01:36:02.244502+00:00",
+  "scope": "Real product planning review and supported LED software creation path; no A/C electrical generation or fresh native EDA/physical execution.",
+  "product_source_baseline": "ff5323b20a75af194901a5418b5585963678c110",
+  "pcb_software_source_baseline": "da755f7c1135c22949c5c116763e4f659acad312",
+  "source_identity_note": "Baselines precede this increment; exact implementation and generated input hashes below identify the tested work.",
+  "software_file_sha256": {
+    "pcb_agent/__main__.py": "6dec2226e3fa9afa544eff1d329e2284da74979d5d105232bed84bacb0c1bdaa",
+    "pcb_agent/requirements/__init__.py": "15216f4fb38d302303cc43026f693bd2f8d0e6f06c5bc90200f615a8b1ee56df",
+    "pcb_agent/requirements/build_plan.py": "d8d49d845d5a315d3aff03476313e8f02cf099ccffe600e8d768032552f43148",
+    "pcb_agent/requirements/product_review.py": "1944d3e8bef3f4d5f7cb657750b60e3db0ff43489b6af1d620615b59fa01555f",
+    "tests/integration/test_product_build_review.py": "c8ed07f5ef83fcf9eebf1cacc311390eeb8aa8b5c9d3320b69fed5e5d5e1f78e",
+    ".github/workflows/ci.yml": "4a2417367e3f9ce1a31356b6d00d46b3d3fd7cb56680e804b1db88bee5dbeba2"
+  },
+  "product_plan_sha256": "7c1cc8dcbf7e289dcb7dda3f9d86b3fc6b3899c52f4c5977210ac9a1d61105be",
+  "board_spec_file_sha256": "23ae9bd4d1bbff1974293a6a89ebcf9516b1dff9fb9e771c5293a3811ff0ea78",
+  "product_review": {
+    "manifest_sha256": "2a4a0e30e1f39b6ef3ff11b613c050f9e857ad11479e29bed5263345d665fe00",
+    "manifest_file_sha256": "4391978b81dbfd99b5814e85dcf2cb4f549ee8dee497b42037c253040035d64d",
+    "file_count": 18,
+    "captured_input_file_count": 14,
+    "source_reference_count": 6,
+    "active_requirement_count": 9,
+    "blocking_field_count": 14,
+    "step_count": 9,
+    "planned_test_group_count": 13,
+    "input_consistency": "PASS",
+    "plan_coverage": "PASS",
+    "requirements_state": "BLOCKED_REQUIREMENTS",
+    "engineering_outcome": "INCOMPLETE",
+    "release_state": "BLOCKED",
+    "live_product_fixture_and_installed_wheel_byte_identity": "PASS"
+  },
+  "checks": {
+    "real_product_regression_cases": {
+      "status": "PASS",
+      "passed": 44
+    },
+    "full_pcb_suite": {
+      "status": "PASS",
+      "passed": 1942,
+      "skipped": 22,
+      "elapsed_seconds": 174.76,
+      "command": "PCB_AGENT_KICAD_CLI=/private/tmp/pcb-native-execution-on-orion-only/kicad-cli .venv/bin/pytest --cov=pcb_agent --cov-report=term-missing -q",
+      "placement": "Mac single-process software checks; native KiCad unavailable under Orion placement policy",
+      "coverage_totals": {
+        "covered_lines": 12798,
+        "num_statements": 13504,
+        "percent_covered": 92.72204402167901,
+        "percent_covered_display": "93",
+        "missing_lines": 706,
+        "excluded_lines": 41,
+        "percent_statements_covered": 94.77191943127963,
+        "percent_statements_covered_display": "95",
+        "num_branches": 4578,
+        "num_partial_branches": 556,
+        "covered_branches": 3968,
+        "missing_branches": 610,
+        "percent_branches_covered": 86.67540410659677,
+        "percent_branches_covered_display": "87"
+      },
+      "coverage_json_sha256": "0acf810b1045b4de41541f01b84c896d886139333b732f4c556205a0f2d0b22d",
+      "observation_note": "Completion and summary observed from the tool output; coverage JSON retained externally. No raw full-suite log was saved."
+    },
+    "ruff": {
+      "status": "PASS",
+      "command": ".venv/bin/ruff check ."
+    },
+    "intake_baseline": {
+      "status": "PASS",
+      "cases": 43,
+      "relations": 10,
+      "report_sha256": "97bb90d0444504d3f0b91a3bdcadcf895f218bd50d0308a945bbea06c53f53e9"
+    },
+    "schema_export": {
+      "status": "PASS",
+      "schema": "pcb-autopilot.product-build-plan.v1"
+    },
+    "installed_distribution": {
+      "status": "PASS",
+      "wheel": "pcb_autopilot-0.1.0-py3-none-any.whl",
+      "wheel_sha256": "a6b583f622146311df9ae0914bcc696f818f53576012477a64fd5ebeadc0bf68",
+      "source_and_installed_wheel_review_bytes": "IDENTICAL",
+      "runtime": "CPython 3.13.11 isolated virtual environment outside the checkout"
+    },
+    "supported_led_generation": {
+      "status": "PASS",
+      "identical_file_count": 16,
+      "candidate_file_sha256": {
+        "candidate.json": "6a592add4ae59e372fb447dbb6b39f5db43f4d9c624b3bf2ef2f966f9342bcd9",
+        "recipe.json": "0e7743a4bca4290d517c415990bc3320d0df37720555c4b94f70366d6b38254b",
+        "README.md": "c21c5b81eafa72f2fa5f1331753d2ef5f46ba28bc288fbb14bbe5b5299250ffd",
+        "assets/board.kicad_pcb.in": "3d51e93e1b0b9939eb94d4747d44a00cf622381ce65a752f5f6c410051a2ad2b",
+        "assets/LED.symbol.sexpr": "ec242d51403e1a6bd0228ef68984c367469e4db9f08586b1962e27d0df0e99ea",
+        "assets/project.kicad_pro.in": "a50a647cf7c43219b1faa6c690b8e4bbe5fcd2fbd9aa531cb5747609331f4c3a",
+        "assets/schematic.kicad_sch.in": "0bc5b49a449ec161472ea0e2260f64445b937b5287164d2054e91832fbfbfe89",
+        "assets/led.kicad_mod": "7931ed1efba34cb13c8d74a60eb1dca4b0be57d950c38e08c3e7f007db500a1c",
+        "assets/BenchTerminal.kicad_sym": "5e242f96f38ba5d2df42ec9a2415c07caa2b8512d023cc08822e534fbdadc0ca",
+        "assets/catalog.json": "edbf4c54f114aa397e070d48789e881aafce2a55a8413d0681fc3966cc3e7528",
+        "assets/R.symbol.sexpr": "7795fe842ac0f0ef4e0d61167d328f3219fb3a65f7f84ecb79ab632dfdcb6156",
+        "assets/NOTICE.md": "966b6f82091090356a5ed69fe5b8884d0e0fb35b6a2e542655c78909e84b1c8a",
+        "assets/resistor.kicad_mod": "7190ac4a00125b807e54129ef0d87d87f2a658eeb74d025a7028203419b09f23",
+        "led_indicator/led_indicator.kicad_pcb": "b137ad79da8acef662d4f7be7443e0dc3da29ee603f542d763d58f8ecac75110",
+        "led_indicator/led_indicator.kicad_pro": "a50a647cf7c43219b1faa6c690b8e4bbe5fcd2fbd9aa531cb5747609331f4c3a",
+        "led_indicator/led_indicator.kicad_sch": "0bc5b49a449ec161472ea0e2260f64445b937b5287164d2054e91832fbfbfe89"
+      }
+    },
+    "supported_led_retained_orion_review": {
+      "status": "PASS",
+      "manifest_sha256": "fcc4fe9139350856eac005fdbee0f3f13b016ea1e28e27b0dcb8df9a6eb0106b",
+      "scope": "Replay of actual retained Orion native evidence, not a fresh native execution or A/C circuit qualification",
+      "engineering_outcome": "INCOMPLETE",
+      "release_state": "BLOCKED"
+    },
+    "product_repository": {
+      "status": "PASS",
+      "regression_cases_passed": 15,
+      "firmware_source_file_count": 18,
+      "compiled_artifact_count": 6,
+      "retained_orion_firmware_evidence_replay": "PASS",
+      "checks": [
+        {
+          "command": [
+            "python3",
+            "tools/verify_repository.py",
+            "--recovery-build-dir",
+            "/private/tmp/ac-carrier-verification-20261012-7a7bcfa7/attempt4/compiled/firmware/ac-sensor-node-esp32s3/build",
+            "--temperature-build-dir",
+            "/private/tmp/ac-carrier-verification-20261012-7a7bcfa7/attempt4/compiled/firmware/ac-temperature-bench-esp32s3/build"
+          ],
+          "exit_code": 0,
+          "log": "check-1.log",
+          "log_sha256": "19f4b7dc313074cda7273e72cdbd6c52a35aceea7bbb18f7b698200cfd75db56"
+        },
+        {
+          "command": [
+            "python3",
+            "-m",
+            "unittest",
+            "discover",
+            "-s",
+            "tests",
+            "-v"
+          ],
+          "exit_code": 0,
+          "log": "check-2.log",
+          "log_sha256": "2638c6738756327a078ff2dd095f0307b8f42efd7d8dd9c9edad5ecf316f09e8"
+        }
+      ]
+    }
+  },
+  "a_c_circuit_generation": "BLOCKED_REQUIREMENTS",
+  "a_c_native_eda_execution": "NOT_RUN",
+  "physical_test_execution": "NOT_RUN",
+  "transportation_or_military_standards_qualification": "NOT_ESTABLISHED",
+  "authorizes_schematic_compilation": false,
+  "authorizes_technical_release": false,
+  "authorizes_fabrication": false,
+  "authorizes_vehicle_installation": false,
+  "authorizes_payment": false,
+  "authorizes_order": false
+}
