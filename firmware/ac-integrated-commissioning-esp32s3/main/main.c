@@ -183,7 +183,8 @@ void app_main(void)
     for (uint64_t seq = 1;; ++seq) {
         esp_err_t g = gauge_report(seq), a = ESP_OK;
         for (unsigned bank = 0; bank < 2; ++bank) for (unsigned ch = 0; ch < 4; ++ch) {
-            int16_t counts;
+            // Defensive initialization; failed conversions still emit null.
+            int16_t counts = 0;
             esp_err_t err = adc_read(bank, ch, &counts);
             if (err != ESP_OK) a = err;
             printf("{\"event\":\"adc_raw\",\"seq\":%" PRIu64 ",\"bank\":%u,\"channel\":%u,\"io\":%d,\"counts\":",seq,bank,ch,err);
