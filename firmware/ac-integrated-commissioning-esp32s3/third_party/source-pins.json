@@ -1,0 +1,22 @@
+[
+  {
+    "url": "https://raw.githubusercontent.com/adafruit/Adafruit_HX8357_Library/f54cb0df2fa9128385fc2c7537bb3694a8cfde16/Adafruit_HX8357.cpp",
+    "path": "Adafruit_HX8357_Library-Adafruit_HX8357.cpp",
+    "sha256": "ae28aa7e2eda2093bd45d4945c8ac29e4c2795ea02f1d6fdf773e92334cb9e55"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/adafruit/Adafruit_HX8357_Library/f54cb0df2fa9128385fc2c7537bb3694a8cfde16/Adafruit_HX8357.h",
+    "path": "Adafruit_HX8357_Library-Adafruit_HX8357.h",
+    "sha256": "c0a4077af1c0c3c989d4e7ab681428baf8357997ff1c24cb845b3f7c3365d2da"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/adafruit/Adafruit_TSC2007/99a91e05758fd7aa440773562f9506e94655c788/Adafruit_TSC2007.cpp",
+    "path": "Adafruit_TSC2007-Adafruit_TSC2007.cpp",
+    "sha256": "bdb7db40320f5b2ac5a1a75ffce74c05d2973041756802b121ea15fbb35d8cc4"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/adafruit/Adafruit_TSC2007/99a91e05758fd7aa440773562f9506e94655c788/Adafruit_TSC2007.h",
+    "path": "Adafruit_TSC2007-Adafruit_TSC2007.h",
+    "sha256": "5dbd91bf555eea795f7bb090e038f71be10e24103cef0acea0807dc96431a3a9"
+  }
+]
